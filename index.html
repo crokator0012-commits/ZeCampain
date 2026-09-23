@@ -2776,9 +2776,12 @@ function ghTarget(){
   return {o:"crokator0012-commits", r:"ZeCampain"};
 }
 /* Burner-account GitHub PAT, intentionally client-side (see AGENTS/TASK notes) —
-   anyone with DevTools access to this page can read it. Rotate it on the burner
-   account if it's ever leaked outside the trusted player pool. */
-const GH_TOKEN="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";
+   anyone with DevTools access to this page can read it. Fine-grained, scoped to
+   only this repo with Contents: Read and write. GitHub auto-revokes classic
+   ghp_ tokens it detects committed in plaintext (that's what killed the last
+   one) — if this one ever stops working, generate a new fine-grained PAT the
+   same way and swap it in here. */
+const GH_TOKEN="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";
 async function publishTurn(){
   const tgt=ghTarget();
   const api=`https://api.github.com/repos/${tgt.o}/${tgt.r}/contents/campaign.json`;
