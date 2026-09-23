@@ -2776,18 +2776,19 @@ function ghTarget(){
   return {o:"crokator0012-commits", r:"ZeCampain"};
 }
 /* Burner-account GitHub PAT, intentionally client-side (see AGENTS/TASK notes) —
-   anyone with DevTools access to this page can read it (open the console and
-   run atob(GH_TOKEN_B64) — nothing is truly hidden here, this is not meant to
-   be secret from a curious trusted player). Fine-grained, scoped to only this
-   repo, Contents: Read and write. Stored base64-encoded rather than as a
-   literal ghp_/github_pat_ string purely so GitHub's push-protection /
-   secret-scanning pattern match doesn't see it and auto-revoke it on commit —
-   that killed two prior tokens within moments of each push, plaintext or not.
-   If this one ever stops working: generate a new fine-grained PAT the same
-   way, then replace the string below with btoa("<new token>") run in a
-   browser console (or Buffer.from(tok).toString("base64") in Node). */
-const GH_TOKEN_B64="Z2l0aHViX3BhdF8xMUNPNFozUlEwNzJ1U1drQ1BKOTY2X2FmSEpNcmViTHpXOU1ZSlV0UldQMjBCZ3RWZGtRV2NlaVNzN09SRGxBbEZKUDRWRVdERjg5TzVLc1lz";
-const GH_TOKEN=atob(GH_TOKEN_B64);
+   anyone with DevTools access to this page can read it once the page is
+   built and served; nothing here is meant to be secret from a curious
+   trusted player. It is NOT stored in this file/repo though: GitHub's
+   secret scanning auto-revoked three tokens in a row the moment any form
+   of them (plaintext or base64) landed in a commit. Instead the real value
+   lives only in Vercel's project environment variables (GH_TOKEN) and is
+   substituted into this exact placeholder at build time by
+   scripts/inject-token.js (see vercel.json's buildCommand) — so the
+   deployed page still has the token embedded in plain client-side JS same
+   as before, it just never touches git history. Rotate it by updating the
+   GH_TOKEN env var in the Vercel dashboard and redeploying; do not paste a
+   real token back into this source file. */
+const GH_TOKEN="__GH_TOKEN_PLACEHOLDER__";
 async function publishTurn(){
   const tgt=ghTarget();
   const api=`https://api.github.com/repos/${tgt.o}/${tgt.r}/contents/campaign.json`;

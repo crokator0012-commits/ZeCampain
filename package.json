@@ -1,0 +1,7 @@
+{
+  "name": "zecampain",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/inject-token.js"
+  }
+}
