@@ -243,7 +243,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 1025,
+   "treasury": 2025,
    "capital": "Province_449",
    "zeal": 6
   },
@@ -2582,32 +2582,13 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "fishing_jetties",
-    "goat_pen",
-    "sheep_pen"
+    "fishing_jetties"
    ],
    "availableBldOwner": {
-    "fishing_jetties": "Dol Amroth",
-    "goat_pen": "Dol Amroth",
-    "sheep_pen": "Dol Amroth"
+    "fishing_jetties": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "payer": "Dol Amroth",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "sheep_pen",
-     "payer": "Dol Amroth",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9454,6 +9435,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen is no longer available at Province_438.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen is no longer available at Province_438.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_438: construction declined — Dol Amroth refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_438: construction declined — Dol Amroth refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
