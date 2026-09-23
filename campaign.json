@@ -9438,6 +9438,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Drudain ends its turn — Goblins to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Dale ends its turn — Goblins to move.",
    "kind": "turn",
    "detail": null
@@ -12975,7 +12982,7 @@
   "Southern Endwaith",
   "Umbar"
  ],
- "active": 0,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15622,7 +15629,8 @@
   "Umbar",
   "Dol Amroth",
   "Dorvinion",
-  "Dale"
+  "Dale",
+  "Drudain"
  ],
  "pendingReview": false
 }
