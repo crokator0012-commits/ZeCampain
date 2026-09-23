@@ -2423,7 +2423,7 @@ async function endTurn(){
   }
   stats();drawLedger();draw();
   if(sel)openProv(P[sel]);
-  if(cx.classList.contains("open"))cxRender();
+  if(window.cxIsOpen&&window.cxIsOpen())window.cxRefresh();
   const ok=await publishTurn();
   if(btn)btn.disabled=false;
   if(!ok){
@@ -2431,7 +2431,7 @@ async function endTurn(){
     S.log.shift();
     stats();drawLedger();draw();
     if(sel)openProv(P[sel]);
-    if(cx.classList.contains("open"))cxRender();
+    if(window.cxIsOpen&&window.cxIsOpen())window.cxRefresh();
     toast(`Publish failed — ${name}'s turn has not been ended. Try again.`);
     return;
   }
@@ -3184,6 +3184,8 @@ window.closeCodex=closeCodex;
 window.openPlanner=openPlanner;
 window.parsePlan=parsePlan;
 window.musterPlan=musterPlan;
+window.cxIsOpen=()=>cx.classList.contains("open");
+window.cxRefresh=()=>cxRender();
 window.exportArmySetup=window.exportArmySetup||function(a){
   if(!a||!Array.isArray(a.units)||!a.units.length){toast("Nothing mustered to export");return;}
   return buildArmySetup(a);
