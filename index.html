@@ -3975,6 +3975,7 @@ function setActiveManually(fid){
   paintOrder();stats();drawLedger();
   toast(`${(F[fid]||{}).name||fid} now has the turn — no one was marked as having moved`);
 }
+function ordEsc(s){return String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
 function paintOrder(){
   $("ordList").innerHTML=S.order.map((id,i)=>{
     const f=F[id]||{name:id,color:"#777"};
@@ -3985,7 +3986,7 @@ function paintOrder(){
       <span class="pos">${i+1}</span>
       ${EMBLEMS[id]?`<img src="${EMBLEMS[id]}" alt="">`:`<span class="sw" style="background:${f.color}"></span>`}
       <span class="nm">${f.name||id}</span><span class="tag">${tag}</span>
-      ${(!done&&i!==S.active)?`<button data-oact="${esc(id)}" style="width:auto;padding:0 8px;color:var(--brass);border-color:var(--brass)" title="Give ${esc(f.name||id)} the turn now — for an AFK player. Doesn't mark anyone as moved.">Set active</button>`:""}
+      ${(!done&&i!==S.active)?`<button data-oact="${ordEsc(id)}" style="width:auto;padding:0 8px;color:var(--brass);border-color:var(--brass)" title="Give ${ordEsc(f.name||id)} the turn now — for an AFK player. Doesn't mark anyone as moved.">Set active</button>`:""}
       <button data-omf="${i}" title="Move to the front" ${i===0?"disabled":""}>&#8593;&#8593;</button>
       <button data-oup="${i}" title="Earlier" ${i===0?"disabled":""}>&#8593;</button>
       <button data-odn="${i}" title="Later" ${i===S.order.length-1?"disabled":""}>&#8595;</button>
