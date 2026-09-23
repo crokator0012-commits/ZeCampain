@@ -107,7 +107,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 50,
+   "treasury": 1850,
    "capital": "Harondor",
    "zeal": 6
   },
@@ -243,7 +243,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 25,
+   "treasury": 1025,
    "capital": "Province_449",
    "zeal": 6
   },
@@ -251,7 +251,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 500,
+   "treasury": 1750,
    "capital": "Province_23",
    "zeal": 6
   },
@@ -1168,22 +1168,7 @@
     "sheep_pen": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "payer": "Dol Amroth",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "goat_pen",
-     "payer": "Dol Amroth",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1895,15 +1880,7 @@
     "horse_stables": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "horse_stables",
-     "payer": "Anduin Vale",
-     "cost": 750,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3621,15 +3598,7 @@
     "sheep_pen": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "payer": "Anduin Vale",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4144,13 +4113,6 @@
      "toLevel": 2,
      "payer": "Umbar",
      "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "fishing_jetties",
-     "payer": "Umbar",
-     "cost": 600,
      "startedTurn": 1,
      "startedDate": "Spring 1418"
     }
@@ -6574,15 +6536,7 @@
    "availableBldOwner": {
     "fishing_jetties": "Umbar"
    },
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "payer": "Umbar",
-     "cost": 600,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ]
+   "buildQueue": []
   },
   {
    "id": "Province_296",
@@ -7137,15 +7091,7 @@
    "availableBldOwner": {
     "fishing_jetties": "Umbar"
    },
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "payer": "Umbar",
-     "cost": 600,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ]
+   "buildQueue": []
   },
   {
    "id": "Province_28",
@@ -9508,6 +9454,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Near Harad: construction declined — Umbar refunded 600 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "South Ithilien: construction declined — Umbar refunded 600 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor: construction declined — Umbar refunded 600 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_29: construction declined — Anduin Vale refunded 750 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_18: construction declined — Anduin Vale refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_383: construction declined — Dol Amroth refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_383: construction declined — Dol Amroth refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
