@@ -9438,6 +9438,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale ends its turn — Goblins to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Dorvinion ends its turn — Dale to move.",
    "kind": "turn",
    "detail": null
@@ -12929,8 +12936,9 @@
   "Anduin Vale",
   "Balcoth",
   "Beorings",
-  "Dale",
   "Dol Amroth",
+  "Dale",
+  "Goblins",
   "Dol Gul Dur",
   "DolGulDur",
   "Dorvinion",
@@ -12943,7 +12951,6 @@
   "Ered Luin",
   "Ered Mithrin",
   "Feredrim",
-  "Goblins",
   "Gondor",
   "GreenWood",
   "Gundabad",
@@ -12968,7 +12975,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 3,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15614,7 +15621,8 @@
   "Beorings",
   "Umbar",
   "Dol Amroth",
-  "Dorvinion"
+  "Dorvinion",
+  "Dale"
  ],
  "pendingReview": false
 }
