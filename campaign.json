@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 5225,
+   "treasury": 475,
    "capital": "Province_388",
    "zeal": 6
   },
@@ -500,11 +500,11 @@
    "hex": "#bbdefb",
    "playable": true,
    "owner": "",
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 200,
    "bld": [],
    "adj": [
     "Province_103",
@@ -1225,7 +1225,17 @@
     "fishing_jetties": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dale",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -1620,11 +1630,11 @@
    "hex": "#b3c2c1",
    "playable": true,
    "owner": "",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [],
    "adj": [
     "Province_127",
@@ -2885,11 +2895,11 @@
    "hex": "#e31181",
    "playable": true,
    "owner": "",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [],
    "adj": [],
    "bldLevel": {},
@@ -6516,7 +6526,17 @@
     "timber_yard": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dale",
+     "cost": 850,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7427,11 +7447,11 @@
    "hex": "#e85d04",
    "playable": true,
    "owner": "",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [],
    "adj": [
     "Province_25",
@@ -7461,11 +7481,11 @@
    "hex": "#bf4d03",
    "playable": true,
    "owner": "",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [],
    "adj": [
     "Province_103",
@@ -7621,7 +7641,17 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dale",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7663,7 +7693,17 @@
     "barracks": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Dale",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7922,8 +7962,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "goat_pen"
+   ],
+   "availableBldOwner": {
+    "goat_pen": "Dale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9212,7 +9256,7 @@
    "name": "Host of Province_388",
    "faction": "Dale",
    "men": 1720,
-   "at": "Province_388",
+   "at": "Province_421",
    "order": null,
    "units": [
     "dale_northmen_scouts",
@@ -9464,6 +9508,83 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Winery is no longer available at Province_404.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Winery at Province_404.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Timber Yard at Province_406 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_455_split_1: construction declined — Dale refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Goat Pen at Province_455_split_1 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Goat Pen at Province_455_split_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Grain Farm at Province_404 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Fishing Jetties at Province_465 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Barracks at Province_388 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_465 → Province_421",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_388 → Province_465",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -12797,8 +12918,8 @@
   "Anduin Vale",
   "Balcoth",
   "Beorings",
-  "Dol Amroth",
   "Dale",
+  "Dol Amroth",
   "Dol Gul Dur",
   "DolGulDur",
   "Dorvinion",
@@ -12836,7 +12957,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 4,
+ "active": 3,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
