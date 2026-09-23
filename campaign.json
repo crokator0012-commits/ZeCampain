@@ -12933,8 +12933,11 @@
   "Dol Guldur|Goblins"
  ],
  "order": [
+  "Drudain",
   "Goblins",
   "Lindon",
+  "Dol Gul Dur",
+  "Rohan",
   "Rhurrim",
   "Rhudaur",
   "Rachrohir",
@@ -12952,16 +12955,15 @@
   "Imraldris",
   "Gundabad",
   "Gondor",
+  "Woodland Realm",
   "Anduin Vale",
   "Balcoth",
   "Beorings",
   "Dale",
   "Dol Amroth",
-  "Dol Gul Dur",
   "DolGulDur",
   "Dorvinion",
   "Dorwinion",
-  "Drudain",
   "Dunlendings",
   "Eotheod",
   "Ered Luin",
@@ -12970,10 +12972,8 @@
   "Haerrim",
   "Mahud",
   "Northern Endwaith",
-  "Rohan",
   "Southern Endwaith",
-  "Umbar",
-  "Woodland Realm"
+  "Umbar"
  ],
  "active": 0,
  "wars": [
