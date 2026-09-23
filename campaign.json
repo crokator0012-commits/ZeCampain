@@ -9438,6 +9438,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Sheep Pen is no longer available at Province_438.",
    "kind": "",
    "detail": null
@@ -12922,12 +12929,11 @@
   "Anduin Vale",
   "Balcoth",
   "Beorings",
-  "Dol Amroth",
-  "Dorvinion",
   "Dale",
-  "Rhudaur",
+  "Dol Amroth",
   "Dol Gul Dur",
   "DolGulDur",
+  "Dorvinion",
   "Dorwinion",
   "Drudain",
   "Dunland",
@@ -12955,13 +12961,14 @@
   "Mordor",
   "Northern Endwaith",
   "Rachrohir",
+  "Rhudaur",
   "Rhurrim",
   "Rohan",
   "Southern Endwaith",
   "Umbar",
   "Woodland Realm"
  ],
- "active": 4,
+ "active": 3,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15606,6 +15613,8 @@
   "Balcoth",
   "Beorings",
   "Umbar",
-  "Dol Amroth"
- ]
+  "Dol Amroth",
+  "Dorvinion"
+ ],
+ "pendingReview": false
 }
