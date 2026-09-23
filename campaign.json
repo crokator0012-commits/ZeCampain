@@ -43,7 +43,7 @@
    "id": "Goblins",
    "name": "Goblins",
    "color": "#5B6B21",
-   "treasury": 5000,
+   "treasury": 1000,
    "capital": "Province_435",
    "zeal": 6
   },
@@ -6202,7 +6202,13 @@
    "availableBldOwner": {
     "iron_mine": "Goblins"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Goblins",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9435,6 +9441,48 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins ends its turn — Dol Gul Dur to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_418 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_418",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_418 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_418",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins starts construction: Province_418 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -12940,49 +12988,49 @@
   "Dol Guldur|Goblins"
  ],
  "order": [
-  "Drudain",
-  "Goblins",
-  "Lindon",
-  "Dol Gul Dur",
-  "Rohan",
-  "Rhurrim",
-  "Rhudaur",
-  "Rachrohir",
-  "Mordor",
-  "Lothlorien",
-  "Lostladen Tribes",
-  "Khazad-dum",
-  "Khand",
-  "Iron Hills",
-  "Dunland",
-  "Erebor",
-  "Ered Mithrin",
-  "Harondor",
-  "Isengard",
-  "Imraldris",
-  "Gundabad",
-  "Gondor",
-  "Woodland Realm",
   "Anduin Vale",
   "Balcoth",
   "Beorings",
   "Dale",
   "Dol Amroth",
+  "Dol Gul Dur",
   "DolGulDur",
   "Dorvinion",
   "Dorwinion",
+  "Drudain",
+  "Dunland",
   "Dunlendings",
   "Eotheod",
+  "Erebor",
   "Ered Luin",
+  "Ered Mithrin",
   "Feredrim",
+  "Goblins",
+  "Gondor",
   "GreenWood",
+  "Gundabad",
   "Haerrim",
+  "Harondor",
+  "Imraldris",
+  "Iron Hills",
+  "Isengard",
+  "Khand",
+  "Khazad-dum",
+  "Lindon",
+  "Lostladen Tribes",
+  "Lothlorien",
   "Mahud",
+  "Mordor",
   "Northern Endwaith",
+  "Rachrohir",
+  "Rhudaur",
+  "Rhurrim",
+  "Rohan",
   "Southern Endwaith",
-  "Umbar"
+  "Umbar",
+  "Woodland Realm"
  ],
- "active": 1,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15630,7 +15678,8 @@
   "Dol Amroth",
   "Dorvinion",
   "Dale",
-  "Drudain"
+  "Drudain",
+  "Goblins"
  ],
  "pendingReview": false
 }
