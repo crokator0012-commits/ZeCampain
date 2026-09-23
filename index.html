@@ -1548,9 +1548,8 @@ function openRealm(fid){
   const held=S.provinces.filter(p=>p.owner===fid);
   const ib=facIncomeCalc(fid);const inc=ib.total;
   const hosts=S.armies.filter(a=>a.faction===fid);
-  // upkeep: steepest host pays full, the rest at the sliding rate; holy hosts are free
-  const upk=(()=>{const ds=hosts.map(armyUpkeep).sort((x,y)=>y-x);let u=0;
-    ds.forEach((x,i)=>u+=Math.round(x*(i<UPKEEP_RATES.length?UPKEEP_RATES[i]:1)));return u;})();
+  // upkeep: every host pays its full upkeep; holy hosts are free
+  const upk=hosts.map(armyUpkeep).reduce((u,x)=>u+Math.round(x),0);
   const bldUpk=typeof factionBldUpkeep==="function"?factionBldUpkeep(fid):0;
   const totalUpk=upk+bldUpk;
   const net=inc-totalUpk;
@@ -2457,7 +2456,6 @@ $("pwGatePass").onkeydown=e=>{if(e.key==="Enter")pwGateTry();if(e.key==="Escape"
 $("pwGateCancel").onclick=()=>$("pwGate").classList.remove("open");
 $("pwGate").onclick=e=>{if(e.target.id==="pwGate")$("pwGate").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:formatCampaignDate(),txt,kind:kind||"",detail:detail||null}); }
-const UPKEEP_RATES=[0,.25,.5,.75];
 function armyUpkeep(a){
   if(!a||a.holy)return 0;
   /* cxBy is initialised later in the script (after the codex loads).
@@ -2542,9 +2540,9 @@ $("bTurn").onclick=()=>{
     }
   }
   for(const f of S.factions){
-    const dues=S.armies.filter(a=>a.faction===f.id).map(armyUpkeep).sort((a,b)=>b-a);
+    const dues=S.armies.filter(a=>a.faction===f.id).map(armyUpkeep);
     let upkeep=typeof factionBldUpkeep==="function"?factionBldUpkeep(f.id):0;
-    dues.forEach((u,i)=>upkeep+=Math.round(u*(i<UPKEEP_RATES.length?UPKEEP_RATES[i]:1)));
+    dues.forEach(u=>upkeep+=Math.round(u));
     f.treasury+=(gain[f.id]||0)-upkeep;
     if(f.treasury<0){
       logIt(`${f.name} cannot meet upkeep — ${(-f.treasury).toLocaleString()} castas short. The GM decides what starves.`,"battle");
