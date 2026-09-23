@@ -203,9 +203,9 @@ textarea{resize:vertical;min-height:60px;font-size:12px;line-height:1.5}
 .chip{background:#141E26;border:1px solid var(--soft);border-radius:99px;padding:1px 8px;cursor:pointer;font-size:10px;color:var(--dimmer)}
 .chip:hover{border-color:var(--brass);color:var(--bone)}
 .batcard .s{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim);margin-bottom:8px}
-#help,#gmask,#cxShare,#batM,#rulesOv,#tmapOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
+#help,#gmask,#pwGate,#cxShare,#batM,#rulesOv,#tmapOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
  display:none;align-items:center;justify-content:center}
-#help.open,#gmask.open,#cxShare.open,#batM.open,#rulesOv.open,#tmapOv.open{display:flex}
+#help.open,#gmask.open,#pwGate.open,#cxShare.open,#batM.open,#rulesOv.open,#tmapOv.open{display:flex}
 .hcard{background:rgba(15,22,28,.99);border:1px solid var(--line);border-radius:6px;padding:26px 30px;width:520px;max-width:92vw}
 .hcard h2{margin:0 0 14px;font-family:"Cinzel",serif;font-size:20px;font-weight:600}
 .hgrid{display:grid;grid-template-columns:130px 1fr;gap:7px 14px;font-size:13px}
@@ -389,6 +389,9 @@ input[type=file]{display:none}
   <div class="stat"><div class="k">Date</div><div class="v" id="sDate">Spring 1200</div></div>
   <div class="stat"><div class="k">Acting</div><div class="v" id="sAct" style="display:flex;align-items:center;gap:6px">—</div></div>
   <div class="stat player-view"><div class="k">Viewing as</div><select id="playerFaction" class="v" style="background:transparent;border:0;max-width:130px"></select></div>
+  <div class="stat player-view" id="turnGate"><div class="k" id="tgLabel">Turn</div><div class="v" id="tgStatus" style="display:flex;align-items:center;gap:8px">
+    <span id="tgMsg">—</span><button class="btn" id="tgUnlock" style="display:none;padding:4px 8px;font-size:11px">Unlock</button><button class="btn primary" id="tgEndTurn" style="display:none;padding:4px 8px;font-size:11px">End turn</button>
+  </div></div>
   <div class="acts">
     <button class="btn primary gm" id="bTurn">Next realm ▸</button><button class="btn gm" id="bClock" title="Set the current campaign turn">Set turn</button><button class="btn gm" id="bOrder" title="Set the order realms move in">Order</button>
     <button class="btn primary gm" id="bPub" title="Push this turn to the players">⇧ Publish</button>
@@ -542,6 +545,16 @@ input[type=file]{display:none}
   </div>
 </div></div>
 
+<div id="pwGate"><div class="hcard" style="width:340px">
+  <h2 id="pwGateTitle">Realm passphrase</h2>
+  <input type="password" id="pwGatePass" placeholder="passphrase" autocomplete="off" style="margin-bottom:12px">
+  <div id="pwGateErr" style="color:#E5A594;font-size:12px;min-height:16px;margin-bottom:6px"></div>
+  <div class="row">
+    <button class="btn" id="pwGateCancel" style="flex:1">Cancel</button>
+    <button class="btn primary" id="pwGateGo" style="flex:1">Unlock</button>
+  </div>
+</div></div>
+
 <div id="help"><div class="hcard">
   <h2>Controls</h2>
   <div class="hgrid">
@@ -614,7 +627,7 @@ input[type=file]{display:none}
     <div class="sect">
       <span class="lbl">Forces present</span>
       <div id="dArmies"></div>
-      <button class="btn wide primary gm" id="bMusterTile" style="margin-top:6px;background:#2D6A4F;border-color:#52B788;font-weight:600" title="Open the roster and directly recruit an army for this province (GM only)">⚔ Muster & Recruit Army Here</button>
+      <button class="btn wide primary" id="bMusterTile" style="display:none;margin-top:6px;background:#2D6A4F;border-color:#52B788;font-weight:600" title="Open the roster and directly recruit an army for this province">⚔ Muster & Recruit Army Here</button>
       <button class="btn wide gm" id="bRaise" style="margin-top:4px">Raise basic 1k host</button>
     </div>
     <div class="sect"><span class="lbl">Borders</span><div id="dAdj"></div></div>
@@ -1271,7 +1284,7 @@ function snap(label){
       garrison:p.garrison,terrain:p.terrain,note:p.note,siege:p.siege?{...p.siege}:null,occ:p.occ?{...p.occ}:null,bld:[...(p.bld||[])],bldLevel:{...(p.bldLevel||{})},bldOwner:{...(p.bldOwner||{})},availableBld:[...(p.availableBld||[])],availableBldOwner:{...(p.availableBldOwner||{})},upg:p.upg?{...p.upg}:null,buildQueue:(p.buildQueue||[]).map(j=>({...j})),raid:p.raid?{...p.raid}:null})),
     armies:JSON.parse(JSON.stringify(S.armies)),
     fac:S.factions.map(f=>({...f})),
-    wars:[...S.wars], battles:JSON.parse(JSON.stringify(S.battles)), fought:{...S.fought}, truces:{...S.truces}, allies:[...S.allies], order:[...S.order], moved:[...(S.moved||[])], active:S.active,
+    wars:[...S.wars], battles:JSON.parse(JSON.stringify(S.battles)), fought:{...S.fought}, truces:{...S.truces}, allies:[...S.allies], order:[...S.order], moved:[...(S.moved||[])], active:S.active, pendingReview:!!S.pendingReview,
     turn:S.turn,year:S.year,season:S.season});
   if(undoStack.length>60)undoStack.shift();
   $("bUndo").disabled=false;
@@ -1282,7 +1295,7 @@ function undo(){
   S.armies=s.armies;
   S.factions.length=0;s.fac.forEach(f=>{S.factions.push(f);F[f.id]=f;});
   Object.keys(F).forEach(k=>{if(!S.factions.find(f=>f.id===k))delete F[k];});
-  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.order=s.order||S.order;S.moved=s.moved||[];S.active=s.active??0;sortTurnOrder(S.order[S.active]);
+  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.order=s.order||S.order;S.moved=s.moved||[];S.active=s.active??0;S.pendingReview=!!s.pendingReview;sortTurnOrder(S.order[S.active]);
   $("bUndo").disabled=!undoStack.length;
   buildSelects();paintMap();legend();stats();drawLedger();if(sel)openProv(P[sel]);
   toast("Undid: "+s.label);
@@ -1299,6 +1312,7 @@ function claim(p,fac){
 }
 
 function reachableFrom(from,budget,fac){
+  const CROSS=new Set(S.crossings||[]);
   const hostile=id=>{const q=P[id];return !!(fac&&q&&q.owner&&q.owner!==fac&&atWar(fac,q.owner));};
   const startHostile=hostile(from);
   const dist={}; dist[from]=0;
@@ -1381,21 +1395,25 @@ function click(e){
         if(gm){
           const uCount=Array.isArray(selArmy.units)?selArmy.units.length:0;
           toast(`${selArmy.name} (${uCount} units, ${selArmy.men.toLocaleString()} men) — click a province to move`);
+        }else if(canAct(selArmy.faction)){
+          setReach(selArmy);
+          toast(`${selArmy.name} — click a highlighted province to move (≤${S.allowance} movement)`);
         }
       }
       return;
     }
   const p=provAt(e.clientX,e.clientY);
   if(!p){selArmy=null;setReach(null);draw();return;}
-  if(gm&&selArmy){
-    if(p.id===selArmy.at){selArmy=null;draw();return;}
+  if(selArmy&&(gm||canAct(selArmy.faction))){
+    if(p.id===selArmy.at){selArmy=null;setReach(null);draw();return;}
+    if(!gm&&(!reach||!(p.id in reach))){toast(`${p.id} is beyond ${selArmy.name}'s reach this turn`);return;}
     snap("move host");
     const from=selArmy.at;
     if(selArmy.fort){selArmy.fort=false;logIt(`${selArmy.name} abandons its fort at ${from}`);}
     selArmy.at=p.id;selArmy.order=null;
     logIt(`${selArmy.name} moved ${from} → ${p.id}`);
     toast(`${selArmy.name} → ${p.id}`);
-    selArmy=null;drawLedger();draw();openProv(p);return;
+    selArmy=null;setReach(null);drawLedger();draw();openProv(p);return;
   }
   if(gm&&e.ctrlKey){
     picked.has(p.id)?picked.delete(p.id):picked.add(p.id);
@@ -1470,6 +1488,7 @@ function openProv(p){
   $("dGarr").value=p.garrison;$("dVal").value=p.value;
   $("dBody").style.display="block";$("rBody").style.display="none";
   renderSiegeBox(p);renderClaimBox(p);renderWorksBox(p);renderConstructionQueue(p);
+  {const bmt=$("bMusterTile");if(bmt)bmt.style.display=(gm||canAct(p.owner))?"":"none";}
   $("dDisplayName").onchange=e=>{if(!gm)return;snap("rename tile");p.displayName=e.target.value.trim()||null;persistCampaign();openProv(p);};
   let warns="";
   if(p.siege)warns+=`<div class="warn" style="margin-bottom:10px">Under siege by <b>${p.siege.by}</b> — ${p.siege.turns} turn${p.siege.turns===1?"":"s"} remaining.</div>`;
@@ -1788,10 +1807,10 @@ function drawerArmies(p){
 }
 const RAISE_COST=1000;
 $("bMusterTile").onclick=()=>{
-  if(!gm){toast("Only the GM can muster armies on provinces.");return;}
   if(!sel||!P[sel])return;
   const p=P[sel];
-  const f=paintFac||p.owner||S.factions[0].id;
+  if(!gm&&!canAct(p.owner)){toast("Only the ruling realm, on its turn, can recruit here.");return;}
+  const f=gm?(paintFac||p.owner||S.factions[0].id):factionAuth;
   if(!f){toast("Claim the province or select a realm first");return;}
   const newHost={name:"Host of "+p.id,faction:f,men:0,at:p.id,order:null,units:[],xp:[]};
   cxRealm=f;
@@ -1820,11 +1839,11 @@ function renderWorksBox(p){
   const box=$("dWorksBox");if(!box)return;
   if(!p.playable){box.innerHTML="";return;}
   let h='<span class="lbl">Works</span>';
-  const built=p.bld.filter(b=>BLD[b]).map(b=>{const level=tradeLevel(p,b),trade=TRADE_BUILDINGS[b],queued=(p.buildQueue||[]).some(j=>j.key===b&&j.kind==="tradeUpgrade");const detail=trade?`Level ${level} · +${tradeRevenue(p,b)} revenue per season`:BLD[b].tip;return `<div class="kv"><b>${BLD[b].n}</b><span style="font-size:11px;color:var(--dim)">${detail}${p.bldOwner&&p.bldOwner[b]&&F[p.bldOwner[b]]?` · ${F[p.bldOwner[b]].name}`:""}${queued?` · upgrade queued`:gm&&trade&&level<5?` <button class="btn sm" data-trade-up="${b}" data-trade-level="${level+1}">Upgrade to ${level+1} · ${trade.l[level][0].toLocaleString()}</button>`:""}</span></div>`;}).join("");
+  const built=p.bld.filter(b=>BLD[b]).map(b=>{const level=tradeLevel(p,b),trade=TRADE_BUILDINGS[b],queued=(p.buildQueue||[]).some(j=>j.key===b&&j.kind==="tradeUpgrade");const detail=trade?`Level ${level} · +${tradeRevenue(p,b)} revenue per season`:BLD[b].tip;return `<div class="kv"><b>${BLD[b].n}</b><span style="font-size:11px;color:var(--dim)">${detail}${p.bldOwner&&p.bldOwner[b]&&F[p.bldOwner[b]]?` · ${F[p.bldOwner[b]].name}`:""}${queued?` · upgrade queued`:canAct(p.owner)&&trade&&level<5?` <button class="btn sm" data-trade-up="${b}" data-trade-level="${level+1}">Upgrade to ${level+1} · ${trade.l[level][0].toLocaleString()}</button>`:""}</span></div>`;}).join("");
   h+=built||'<div style="font-size:12px;color:var(--dimmer);padding:5px 0">Nothing built.</div>';
   if(barracksLevel(p)){
     const next=barracksLevel(p)+1;
-    h+=`<div class="kv"><b>Barracks level</b><span>Level ${barracksLevel(p)} · Tiers 1–${barracksLevel(p)}${gm&&next<=4?` <button class="btn sm" data-barr-up="${next}">Upgrade to ${next} · ${(BARRACKS_UPGRADE_COST[next]/1000).toFixed(0)}k</button>`:""}</span></div>`;
+    h+=`<div class="kv"><b>Barracks level</b><span>Level ${barracksLevel(p)} · Tiers 1–${barracksLevel(p)}${canAct(p.owner)&&next<=4?` <button class="btn sm" data-barr-up="${next}">Upgrade to ${next} · ${(BARRACKS_UPGRADE_COST[next]/1000).toFixed(0)}k</button>`:""}</span></div>`;
   }
   const ownView=canSeePlayerConstruction(p);
   const available=(p.availableBld||[]).filter(k=>BLD[k]&&!p.bld.includes(k));
@@ -1832,7 +1851,8 @@ function renderWorksBox(p){
   if((gm||ownView)&&visibleAvailable.length){
     h+='<span class="lbl" style="display:block;margin-top:12px">Available construction</span>';
     h+=visibleAvailable.map(key=>{const b=BLD[key],owner=(p.availableBldOwner||{})[key],who=owner&&F[owner]?` · ${F[owner].name}`:"";
-      return `<div class="kv"><div><b>${b.n}</b><div style="font-size:11px;color:var(--dim)">${b.tip}${who}</div></div>${gm?`<span style="display:flex;gap:4px"><button class="btn sm primary" data-bq="${key}">Queue · ${(b.cost/1000).toFixed(1)}k</button><button class="btn sm" data-buassign="${key}" title="Remove from this tile's available building roster">×</button></span>`:`<span style="font-size:11px;color:var(--brass)">${(b.cost/1000).toFixed(1)}k · ask GM</span>`}</div>`;}).join("");
+      const canQueue=gm||canAct(owner);
+      return `<div class="kv"><div><b>${b.n}</b><div style="font-size:11px;color:var(--dim)">${b.tip}${who}</div></div>${canQueue?`<span style="display:flex;gap:4px"><button class="btn sm primary" data-bq="${key}">Queue · ${(b.cost/1000).toFixed(1)}k</button>${gm?`<button class="btn sm" data-buassign="${key}" title="Remove from this tile's available building roster">×</button>`:""}</span>`:`<span style="font-size:11px;color:var(--brass)">${(b.cost/1000).toFixed(1)}k · ask GM</span>`}</div>`;}).join("");
   }
   if(gm){
     const owner=p.owner?F[p.owner]:null;
@@ -1860,7 +1880,9 @@ function renderWorksBox(p){
   }
   else if(canSeePlayerSettlement(p)&&p.tier<4&&!p.upg){
     const t=p.tier+1;
-    h+=`<div class="row" style="margin-top:8px"><button class="btn sm primary" disabled style="flex:1">Upgrade to ${UPG[t].n} · ${(UPG[t].cost/1000).toFixed(0)}k · ${UPG[t].revenue.toLocaleString()} revenue / turn</button></div><div class="hint" style="margin-top:5px">Ask the GM to queue this construction.</div>`;
+    h+=canAct(p.owner)
+      ?`<div class="row" style="margin-top:8px"><button class="btn sm primary" data-bu="${t}" style="flex:1">Upgrade to ${UPG[t].n} · ${(UPG[t].cost/1000).toFixed(0)}k · ${UPG[t].revenue.toLocaleString()} revenue / turn</button></div>`
+      :`<div class="row" style="margin-top:8px"><button class="btn sm primary" disabled style="flex:1">Upgrade to ${UPG[t].n} · ${(UPG[t].cost/1000).toFixed(0)}k · ${UPG[t].revenue.toLocaleString()} revenue / turn</button></div><div class="hint" style="margin-top:5px">Ask the GM to queue this construction.</div>`;
   }
   box.innerHTML=h;
   const pay=(cost,fid=p.owner)=>{
@@ -1941,7 +1963,8 @@ function renderConstructionQueue(p){
   box.innerHTML='<span class="lbl">Construction queue</span>'+visibleJobs.map((job,i)=>{
     const name=job.type==="settlement"?`${TIER[p.tier]} → ${UPG[job.to].n}`:job.kind==="barracksUpgrade"?`Barracks → Level ${job.toLevel}`:job.kind==="tradeUpgrade"?`${TRADE_BUILDINGS[job.key].n} → Level ${job.toLevel}`:BLD[job.key].n;
     const started=job.startedDate||(job.left!==undefined?"Legacy queue item":"Unknown date");
-    return `<div class="kv" style="align-items:flex-start;gap:8px"><div><b>${name}</b><div style="font-size:11px;color:var(--brass);margin-top:3px">Started T${job.startedTurn||S.turn} · ${started} · ${Number(job.cost||0).toLocaleString()} castas</div><div style="font-size:11px;color:var(--dimmer);margin-top:2px">Awaiting GM decision.</div></div>${gm?`<span style="display:flex;gap:4px"><button class="btn sm" data-cq-decline="${i}" title="Decline construction and refund the payer">×</button><button class="btn sm primary" data-cq-complete="${i}">Constructed</button></span>`:""}</div>`;
+    const canCancel=gm||canAct(job.payer||p.owner);
+    return `<div class="kv" style="align-items:flex-start;gap:8px"><div><b>${name}</b><div style="font-size:11px;color:var(--brass);margin-top:3px">Started T${job.startedTurn||S.turn} · ${started} · ${Number(job.cost||0).toLocaleString()} castas</div><div style="font-size:11px;color:var(--dimmer);margin-top:2px">Awaiting GM decision.</div></div>${canCancel?`<span style="display:flex;gap:4px"><button class="btn sm" data-cq-decline="${i}" title="Cancel construction and refund the payer">×</button>${gm?`<button class="btn sm primary" data-cq-complete="${i}">Constructed</button>`:""}</span>`:""}</div>`;
   }).join("");
   const removeJob=(job)=>{if(job.type==="settlement")p.upg=null;else{const q=p.buildQueue||[],i=q.indexOf(job._source);if(i>=0)q.splice(i,1);}};
   jobs.forEach(job=>{if(job.type==="building")job._source=(p.buildQueue||[]).find(q=>q===job||q.key===job.key&&q.startedTurn===job.startedTurn&&q.startedDate===job.startedDate);});
@@ -2183,6 +2206,7 @@ function stats(){
   $("sDate").textContent=formatCampaignDate();
   const fid=S.order[S.active], f=F[fid];
   $("sAct").innerHTML=f?`${EMBLEMS[fid]?`<img src="${EMBLEMS[fid]}" style="width:16px;height:16px;border-radius:50%">`:""}<span style="color:${f.color}">${f.name}</span>`:"—";
+  renderTurnGate();
 }
 
 function normalizeCampaignClock(){
@@ -2191,6 +2215,7 @@ function normalizeCampaignClock(){
   if(!SEASONS.includes(S.season))S.season="Spring";
   if(!Array.isArray(S.order)||!S.order.length){S.order=S.factions.map(f=>f.id);S.active=0;}
   if(!Number.isInteger(S.active)||S.active<0||S.active>=S.order.length)S.active=0;
+  if(typeof S.pendingReview!=="boolean")S.pendingReview=false;
 }
 
 $("q").oninput=()=>{
@@ -2266,6 +2291,7 @@ function setGM(on){
   requestAnimationFrame(layoutChrome);
   $("bGM").classList.toggle("on",gm);$("bGM").textContent=gm?"GM ✓":"GM";
   if(!gm){syncPlayerFactionToTurn();paintFac=null;selArmy=null;reach=null;picked.clear();cv.classList.remove("paint");paintSel();updateSelInfo();if(sel)openProv(P[sel]);}
+  renderTurnGate();
   drawLedger();legend();draw();
 }
 $("bGM").onclick=()=>{
@@ -2291,6 +2317,145 @@ $("gmGo").onclick=gmTry;
 $("gmPass").onkeydown=e=>{if(e.key==="Enter")gmTry();if(e.key==="Escape")$("gmask").classList.remove("open");};
 $("gmCancel").onclick=()=>$("gmask").classList.remove("open");
 $("gmask").onclick=e=>{if(e.target.id==="gmask")$("gmask").classList.remove("open");};
+
+/* ---------- faction turn-gate (self-service password, Stage 1) ---------- */
+/* GM: fill in each faction's turn-passphrase as a sha256 hex digest (like GM_HASH above),
+   not plaintext. In the browser console: await sha256("yourpassphrase") — then paste the
+   result here. Must match faction ids in campaign.json. */
+const FACTION_PASSWORDS={
+  "Dale": "eb510bf473ca32781cffdba65c074d9468410ca358cbefaba6d8a4af6c1608fa",
+  "DolGulDur": "d59c5d0463680681e4b59dd6075df44c5e32ee059c10e6dbd9eb9c520013cd3f",
+  "Dorvinion": "e11620a95758856f686ebe33204d764e51407e784e122e2eb00f0106c7ddc1b1",
+  "Dunland": "dcb0d3892164cf8631012c680d8a060f624158dd90008047074ac1b6f1ca42b6",
+  "Goblins": "0719cc9d8a373850009d70a2cdcfd94d734b021b697a30984cac31011e7a13ae",
+  "Gondor": "3a9741cb453430d1202fff1b178c2c653037c4b3f108acb628e0469b7f2cee08",
+  "Imraldris": "4e87f8d155c2db937900a75aa095e49833f832d96e1cce228bb47a68a3937d5d",
+  "Lindon": "07c1387edfec05a4caf5762f8291a6d282fa3d0d237c226ba3882e3d7232f2b4",
+  "Lothlorien": "66fcd939111ece322e092ba95ce0fd2c265e0d6c3ef9b48ed2cc5fb490643381",
+  "Mahud": "4c4a86bd0e682a7d82c7e18549a17718bd2c3843c3f21535f549ddcc119c010a",
+  "Mordor": "17550575547b920745daf1f51b8cf6361a554997eb1d35e839c4bfba51f1b991",
+  "Rohan": "77b437c59cde096ed8a4020131d33df47588e98da758b7d72145311e6cf94cc8",
+  "Umbar": "8efb21da9f9c7bb2a7a82c4de52905041121eaf119d134885854254f4acb7d55",
+  "Khand": "4e65f3b18ab570b66b82b778e6ef6cd49d145129cbcabfabf997fcfe0d80ce02",
+  "Woodland Realm": "be27a4febf47b04c1a7d2369819c9d2f685e11dcd0524d33dd6a272db2cbca9c",
+  "Rhurrim": "bba052b48bf44f227f3709d019aba0e8c0c5788e78cd66bcc493520668d565ba",
+  "Rhudaur": "6c5f13ba09b835eb08dffca8c3fff1d02c014a31728d514e3b63717adf0e7761",
+  "Rachrohir": "8b99eebda1fa91f5c957080883277d28920b4e42facc22c6ba780bb6f89bf360",
+  "Lostladen Tribes": "2fdbbeb3f05d4b1a1c810878af6ab02f2690549fe767cfde7b98eb77d9c05cc1",
+  "Khazad-dum": "c28d794bff7c7d03a2fc962ffb05f8b718b8d788e1757bcf97d852fcc4230d96",
+  "Isengard": "75399e3841c198e70dece8d094891c1a2600737e56f35628cebb073a3241d904",
+  "Iron Hills": "db05508c07652397e960ee81b6cc4384f280e11c3cef0b9d43e979c9c951b32f",
+  "Gundabad": "4e791d26a27e95930eaf850bb27689981f43a5f385088424905fb2b32ec37112",
+  "Ered Mithrin": "985d860880a1b82512b2718f663a74c24c7ed9c262f14cd5ac82435e683b5844",
+  "Ered Luin": "72b94ae5cc7bfcd7e46fb00e3aa6295fd66670cc4ccd79e65e4bf74241bd6ecc",
+  "Erebor": "62fd0b985b4161c35764c4ccb29385124cd74bade5ab0571939b3c75fbecb112",
+  "Dunlendings": "652fe102db5861fb2ead03462dbe6d44a668d153cce7d71726fc546b816185d3",
+  "Dorwinion": "212fc48d1ca5f1f3defadd2ec99a8ae03dd9d292645e8b78e98f463dff10f426",
+  "Dol Gul Dur": "9dc0e2d9116f3a230ef6dd4fe693f21752716485813cf6086e086ceb74eaea3f",
+  "Dol Amroth": "c98090d46b97128701a8e4ebd39f639e15549b94d756b546abc31ec32bf2a9d4",
+  "Anduin Vale": "978f40ee12d5f8fd77e51d36cf0f937a850479fd67ede3971d40729bb193af96",
+  "Balcoth": "0e14fb47b2e26a605ab072be6f0ffc76c9888a592edcbc114fd7feb56720aac1",
+  "Haerrim": "4a60f6e1c08e71a5f077ff9c018f9288ad521ae191e82da6d405a2da19037430",
+  "Feredrim": "786b71408658fa2cf9089b1cb9af23e0b9959ab1439a5a74e1d8ba076fa1bd9d",
+  "Beorings": "34849be1e777da1bff258a66c94fb864adea2ad0c39fac01556cad7abaa42e89",
+  "Eotheod": "2ee63598559ddd8997fe39fea88b186b86fe9a1e5ec1d562ac6f7ef6d94c7649",
+  "GreenWood": "41ca607f25d9d5d642e5f6f27f9b20b63daadc8b2f5def3df57b99621013a36e",
+  "Drudain": "bd02a517c72305900ca10f5f579fa1d385b423307ddbf5f18abbc2bb1e9df420",
+  "Northern Endwaith": "3ddbb4d60d6cfb8babacc630b2a0a05c32daf019a5e1d0bae299ea6f94454721",
+  "Southern Endwaith": "c349c7a761a4fa2ccf313d0619ac3b01dbbf0b6d449406aa9bd31a1ef4dfcc3b",
+  "Harondor": "7dddea8230033f23c135d4e13f5d835221ae9ca8201fc89179f2f520cd7c1e81",
+};
+let factionAuth=null;
+try{factionAuth=store.get("rqFactionAuth")||null;}catch(e){}
+function activeFactionId(){return S.order&&S.order[S.active]?S.order[S.active]:null;}
+/* Can this browser act on behalf of faction fid right now? True for the GM always,
+   or for a faction that has unlocked its own turn-gate password AND whose turn it
+   currently is. */
+function canAct(fid){return gm||(!!factionAuth&&!!fid&&!S.pendingReview&&factionAuth===activeFactionId()&&factionAuth===fid);}
+function renderTurnGate(){
+  const el=$("turnGate");if(!el)return;
+  const msg=$("tgMsg"),ubtn=$("tgUnlock"),ebtn=$("tgEndTurn");if(!msg||!ubtn||!ebtn)return;
+  if(S.pendingReview){
+    msg.textContent="Turn complete — awaiting GM review";
+    ubtn.style.display="none";ebtn.style.display="none";
+    return;
+  }
+  const fid=activeFactionId(),f=fid&&F[fid];
+  if(!fid||!f){msg.textContent="No active realm";ubtn.style.display="none";ebtn.style.display="none";return;}
+  if(factionAuth===fid){
+    msg.textContent=`Your turn, ${f.name} — unlocked`;
+    ubtn.style.display="none";
+    ebtn.style.display="";
+  }else{
+    msg.textContent=`Waiting for ${f.name}`;
+    ubtn.textContent="This is my realm — unlock";
+    ubtn.style.display="";
+    ebtn.style.display="none";
+  }
+}
+$("tgUnlock").onclick=()=>{
+  const fid=activeFactionId();if(!fid)return;
+  $("pwGateTitle").textContent=`${F[fid]?F[fid].name:fid} passphrase`;
+  $("pwGateErr").textContent="";$("pwGatePass").value="";
+  $("pwGate").classList.add("open");
+  setTimeout(()=>$("pwGatePass").focus(),40);
+};
+/* ---------- self-service End Turn (Stage 3) ---------- */
+async function endTurn(){
+  const fid=activeFactionId();
+  if(!canAct(fid))return;
+  const f=F[fid],name=f?f.name:fid;
+  if(!confirm(`End ${name}'s turn? This publishes immediately and locks ${name} out until the GM overrides or the next round.`))return;
+  const btn=$("tgEndTurn");if(btn)btn.disabled=true;
+  snap("end turn — "+name);
+  const prevActive=S.active,prevMoved=[...(S.moved||[])],prevPending=!!S.pendingReview;
+  S.moved=S.moved||[];
+  if(S.moved.indexOf(fid)<0)S.moved.push(fid);
+  const remaining=S.order.filter(id=>S.moved.indexOf(id)<0);
+  const wasLastSlot=(S.active>=S.order.length-1);
+  if(remaining.length&&!wasLastSlot){
+    S.active=S.order.indexOf(remaining[0]);
+    logIt(`${name} ends its turn — ${(F[S.order[S.active]]||{}).name||S.order[S.active]} to move.`,"turn");
+  }else{
+    S.active=S.order.length-1;
+    S.pendingReview=true;
+    logIt(`${name} ends its turn — every realm has moved this round. Awaiting GM review.`,"turn");
+  }
+  stats();drawLedger();draw();
+  if(sel)openProv(P[sel]);
+  if(cx.classList.contains("open"))cxRender();
+  const ok=await publishTurn();
+  if(btn)btn.disabled=false;
+  if(!ok){
+    S.active=prevActive;S.moved=prevMoved;S.pendingReview=prevPending;
+    S.log.shift();
+    stats();drawLedger();draw();
+    if(sel)openProv(P[sel]);
+    if(cx.classList.contains("open"))cxRender();
+    toast(`Publish failed — ${name}'s turn has not been ended. Try again.`);
+    return;
+  }
+  toast(`${name}'s turn ended and published.`);
+}
+$("tgEndTurn").onclick=endTurn;
+async function pwGateTry(){
+  const fid=activeFactionId();if(!fid)return;
+  const t=$("pwGatePass").value;if(!t)return;
+  if(FACTION_PASSWORDS[fid]&&await sha256(t)===FACTION_PASSWORDS[fid]){
+    factionAuth=fid;
+    try{store.set("rqFactionAuth",fid);}catch(e){}
+    $("pwGate").classList.remove("open");
+    toast(`${F[fid]?F[fid].name:fid} unlocked`);
+    renderTurnGate();
+  }else{
+    $("pwGateErr").textContent="Wrong passphrase.";
+    $("pwGatePass").select();
+  }
+}
+$("pwGateGo").onclick=pwGateTry;
+$("pwGatePass").onkeydown=e=>{if(e.key==="Enter")pwGateTry();if(e.key==="Escape")$("pwGate").classList.remove("open");};
+$("pwGateCancel").onclick=()=>$("pwGate").classList.remove("open");
+$("pwGate").onclick=e=>{if(e.target.id==="pwGate")$("pwGate").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:formatCampaignDate(),txt,kind:kind||"",detail:detail||null}); }
 const UPKEEP_RATES=[0,.25,.5,.75];
 function armyUpkeep(a){
@@ -2610,16 +2775,14 @@ function b64u(t){return btoa(unescape(encodeURIComponent(t)));}
 function ghTarget(){
   return {o:"crokator0012-commits", r:"ZeCampain"};
 }
+/* Burner-account GitHub PAT, intentionally client-side (see AGENTS/TASK notes) —
+   anyone with DevTools access to this page can read it. Rotate it on the burner
+   account if it's ever leaked outside the trusted player pool. */
+const GH_TOKEN="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";
 async function publishTurn(){
   const tgt=ghTarget();
-  let tok=null;try{tok=localStorage.getItem("rqTok");}catch(e){}
-  if(!tok){
-    tok=prompt("Paste your GitHub access token:");
-    if(!tok)return;tok=tok.trim();
-    try{localStorage.setItem("rqTok",tok);}catch(e){}
-  }
   const api=`https://api.github.com/repos/${tgt.o}/${tgt.r}/contents/campaign.json`;
-  const H={Authorization:"Bearer "+tok,Accept:"application/vnd.github+json"};
+  const H={Authorization:"Bearer "+GH_TOKEN,Accept:"application/vnd.github+json"};
   $("bPub").disabled=true;$("bPub").textContent="Publishing…";
   try{
     let sha=null;
@@ -2627,9 +2790,8 @@ async function publishTurn(){
     if(g.status===200){
       sha=(await g.json()).sha;
     }else if(g.status===401||g.status===403||g.status===404){
-      try{localStorage.removeItem("rqTok");localStorage.removeItem("rqRepo");}catch(e){}
-      toast("Token rejected ("+g.status+") — token cleared, click Publish again to re-enter");
-      return;
+      toast("Token rejected ("+g.status+") — the GitHub token in index.html needs to be updated");
+      return false;
     }
     const body={message:`Turn ${S.turn} — ${S.season} ${S.year}`,content:b64u(JSON.stringify(S,null,1))};
     if(sha)body.sha=sha;
@@ -2637,11 +2799,12 @@ async function publishTurn(){
     if(p.ok){
       $("bPub").classList.remove("on");
       toast("Published — live for the players in about a minute");
+      return true;
     }else{
-      try{localStorage.removeItem("rqTok");localStorage.removeItem("rqRepo");}catch(e){}
-      toast("Publish failed ("+p.status+") — token cleared, please try again");
+      toast("Publish failed ("+p.status+") — please try again");
+      return false;
     }
-  }catch(e){toast("No connection — publish failed");}
+  }catch(e){toast("No connection — publish failed");return false;}
   finally{$("bPub").disabled=false;$("bPub").textContent="⇧ Publish";}
 }
 $("bPub").onclick=()=>{if(!gm){toast("GM mode required");return;}publishTurn();};
@@ -2651,7 +2814,7 @@ $("fLoad").onchange=e=>{
   f.text().then(t=>{
     const d=JSON.parse(t);
     S.turn=d.turn;S.year=d.year;S.season=d.season;S.armies=d.armies||[];S.log=d.log||[];
-    S.wars=d.wars||[];S.battles=d.battles||[];S.allowance=d.allowance??3;S.fought=d.fought||{};S.truces=d.truces||{};S.allies=d.allies||[];S.order=d.order||S.factions.map(f=>f.id);S.moved=d.moved||[];S.active=d.active??0;S.armies.forEach(a=>a.order??=null);
+    S.wars=d.wars||[];S.battles=d.battles||[];S.allowance=d.allowance??3;S.fought=d.fought||{};S.truces=d.truces||{};S.allies=d.allies||[];S.order=d.order||S.factions.map(f=>f.id);S.moved=d.moved||[];S.active=d.active??0;S.pendingReview=d.pendingReview??false;S.armies.forEach(a=>a.order??=null);
     if(d.factions){S.factions.length=0;Object.keys(F).forEach(k=>delete F[k]);
       d.factions.forEach(nf=>{S.factions.push(nf);F[nf.id]=nf;});}
     sortTurnOrder(S.order[S.active]);
@@ -2773,7 +2936,7 @@ function turnSnapshot(label){
     <span class="note">plans are free to draft — when the GM musters, the treasury is charged at once</span>
     <span style="flex:1"></span>
     <button class="btn" id="cxCopy">Copy for GM</button>
-    <button class="btn primary gm" id="cxMusterMap" style="background:#2D6A4F;border-color:#52B788;font-weight:600" title="Immediately muster this host onto the map (GM only)">⚔ Muster to Map</button>
+    <button class="btn primary" id="cxMusterMap" style="display:none;background:#2D6A4F;border-color:#52B788;font-weight:600" title="Immediately muster this host onto the map">⚔ Muster to Map</button>
     <button class="btn" id="cxDone">Done mustering</button>
   </div>
 </div>
@@ -2906,6 +3069,7 @@ function cxRender(){
   } else ents=list.map(u=>({u,rank:null}));
   const _g=$("cxGrid");const _st=_g.scrollTop;_g.innerHTML=ents.map(en=>cxCard(en.u,en.rank)).join("")||'<div style="color:var(--dimmer);padding:30px;font-size:13px">No unit answers that call.</div>';
   $("cxCount").textContent=list.length+" / "+CX.units.length+" units";
+  {const mm=$("cxMusterMap");if(mm)mm.style.display=(cxArmy&&canAct(cxArmy.faction))?"":"none";}
   document.querySelectorAll("#cxRealms .cxchip").forEach(c=>c.classList.toggle("on",c.dataset.r===cxRealm));
   cxFoot();
   _g.scrollTop=_st;
@@ -3320,8 +3484,8 @@ $("cxShare").onclick=e=>{if(e.target.id==="cxShare")$("cxShare").classList.remov
 $("bCodex").onclick=()=>cx.classList.contains("open")&&!cxArmy?closeCodex():openCodex(null);
 $("cxClose").onclick=closeCodex;
 $("cxMusterMap").onclick=()=>{
-  if(!gm){toast("Only the GM can muster armies to the map. Use 'Copy for GM' to send your plan.");return;}
   if(!cxArmy)return;
+  if(!canAct(cxArmy.faction)){toast("Only the GM, or that realm on its turn, can muster armies to the map. Use 'Copy for GM' to send your plan.");return;}
   if(!cxArmy.units.length){toast("Recruit at least one regiment first");return;}
   const bill=cxArmy.units.reduce((s,k)=>s+((cxBy[k]&&cxBy[k].cost)||0),0);
   const ff=F[cxArmy.faction];
@@ -3392,7 +3556,7 @@ cx.addEventListener("click",e=>{
   }
   const ad=e.target.closest("[data-cxad]");
   if(ad){e.stopPropagation();
-    if(!cxArmy||(!gm&&!cxArmy._plan))return;
+    if(!cxArmy||!(gm||cxArmy._plan||canAct(cxArmy.faction)))return;
     if(cxArmy.units.length>=CAPU){toast("An army may field only "+CAPU+" units");return;}
     const uu=cxBy[ad.dataset.cxad],ff=F[cxArmy.faction];
     const ucost=uu?(uu.cost||0):0;
@@ -3410,7 +3574,7 @@ cx.addEventListener("click",e=>{
     cxArmy.units.push(ad.dataset.cxad);if(!cxArmy._plan)ensureXp(cxArmy);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();return;}
   const rm=e.target.closest("[data-cxrm]");
   if(rm){e.stopPropagation();
-    if(!cxArmy||(!gm&&!cxArmy._plan))return;
+    if(!cxArmy||!(gm||cxArmy._plan||canAct(cxArmy.faction)))return;
     let i=-1;
     if(!cxArmy._plan&&Array.isArray(cxArmy.xp)){for(let j=cxArmy.units.length-1;j>=0;j--){if(cxArmy.units[j]===rm.dataset.cxrm&&((cxArmy.xp[j]||0)===0)){i=j;break;}}}
     else i=cxArmy.units.lastIndexOf(rm.dataset.cxrm);
@@ -3435,10 +3599,10 @@ addEventListener("keydown",e=>{
 
 /* ---------- raise host -> straight into muster ---------- */
 $("bMusterTile").onclick=()=>{
-  if(!gm){toast("Only the GM can muster armies on provinces.");return;}
   if(!sel||!P[sel])return;
   const p=P[sel];
-  const f=paintFac||p.owner||S.factions[0].id;
+  if(!gm&&!canAct(p.owner)){toast("Only the ruling realm, on its turn, can recruit here.");return;}
+  const f=gm?(paintFac||p.owner||S.factions[0].id):factionAuth;
   if(!f){toast("Claim the province or select a realm first");return;}
   const newHost={name:"Host of "+p.id,faction:f,men:0,at:p.id,order:null,units:[],xp:[]};
   cxRealm=f;
@@ -3779,7 +3943,7 @@ $("bTurn").onclick=function(){
   S.active=S.order.length-1;
   const t0=S.turn;
   const res=_bTurn.apply(this,arguments);
-  if(S.turn!==t0)S.moved=[];
+  if(S.turn!==t0){S.moved=[];S.pendingReview=false;}
   return res;
 };
 function syncActive(){
@@ -3801,6 +3965,16 @@ function toFirst(i){
   withMoverKept(()=>{const [x]=S.order.splice(i,1);S.order.unshift(x);});
   paintOrder();stats();drawLedger();
 }
+function setActiveManually(fid){
+  if(!gm)return;
+  const i=S.order.indexOf(fid);if(i<0)return;
+  if((S.moved||[]).indexOf(fid)>=0){toast(`${(F[fid]||{}).name||fid} has already moved this round`);return;}
+  if(i===S.active)return;
+  snap("hand turn to "+((F[fid]||{}).name||fid));
+  S.active=i;
+  paintOrder();stats();drawLedger();
+  toast(`${(F[fid]||{}).name||fid} now has the turn — no one was marked as having moved`);
+}
 function paintOrder(){
   $("ordList").innerHTML=S.order.map((id,i)=>{
     const f=F[id]||{name:id,color:"#777"};
@@ -3811,6 +3985,7 @@ function paintOrder(){
       <span class="pos">${i+1}</span>
       ${EMBLEMS[id]?`<img src="${EMBLEMS[id]}" alt="">`:`<span class="sw" style="background:${f.color}"></span>`}
       <span class="nm">${f.name||id}</span><span class="tag">${tag}</span>
+      ${(!done&&i!==S.active)?`<button data-oact="${esc(id)}" style="width:auto;padding:0 8px;color:var(--brass);border-color:var(--brass)" title="Give ${esc(f.name||id)} the turn now — for an AFK player. Doesn't mark anyone as moved.">Set active</button>`:""}
       <button data-omf="${i}" title="Move to the front" ${i===0?"disabled":""}>&#8593;&#8593;</button>
       <button data-oup="${i}" title="Earlier" ${i===0?"disabled":""}>&#8593;</button>
       <button data-odn="${i}" title="Later" ${i===S.order.length-1?"disabled":""}>&#8595;</button>
@@ -3818,8 +3993,8 @@ function paintOrder(){
 }
 $("ordM").addEventListener("click",e=>{
   if(e.target===$("ordM")){$("ordM").classList.remove("open");return;}
-  const up=e.target.closest("[data-oup]"),dn=e.target.closest("[data-odn]"),mf=e.target.closest("[data-omf]");
-  if(up)moveAt(+up.dataset.oup,-1); else if(dn)moveAt(+dn.dataset.odn,1); else if(mf)toFirst(+mf.dataset.omf);
+  const up=e.target.closest("[data-oup]"),dn=e.target.closest("[data-odn]"),mf=e.target.closest("[data-omf]"),act=e.target.closest("[data-oact]");
+  if(up)moveAt(+up.dataset.oup,-1); else if(dn)moveAt(+dn.dataset.odn,1); else if(mf)toFirst(+mf.dataset.omf); else if(act)setActiveManually(act.dataset.oact);
 });
 $("ordClose").onclick=()=>$("ordM").classList.remove("open");
 $("bOrder").onclick=()=>{paintOrder();$("ordM").classList.add("open");};
