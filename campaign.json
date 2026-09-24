@@ -208,14 +208,6 @@
    "zeal": 6
   },
   {
-   "id": "Dorwinion",
-   "name": "Dorwinion",
-   "color": "#9C27B0",
-   "treasury": 5000,
-   "capital": "",
-   "zeal": 6
-  },
-  {
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
@@ -13203,7 +13195,7 @@
  "allowance": 3,
  "truces": {},
  "allies": [
-  "Dorwinion|Gondor",
+  "Dorvinion|Gondor",
   "Dol Guldur|Rhurrim",
   "Dol Guldur|Goblins"
  ],
@@ -13213,7 +13205,6 @@
   "Dol Amroth",
   "Dol Gul Dur",
   "Dorvinion",
-  "Dorwinion",
   "Lothlorien",
   "Dunland",
   "Erebor",
@@ -13238,11 +13229,11 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 16,
+ "active": 15,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
-  "Dorwinion|Goblins",
+  "Dorvinion|Goblins",
   "Dol Guldur|Gondor"
  ],
  "battles": [

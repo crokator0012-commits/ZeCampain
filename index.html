@@ -1556,8 +1556,9 @@ function openRealm(fid){
   const ib=facIncomeCalc(fid);const inc=ib.total;
   const hosts=S.armies.filter(a=>a.faction===fid);
   // upkeep: every host pays its full upkeep; holy hosts are free
-  const upk=hosts.map(armyUpkeep).reduce((u,x)=>u+Math.round(x),0);
-  const bldUpk=typeof factionBldUpkeep==="function"?factionBldUpkeep(fid):0;
+  const upkFree=upkeepWaived();
+  const upk=upkFree?0:hosts.map(armyUpkeep).reduce((u,x)=>u+Math.round(x),0);
+  const bldUpk=upkFree?0:(typeof factionBldUpkeep==="function"?factionBldUpkeep(fid):0);
   const totalUpk=upk+bldUpk;
   const net=inc-totalUpk;
   const men=hosts.reduce((a,x)=>a+x.men,0);
@@ -1578,7 +1579,7 @@ function openRealm(fid){
       <div class="kv"><b>Provinces</b><span>${held.length}</span></div>
       <div class="kv" id="incRow" style="cursor:pointer" title="Click for the sources"><b>Income / turn <span style="color:var(--dimmer)">▸</span></b><span>${inc.toLocaleString()}◈</span></div>
       <div class="aroster" id="incBrk">${ib.rows.map(r=>`<div class="ru"><span class="un">${r.id}</span><span class="us">${r.note}${r.v?` = ${r.v.toLocaleString()}`:""}</span></div>`).join("")||'<div class="ru"><span class="us">No revenue.</span></div>'}</div>
-      <div class="kv"><b>Upkeep / turn</b><span>${totalUpk.toLocaleString()}◈${bldUpk?` <span style="font-size:11px;color:var(--dimmer)">(armies ${upk.toLocaleString()} + barracks ${bldUpk.toLocaleString()})</span>`:""}</span></div>
+      <div class="kv"><b>Upkeep / turn</b><span>${totalUpk.toLocaleString()}◈${upkFree?` <span style="font-size:11px;color:var(--verd)">waived — free until turn ${UPKEEP_FREE_TURNS+1}</span>`:""}${bldUpk?` <span style="font-size:11px;color:var(--dimmer)">(armies ${upk.toLocaleString()} + barracks ${bldUpk.toLocaleString()})</span>`:""}</span></div>
       <div class="kv" title="Income minus upkeep — what the treasury actually gains each turn"><b>Net income / turn</b><span style="color:${net<0?"#E5A594":(net>0?"#8FBF7F":"var(--bone)")}">${net>0?"+":""}${net.toLocaleString()}◈</span></div>
       <div class="kv"><b>Zeal</b><span class="gm" style="padding:0"><input type="number" id="rZeal" value="${f.zeal||0}" min="0" max="10" style="width:60px;text-align:right"></span><span style="display:${gm?"none":"inline"}">${f.zeal||0} ✦</span></div>
       <div class="kv"><b>Hosts</b><span>${hosts.filter(a=>!a.holy).length}${hosts.some(a=>a.holy)?` <span style="color:var(--brass)">+${hosts.filter(a=>a.holy).length} holy</span>`:""} · ${men.toLocaleString()} men</span></div>
@@ -2354,7 +2355,6 @@ const FACTION_PASSWORDS={
   "Ered Mithrin": "985d860880a1b82512b2718f663a74c24c7ed9c262f14cd5ac82435e683b5844",
   "Ered Luin": "72b94ae5cc7bfcd7e46fb00e3aa6295fd66670cc4ccd79e65e4bf74241bd6ecc",
   "Erebor": "62fd0b985b4161c35764c4ccb29385124cd74bade5ab0571939b3c75fbecb112",
-  "Dorwinion": "212fc48d1ca5f1f3defadd2ec99a8ae03dd9d292645e8b78e98f463dff10f426",
   "Dol Gul Dur": "9dc0e2d9116f3a230ef6dd4fe693f21752716485813cf6086e086ceb74eaea3f",
   "Dol Amroth": "c98090d46b97128701a8e4ebd39f639e15549b94d756b546abc31ec32bf2a9d4",
   "Anduin Vale": "978f40ee12d5f8fd77e51d36cf0f937a850479fd67ede3971d40729bb193af96",
@@ -2452,6 +2452,9 @@ $("pwGateCancel").onclick=()=>$("pwGate").classList.remove("open");
 $("pwGate").onclick=e=>{if(e.target.id==="pwGate")$("pwGate").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:formatCampaignDate(),txt,kind:kind||"",detail:detail||null}); }
 const UPKEEP_DISCOUNT=0.25;
+/* Grace period: no upkeep (armies or barracks) is charged for the first turns of the campaign. */
+const UPKEEP_FREE_TURNS=3;
+const upkeepWaived=()=>S.turn<=UPKEEP_FREE_TURNS;
 function armyUpkeep(a){return Math.round(armyUpkeepFull(a)*(1-UPKEEP_DISCOUNT));}
 function armyUpkeepFull(a){
   if(!a||a.holy)return 0;
@@ -2536,10 +2539,13 @@ $("bTurn").onclick=()=>{
       events.push(`${f.id}'s synagogues yield ${bonus.toLocaleString()} castas (+${5*syn}%)`);
     }
   }
+  const upkeepFree=upkeepWaived();
+  if(upkeepFree)logIt(`Upkeep is waived for the first ${UPKEEP_FREE_TURNS} turns — nothing is charged this round.`);
   for(const f of S.factions){
     const dues=S.armies.filter(a=>a.faction===f.id).map(armyUpkeep);
     let upkeep=typeof factionBldUpkeep==="function"?factionBldUpkeep(f.id):0;
     dues.forEach(u=>upkeep+=Math.round(u));
+    if(upkeepFree)upkeep=0;
     f.treasury+=(gain[f.id]||0)-upkeep;
     if(f.treasury<0){
       logIt(`${f.name} cannot meet upkeep — ${(-f.treasury).toLocaleString()} castas short. The GM decides what starves.`,"battle");
