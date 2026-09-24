@@ -2450,7 +2450,9 @@ $("pwGatePass").onkeydown=e=>{if(e.key==="Enter")pwGateTry();if(e.key==="Escape"
 $("pwGateCancel").onclick=()=>$("pwGate").classList.remove("open");
 $("pwGate").onclick=e=>{if(e.target.id==="pwGate")$("pwGate").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:formatCampaignDate(),txt,kind:kind||"",detail:detail||null}); }
-function armyUpkeep(a){
+const UPKEEP_DISCOUNT=0.25;
+function armyUpkeep(a){return Math.round(armyUpkeepFull(a)*(1-UPKEEP_DISCOUNT));}
+function armyUpkeepFull(a){
   if(!a||a.holy)return 0;
   /* cxBy is initialised later in the script (after the codex loads).
      Guard against the temporal-dead-zone ReferenceError that killed boot. */
