@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 5000,
+   "treasury": 375,
    "capital": "Province_400",
    "zeal": 6
   },
@@ -2459,7 +2459,17 @@
     "iron_mine": "Isengard"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Isengard",
+     "cost": 1100,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8518,7 +8528,7 @@
    "name": "Host of Province_400",
    "faction": "Isengard",
    "men": 1780,
-   "at": "Province_400",
+   "at": "Province_296",
    "order": null,
    "units": [
     "isengard_lurtz",
@@ -9475,9 +9485,81 @@
     0
    ],
    "upkeep": 425
+  },
+  {
+   "name": "Host of Province_400",
+   "faction": "Isengard",
+   "men": 1080,
+   "at": "Province_400",
+   "order": null,
+   "units": [
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_goblin_men_ruffians_2",
+    "isengard_goblin_men_ruffians",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians_2"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1762.5
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard mustered Host of Province_400 at Province_400 (9 regiments · 3,525 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Iron Mine at Province_400 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_400: construction declined — Isengard refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Barracks at Province_400 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_400 → Province_296",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13229,7 +13311,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 15,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15877,7 +15959,8 @@
   "Dale",
   "Goblins",
   "Dol Gul Dur",
-  "Lothlorien"
+  "Lothlorien",
+  "Isengard"
  ],
  "pendingReview": false
 }
