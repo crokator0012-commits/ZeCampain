@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 5000,
+   "treasury": 850,
    "capital": "Province_359",
    "zeal": 6
   },
@@ -3879,7 +3879,17 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "spice_trader",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 1250,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6417,7 +6427,17 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7252,7 +7272,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Lostladen Tribes",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9518,6 +9544,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts construction: Province_464 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts upgrading Sheep Pen at Province_462 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts upgrading Spice Trader at Province_359 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13311,7 +13365,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 19,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15960,7 +16014,8 @@
   "Goblins",
   "Dol Gul Dur",
   "Lothlorien",
-  "Isengard"
+  "Isengard",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
