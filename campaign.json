@@ -219,7 +219,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 5000,
+   "treasury": 150,
    "capital": "Province_454",
    "zeal": 6
   },
@@ -4175,7 +4175,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dol Gul Dur",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -5237,7 +5243,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dol Gul Dur",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9432,9 +9444,53 @@
     0
    ],
    "upkeep": 4987.5
+  },
+  {
+   "name": "Host of Province_454",
+   "faction": "Dol Gul Dur",
+   "men": 240,
+   "at": "Province_454",
+   "order": null,
+   "units": [
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads"
+   ],
+   "xp": [
+    0,
+    0
+   ],
+   "upkeep": 425
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur ends its turn — Dorwinion to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur mustered Host of Province_454 at Province_454 (2 regiments · 850 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Province_407 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Province_373 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13012,7 +13068,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 3,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15658,7 +15714,8 @@
   "Dol Amroth",
   "Dorvinion",
   "Dale",
-  "Goblins"
+  "Goblins",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
