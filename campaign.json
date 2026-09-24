@@ -4047,7 +4047,7 @@
    "modern": "Province 430",
    "hex": "#d41759",
    "playable": true,
-   "owner": "",
+   "owner": "Lindon",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9576,6 +9576,20 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon annexed Province_430 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon occupied Province_430 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Lindon ends its turn — Dunland to move.",
    "kind": "turn",
    "detail": null
@@ -13436,7 +13450,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 23,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
