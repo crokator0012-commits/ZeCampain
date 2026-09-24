@@ -67,9 +67,9 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 825,
+   "treasury": 325,
    "capital": "Province_16",
-   "zeal": 6
+   "zeal": 3
   },
   {
    "id": "Mahud",
@@ -8335,7 +8335,7 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1180,
+   "men": 1260,
    "at": "Province_14",
    "order": null,
    "units": [
@@ -8348,6 +8348,7 @@
     "lothlorien_galadhon_archers",
     "lothlorien_galadhon_archers",
     "lothlorien_galadhon_archers",
+    "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders"
    ],
    "xp": [
@@ -8360,9 +8361,12 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4912.5
+   "upkeep": 5500,
+   "_startCost": 9825,
+   "fort": false
   },
   {
    "name": "Host of Province_364",
@@ -9479,23 +9483,37 @@
     0
    ],
    "upkeep": 425
-  },
-  {
-   "name": "Host of Province_16",
-   "faction": "Lothlorien",
-   "men": 80,
-   "at": "Province_31",
-   "order": null,
-   "units": [
-    "lothlorien_lorien_outriders"
-   ],
-   "xp": [
-    0
-   ],
-   "upkeep": 587.5
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 abandons its fort at Province_14",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 raises a fort at Province_14 — battles there are fought on the fort map",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien spends 3✦ — Host of Province_16 entrenches at Province_14",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_31 → Province_14",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
