@@ -749,7 +749,7 @@ S.provinces.forEach(p=>{if((p.bld||[]).includes("muster")){p.bld=p.bld.map(k=>k=
 S.provinces.forEach(p=>{p.bld=p.bld||[];p.bldLevel=p.bldLevel||{};p.bld=p.bld.map(k=>TRADE_BUILDING_ALIASES[k]||k);p.bld.forEach(k=>{if(TRADE_BUILDINGS[k])p.bldLevel[k]=Math.max(1,Math.min(5,Number(p.bldLevel[k])||1));});});
 const barracksLevel=p=>(p&&p.bld||[]).includes("barracks")?Math.max(1,Number((p.bldLevel||{}).barracks)||1):0;
 const barracksUpkeep=p=>(p&&p.bld&&p.bld.includes("barracks"))?(BARRACKS_UPKEEP[barracksLevel(p)]||0):0;
-const factionBldUpkeep=fid=>S.provinces.filter(p=>p.playable&&p.owner===fid&&!p.occ).reduce((s,p)=>s+barracksUpkeep(p),0);
+const factionBldUpkeep=fid=>S.provinces.filter(p=>p.playable&&p.owner===fid&&!p.occ).reduce((s,p)=>s+Math.round(barracksUpkeep(p)*(1-UPKEEP_DISCOUNT)),0);
 const tradeLevel=(p,key)=>TRADE_BUILDINGS[key]&&p&&p.bld&&p.bld.includes(key)?Math.max(1,Math.min(5,Number((p.bldLevel||{})[key])||1)):0;
 const tradeRevenue=(p,key)=>{const level=tradeLevel(p,key),trade=TRADE_BUILDINGS[key];return level&&trade?trade.l[level-1][1]:0;};
 const tradeIncome=p=>Object.keys(TRADE_BUILDINGS).reduce((total,key)=>total+tradeRevenue(p,key),0);
@@ -1579,10 +1579,9 @@ function openRealm(fid){
   const held=S.provinces.filter(p=>p.owner===fid);
   const ib=facIncomeCalc(fid);const inc=ib.total;
   const hosts=S.armies.filter(a=>a.faction===fid);
-  // upkeep: every host pays its full upkeep; holy hosts are free
-  const upkFree=upkeepWaived();
-  const upk=upkFree?0:hosts.map(armyUpkeep).reduce((u,x)=>u+Math.round(x),0);
-  const bldUpk=upkFree?0:(typeof factionBldUpkeep==="function"?factionBldUpkeep(fid):0);
+  // upkeep: every host and barracks pays its upkeep after the global discount; holy hosts are free
+  const upk=hosts.map(armyUpkeep).reduce((u,x)=>u+Math.round(x),0);
+  const bldUpk=typeof factionBldUpkeep==="function"?factionBldUpkeep(fid):0;
   const totalUpk=upk+bldUpk;
   const net=inc-totalUpk;
   const men=hosts.reduce((a,x)=>a+x.men,0);
@@ -1603,7 +1602,7 @@ function openRealm(fid){
       <div class="kv"><b>Provinces</b><span>${held.length}</span></div>
       <div class="kv" id="incRow" style="cursor:pointer" title="Click for the sources"><b>Income / turn <span style="color:var(--dimmer)">▸</span></b><span>${inc.toLocaleString()}◈</span></div>
       <div class="aroster" id="incBrk">${ib.rows.map(r=>`<div class="ru"><span class="un">${r.id}</span><span class="us">${r.note}${r.v?` = ${r.v.toLocaleString()}`:""}</span></div>`).join("")||'<div class="ru"><span class="us">No revenue.</span></div>'}</div>
-      <div class="kv"><b>Upkeep / turn</b><span>${totalUpk.toLocaleString()}◈${upkFree?` <span style="font-size:11px;color:var(--verd)">waived — free until turn ${UPKEEP_FREE_TURNS+1}</span>`:""}${bldUpk?` <span style="font-size:11px;color:var(--dimmer)">(armies ${upk.toLocaleString()} + barracks ${bldUpk.toLocaleString()})</span>`:""}</span></div>
+      <div class="kv"><b>Upkeep / turn</b><span>${totalUpk.toLocaleString()}◈ <span style="font-size:11px;color:var(--verd)">after ${Math.round(UPKEEP_DISCOUNT*100)}% discount</span>${bldUpk?` <span style="font-size:11px;color:var(--dimmer)">(armies ${upk.toLocaleString()} + barracks ${bldUpk.toLocaleString()})</span>`:""}</span></div>
       <div class="kv" title="Income minus upkeep — what the treasury actually gains each turn"><b>Net income / turn</b><span style="color:${net<0?"#E5A594":(net>0?"#8FBF7F":"var(--bone)")}">${net>0?"+":""}${net.toLocaleString()}◈</span></div>
       <div class="kv"><b>Zeal</b><span class="gm" style="padding:0"><input type="number" id="rZeal" value="${f.zeal||0}" min="0" max="10" style="width:60px;text-align:right"></span><span style="display:${gm?"none":"inline"}">${f.zeal||0} ✦</span></div>
       <div class="kv"><b>Hosts</b><span>${hosts.filter(a=>!a.holy).length}${hosts.some(a=>a.holy)?` <span style="color:var(--brass)">+${hosts.filter(a=>a.holy).length} holy</span>`:""} · ${men.toLocaleString()} men</span></div>
@@ -2475,10 +2474,8 @@ $("pwGatePass").onkeydown=e=>{if(e.key==="Enter")pwGateTry();if(e.key==="Escape"
 $("pwGateCancel").onclick=()=>$("pwGate").classList.remove("open");
 $("pwGate").onclick=e=>{if(e.target.id==="pwGate")$("pwGate").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:formatCampaignDate(),txt,kind:kind||"",detail:detail||null}); }
-const UPKEEP_DISCOUNT=0.25;
-/* Grace period: no upkeep (armies or barracks) is charged for the first turns of the campaign. */
-const UPKEEP_FREE_TURNS=3;
-const upkeepWaived=()=>S.turn<=UPKEEP_FREE_TURNS;
+/* Share of upkeep forgiven for every faction, armies and barracks alike (0.8 = pay 20%). Changed by hand, never automatically. */
+const UPKEEP_DISCOUNT=0.80;
 function armyUpkeep(a){return Math.round(armyUpkeepFull(a)*(1-UPKEEP_DISCOUNT));}
 function armyUpkeepFull(a){
   if(!a||a.holy)return 0;
@@ -2563,13 +2560,10 @@ $("bTurn").onclick=()=>{
       events.push(`${f.id}'s synagogues yield ${bonus.toLocaleString()} castas (+${5*syn}%)`);
     }
   }
-  const upkeepFree=upkeepWaived();
-  if(upkeepFree)logIt(`Upkeep is waived for the first ${UPKEEP_FREE_TURNS} turns — nothing is charged this round.`);
   for(const f of S.factions){
     const dues=S.armies.filter(a=>a.faction===f.id).map(armyUpkeep);
     let upkeep=typeof factionBldUpkeep==="function"?factionBldUpkeep(f.id):0;
     dues.forEach(u=>upkeep+=Math.round(u));
-    if(upkeepFree)upkeep=0;
     f.treasury+=(gain[f.id]||0)-upkeep;
     if(f.treasury<0){
       logIt(`${f.name} cannot meet upkeep — ${(-f.treasury).toLocaleString()} castas short. The GM decides what starves.`,"battle");
@@ -2993,6 +2987,39 @@ const cxBy={};(CX.units||[]).forEach(u=>cxBy[u.unit_key]=u);
 /* The roster no longer ships CX.max (stat maxima), so derive the bar scales from the units themselves. */
 const cxCpm=u=>u.men?u.cost/u.men:0;
 const CXMAX={};(CX.units||[]).forEach(u=>{for(const k of ["men","cost","upkeep"])if((+u[k]||0)>(CXMAX[k]||0))CXMAX[k]=+u[k];if(cxCpm(u)>(CXMAX.cpm||0))CXMAX.cpm=cxCpm(u);});
+/* Regional (AOR) and mercenary units of the NPC realms are RECRUITED from the roster of the faction unit.md files them under,
+   not from the NPC realm's own roster. Purely a listing: nothing here restricts who may recruit them (the GM decides that by story).
+   unit_key -> codex realm name(s). A unit's own `faction` (and so its icon, emblem and existing armies) is unchanged. */
+const AOR_ROSTERS={
+  "beorings_aor_beoring_warroirs":["Anduin Vale"], // Beoring Warroirs (Beorings)
+  "beorings_aor_carrock_wardens":["Anduin Vale"], // Carrock Wardens (Beorings)
+  "eotheod_aor_eotheod_cavalry":["Anduin Vale"], // Eotheod Cavalry (Eotheod)
+  "eotheod_aor_eotheod_footmen":["Anduin Vale"], // Eotheod Footmen (Eotheod)
+  "eotheod_aor_eotheod_horse_archers":["Anduin Vale"], // Eotheod Horse Archers (Eotheod)
+  "eotheod_aor_eotheod_lancers":["Anduin Vale"], // Eotheod Lancers (Eotheod)
+  "eotheod_aor_eotheod_nobles":["Anduin Vale"], // Eotheod Nobles (Eotheod)
+  "eotheod_aor_eotheod_outriders":["Anduin Vale"], // Eotheod Outriders (Eotheod)
+  "greenwood_aor_greenwood_rangers":["Anduin Vale"], // Greenwood Rangers (GreenWood)
+  "beorings_aor_pass_sentries":["Anduin Vale"], // Pass Sentries (Beorings)
+  "greenwood_aor_stoor_shirrifs":["Anduin Vale"], // Stoor Shirrifs (GreenWood)
+  "greenwood_aor_woodland_axemen":["Anduin Vale"], // Woodland Axemen (GreenWood)
+  "feredrim_aor_feredrim_rangers":["Rhurrim"], // Feredrim rangers (Feredrim)
+  "feredrim_aor_feredrim_woodsmen":["Rhurrim"], // Feredrim Woodsmen (Feredrim)
+  "haerrim_aor_haerrim_infantry":["Rhurrim","Rachrohir"], // Haerrim Infantry (Haerrim)
+  "haerrim_aor_haerrim_outriders":["Rhurrim","Rachrohir"], // Haerrim Outriders (Haerrim)
+  "balcoth_aor_balcoth_nobles":["Rachrohir"], // Balcoth Nobles (Balcoth)
+  "balcoth_aor_balcoth_raiders":["Rachrohir"], // Balcoth Raiders (Balcoth)
+  "balcoth_aor_balcoth_spears":["Rachrohir"], // Balcoth Spears (Balcoth)
+  "drudain_aor_warlord_cavalry":["Dunlendings"], // Warlord Cavalry (Drudain)
+  "drudain_aor_warlord_s_champions":["Dunlendings"], // Warlord's Champions (Drudain)
+  "drudain_aor_warlord_s_crossbows":["Dunlendings"], // Warlord's Crossbows (Drudain)
+  "drudain_aor_warlord_s_pillagers":["Dunlendings"], // Warlord's Pillagers (Drudain)
+  "northern_endwaith_mercs_orthanc_servants":["Dunlendings"], // Orthanc Servants (Northern Endwaith)
+  "southern_endwaith_elder_riders":["Dunlendings"], // Elder Riders (Southern Endwaith)
+  "southern_endwaith_elder_spears":["Dunlendings"], // Elder Spears (Southern Endwaith)
+};
+CX.units.forEach(u=>{const r=AOR_ROSTERS[u.unit_key];if(r)u.rosters=r;});
+const inRoster=(u,realm)=>(u.rosters||[u.faction]).includes(realm);
 const ICON_FACTION_PREFIX={"Dol Gul Dur":"dol_gul_dur","Khazad-dum":"khazadum","Lostladen Tribes":"lostladen_tribes","Woodland Realm":"woodland_realm","Iron Hills":"iron_hills","Ered Luin":"ered_luin","Ered Mithrin":"ered_mithrin","Dol Amroth":"dol_amroth","Anduin Vale":"anduin_vale"};
 const iconNormal=s=>String(s||"").toLowerCase().replace(/\([^)]*\)/g," ").replace(/(?:[_\s](?:uc\d*png|ucpng|v\d+png|v\d+|t[1-4]))+$/g," ").replace(/[_-]/g," ").replace(/\b(?:aor|oar|mercs?|av|wr|roh|mor|gun|dor|umb|kha|ise|iro|em|el|dg|dol|gon|khz|dun|wan|lin|lh)\b/g," ").replace(/\bwarroirs?\b/g,"warrior").replace(/\bgaurds?\b/g,"guard").replace(/\bcalvary\b/g,"cavalry").replace(/\bdunleding\b/g,"dunlending").replace(/\bdeckemen\b/g,"deckmen").replace(/\bvinter\b/g,"winter").replace(/\bolog hia\b/g,"olog hai").replace(/\bshirrifs\b/g,"shire reeves").replace(/[^a-z0-9]+/g," ").trim().replace(/\s+/g," ");
 const iconPrefix=f=>ICON_FACTION_PREFIX[f]||String(f||"").toLowerCase().replace(/\s+/g,"_");
@@ -3052,7 +3079,7 @@ function syncAll(){S.armies.forEach(a=>{if(a.units!==undefined&&!Array.isArray(a
 function canServe(u,fid){
   if(!u)return false;
   const realm=REALM_OF[fid]||fid;
-  return !realm||u.faction===realm;
+  return !realm||u.faction===realm||(u.rosters||[]).includes(realm);
 }
 function unitTier(u){
   const tagged=String((u&&u.unit_key)||"").match(/(?:^|_)t([1-4])(?:_|$)/i)||String((u&&u.name)||"").match(/\bT([1-4])\b/i);
@@ -3075,8 +3102,8 @@ function cxList(){
       // Player plans remain limited to their realm and local Barracks tier.
       if(!gm&&cxArmy&&!canServe(u,cxArmy.faction))return false;
       if(!gm&&cxArmy&&!cxArmy.holy&&unitTier(u)>recruitmentBarracksLevel(cxArmy))return false;
-      if(gm&&cxFaction&&u.faction!==cxFaction)return false;
-      if(!cxArmy&&cxRealm&&u.faction!==(REALM_OF[cxRealm]||cxRealm))return false;
+      if(gm&&cxFaction&&!inRoster(u,cxFaction))return false;
+      if(!cxArmy&&cxRealm&&!inRoster(u,REALM_OF[cxRealm]||cxRealm))return false;
     }
     if(cxCls&&u.class!==cxCls)return false;
     if(q){const hay=(u.name+" "+u.unit_key+" "+u.class_name+" "+(u.abilities||"")+" "+(u.attributes||"")).toLowerCase();
@@ -3161,7 +3188,7 @@ function cxFoot(){
   let sb="";for(let i=0;i<CAPU;i++)sb+=`<i class="${i<n?"f":""}"></i>`;
   $("cxSlots").innerHTML=sb;
   const cost=cxArmy.units.reduce((s,k)=>s+((cxBy[k]||{}).cost||0),0);
-  const upk=cxArmy.units.reduce((s,k)=>s+((cxBy[k]||{}).upkeep||0),0);
+  const upk=Math.round(cxArmy.units.reduce((s,k)=>s+((cxBy[k]||{}).upkeep||0),0)*(1-UPKEEP_DISCOUNT));
   const ff=F[cxArmy.faction];
   const baseStart=cxArmy._startCost||0;
   const newAddedCost=cost-baseStart;
@@ -3201,14 +3228,14 @@ function cxDetail(k){
     <div class="cxtags" style="margin-top:9px"><span class="cxtag">Tier ${unitTier(u)}</span>${parts.tags.map(t=>`<span class="cxtag ab">${t}</span>`).join("")}</div>
     ${u.description_short?`<div class="desc">${esc(u.description_short)}</div>`:""}
   </div></div>`;
-  const factions=u.faction?[u.faction]:[];
+  const factions=u.rosters||(u.faction?[u.faction]:[]);
   h+=`<div class="sx"><span class="lbl">Fielded by</span><div class="cxtags">`+
     factions.map(r=>{const fid=REALM_FAC[r];const em=(fid&&EMBLEMS[fid])||(window.CODEX_FLAGS||{})[r];
       return `<span class="cxtag">${em?`<img src="${em}" style="width:13px;height:13px;border-radius:50%;vertical-align:-2px"> `:""}${esc(r)}</span>`;}).join("")+`</div></div>`;
   const perMan=u.men?Math.round(u.cost/u.men*10)/10:null;
   const charged=Math.round((+u.upkeep||0)*(1-UPKEEP_DISCOUNT));
   h+=`<div class="sx"><span class="lbl">Campaign</span>`+cxBar("Men","men",u.men)+cxBar("Cost","cost",u.cost)+cxBar("Cost / man","cpm",perMan)+cxBar("Upkeep","upkeep",u.upkeep)+
-    `<div class="cxnote">Charged upkeep after the ${Math.round(UPKEEP_DISCOUNT*100)}% discount: <b>${charged.toLocaleString()}</b> / turn${upkeepWaived()?` &middot; <span style="color:var(--verd)">free until turn ${UPKEEP_FREE_TURNS+1}</span>`:""}</div></div>`;
+    `<div class="cxnote">Charged upkeep after the ${Math.round(UPKEEP_DISCOUNT*100)}% discount: <b>${charged.toLocaleString()}</b> / turn</div></div>`;
   h+=cxSec("Melee",[["Attack","melee_attack",u.melee_attack],["Defence","melee_defence",u.melee_defence],["Charge","charge_bonus",u.charge_bonus],
     ["Damage","weapon_damage",u.weapon_damage],["AP damage","weapon_ap_damage",u.weapon_ap_damage],["Morale","morale",u.morale]]);
   h+=cxSec("Defence",[["Armour","armour_value",u.armour_value],["Shield","shield_defence",u.shield_defence],["Hit points","hit_points_total",u.hit_points_total]]);
@@ -3486,7 +3513,7 @@ function planText(a){
   const lines={};
   a.units.forEach(k=>{lines[k]=(lines[k]||0)+1;});
   const cost=a.units.reduce((s,k)=>s+((cxBy[k]||{}).cost||0),0);
-  const upk=a.units.reduce((s,k)=>s+((cxBy[k]||{}).upkeep||0),0);
+  const upk=Math.round(a.units.reduce((s,k)=>s+((cxBy[k]||{}).upkeep||0),0)*(1-UPKEEP_DISCOUNT));
   syncMen(a);
   return `═══ ARMY PLAN — ${a.faction} ═══
 ${a.units.length}/${CAPU} units · ${a.men.toLocaleString()} men · ${cost.toLocaleString()}g raise · ${upk.toLocaleString()}g/turn upkeep

@@ -42,6 +42,7 @@ REJECT = {
     ("Gundabad", "Gundabad Wargs"), ("Lindon", "Falathrim Spearmen"), ("Ered Luin", "(S)-Merchant Swordsmen"),
     ("Dorwinion", "Earls of the Vinter Court"), ("Ered Mithrin", "Dwarven Mace Infantry"),
     ("Ered Mithrin", "Troll Hunters"), ("Mordor", "(Mercs AOR)-Mirkwood Reavers"),
+    ("Imraldris", "Noldorin Swordsmen"),                     # would pair with the Noldorin *horsemen* art
 }
 REJECT_REALM_CONTAINS = [("Drudain", "Warlord")]     # four different Drudain units would all share one generic "Warlords" icon
 
@@ -62,6 +63,7 @@ OVERRIDE = {
     ("Mordor", "Uruk Archers"): ("Isengard", "07_Uruk_hai_archers_UCpng.png"),
     ("Goblins", "high Chiefton's Guard"): ("Goblins", "03_High_Chieftains_Guard_UCpng.png"),
     ("Gondor", "(AOR)-RingloVale men at arms"): ("Gondor", "02_Ringolo_Vale_Swordsjpg.jpg"),
+    ("Beorings", "(AOR)-Beoring Warroirs"): ("Anduin Vale", "av_beorning_warriors.png"),     # "Beoring" vs "beorning" spelling
 }
 
 NOISE = {"aor", "oar", "merc", "mercs", "av", "wr", "uc", "unit", "the", "of", "a"}
