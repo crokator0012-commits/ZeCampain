@@ -13044,6 +13044,7 @@
   "Dol Gul Dur",
   "Dorvinion",
   "Dorwinion",
+  "Lothlorien",
   "Dunland",
   "Erebor",
   "Ered Luin",
@@ -13058,7 +13059,6 @@
   "Khazad-dum",
   "Lindon",
   "Lostladen Tribes",
-  "Lothlorien",
   "Mahud",
   "Mordor",
   "Rachrohir",
@@ -13068,7 +13068,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 5,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
