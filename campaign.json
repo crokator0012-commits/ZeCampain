@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 5000,
+   "treasury": 825,
    "capital": "Province_16",
    "zeal": 6
   },
@@ -2036,7 +2036,26 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lothlorien",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Lothlorien",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8317,7 +8336,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1180,
-   "at": "Province_16",
+   "at": "Province_14",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9460,9 +9479,135 @@
     0
    ],
    "upkeep": 425
+  },
+  {
+   "name": "Host of Province_16",
+   "faction": "Lothlorien",
+   "men": 80,
+   "at": "Province_418",
+   "order": null,
+   "units": [
+    "lothlorien_lorien_outriders"
+   ],
+   "xp": [
+    0
+   ],
+   "upkeep": 587.5
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien ends its turn — Dorwinion to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Barracks at Province_16 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_14: construction declined — Lothlorien refunded 1,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_14 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_16: construction declined — Lothlorien refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_16 → Province_14",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_16 → Province_418",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Barracks at Province_16 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien mustered Host of Province_16 at Province_16 (1 regiments · 1,175 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_16: construction declined — Lothlorien refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Barracks at Province_16 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_16: construction declined — Lothlorien refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Barracks at Province_16 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_16 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_14 → Province_16",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_16 → Province_14",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13068,7 +13213,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15715,7 +15860,8 @@
   "Dorvinion",
   "Dale",
   "Goblins",
-  "Dol Gul Dur"
+  "Dol Gul Dur",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
