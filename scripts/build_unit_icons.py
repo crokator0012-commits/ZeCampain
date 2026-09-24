@@ -37,9 +37,9 @@ REJECT = {
     ("Ered Mithrin", "Grey Mountain Sentinels"), ("Dol Gul Dur", "Mirkwood reavers"),
     ("Dol Gul Dur", "Mirkwood raiders"), ("Dol Gul Dur", "Mirkwood trackers"), ("Dol Gul Dur", "Mirkwood Spiders"),
     ("Khazad-dum", "Onager"), ("Lothlorien", "Galadrim Bow warroirs"), ("Lothlorien", "Galadrim Sword Warroirs"),
-    ("Khazad-dum", "Hunters of Khazad Dum"), ("Woodland Realm", "Lasgalen Warroirs"),
+    ("Khazad-dum", "Hunters of Khazad Dum"),
     ("Iron Hills", "Dwarven Boar Hunters"), ("Dale", "(AOR)-Rhovanion Rangers"), ("Umbar", "Corsair Raiders"),
-    ("Gundabad", "Gundabad Wargs"), ("Lindon", "Falathrim Spearmen"), ("Ered Luin", "(S)-Merchant Swordsmen"),
+    ("Gundabad", "Gundabad Wargs"), ("Ered Luin", "(S)-Merchant Swordsmen"),
     ("Dorwinion", "Earls of the Vinter Court"), ("Ered Mithrin", "Dwarven Mace Infantry"),
     ("Ered Mithrin", "Troll Hunters"), ("Mordor", "(Mercs AOR)-Mirkwood Reavers"),
     ("Imraldris", "Noldorin Swordsmen"),                     # would pair with the Noldorin *horsemen* art
@@ -64,6 +64,8 @@ OVERRIDE = {
     ("Goblins", "high Chiefton's Guard"): ("Goblins", "03_High_Chieftains_Guard_UCpng.png"),
     ("Gondor", "(AOR)-RingloVale men at arms"): ("Gondor", "02_Ringolo_Vale_Swordsjpg.jpg"),
     ("Beorings", "(AOR)-Beoring Warroirs"): ("Anduin Vale", "av_beorning_warriors.png"),     # "Beoring" vs "beorning" spelling
+    ("Lindon", "Falathrim Spearmen"): ("Lindon", "lin_falathrimspear.png"),                  # art added: a Falathrim with a spear
+    ("Woodland Realm", "Lasgalen Warroirs"): ("Woodland Realm", "lasglaen swords.png"),      # art added; near-identical to the Blades icon
 }
 
 NOISE = {"aor", "oar", "merc", "mercs", "av", "wr", "uc", "unit", "the", "of", "a"}
