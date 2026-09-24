@@ -274,32 +274,56 @@ input[type=file]{display:none}
 .cxchip.on{color:#150F06;background:var(--brass);border-color:var(--brass)}
 #cxMain{flex:1;display:flex;min-height:0}
 #cxBody{flex:1;overflow:auto;padding:14px}
-#cxGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:10px}
-.cxcard{background:var(--panel2);border:1px solid var(--soft);border-radius:4px;overflow:hidden;cursor:pointer;transition:border-color .12s}
-.cxcard:hover{border-color:var(--brass)}
-.cxcard.sel{border-color:var(--brass);box-shadow:0 0 0 1px rgba(201,160,60,.4)}
-.cxcard .unitmeta{display:flex;align-items:center;gap:8px;padding:10px 10px 8px;border-bottom:1px solid var(--soft)}
-.cxcard .uicon{width:38px;height:38px;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:3px;background:var(--ink);flex:none}
-.cxcard .nm{flex:1;font-family:"Archivo Narrow";font-weight:600;font-size:13px;line-height:1.25;color:var(--bone)}
-.cxcard .tier,.cxcard .cost{font-family:"IBM Plex Mono",monospace;font-size:10.5px;white-space:nowrap;border:1px solid var(--soft);border-radius:2px;padding:2px 5px}
-.cxcard .tier{color:var(--dim)}
-.cxcard .cost{color:var(--brass)}
+#cxGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:12px;align-items:start}
+.cxcard{--tier:#8b95a1;position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);column-gap:13px;padding:10px 12px 10px 10px;min-height:138px;
+ background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,0) 55%),var(--panel2);
+ border:1px solid var(--soft);border-left:3px solid var(--tier);border-radius:5px;cursor:pointer;
+ transition:border-color .14s,box-shadow .14s,transform .14s}
+.cxcard.t2{--tier:#6fae6b}.cxcard.t3{--tier:#5e9bd6}.cxcard.t4{--tier:#d4a94a}
+.cxcard:hover{border-color:var(--brass);border-left-color:var(--tier);transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.38)}
+.cxcard.sel{border-color:var(--brass);border-left-color:var(--tier);box-shadow:0 0 0 1px rgba(201,160,60,.45),0 6px 16px rgba(0,0,0,.38)}
+.cxcard .portrait{position:relative;width:50px;height:119px;border-radius:3px;overflow:hidden;border:1px solid var(--line);
+ background:radial-gradient(120% 90% at 50% 15%,rgba(255,255,255,.12),rgba(0,0,0,.5)),var(--ink);display:flex;align-items:center;justify-content:center}
+.cxcard .portrait img.uicon{width:100%;height:100%;object-fit:contain;object-position:center bottom;display:block}
+.cxcard .portrait.ph img{width:36px;height:36px;object-fit:contain;opacity:.55}
+.cxcard .portrait.ph .mono{font:600 22px "Cinzel",serif;color:var(--dimmer)}
+.cxcard .count{position:absolute;left:3px;top:3px;z-index:1;min-width:19px;height:19px;padding:0 5px;border-radius:10px;background:var(--brass);color:#1a1408;
+ font:700 11px/19px "IBM Plex Mono",monospace;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.65)}
+.cxcard .info{min-width:0;display:flex;flex-direction:column;gap:6px}
+.cxcard .top{display:flex;align-items:flex-start;gap:8px}
+.cxcard .nm{flex:1;min-width:0;font-family:"Archivo Narrow";font-weight:600;font-size:14.5px;line-height:1.22;color:var(--bone);
+ display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cxcard .tier{flex:none;font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.06em;color:var(--tier);border:1px solid var(--tier);border-radius:3px;padding:3px 5px;background:rgba(0,0,0,.28)}
+.cxcard .kind{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font:500 10px/1.2 "Archivo Narrow",sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.cxcard .kind .pill{padding:2px 5px;border:1px solid var(--line);border-radius:2px;color:var(--brass);letter-spacing:.05em}
+.cxcard .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:auto;padding-top:7px;border-top:1px solid var(--soft)}
+.cxcard .stat{display:flex;flex-direction:column;gap:3px;min-width:0}
+.cxcard .stat b{font:500 9px/1 "Archivo Narrow",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.cxcard .stat span{font:500 12.5px/1.1 "IBM Plex Mono",monospace;color:var(--bone);white-space:nowrap}
+.cxcard .stat.cost span{color:var(--brass)}
+.cxcard.unaffordable .stat.cost span{color:#E5A594}
+.cxcard.unaffordable .portrait{filter:saturate(.6) brightness(.85)}
 .cxcard.cxbar{opacity:.35}
-.cxcard .mrow{display:flex;align-items:center;gap:6px;padding:6px 8px;border-top:1px solid var(--soft);background:rgba(0,0,0,.22)}
-.cxcard .mrow button{flex:none;width:26px;height:22px;background:var(--ink);border:1px solid var(--line);
- border-radius:2px;color:var(--bone);cursor:pointer;font-size:13px;line-height:1}
+.cxcard .mrow{grid-column:1/-1;display:flex;align-items:center;gap:8px;margin:9px -12px -10px -10px;padding:7px 10px;border-top:1px solid var(--soft);background:rgba(0,0,0,.28);border-radius:0 0 4px 4px}
+.cxcard .mrow button{flex:none;width:32px;height:24px;background:var(--ink);border:1px solid var(--line);
+ border-radius:3px;color:var(--bone);cursor:pointer;font-size:14px;line-height:1;transition:border-color .12s,color .12s}
 .cxcard .mrow button:hover:not(:disabled){border-color:var(--brass);color:var(--brass)}
 .cxcard .mrow button:disabled{opacity:.35;cursor:default}
-.cxcard .mrow .n{flex:1;text-align:center;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--brass)}
+.cxcard .mrow .n{flex:1;text-align:center;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--brass)}
+.cxcard .xrow{grid-column:1/-1;margin:8px 0 0}
 #cxSide{width:392px;border-left:1px solid var(--soft);overflow:auto;display:none;background:rgba(10,16,23,.55);flex:none}
 #cxSide.open{display:block}
-#cxSide .hd{padding:14px;border-bottom:1px solid var(--soft);display:flex;gap:12px;align-items:center}
-#cxSide .hd img{height:96px;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(0,0,0,.75))}
+#cxSide .hd{padding:14px;border-bottom:1px solid var(--soft);display:flex;gap:14px;align-items:flex-start}
+#cxSide .hd img{flex:none;width:64px;height:152px;object-fit:contain;object-position:center bottom;border:1px solid var(--line);border-radius:4px;
+ background:radial-gradient(120% 90% at 50% 15%,rgba(255,255,255,.12),rgba(0,0,0,.5)),var(--ink);box-shadow:0 5px 14px rgba(0,0,0,.55)}
 #cxSide .hd h3{margin:0;font:600 16px "Archivo Narrow";color:var(--bone);line-height:1.2}
 #cxSide .hd .sub{font-size:11px;color:var(--dim);margin-top:3px;text-transform:uppercase;letter-spacing:.07em}
 #cxSide .hd .desc{font-size:12px;color:var(--dim);margin-top:7px;line-height:1.45;font-style:italic}
 #cxSide .sx{padding:11px 14px;border-bottom:1px solid var(--soft)}
 #cxSide .sx .lbl{display:block;margin-bottom:8px}
+#cxSide .hd img.emb{height:64px;padding:8px;opacity:.7;object-position:center}
+.cxnote{margin-top:8px;font-size:11.5px;line-height:1.45;color:var(--dim)}
+.cxnote b{color:var(--brass);font-weight:600}
 .cxstat{display:grid;grid-template-columns:104px 1fr 40px;gap:8px;align-items:center;margin-bottom:5px}
 .cxstat .sl{font-size:11px;color:var(--dim)}
 .cxstat .sb{height:6px;background:rgba(0,0,0,.5);border:1px solid var(--soft);border-radius:1px;overflow:hidden}
@@ -2966,10 +2990,13 @@ CX.factions=(CX.factions||[]).map(f=>typeof f==="string"?(f==="Rhun"?"Rhurrim":f
 const CAPU=CX.cap||20;
 const CX_CLASSES=Array.isArray(CX.classes)?CX.classes:[];
 const cxBy={};(CX.units||[]).forEach(u=>cxBy[u.unit_key]=u);
+/* The roster no longer ships CX.max (stat maxima), so derive the bar scales from the units themselves. */
+const cxCpm=u=>u.men?u.cost/u.men:0;
+const CXMAX={};(CX.units||[]).forEach(u=>{for(const k of ["men","cost","upkeep"])if((+u[k]||0)>(CXMAX[k]||0))CXMAX[k]=+u[k];if(cxCpm(u)>(CXMAX.cpm||0))CXMAX.cpm=cxCpm(u);});
 const ICON_FACTION_PREFIX={"Dol Gul Dur":"dol_gul_dur","Khazad-dum":"khazadum","Lostladen Tribes":"lostladen_tribes","Woodland Realm":"woodland_realm","Iron Hills":"iron_hills","Ered Luin":"ered_luin","Ered Mithrin":"ered_mithrin","Dol Amroth":"dol_amroth","Anduin Vale":"anduin_vale"};
 const iconNormal=s=>String(s||"").toLowerCase().replace(/\([^)]*\)/g," ").replace(/(?:[_\s](?:uc\d*png|ucpng|v\d+png|v\d+|t[1-4]))+$/g," ").replace(/[_-]/g," ").replace(/\b(?:aor|oar|mercs?|av|wr|roh|mor|gun|dor|umb|kha|ise|iro|em|el|dg|dol|gon|khz|dun|wan|lin|lh)\b/g," ").replace(/\bwarroirs?\b/g,"warrior").replace(/\bgaurds?\b/g,"guard").replace(/\bcalvary\b/g,"cavalry").replace(/\bdunleding\b/g,"dunlending").replace(/\bdeckemen\b/g,"deckmen").replace(/\bvinter\b/g,"winter").replace(/\bolog hia\b/g,"olog hai").replace(/\bshirrifs\b/g,"shire reeves").replace(/[^a-z0-9]+/g," ").trim().replace(/\s+/g," ");
 const iconPrefix=f=>ICON_FACTION_PREFIX[f]||String(f||"").toLowerCase().replace(/\s+/g,"_");
-const unitIconFor=u=>{if(!u)return null;const prefix=iconPrefix(u.faction)+"_",target=iconNormal(u.name);const key=Object.keys(CODEX_ICONS).find(k=>k.startsWith(prefix)&&iconNormal(k.slice(prefix.length))===target);return key?CODEX_ICONS[key]:null;};
+const unitIconFor=u=>{if(!u)return null;const mk=typeof CODEX_ICON_MAP!=="undefined"&&CODEX_ICON_MAP[u.unit_key];if(mk&&CODEX_ICONS[mk])return CODEX_ICONS[mk];const prefix=iconPrefix(u.faction)+"_",target=iconNormal(u.name);const key=Object.keys(CODEX_ICONS).find(k=>k.startsWith(prefix)&&iconNormal(k.slice(prefix.length))===target);return key?CODEX_ICONS[key]:null;};
 const unitKeyTokens=k=>String(k||"").toLowerCase().replace(/_uc\d*png$|_ucpng$|_v\d+png$|_v\d+$/i,"").split(/[_\s]+/).filter(Boolean);
 function resolveUnitKey(k,faction){
   if(cxBy[k])return k;
@@ -2990,7 +3017,34 @@ function normalizeArmyUnits(a){
 const REALM_OF={"Gondor":"Gondor","South Ithilien":"Gondor","Mordor":"Mordor","Harondor":"Mordor","Lostladen Tribes":"Lostladen Tribes","Near Harad":"Lostladen Tribes","Lostladen":"Lostladen Tribes","Harad":"Lostladen Tribes","Mahud":"Lostladen Tribes","Dale":"Dale","DolGulDur":"Dol Gul Dur","Dol Guldur":"Dol Gul Dur","Dol Gul Dur":"Dol Gul Dur","Dorvinion":"Dorwinion","Dunland":"Dunlendings","Rhun":"Rhun","Rh\u00fbn":"Rhun","Goblins":"Goblins","Rohan":"Rohan","Woodland Realm":"Woodland Realm","Lothlorien":"Lothlorien","Imraldris":"Imraldris","Lindon":"Lindon","Umbar":"Umbar"};
 const REALM_FAC={};Object.keys(REALM_OF).forEach(k=>{if(F[k]&&!REALM_FAC[REALM_OF[k]])REALM_FAC[REALM_OF[k]]=k;});
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-const unitDisplayName=u=>String(u&&u.name||"").replace(/\s+uc\d*png$/i,"").trim();
+const NAME_FIXES=[[/\bcalvary\b/gi,"Cavalry"],[/\bcavarly\b/gi,"Cavalry"],[/\bwarroirs?\b/gi,m=>/s$/i.test(m)?"Warriors":"Warrior"],[/\bgaurds?\b/gi,m=>/s$/i.test(m)?"Guards":"Guard"],
+  [/\bsergaents\b/gi,"Sergeants"],[/\bseargeants\b/gi,"Sergeants"],[/\buserpers\b/gi,"Usurpers"],[/\bchiefton's\b/gi,"Chieftain's"],[/\bdunleding\b/gi,"Dunlending"],
+  [/\blossnarch\b/gi,"Lossarnach"],[/\bpelagir\b/gi,"Pelargir"],[/\bpeligir\b/gi,"Pelargir"],[/\btrebucheet\b/gi,"Trebuchet"],[/\bdeckemen\b/gi,"Deckmen"],[/\bmusterd\b/gi,"Mustered"],[/\bolog hia\b/gi,"Olog-hai"],
+  [/\bmirk wood\b/gi,"Mirkwood"],[/\bgreen wood\b/gi,"Greenwood"],[/\bwain rider\b/gi,"Wainrider"],[/\blong beard\b/gi,"Longbeard"],[/\biron foot\b/gi,"Ironfoot"],
+  [/\bbroad beam\b/gi,"Broadbeam"],[/\bfire beard\b/gi,"Firebeard"],[/\bunder ground\b/gi,"Underground"],[/\bpack masters\b/gi,"Packmasters"],[/\bhouse hold\b/gi,"Household"],[/\bbronze watch\b/gi,"Bronzewatch"]];
+const NAME_SMALL=new Set(["of","the","at","and","in","de"]);
+function unitNameParts(u){
+  let raw=String(u&&u.name||"").replace(/\s+uc\d*png$/i,"").trim(),tags=[];
+  for(let m;(m=raw.match(/^\(([^)]*)\)\s*-?\s*/));){
+    const t=m[1].toLowerCase();
+    if(/aor/.test(t)&&!tags.includes("AOR"))tags.push("AOR");
+    if(/merc/.test(t)&&!tags.includes("Merc"))tags.push("Merc");
+    raw=raw.slice(m[0].length);
+  }
+  raw=raw.replace(/([a-z])([A-Z])/g,"$1 $2");
+  for(const [re,to] of NAME_FIXES)raw=raw.replace(re,to);
+  const title=raw.split(/(\s+)/).map((w,i,a)=>{
+    if(!w.trim())return w;
+    const first=a.findIndex(x=>x.trim())===i;
+    return w.split("-").map((p,j)=>{
+      const lower=p.toLowerCase();
+      if(!first&&NAME_SMALL.has(lower))return lower;
+      return /^[a-z]/.test(p)?p.charAt(0).toUpperCase()+p.slice(1):p;
+    }).join("-");
+  }).join("").trim();
+  return {title:title||String(u&&u.name||""),tags};
+}
+const unitDisplayName=u=>unitNameParts(u).title;
 const nz=v=>(v===null||v===undefined||v==="")?null:v;
 const unitMen=k=>{const u=cxBy[k];return u&&u.men?u.men:0;};
 function syncMen(a){if(Array.isArray(a.units)){a.men=a.units.reduce((s,k)=>s+unitMen(k),0);a.upkeep=a.units.reduce((s,k)=>s+((cxBy[k]||{}).upkeep||0),0);}}
@@ -3054,9 +3108,24 @@ function cxCard(u,rank){
   }
   const adDisabled=full||!canAfford;
   const adTitle=full?`Cap of ${CAPU} units reached`:(!canAfford?`Cannot afford! Only ${leftGold.toLocaleString()}g left (${u.cost}g needed)`:"Add regiment");
-  const ic=unitIconFor(u)||EMBLEMS[u.faction]||null;
-  return `<div class="cxcard${cxSel===u.unit_key?" sel":""}${!canAfford?" unaffordable":""}" data-cxk="${esc(u.unit_key)}">
-    <div class="unitmeta">${ic?`<img class="uicon" src="${ic}" alt="">`:""}<div class="nm">${esc(unitDisplayName(u))}</div><span class="tier">T${unitTier(u)}</span><span class="cost"${!canAfford?' style="color:#E5A594"':""}>${u.cost}g</span></div>
+  const parts=unitNameParts(u),tier=unitTier(u),icon=unitIconFor(u),emb=EMBLEMS[u.faction]||null;
+  const shown=rank>=1?countRank(u.unit_key,rank):n;
+  const count=shown>0?`<span class="count">×${shown}</span>`:"";
+  const portrait=icon
+    ?`<div class="portrait">${count}<img class="uicon" src="${icon}" alt="" loading="lazy" decoding="async"></div>`
+    :`<div class="portrait ph">${count}${emb?`<img src="${emb}" alt="">`:`<span class="mono">${esc(String(u.faction||"?").charAt(0))}</span>`}</div>`;
+  const kind=[`<span>${esc(u.class_name||u.category_name||"")}</span>`].concat(parts.tags.map(t=>`<span class="pill">${t}</span>`)).join("");
+  return `<div class="cxcard t${tier}${cxSel===u.unit_key?" sel":""}${!canAfford?" unaffordable":""}" data-cxk="${esc(u.unit_key)}">
+    ${portrait}
+    <div class="info">
+      <div class="top"><div class="nm" title="${esc(parts.title)}">${esc(parts.title)}</div><span class="tier">T${tier}</span></div>
+      <div class="kind">${kind}</div>
+      <div class="stats">
+        <div class="stat"><b>Men</b><span>${(u.men||0).toLocaleString()}</span></div>
+        <div class="stat cost"><b>Cost</b><span>${(u.cost||0).toLocaleString()}g</span></div>
+        <div class="stat"><b>Upkeep</b><span>${Math.round(u.upkeep||0).toLocaleString()}</span></div>
+      </div>
+    </div>
     ${rank>=1?`<div class="xrow"><button class="xb gm" data-cxv="${esc(u.unit_key)}|${rank}|-1" title="One regiment loses a chevron">−</button><span class="n">${countRank(u.unit_key,rank)}×</span>${chevMark(rank)}<button class="xb gm" data-cxv="${esc(u.unit_key)}|${rank}|1" title="One regiment gains a chevron">+</button></div>`
   :cxArmy?`<div class="mrow"><button data-cxrm="${esc(u.unit_key)}" ${n?"":"disabled"}>−</button>
       <span class="n">${n||""}</span>
@@ -3113,36 +3182,40 @@ function cxFoot(){
 
 /* ---------- detail ---------- */
 function cxBar(l,k,v){
-  const has=nz(v)!==null,mx=CX.max[k]||0;
+  const has=nz(v)!==null,mx=(CX.max&&CX.max[k])||CXMAX[k]||0;
   const pct=has&&mx?Math.max(2,Math.min(100,v/mx*100)):0;
   return `<div class="cxstat${has?"":" na"}"><div class="sl">${l}</div>
     <div class="sb">${has?`<div class="sf" style="width:${pct}%"></div>`:""}</div>
     <div class="sv">${has?v:"–"}</div></div>`;
 }
+/* A stat block that only appears when at least one of its rows has data (the roster carries men/cost/upkeep only). */
+function cxSec(label,rows){
+  const bars=rows.filter(r=>nz(r[2])!==null).map(r=>cxBar(r[0],r[1],r[2])).join("");
+  return bars?`<div class="sx"><span class="lbl">${label}</span>${bars}</div>`:"";
+}
 function cxDetail(k){
   cxSel=k;const u=cxBy[k];if(!u){$("cxSide").classList.remove("open");return;}
-  const ic=unitIconFor(u);
-  let h=`<div class="hd">${ic?`<img src="${ic}">`:""}<div>
-    <h3>${esc(unitDisplayName(u))}</h3><div class="sub">${esc(u.class_name)} · ${esc(u.category_name)}</div>
+  const ic=unitIconFor(u),parts=unitNameParts(u),emb=EMBLEMS[u.faction]||null;
+  let h=`<div class="hd">${ic?`<img class="uicon" src="${ic}" alt="">`:(emb?`<img class="emb" src="${emb}" alt="">`:"")}<div>
+    <h3>${esc(parts.title)}</h3><div class="sub">${esc(u.class_name)} · ${esc(u.category_name)}</div>
+    <div class="cxtags" style="margin-top:9px"><span class="cxtag">Tier ${unitTier(u)}</span>${parts.tags.map(t=>`<span class="cxtag ab">${t}</span>`).join("")}</div>
     ${u.description_short?`<div class="desc">${esc(u.description_short)}</div>`:""}
   </div></div>`;
   const factions=u.faction?[u.faction]:[];
   h+=`<div class="sx"><span class="lbl">Fielded by</span><div class="cxtags">`+
     factions.map(r=>{const fid=REALM_FAC[r];const em=(fid&&EMBLEMS[fid])||(window.CODEX_FLAGS||{})[r];
       return `<span class="cxtag">${em?`<img src="${em}" style="width:13px;height:13px;border-radius:50%;vertical-align:-2px"> `:""}${esc(r)}</span>`;}).join("")+`</div></div>`;
-  h+=`<div class="sx"><span class="lbl">Campaign</span>`+cxBar("Men","men",u.men)+cxBar("Cost","cost",u.cost)+cxBar("Upkeep","upkeep",u.upkeep)+`</div>`;
-  h+=`<div class="sx"><span class="lbl">Melee</span>`+cxBar("Attack","melee_attack",u.melee_attack)+
-    cxBar("Defence","melee_defence",u.melee_defence)+cxBar("Charge","charge_bonus",u.charge_bonus)+
-    cxBar("Damage","weapon_damage",u.weapon_damage)+cxBar("AP damage","weapon_ap_damage",u.weapon_ap_damage)+
-    cxBar("Morale","morale",u.morale)+`</div>`;
-  h+=`<div class="sx"><span class="lbl">Defence</span>`+cxBar("Armour","armour_value",u.armour_value)+
-    cxBar("Shield","shield_defence",u.shield_defence)+cxBar("Hit points","hit_points_total",u.hit_points_total)+`</div>`;
+  const perMan=u.men?Math.round(u.cost/u.men*10)/10:null;
+  const charged=Math.round((+u.upkeep||0)*(1-UPKEEP_DISCOUNT));
+  h+=`<div class="sx"><span class="lbl">Campaign</span>`+cxBar("Men","men",u.men)+cxBar("Cost","cost",u.cost)+cxBar("Cost / man","cpm",perMan)+cxBar("Upkeep","upkeep",u.upkeep)+
+    `<div class="cxnote">Charged upkeep after the ${Math.round(UPKEEP_DISCOUNT*100)}% discount: <b>${charged.toLocaleString()}</b> / turn${upkeepWaived()?` &middot; <span style="color:var(--verd)">free until turn ${UPKEEP_FREE_TURNS+1}</span>`:""}</div></div>`;
+  h+=cxSec("Melee",[["Attack","melee_attack",u.melee_attack],["Defence","melee_defence",u.melee_defence],["Charge","charge_bonus",u.charge_bonus],
+    ["Damage","weapon_damage",u.weapon_damage],["AP damage","weapon_ap_damage",u.weapon_ap_damage],["Morale","morale",u.morale]]);
+  h+=cxSec("Defence",[["Armour","armour_value",u.armour_value],["Shield","shield_defence",u.shield_defence],["Hit points","hit_points_total",u.hit_points_total]]);
   if(nz(u.missile_range)!==null)
-    h+=`<div class="sx"><span class="lbl">Missile</span>`+cxBar("Range","missile_range",u.missile_range)+
-      cxBar("Damage","missile_damage",u.missile_damage)+cxBar("AP","missile_ap_damage",u.missile_ap_damage)+
-      cxBar("Accuracy","accuracy",u.accuracy)+cxBar("Ammo","ammo",u.ammo)+`</div>`;
-  h+=`<div class="sx"><span class="lbl">Movement</span>`+cxBar("Speed","speed",u.speed)+
-    cxBar("Charge spd","charge_speed",u.charge_speed)+cxBar("Mass","mass",u.mass)+`</div>`;
+    h+=cxSec("Missile",[["Range","missile_range",u.missile_range],["Damage","missile_damage",u.missile_damage],["AP","missile_ap_damage",u.missile_ap_damage],
+      ["Accuracy","accuracy",u.accuracy],["Ammo","ammo",u.ammo]]);
+  h+=cxSec("Movement",[["Speed","speed",u.speed],["Charge spd","charge_speed",u.charge_speed],["Mass","mass",u.mass]]);
   if(u.abilities||u.attributes){
     h+=`<div class="sx"><span class="lbl">Abilities & attributes</span><div class="cxtags">`+
       (u.abilities?u.abilities.split("|").map(a=>`<span class="cxtag ab">${esc(a)}</span>`).join(""):"")+
