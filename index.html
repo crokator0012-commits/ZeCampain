@@ -663,18 +663,24 @@ const S=JSON.parse(document.getElementById("mapdata").textContent);
 /* Harad and Rhun are legacy duplicates: their canonical campaign realms are Lostladen Tribes and Rhurrim. */
 S.factions=(S.factions||[]).filter(f=>f.id!=="Harad"&&f.id!=="Rhun");
 const currentTurn=S.order&&S.order[S.active];
-S.order=[...new Set((S.order||[]).map(id=>id==="Rhun"?"Rhurrim":id).filter(id=>id!=="Harad"))].sort((a,b)=>a.localeCompare(b));
+/* NPC factions (f.npc) are GM-controlled only and never take a turn of their own. The published
+   turn order is kept exactly as saved — it used to be re-sorted alphabetically on every load,
+   which threw away the GM's custom order and re-published the sorted one on the next End Turn. */
+const npcIds=new Set((S.factions||[]).filter(f=>f.npc).map(f=>f.id));
+S.order=[...new Set((S.order||[]).map(id=>id==="Rhun"?"Rhurrim":id).filter(id=>id!=="Harad"&&!npcIds.has(id)))];
+S.moved=(S.moved||[]).filter(id=>!npcIds.has(id));
 S.active=Math.max(0,S.order.indexOf(currentTurn));
 const canonicalRealm=id=>id==="Rhun"?"Rhurrim":id;
 S.allies=(S.allies||[]).map(pair=>pair.split("|").map(canonicalRealm).sort().join("|"));
 S.wars=(S.wars||[]).map(pair=>pair.split("|").map(canonicalRealm).sort().join("|"));
-const FACTION_COLOURS={DolGulDur:"#54152A",Goblins:"#5B6B21",Harad:"#C24C1B",Mahud:"#8E2F1B",Mordor:"#6B1010",Rhun:"#C44A21",Umbar:"#7B2639",Khand:"#A85A25","Woodland Realm":"#28603B",Rachrohir:"#9B3A21","Lostladen Tribes":"#D46A16",Isengard:"#363B35",Gundabad:"#58221B","Dol Gul Dur":"#3A0E20","Anduin Vale":"#2E86AB",Balcoth:"#6E1E24",Haerrim:"#B65A2A",Feredrim:"#4F7A4E",Beorings:"#8A6A2E",Eotheod:"#5A8FC8",GreenWood:"#246B47",Drudain:"#71412F","Northern Endwaith":"#4C5963","Southern Endwaith":"#8B6B3C"};
+const FACTION_COLOURS={Goblins:"#5B6B21",Harad:"#C24C1B",Mahud:"#8E2F1B",Mordor:"#6B1010",Rhun:"#C44A21",Umbar:"#7B2639",Khand:"#A85A25","Woodland Realm":"#28603B",Rachrohir:"#9B3A21","Lostladen Tribes":"#D46A16",Isengard:"#363B35",Gundabad:"#58221B","Dol Gul Dur":"#3A0E20","Anduin Vale":"#2E86AB",Balcoth:"#6E1E24",Haerrim:"#B65A2A",Feredrim:"#4F7A4E",Beorings:"#8A6A2E",Eotheod:"#5A8FC8",GreenWood:"#246B47",Drudain:"#71412F","Northern Endwaith":"#4C5963","Southern Endwaith":"#8B6B3C"};
 (S.factions||[]).forEach(f=>{if(FACTION_COLOURS[f.id])f.color=FACTION_COLOURS[f.id];});
 const F=Object.fromEntries((S.factions||[]).map(f=>[f.id,f]));
 const P=Object.fromEntries((S.provinces||[]).map(p=>[p.id,p]));
-function sortTurnOrder(activeFaction){
-  const valid=new Set(S.factions.map(f=>f.id));
-  S.order=[...valid].sort((a,b)=>a.localeCompare(b));
+function reconcileTurnOrder(activeFaction){
+  const eligible=new Set(S.factions.filter(f=>!f.npc).map(f=>f.id));
+  const kept=[...new Set((S.order||[]).filter(id=>eligible.has(id)))];
+  S.order=kept.concat([...eligible].filter(id=>!kept.includes(id)));
   S.active=Math.max(0,S.order.indexOf(activeFaction));
 }
 let playerFaction="";
@@ -1295,7 +1301,7 @@ function undo(){
   S.armies=s.armies;
   S.factions.length=0;s.fac.forEach(f=>{S.factions.push(f);F[f.id]=f;});
   Object.keys(F).forEach(k=>{if(!S.factions.find(f=>f.id===k))delete F[k];});
-  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.order=s.order||S.order;S.moved=s.moved||[];S.active=s.active??0;S.pendingReview=!!s.pendingReview;sortTurnOrder(S.order[S.active]);
+  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.order=s.order||S.order;S.moved=s.moved||[];S.active=s.active??0;S.pendingReview=!!s.pendingReview;reconcileTurnOrder(S.order[S.active]);
   $("bUndo").disabled=!undoStack.length;
   buildSelects();paintMap();legend();stats();drawLedger();if(sel)openProv(P[sel]);
   toast("Undid: "+s.label);
@@ -2212,7 +2218,7 @@ function normalizeCampaignClock(){
   if(!Number.isInteger(S.turn)||S.turn<1)S.turn=1;
   if(!Number.isInteger(S.year)||S.year<1)S.year=1200;
   if(!SEASONS.includes(S.season))S.season="Spring";
-  if(!Array.isArray(S.order)||!S.order.length){S.order=S.factions.map(f=>f.id);S.active=0;}
+  if(!Array.isArray(S.order)||!S.order.length){S.order=S.factions.filter(f=>!f.npc).map(f=>f.id);S.active=0;}
   if(!Number.isInteger(S.active)||S.active<0||S.active>=S.order.length)S.active=0;
   if(typeof S.pendingReview!=="boolean")S.pendingReview=false;
 }
@@ -2323,7 +2329,6 @@ $("gmask").onclick=e=>{if(e.target.id==="gmask")$("gmask").classList.remove("ope
    result here. Must match faction ids in campaign.json. */
 const FACTION_PASSWORDS={
   "Dale": "eb510bf473ca32781cffdba65c074d9468410ca358cbefaba6d8a4af6c1608fa",
-  "DolGulDur": "d59c5d0463680681e4b59dd6075df44c5e32ee059c10e6dbd9eb9c520013cd3f",
   "Dorvinion": "e11620a95758856f686ebe33204d764e51407e784e122e2eb00f0106c7ddc1b1",
   "Dunland": "dcb0d3892164cf8631012c680d8a060f624158dd90008047074ac1b6f1ca42b6",
   "Goblins": "0719cc9d8a373850009d70a2cdcfd94d734b021b697a30984cac31011e7a13ae",
@@ -2348,21 +2353,10 @@ const FACTION_PASSWORDS={
   "Ered Mithrin": "985d860880a1b82512b2718f663a74c24c7ed9c262f14cd5ac82435e683b5844",
   "Ered Luin": "72b94ae5cc7bfcd7e46fb00e3aa6295fd66670cc4ccd79e65e4bf74241bd6ecc",
   "Erebor": "62fd0b985b4161c35764c4ccb29385124cd74bade5ab0571939b3c75fbecb112",
-  "Dunlendings": "652fe102db5861fb2ead03462dbe6d44a668d153cce7d71726fc546b816185d3",
   "Dorwinion": "212fc48d1ca5f1f3defadd2ec99a8ae03dd9d292645e8b78e98f463dff10f426",
   "Dol Gul Dur": "9dc0e2d9116f3a230ef6dd4fe693f21752716485813cf6086e086ceb74eaea3f",
   "Dol Amroth": "c98090d46b97128701a8e4ebd39f639e15549b94d756b546abc31ec32bf2a9d4",
   "Anduin Vale": "978f40ee12d5f8fd77e51d36cf0f937a850479fd67ede3971d40729bb193af96",
-  "Balcoth": "0e14fb47b2e26a605ab072be6f0ffc76c9888a592edcbc114fd7feb56720aac1",
-  "Haerrim": "4a60f6e1c08e71a5f077ff9c018f9288ad521ae191e82da6d405a2da19037430",
-  "Feredrim": "786b71408658fa2cf9089b1cb9af23e0b9959ab1439a5a74e1d8ba076fa1bd9d",
-  "Beorings": "34849be1e777da1bff258a66c94fb864adea2ad0c39fac01556cad7abaa42e89",
-  "Eotheod": "2ee63598559ddd8997fe39fea88b186b86fe9a1e5ec1d562ac6f7ef6d94c7649",
-  "GreenWood": "41ca607f25d9d5d642e5f6f27f9b20b63daadc8b2f5def3df57b99621013a36e",
-  "Drudain": "bd02a517c72305900ca10f5f579fa1d385b423307ddbf5f18abbc2bb1e9df420",
-  "Northern Endwaith": "3ddbb4d60d6cfb8babacc630b2a0a05c32daf019a5e1d0bae299ea6f94454721",
-  "Southern Endwaith": "c349c7a761a4fa2ccf313d0619ac3b01dbbf0b6d449406aa9bd31a1ef4dfcc3b",
-  "Harondor": "7dddea8230033f23c135d4e13f5d835221ae9ca8201fc89179f2f520cd7c1e81",
 };
 let factionAuth=null;
 try{factionAuth=store.get("rqFactionAuth")||null;}catch(e){}
@@ -2825,7 +2819,7 @@ $("fLoad").onchange=e=>{
     S.wars=d.wars||[];S.battles=d.battles||[];S.allowance=d.allowance??3;S.fought=d.fought||{};S.truces=d.truces||{};S.allies=d.allies||[];S.order=d.order||S.factions.map(f=>f.id);S.moved=d.moved||[];S.active=d.active??0;S.pendingReview=d.pendingReview??false;S.armies.forEach(a=>a.order??=null);
     if(d.factions){S.factions.length=0;Object.keys(F).forEach(k=>delete F[k]);
       d.factions.forEach(nf=>{S.factions.push(nf);F[nf.id]=nf;});}
-    sortTurnOrder(S.order[S.active]);
+    reconcileTurnOrder(S.order[S.active]);
     (d.provinces||[]).forEach(np=>{if(P[np.id])Object.assign(P[np.id],{
       owner:np.owner,note:np.note,siege:np.siege??null,occ:np.occ??null,bld:np.bld||[],bldLevel:np.bldLevel||{},bldOwner:np.bldOwner||{},availableBld:np.availableBld||[],availableBldOwner:np.availableBldOwner||{},upg:np.upg??null,buildQueue:np.buildQueue||[],raid:np.raid??null,tier:np.tier??P[np.id].tier,
       value:np.value??P[np.id].value,garrison:np.garrison??P[np.id].garrison,
@@ -2984,7 +2978,7 @@ function normalizeArmyUnits(a){
   if(!Array.isArray(a.units))return;
   a.units=a.units.map(k=>resolveUnitKey(k,a.faction)||k);
 }
-const REALM_OF={"Gondor":"Gondor","South Ithilien":"Gondor","Mordor":"Mordor","Harondor":"Mordor","Lostladen Tribes":"Lostladen Tribes","Near Harad":"Lostladen Tribes","Lostladen":"Lostladen Tribes","Harad":"Lostladen Tribes","Mahud":"Lostladen Tribes","Dale":"Dale","DolGulDur":"Dol Gul Dur","Dol Guldur":"Dol Gul Dur","Dorvinion":"Dorwinion","Dunland":"Dunlendings","Rhun":"Rhun","Rh\u00fbn":"Rhun","Goblins":"Goblins","Rohan":"Rohan","Woodland Realm":"Woodland Realm","Lothlorien":"Lothlorien","Imraldris":"Imraldris","Lindon":"Lindon","Umbar":"Umbar"};
+const REALM_OF={"Gondor":"Gondor","South Ithilien":"Gondor","Mordor":"Mordor","Harondor":"Mordor","Lostladen Tribes":"Lostladen Tribes","Near Harad":"Lostladen Tribes","Lostladen":"Lostladen Tribes","Harad":"Lostladen Tribes","Mahud":"Lostladen Tribes","Dale":"Dale","DolGulDur":"Dol Gul Dur","Dol Guldur":"Dol Gul Dur","Dol Gul Dur":"Dol Gul Dur","Dorvinion":"Dorwinion","Dunland":"Dunlendings","Rhun":"Rhun","Rh\u00fbn":"Rhun","Goblins":"Goblins","Rohan":"Rohan","Woodland Realm":"Woodland Realm","Lothlorien":"Lothlorien","Imraldris":"Imraldris","Lindon":"Lindon","Umbar":"Umbar"};
 const REALM_FAC={};Object.keys(REALM_OF).forEach(k=>{if(F[k]&&!REALM_FAC[REALM_OF[k]])REALM_FAC[REALM_OF[k]]=k;});
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const unitDisplayName=u=>String(u&&u.name||"").replace(/\s+uc\d*png$/i,"").trim();

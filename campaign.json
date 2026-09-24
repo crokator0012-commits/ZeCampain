@@ -16,14 +16,6 @@
    "zeal": 6
   },
   {
-   "id": "DolGulDur",
-   "name": "DolGulDur",
-   "color": "#54152A",
-   "treasury": 5000,
-   "capital": "",
-   "zeal": 6
-  },
-  {
    "id": "Dorvinion",
    "name": "Dorvinion",
    "color": "#7B1FA2",
@@ -216,14 +208,6 @@
    "zeal": 6
   },
   {
-   "id": "Dunlendings",
-   "name": "Dunlendings",
-   "color": "#5A3426",
-   "treasury": 5000,
-   "capital": "",
-   "zeal": 6
-  },
-  {
    "id": "Dorwinion",
    "name": "Dorwinion",
    "color": "#9C27B0",
@@ -261,7 +245,8 @@
    "color": "#6E1E24",
    "treasury": 36841,
    "capital": "Province_428",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Haerrim",
@@ -269,7 +254,8 @@
    "color": "#B65A2A",
    "treasury": 6025,
    "capital": "Province_33",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Feredrim",
@@ -277,7 +263,8 @@
    "color": "#4F7A4E",
    "treasury": 14425,
    "capital": "Province_460",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Beorings",
@@ -285,7 +272,8 @@
    "color": "#8A6A2E",
    "treasury": 2300,
    "capital": "Province_208",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Eotheod",
@@ -293,7 +281,8 @@
    "color": "#5A8FC8",
    "treasury": 10225,
    "capital": "Province_382",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "GreenWood",
@@ -301,7 +290,8 @@
    "color": "#246B47",
    "treasury": 456450,
    "capital": "Province_345",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Drudain",
@@ -309,7 +299,8 @@
    "color": "#71412F",
    "treasury": 5000,
    "capital": "Province_3",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Northern Endwaith",
@@ -317,7 +308,8 @@
    "color": "#4C5963",
    "treasury": 5000,
    "capital": "Province_389",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Southern Endwaith",
@@ -325,7 +317,8 @@
    "color": "#8B6B3C",
    "treasury": 5000,
    "capital": "Province_377",
-   "zeal": 6
+   "zeal": 6,
+   "npc": true
   },
   {
    "id": "Harondor",
@@ -333,7 +326,8 @@
    "color": "#52efa7",
    "treasury": 9150,
    "capital": "Province_5",
-   "zeal": 0
+   "zeal": 0,
+   "npc": true
   }
  ],
  "provinces": [
@@ -12989,28 +12983,18 @@
  ],
  "order": [
   "Anduin Vale",
-  "Balcoth",
-  "Beorings",
   "Dale",
   "Dol Amroth",
   "Dol Gul Dur",
-  "DolGulDur",
   "Dorvinion",
   "Dorwinion",
-  "Drudain",
   "Dunland",
-  "Dunlendings",
-  "Eotheod",
   "Erebor",
   "Ered Luin",
   "Ered Mithrin",
-  "Feredrim",
   "Goblins",
   "Gondor",
-  "GreenWood",
   "Gundabad",
-  "Haerrim",
-  "Harondor",
   "Imraldris",
   "Iron Hills",
   "Isengard",
@@ -13021,16 +13005,14 @@
   "Lothlorien",
   "Mahud",
   "Mordor",
-  "Northern Endwaith",
   "Rachrohir",
   "Rhudaur",
   "Rhurrim",
   "Rohan",
-  "Southern Endwaith",
   "Umbar",
   "Woodland Realm"
  ],
- "active": 5,
+ "active": 3,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -15672,13 +15654,10 @@
  ],
  "moved": [
   "Anduin Vale",
-  "Balcoth",
-  "Beorings",
   "Umbar",
   "Dol Amroth",
   "Dorvinion",
   "Dale",
-  "Drudain",
   "Goblins"
  ],
  "pendingReview": false
