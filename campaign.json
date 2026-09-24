@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 5000,
+   "treasury": 1100,
    "capital": "Province_364",
    "zeal": 6
   },
@@ -625,7 +625,26 @@
     "barracks": "Lindon"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Lindon",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lindon",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -1261,7 +1280,17 @@
     "grain_farm": "Lindon"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lindon",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8400,7 +8429,7 @@
    "name": "Host of Province_364",
    "faction": "Lindon",
    "men": 1340,
-   "at": "Province_364",
+   "at": "Province_430",
    "order": null,
    "units": [
     "lindon_falathrim_seafarers",
@@ -9544,6 +9573,48 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_364 moved Province_466 → Province_430",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_364 moved Province_364 → Province_466",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts upgrading Fishing Jetties at Province_364 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts upgrading Barracks at Province_364 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts upgrading Grain Farm at Province_24 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13365,7 +13436,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 18,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16015,7 +16086,8 @@
   "Dol Gul Dur",
   "Lothlorien",
   "Isengard",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Lindon"
  ],
  "pendingReview": false
 }
