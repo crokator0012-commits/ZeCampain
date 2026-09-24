@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 5000,
+   "treasury": 1000,
    "capital": "Province_433",
    "zeal": 6
   },
@@ -1520,7 +1520,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Gondor",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -3546,7 +3552,17 @@
     "barracks": "Gondor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Gondor",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9576,6 +9592,41 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Province_395 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts upgrading Barracks at Province_433 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Osgiliath → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Osgiliath moved Osgiliath → Province_433",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Lindon annexed Province_430 (from )",
    "kind": "",
    "detail": null
@@ -13450,7 +13501,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 11,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16101,7 +16152,8 @@
   "Lothlorien",
   "Isengard",
   "Lostladen Tribes",
-  "Lindon"
+  "Lindon",
+  "Gondor"
  ],
  "pendingReview": false
 }
