@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 1000,
+   "treasury": 4000,
    "capital": "Province_436",
    "zeal": 6
   },
@@ -2403,7 +2403,9 @@
    "value": 1900,
    "move": 2,
    "garrison": 2000,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_33",
     "Province_348",
@@ -2419,14 +2421,20 @@
     "Province_72"
    ],
    "displayName": "Rhunnic Plains",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 3531.358243430891,
    "cy": 1359.0045796838283,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "barracks": "Rhurrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5784,13 +5792,7 @@
    "availableBldOwner": {
     "copper_mine": "Rhurrim"
    },
-   "upg": {
-    "to": 2,
-    "payer": "Rhurrim",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 4000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -9627,28 +9629,21 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Rhurrim ends its turn — Dunland to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 1,
-   "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Rhurrim starts construction: Province_362 → fortified city (small) (4,000 castas)",
+   "txt": "Barracks completed at Province_436.",
    "kind": "",
    "detail": null
   },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Province_362: construction declined — Rhurrim refunded 4,000 castas.",
+   "txt": "Rhurrim starts construction: Barracks at Province_436 (1,000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Rhurrim starts construction: Province_362 → fortified city (small) (4,000 castas)",
+   "txt": "Rhurrim may construct Barracks at Province_436.",
    "kind": "",
    "detail": null
   },
@@ -13613,7 +13608,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 24,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16266,8 +16261,7 @@
   "Lostladen Tribes",
   "Lindon",
   "Gondor",
-  "Erebor",
-  "Rhurrim"
+  "Erebor"
  ],
  "pendingReview": false
 }
