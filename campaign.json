@@ -107,7 +107,7 @@
    "id": "Khand",
    "name": "Khand",
    "color": "#A85A25",
-   "treasury": 5000,
+   "treasury": 2150,
    "capital": "Province_414",
    "zeal": 6
   },
@@ -4882,7 +4882,26 @@
     "barracks": "Khand"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Khand",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Khand",
+     "cost": 850,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9618,6 +9637,27 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Timber Yard at Province_414 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Barracks at Province_414 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -16232,7 +16272,8 @@
   "Lostladen Tribes",
   "Lindon",
   "Gondor",
-  "Erebor"
+  "Erebor",
+  "Khand"
  ],
  "pendingReview": false
 }
