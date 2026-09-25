@@ -203,7 +203,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 5000,
+   "treasury": 1800,
    "capital": "Province_10",
    "zeal": 6
   },
@@ -5368,7 +5368,17 @@
     "gem_mine": "Erebor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "gem_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Erebor",
+     "cost": 1400,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7810,7 +7820,26 @@
     "goat_pen": "Erebor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Erebor",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "goat_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Erebor",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9439,7 +9468,7 @@
    "name": "Host of Province_10",
    "faction": "Erebor",
    "men": 1300,
-   "at": "Province_10",
+   "at": "Province_378",
    "order": null,
    "units": [
     "erebor_balin",
@@ -9589,6 +9618,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_10 moved Province_10 → Province_378",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_10 moved Province_378 → Province_10",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_10 moved Province_10 → Province_378",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Goat Pen at Province_378 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Sheep Pen at Province_378 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Gem Mine at Province_10 to Level 2 (1400 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13501,7 +13579,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 7,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16153,7 +16231,8 @@
   "Isengard",
   "Lostladen Tribes",
   "Lindon",
-  "Gondor"
+  "Gondor",
+  "Erebor"
  ],
  "pendingReview": false
 }
