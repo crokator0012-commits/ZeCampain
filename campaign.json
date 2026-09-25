@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 5000,
+   "treasury": 1000,
    "capital": "Province_436",
    "zeal": 6
   },
@@ -5784,7 +5784,13 @@
    "availableBldOwner": {
     "copper_mine": "Rhurrim"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Rhurrim",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9618,6 +9624,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim starts construction: Province_362 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_362: construction declined — Rhurrim refunded 4,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim starts construction: Province_362 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13579,7 +13613,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 24,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16232,7 +16266,8 @@
   "Lostladen Tribes",
   "Lindon",
   "Gondor",
-  "Erebor"
+  "Erebor",
+  "Rhurrim"
  ],
  "pendingReview": false
 }
