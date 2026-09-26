@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 5000,
+   "treasury": 3000,
    "capital": "Province_432",
    "zeal": 6
   },
@@ -1438,7 +1438,17 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Rhudaur",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8317,7 +8327,7 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1540,
+   "men": 1820,
    "at": "Province_432",
    "order": null,
    "units": [
@@ -8333,7 +8343,9 @@
     "rhudaur_hillmen_hunters",
     "rhudaur_hillmen_hunters",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_corcurian_raiders"
+    "rhudaur_corcurian_raiders",
+    "rhudaur_bondi_spears",
+    "rhudaur_bondi_spears"
    ],
    "xp": [
     0,
@@ -8348,9 +8360,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4925
+   "upkeep": 5450,
+   "_startCost": 9850
   },
   {
    "name": "Host of Province_455",
@@ -9687,6 +9702,20 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13795,7 +13824,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 23,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16451,7 +16480,8 @@
   "Erebor",
   "Rhurrim",
   "Khand",
-  "Rohan"
+  "Rohan",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
