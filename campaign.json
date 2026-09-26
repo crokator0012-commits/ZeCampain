@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 3000,
+   "treasury": 5000,
    "capital": "Province_432",
    "zeal": 6
   },
@@ -1438,17 +1438,7 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8327,7 +8317,7 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1820,
+   "men": 1540,
    "at": "Province_432",
    "order": null,
    "units": [
@@ -8343,9 +8333,7 @@
     "rhudaur_hillmen_hunters",
     "rhudaur_hillmen_hunters",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_corcurian_raiders",
-    "rhudaur_bondi_spears",
-    "rhudaur_bondi_spears"
+    "rhudaur_corcurian_raiders"
    ],
    "xp": [
     0,
@@ -8360,12 +8348,9 @@
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 5450,
-   "_startCost": 9850
+   "upkeep": 4925
   },
   {
    "name": "Host of Province_455",
@@ -9568,10 +9553,9 @@
    "name": "Host of Province_10",
    "faction": "Erebor",
    "men": 1300,
-   "at": "Province_378",
+   "at": "Province_10",
    "order": null,
    "units": [
-    "erebor_balin",
     "erebor_dwarven_miners",
     "erebor_dwarven_miners",
     "erebor_dwarven_spears",
@@ -9581,7 +9565,8 @@
     "erebor_erebor_axe_warroirs",
     "erebor_erebor_axe_warroirs",
     "erebor_dwarven_company",
-    "erebor_dwarven_warriors"
+    "erebor_dwarven_warriors",
+    "erebor_gloin"
    ],
    "xp": [
     0,
@@ -9596,7 +9581,8 @@
     0,
     0
    ],
-   "upkeep": 5400
+   "upkeep": 5412.5,
+   "_startCost": 10800
   },
   {
    "name": "Host of Province_9",
@@ -9705,21 +9691,21 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Ered Luin ends its turn — Dunland to move.",
-   "kind": "turn",
+   "txt": "Host of Province_10 moved Province_378 → Province_10",
+   "kind": "",
    "detail": null
   },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Rhudaur ends its turn — Dunland to move.",
-   "kind": "turn",
+   "txt": "Host of Province_10 moved Province_392 → Province_378",
+   "kind": "",
    "detail": null
   },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 2 (2,000 castas)",
+   "txt": "Host of Province_10 moved Province_378 → Province_392",
    "kind": "",
    "detail": null
   },
@@ -13831,7 +13817,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 23,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16487,9 +16473,7 @@
   "Erebor",
   "Rhurrim",
   "Khand",
-  "Rohan",
-  "Rhudaur",
-  "Ered Luin"
+  "Rohan"
  ],
  "pendingReview": false
 }
