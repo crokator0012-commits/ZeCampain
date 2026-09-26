@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 5000,
+   "treasury": 1250,
    "capital": "Province_260",
    "zeal": 6
   },
@@ -6988,7 +6988,17 @@
     "grain_farm": "Rohan"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rohan",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7185,7 +7195,17 @@
     "horse_stables": "Rohan"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Rohan",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7264,7 +7284,17 @@
     "timber_yard": "Rohan"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rohan",
+     "cost": 850,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8140,7 +8170,7 @@
   {
    "name": "Host of Province_127",
    "faction": "Rohan",
-   "men": 1480,
+   "men": 1600,
    "at": "Province_127",
    "order": null,
    "units": [
@@ -8156,7 +8186,8 @@
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_rohan_horse_archers",
-    "rohan_rohan_horse_archers"
+    "rohan_rohan_horse_archers",
+    "rohan_scouts_of_rohan"
    ],
    "xp": [
     0,
@@ -8171,9 +8202,11 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 5000
+   "upkeep": 5362.5,
+   "_startCost": 10000
   },
   {
    "name": "Host of Province_44",
@@ -9665,6 +9698,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_21 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_260 → Province_21",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts upgrading Grain Farm at Province_19 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts upgrading Timber Yard at Province_28 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts upgrading Barracks at Province_260 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_127 → Province_260",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13717,7 +13799,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 25,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16372,7 +16454,8 @@
   "Gondor",
   "Erebor",
   "Rhurrim",
-  "Khand"
+  "Khand",
+  "Rohan"
  ],
  "pendingReview": false
 }
