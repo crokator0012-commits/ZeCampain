@@ -35,7 +35,7 @@
    "id": "Goblins",
    "name": "Goblins",
    "color": "#5B6B21",
-   "treasury": 1000,
+   "treasury": 1800,
    "capital": "Province_435",
    "zeal": 6
   },
@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 5000,
+   "treasury": 3000,
    "capital": "Province_432",
    "zeal": 6
   },
@@ -1438,7 +1438,17 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Rhudaur",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6431,7 +6441,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8206,7 +8216,7 @@
     0
    ],
    "upkeep": 5362.5,
-   "_startCost": 10000
+   "_startCost": 10725
   },
   {
    "name": "Host of Province_44",
@@ -8219,12 +8229,12 @@
     "rohan_sword_theigns",
     "rohan_sword_theigns",
     "rohan_sword_theigns",
-    "rohan_mustered_archers",
-    "rohan_mustered_archers",
-    "rohan_mustered_archers",
     "rohan_aor_eored_of_the_east_fold",
     "rohan_aor_eored_of_the_east_fold",
-    "rohan_aor_eored_of_the_east_fold"
+    "rohan_aor_eored_of_the_east_fold",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark"
    ],
    "xp": [
     0,
@@ -8238,7 +8248,8 @@
     0,
     0
    ],
-   "upkeep": 4537.5
+   "upkeep": 5025,
+   "_startCost": 9075
   },
   {
    "name": "Host of Province_392",
@@ -8272,12 +8283,13 @@
     0,
     0
    ],
-   "upkeep": 4962.5
+   "upkeep": 4962.5,
+   "_startCost": 9925
   },
   {
    "name": "Host of Province_436",
    "faction": "Rhurrim",
-   "men": 1660,
+   "men": 1620,
    "at": "Province_436",
    "order": null,
    "units": [
@@ -8293,8 +8305,8 @@
     "rhurrim_clan_huntsmen",
     "rhurrim_rhunic_archers",
     "rhurrim_rhunic_archers",
-    "rhurrim_clan_raiders",
-    "rhurrim_clan_huntsmen"
+    "rhurrim_clan_huntsmen",
+    "haerrim_aor_haerrim_outriders"
    ],
    "xp": [
     0,
@@ -8312,12 +8324,13 @@
     0,
     0
    ],
-   "upkeep": 4912.5
+   "upkeep": 5025,
+   "_startCost": 9825
   },
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1540,
+   "men": 1820,
    "at": "Province_432",
    "order": null,
    "units": [
@@ -8333,7 +8346,9 @@
     "rhudaur_hillmen_hunters",
     "rhudaur_hillmen_hunters",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_corcurian_raiders"
+    "rhudaur_corcurian_raiders",
+    "rhudaur_bondi_spears",
+    "rhudaur_bondi_spears"
    ],
    "xp": [
     0,
@@ -8348,9 +8363,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4925
+   "upkeep": 5450,
+   "_startCost": 10900
   },
   {
    "name": "Host of Province_455",
@@ -8392,12 +8410,13 @@
     0,
     0
    ],
-   "upkeep": 4975
+   "upkeep": 4975,
+   "_startCost": 9950
   },
   {
    "name": "Host of Province_305",
    "faction": "Mordor",
-   "men": 1540,
+   "men": 1620,
    "at": "Province_305",
    "order": null,
    "units": [
@@ -8413,6 +8432,7 @@
     "mordor_orc_archers",
     "mordor_mordor_orc_warroirs",
     "mordor_aor_morgul_warband",
+    "mordor_warg_riders",
     "mordor_warg_riders"
    ],
    "xp": [
@@ -8428,9 +8448,11 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4587.5
+   "upkeep": 5050,
+   "_startCost": 9175
   },
   {
    "name": "Host of Province_17",
@@ -8472,7 +8494,8 @@
     0,
     0
    ],
-   "upkeep": 5087.5
+   "upkeep": 5087.5,
+   "_startCost": 10175
   },
   {
    "name": "Host of Province_359",
@@ -8512,7 +8535,8 @@
     0,
     0
    ],
-   "upkeep": 4987.5
+   "upkeep": 4987.5,
+   "_startCost": 9975
   },
   {
    "name": "Host of Province_16",
@@ -8547,7 +8571,7 @@
     0
    ],
    "upkeep": 5500,
-   "_startCost": 9825,
+   "_startCost": 11000,
    "fort": false
   },
   {
@@ -8582,7 +8606,8 @@
     0,
     0
    ],
-   "upkeep": 4950
+   "upkeep": 4950,
+   "_startCost": 9900
   },
   {
    "name": "Host of Province_442",
@@ -8616,7 +8641,8 @@
     0,
     0
    ],
-   "upkeep": 4937.5
+   "upkeep": 4937.5,
+   "_startCost": 9875
   },
   {
    "name": "Host of Province_414",
@@ -8652,7 +8678,8 @@
     0,
     0
    ],
-   "upkeep": 4962.5
+   "upkeep": 4962.5,
+   "_startCost": 9925
   },
   {
    "name": "Host of Province_426",
@@ -8718,14 +8745,14 @@
     "isengard_half_orc_spears",
     "isengard_half_orc_axes",
     "isengard_wargs_of_isengrad",
-    "isengard_uruk_hai_raiders",
     "isengard_mercs_aor_mordor_bow_rabble",
     "isengard_mercs_aor_mordor_rabble",
     "isengard_mercs_aor_mordor_rabble",
     "isengard_goblin_men_ruffians",
     "isengard_goblin_men_ruffians_2",
     "isengard_goblin_men_ruffians_2",
-    "isengard_mercs_aor_dunleding_tribal_warroirs"
+    "isengard_mercs_aor_dunleding_tribal_warroirs",
+    "isengard_uruk_hai_raiders"
    ],
    "xp": [
     0,
@@ -8744,7 +8771,8 @@
     0,
     0
    ],
-   "upkeep": 5000
+   "upkeep": 5000,
+   "_startCost": 10000
   },
   {
    "name": "Host of Province_389",
@@ -8848,7 +8876,8 @@
     0,
     0
    ],
-   "upkeep": 4950
+   "upkeep": 4950,
+   "_startCost": 9900
   },
   {
    "name": "Host of Province_393",
@@ -8890,7 +8919,8 @@
     0,
     0
    ],
-   "upkeep": 4950
+   "upkeep": 4950,
+   "_startCost": 9900
   },
   {
    "name": "Host of Province_382",
@@ -8946,8 +8976,6 @@
    "order": null,
    "units": [
     "gondor_faramir",
-    "gondor_aor_ithilien_rangers",
-    "gondor_aor_ithilien_rangers",
     "gondor_aor_ringlovale_men_at_arms",
     "gondor_aor_pelagir_marines",
     "gondor_aor_warriors_of_lossnarch",
@@ -8957,7 +8985,9 @@
     "gondor_aor_pinnath_gelin_spearmen",
     "gondor_aor_anorien_patrollers",
     "gondor_aor_anfalas_coast_levies",
-    "gondor_aor_anfalas_coast_levies"
+    "gondor_aor_anfalas_coast_levies",
+    "gondor_aor_blackroot_vale_archers",
+    "gondor_aor_blackroot_vale_archers"
    ],
    "xp": [
     0,
@@ -8974,7 +9004,8 @@
     0,
     0
    ],
-   "upkeep": 5450
+   "upkeep": 4950,
+   "_startCost": 10900
   },
   {
    "name": "Host of Osgiliath",
@@ -9061,23 +9092,24 @@
   {
    "name": "Host of Province_435",
    "faction": "Goblins",
-   "men": 1520,
+   "men": 1640,
    "at": "Province_435",
    "order": null,
    "units": [
     "goblins_goblin_light_infantry",
-    "goblins_mountain_marauders",
-    "goblins_mountain_marauders",
-    "goblins_mountain_marauders",
-    "goblins_night_raiders",
-    "goblins_night_raiders",
-    "goblins_night_raiders",
     "goblins_goblin_scrappers",
-    "goblins_scavenged_crossbows",
-    "goblins_scavenged_crossbows",
+    "goblins_merc_aor_mordor_uruks",
+    "goblins_high_chiefton_s_guard",
+    "goblins_mountain_marauders",
+    "goblins_mountain_marauders",
+    "goblins_mountain_marauders",
+    "goblins_night_raiders",
+    "goblins_night_raiders",
+    "goblins_night_raiders",
     "goblins_mountain_pass_scouts",
-    "goblins_warg_pack",
-    "goblins_merc_aor_mordor_uruks"
+    "goblins_scavenged_crossbows",
+    "goblins_scavenged_crossbows",
+    "goblins_warg_pack"
    ],
    "xp": [
     0,
@@ -9092,9 +9124,11 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4462.5
+   "upkeep": 5000,
+   "_startCost": 9200
   },
   {
    "name": "Host of Province_445",
@@ -9128,7 +9162,8 @@
     0,
     0
    ],
-   "upkeep": 4975
+   "upkeep": 4975,
+   "_startCost": 9950
   },
   {
    "name": "Host of Province_345",
@@ -9198,12 +9233,13 @@
     0,
     0
    ],
-   "upkeep": 4900
+   "upkeep": 4900,
+   "_startCost": 9800
   },
   {
    "name": "Host of Province_334",
    "faction": "Dunland",
-   "men": 1610,
+   "men": 1590,
    "at": "Province_334",
    "order": null,
    "units": [
@@ -9216,10 +9252,10 @@
     "dunlendings_dunlending_slingers",
     "dunlendings_dunlending_slingers",
     "dunlendings_dunleding_pikemen",
-    "dunlendings_tribal_raiders",
-    "dunlendings_tribal_raiders",
-    "dunlendings_archer_heerbann",
-    "dunlendings_archer_heerbann"
+    "southern_endwaith_elder_spears",
+    "dunlendings_dunleding_hunters",
+    "dunlendings_dunleding_hunters",
+    "southern_endwaith_elder_riders"
    ],
    "xp": [
     0,
@@ -9236,7 +9272,8 @@
     0,
     0
    ],
-   "upkeep": 5250
+   "upkeep": 4987.5,
+   "_startCost": 10500
   },
   {
    "name": "Host of Province_428",
@@ -9294,7 +9331,8 @@
     0,
     0
    ],
-   "upkeep": 2787.5
+   "upkeep": 2787.5,
+   "_startCost": 5575
   },
   {
    "name": "Host of Province_33",
@@ -9318,7 +9356,8 @@
     0,
     0
    ],
-   "upkeep": 2662.5
+   "upkeep": 2662.5,
+   "_startCost": 5325
   },
   {
    "name": "Host of Province_454",
@@ -9363,7 +9402,7 @@
     0
    ],
    "upkeep": 5425,
-   "_startCost": 10000
+   "_startCost": 10850
   },
   {
    "name": "Host of Province_449",
@@ -9399,18 +9438,18 @@
     0,
     0
    ],
-   "upkeep": 4987.5
+   "upkeep": 4987.5,
+   "_startCost": 9975
   },
   {
    "name": "Host of Province_388",
    "faction": "Dale",
-   "men": 1720,
+   "men": 1700,
    "at": "Province_421",
    "order": null,
    "units": [
     "dale_northmen_scouts",
     "dale_rivermen",
-    "dale_spear_militia",
     "dale_spear_militia",
     "dale_shipmen",
     "dale_shipmen",
@@ -9421,7 +9460,8 @@
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
-    "dale_aor_vinelands_gaurds"
+    "dale_aor_vinelands_gaurds",
+    "dale_watch_post_sentries"
    ],
    "xp": [
     0,
@@ -9439,12 +9479,13 @@
     0,
     0
    ],
-   "upkeep": 4887.5
+   "upkeep": 4950,
+   "_startCost": 9775
   },
   {
    "name": "Host of Harondor",
    "faction": "Umbar",
-   "men": 1840,
+   "men": 1820,
    "at": "South Ithilien",
    "order": null,
    "units": [
@@ -9454,15 +9495,15 @@
     "umbar_slaves_of_umbar",
     "umbar_slaves_of_umbar",
     "umbar_balik_axemen",
-    "umbar_corsair_marines",
-    "umbar_corsair_marines",
-    "umbar_corsair_marines",
     "umbar_balik_spearmen",
     "umbar_corsair_archers",
     "umbar_corsair_archers",
     "umbar_balik_bowmen",
     "umbar_balik_bowmen",
-    "umbar_balik_spearmen"
+    "umbar_corsair_raiders",
+    "umbar_corsair_raiders",
+    "umbar_corsair_raiders",
+    "umbar_corsair_marines"
    ],
    "xp": [
     0,
@@ -9481,12 +9522,13 @@
     0,
     0
    ],
-   "upkeep": 4950
+   "upkeep": 4962.5,
+   "_startCost": 9900
   },
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 1640,
+   "men": 1620,
    "at": "Province_26",
    "order": null,
    "units": [
@@ -9502,7 +9544,7 @@
     "anduin_vale_valesmen_archer_levy",
     "anduin_vale_vale_yeomen",
     "anduin_vale_vale_yeomen",
-    "anduin_vale_vale_spearmen"
+    "eotheod_aor_eotheod_nobles"
    ],
    "xp": [
     0,
@@ -9519,7 +9561,8 @@
     0,
     0
    ],
-   "upkeep": 4562.5
+   "upkeep": 4987.5,
+   "_startCost": 9125
   },
   {
    "name": "Host of Province_208",
@@ -9561,11 +9604,11 @@
     "erebor_dwarven_spears",
     "erebor_dwarven_spears",
     "erebor_erebor_axes",
-    "erebor_erebor_axes",
-    "erebor_erebor_axe_warroirs",
-    "erebor_erebor_axe_warroirs",
     "erebor_dwarven_company",
     "erebor_dwarven_warriors",
+    "erebor_dwarven_warriors",
+    "erebor_erebor_axe_throwers",
+    "erebor_erebor_axe_throwers",
     "erebor_gloin"
    ],
    "xp": [
@@ -9581,7 +9624,7 @@
     0,
     0
    ],
-   "upkeep": 5412.5,
+   "upkeep": 4975,
    "_startCost": 10800
   },
   {
@@ -9616,7 +9659,8 @@
     0,
     0
    ],
-   "upkeep": 4887.5
+   "upkeep": 4887.5,
+   "_startCost": 9775
   },
   {
    "name": "Host of Province_22",
@@ -9654,7 +9698,8 @@
     0,
     0
    ],
-   "upkeep": 4987.5
+   "upkeep": 4987.5,
+   "_startCost": 9975
   },
   {
    "name": "Host of Province_400",
@@ -9691,6 +9736,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins occupied Province_409 (held by Imraldris)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Host of Province_10 moved Province_378 → Province_10",
    "kind": "",
    "detail": null
@@ -9698,14 +9750,21 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_10 moved Province_392 → Province_378",
-   "kind": "",
+   "txt": "Ered Luin ends its turn — Dunland to move.",
+   "kind": "turn",
    "detail": null
   },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_10 moved Province_378 → Province_392",
+   "txt": "Rhudaur ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 2 (2,000 castas)",
    "kind": "",
    "detail": null
   },
@@ -13817,7 +13876,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 23,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16473,7 +16532,9 @@
   "Erebor",
   "Rhurrim",
   "Khand",
-  "Rohan"
+  "Rohan",
+  "Rhudaur",
+  "Ered Luin"
  ],
  "pendingReview": false
 }
