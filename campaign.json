@@ -9323,7 +9323,7 @@
   {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
-   "men": 1580,
+   "men": 1820,
    "at": "Province_454",
    "order": null,
    "units": [
@@ -9340,7 +9340,9 @@
     "dol_gul_dur_mirkwood_reavers",
     "dol_gul_dur_mirkwood_trackers",
     "dol_gul_dur_mirkwood_trackers",
-    "dol_gul_dur_mirkwood_raiders"
+    "dol_gul_dur_mirkwood_raiders",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads"
    ],
    "xp": [
     0,
@@ -9356,9 +9358,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5000
+   "upkeep": 5425,
+   "_startCost": 10000
   },
   {
    "name": "Host of Province_449",
@@ -9651,22 +9656,6 @@
    "upkeep": 4987.5
   },
   {
-   "name": "Host of Province_454",
-   "faction": "Dol Gul Dur",
-   "men": 240,
-   "at": "Province_454",
-   "order": null,
-   "units": [
-    "dol_gul_dur_aor_undeads",
-    "dol_gul_dur_aor_undeads"
-   ],
-   "xp": [
-    0,
-    0
-   ],
-   "upkeep": 425
-  },
-  {
    "name": "Host of Province_400",
    "faction": "Isengard",
    "men": 1080,
@@ -9698,6 +9687,13 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_454 moved Province_454 → Province_407",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
