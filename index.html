@@ -1772,7 +1772,7 @@ function drawerArmies(p){
     const i=S.armies.indexOf(a),el=document.createElement("div");el.className="armyc";
     el.innerHTML=`<div class="t"><span class="sw" style="background:${F[a.faction]?F[a.faction].color:'#777'}"></span>
       <b><input class="nm" data-nm="${i}" value="${a.name.replace(/"/g,'&quot;')}" style="background:none;border:none;padding:0;width:100%"></b>
-      <button class="btn sm gm${a.fort?" on":""}" data-fort="${i}" title="${a.fort?"Fortified — click to abandon":"Entrench · 3✦ + 1,500 — battles here fight on the fort map"}">⛨</button><button class="btn sm primary gm" data-rec="${i}" title="Add reinforcements to this army (GM only)" aria-label="Add reinforcements" style="background:#2D6A4F;border-color:#52B788">＋</button><button class="btn sm" data-insp="${i}" title="Muster roll">⚔</button><button class="btn sm gm" data-del="${i}">✕</button></div>
+      <button class="btn sm gm${a.fort?" on":""}" data-fort="${i}" title="${a.fort?"Fortified — click to abandon":"Entrench · 3✦ + 1,500 — battles here fight on the fort map"}">⛨</button>${canAct(a.faction)?`<button class="btn sm primary" data-rec="${i}" ${reinforceBlocker(a)?`disabled title="${esc(reinforceBlocker(a))}"`:`title="Add reinforcements - new regiments are paid for from the treasury"`} aria-label="Add reinforcements" style="background:#2D6A4F;border-color:#52B788">＋</button>`:""}<button class="btn sm" data-insp="${i}" title="Muster roll">⚔</button><button class="btn sm gm" data-del="${i}">✕</button></div>
       <div class="m">${Array.isArray(a.units)?`${a.units.length} units · `:""}${a.men.toLocaleString()} men</div>
       <div class="row gm" style="margin-top:7px">
         <select data-fac="${i}" style="flex:1">${S.factions.map(f=>
@@ -1797,7 +1797,7 @@ function drawerArmies(p){
       };
     }
   });
-  box.querySelectorAll("[data-rec]").forEach(b=>b.onclick=()=>{const a=S.armies[+b.dataset.rec];if(a){cxRealm=a.faction;openCodex(a);}});
+  box.querySelectorAll("[data-rec]").forEach(b=>b.onclick=()=>{const a=S.armies[+b.dataset.rec];if(a){if(window.openReinforce)window.openReinforce(a);else openCodex(a);}});
   box.querySelectorAll("[data-chv]").forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     if(!gm)return;
@@ -2389,6 +2389,16 @@ function activeFactionId(){return S.order&&S.order[S.active]?S.order[S.active]:n
    or for a faction that has unlocked its own turn-gate password AND whose turn it
    currently is. */
 function canAct(fid){return gm||(!!factionAuth&&!!fid&&!S.pendingReview&&factionAuth===activeFactionId()&&factionAuth===fid);}
+/* Why a host can't be reinforced right now ("" = it can). Same recruiting rules as elsewhere: it must stand in its own
+   realm's territory, on a province with a Barracks. The GM is never blocked. */
+function reinforceBlocker(a){
+  if(gm)return "";
+  if(!Array.isArray(a.units))return "This host has no regiment roster - ask the GM to convert it";
+  const p=P[a.at];
+  if(!p||p.owner!==a.faction)return "Must stand in your own territory to be reinforced";
+  if(!barracksLevel(p))return `${a.at} has no Barracks - build one to recruit here`;
+  return "";
+}
 function renderTurnGate(){
   const el=$("turnGate");if(!el)return;
   const msg=$("tgMsg"),ubtn=$("tgUnlock"),ebtn=$("tgEndTurn");if(!msg||!ubtn||!ebtn)return;
@@ -3176,7 +3186,7 @@ function cxRender(){
   } else ents=list.map(u=>({u,rank:null}));
   const _g=$("cxGrid");const _st=_g.scrollTop;_g.innerHTML=ents.map(en=>cxCard(en.u,en.rank)).join("")||'<div style="color:var(--dimmer);padding:30px;font-size:13px">No unit answers that call.</div>';
   $("cxCount").textContent=list.length+" / "+CX.units.length+" units";
-  {const mm=$("cxMusterMap");if(mm)mm.style.display=(cxArmy&&canAct(cxArmy.faction))?"":"none";}
+  {const mm=$("cxMusterMap");if(mm){mm.style.display=(cxArmy&&canAct(cxArmy.faction))?"":"none";mm.textContent=cxArmy&&cxArmy._reinforce?"⚔ Reinforce host":"⚔ Muster to Map";}}
   document.querySelectorAll("#cxRealms .cxchip").forEach(c=>c.classList.toggle("on",c.dataset.r===cxRealm));
   cxFoot();
   _g.scrollTop=_st;
@@ -3197,14 +3207,15 @@ function cxFoot(){
   const leftColor=goldLeft<0?"#E5A594":goldLeft<1000?"var(--brass)":"var(--verd)";
   $("cxTots").innerHTML=cxArmy.holy
     ? `<b>${n}</b>/${CAPU} units &nbsp; <b>${cxArmy.men.toLocaleString()}</b> men &nbsp; <span style="color:var(--brass)">sworn to the holy war &mdash; no cost, no upkeep</span>`
-    : `<b>${n}</b>/${CAPU} units &nbsp; <b>${cxArmy.men.toLocaleString()}</b> men &nbsp; <b>${cost.toLocaleString()}</b>g raise &nbsp; <span style="color:${leftColor}">(<b>${goldLeft.toLocaleString()}</b>g left of ${goldHeld.toLocaleString()}g)</span> &nbsp; <b>${upk.toLocaleString()}</b>g/turn`;
+    : `<b>${n}</b>/${CAPU} units &nbsp; <b>${cxArmy.men.toLocaleString()}</b> men &nbsp; ${cxArmy._reinforce?`<b>+${(n-cxArmy._base.length)}</b> new &nbsp; <b>${newAddedCost.toLocaleString()}</b>g to pay`:`<b>${cost.toLocaleString()}</b>g raise`} &nbsp; <span style="color:${leftColor}">(<b>${goldLeft.toLocaleString()}</b>g left of ${goldHeld.toLocaleString()}g)</span> &nbsp; <b>${upk.toLocaleString()}</b>g/turn`;
+  {const nt=document.querySelector("#cxFoot .note");if(nt){nt.dataset.def??=nt.textContent;nt.textContent=cxArmy._reinforce?"nothing is charged until you press Reinforce host — Cancel discards the new regiments":nt.dataset.def;}}
   const em=EMBLEMS[cxArmy.faction];
   const barracks=recruitmentBarracksLevel(cxArmy);
   $("cxMusterTag").innerHTML=(em?`<img src="${em}">`:"")+
     (cxArmy._plan?`Planning for ${esc(cxArmy.faction)} — copy it to your GM when done`
                  :gm?`GM override: ${esc(cxArmy.name)} · ${esc(cxArmy.faction)} · faction filter · all Tiers 1–4 available`
                     :`Mustering: ${esc(cxArmy.name)} · ${esc(cxArmy.faction)} · ${barracks?`Barracks ${barracks} (Tiers 1–${barracks})`:"No Barracks — construct Barracks I first"}`);
-  $("cxDone").textContent=cxArmy._plan?"Close plan":"Done mustering";
+  $("cxDone").textContent=cxArmy._plan?"Close plan":(cxArmy._reinforce?"Cancel":"Done mustering");
 }
 
 /* ---------- detail ---------- */
@@ -3288,6 +3299,19 @@ function closeCodex(){
   if(cxInspect){cxInspect=null;cx.classList.remove("inspect");}
 }
 window.openMuster=a=>{if(!gm){toast("GM mode required");return;}openCodex(a);};
+/* Reinforcing a host (the green ＋ on an army card). The GM keeps the original live editing. A player works on a DRAFT copy:
+   nothing changes on the map and nothing is charged until they confirm with "Reinforce host", which pays for the new
+   regiments and adds them in one step. Closing the codex discards the draft, so there is no way to keep units unpaid. */
+window.openReinforce=a=>{
+  if(!a)return;
+  if(gm){cxRealm=a.faction;openCodex(a);return;}
+  if(!canAct(a.faction)){toast("Only the realm that owns this host, on its turn, can reinforce it.");return;}
+  const why=reinforceBlocker(a);
+  if(why){toast(why+".");return;}
+  ensureXp(a);
+  cxRealm=a.faction;
+  openCodex({...a,units:a.units.slice(),xp:a.xp.slice(),_reinforce:a,_base:a.units.slice()});
+};
 
 /* Expose the codex API to page global calls that still reference it. */
 window.openCodex=openCodex;
@@ -3599,6 +3623,30 @@ $("cxClose").onclick=closeCodex;
 $("cxMusterMap").onclick=()=>{
   if(!cxArmy)return;
   if(!canAct(cxArmy.faction)){toast("Only the GM, or that realm on its turn, can muster armies to the map. Use 'Copy for GM' to send your plan.");return;}
+  if(cxArmy._reinforce){
+    const tgt=cxArmy._reinforce,ff=F[tgt.faction],p=P[tgt.at],free=!!tgt.holy;
+    if(!ff||!S.armies.includes(tgt)){toast("That host no longer exists.");closeCodex();return;}
+    const added=cxArmy.units.length-cxArmy._base.length;
+    if(added<=0){toast("Add at least one regiment first");return;}
+    if(!gm&&!free){
+      if(!p||p.owner!==tgt.faction){toast(`${tgt.name} must stand in ${tgt.faction}'s own territory to be reinforced.`);return;}
+      const level=barracksLevel(p);
+      if(!level){toast(`${tgt.at} has no Barracks — construct Barracks I before recruiting.`);return;}
+      if(cxArmy.units.slice(cxArmy._base.length).some(k=>unitTier(cxBy[k])>level)){toast(`${tgt.at}'s Barracks is Level ${level}; remove new units above Tier ${level}.`);return;}
+    }
+    const bill=cxArmy.units.reduce((s,k)=>s+((cxBy[k]&&cxBy[k].cost)||0),0);
+    const toCharge=free?0:bill-(cxArmy._startCost||0);
+    if(ff.treasury<toCharge){toast(`${ff.name} cannot afford this! Needs ${toCharge.toLocaleString()}g, only ${ff.treasury.toLocaleString()}g in treasury`);return;}
+    snap("reinforce host");
+    ff.treasury-=toCharge;
+    tgt.units=cxArmy.units.slice();tgt.xp=cxArmy.xp.slice();
+    syncMen(tgt);
+    logIt(`${ff.name} reinforced ${tgt.name} at ${tgt.at} (+${added} regiment${added===1?"":"s"} · ${toCharge.toLocaleString()} castas)`,"battle");
+    closeCodex();legend();drawLedger();draw();
+    if(p)openProv(p);
+    toast(`⚔ ${tgt.name} reinforced with ${added} regiment${added===1?"":"s"} (${toCharge.toLocaleString()}g charged)`);
+    return;
+  }
   if(!cxArmy.units.length){toast("Recruit at least one regiment first");return;}
   const bill=cxArmy.units.reduce((s,k)=>s+((cxBy[k]&&cxBy[k].cost)||0),0);
   const ff=F[cxArmy.faction];
@@ -3638,6 +3686,7 @@ $("cxMusterMap").onclick=()=>{
 };
 $("cxDone").onclick=()=>{
   if(cxArmy&&cxArmy._plan){closeCodex();toast("Plan kept — Build army resumes it");return;}
+  if(cxArmy&&cxArmy._reinforce){const n=cxArmy.units.length-cxArmy._base.length;closeCodex();if(n>0)toast("Reinforcements discarded — nothing was charged");return;}
   if(cxArmy&&!cxArmy.units.length)toast("The host stands empty — recruit or disband it");
   closeCodex();legend();drawLedger();if(sel)openProv(P[sel]);draw();
 };
@@ -3688,6 +3737,10 @@ cx.addEventListener("click",e=>{
   const rm=e.target.closest("[data-cxrm]");
   if(rm){e.stopPropagation();
     if(!cxArmy||!(gm||cxArmy._plan||canAct(cxArmy.faction)))return;
+    if(cxArmy._reinforce){
+      const key=rm.dataset.cxrm,have=cxArmy.units.filter(k=>k===key).length,base=cxArmy._base.filter(k=>k===key).length;
+      if(have<=base){toast("Only regiments you have just added can be taken back — the host's existing regiments stay.");return;}
+    }
     let i=-1;
     if(!cxArmy._plan&&Array.isArray(cxArmy.xp)){for(let j=cxArmy.units.length-1;j>=0;j--){if(cxArmy.units[j]===rm.dataset.cxrm&&((cxArmy.xp[j]||0)===0)){i=j;break;}}}
     else i=cxArmy.units.lastIndexOf(rm.dataset.cxrm);
@@ -3771,7 +3824,7 @@ drawerArmies=function(p){
     const foreign=comp?a.units.filter(k=>!canServe(cxBy[k],a.faction)).length:0;
     el.innerHTML=`<div class="t"><span class="sw" style="background:${F[a.faction]?F[a.faction].color:'#777'}"></span>
       <b><input class="nm" data-nm="${i}" value="${a.name.replace(/"/g,'&quot;')}" style="background:none;border:none;padding:0;width:100%"></b>
-      <button class="btn sm gm${a.fort?" on":""}" data-fort="${i}" title="${a.fort?"Fortified — click to abandon":"Entrench · 3✦ + 1,500 — battles here fight on the fort map"}">⛨</button><button class="btn sm primary gm" data-rec="${i}" title="Add reinforcements to this army (GM only)" aria-label="Add reinforcements" style="background:#2D6A4F;border-color:#52B788">＋</button><button class="btn sm" data-insp="${i}" title="Muster roll">⚔</button><button class="btn sm gm" data-del="${i}">✕</button></div>
+      <button class="btn sm gm${a.fort?" on":""}" data-fort="${i}" title="${a.fort?"Fortified — click to abandon":"Entrench · 3✦ + 1,500 — battles here fight on the fort map"}">⛨</button>${canAct(a.faction)?`<button class="btn sm primary" data-rec="${i}" ${reinforceBlocker(a)?`disabled title="${esc(reinforceBlocker(a))}"`:`title="Add reinforcements - new regiments are paid for from the treasury"`} aria-label="Add reinforcements" style="background:#2D6A4F;border-color:#52B788">＋</button>`:""}<button class="btn sm" data-insp="${i}" title="Muster roll">⚔</button><button class="btn sm gm" data-del="${i}">✕</button></div>
       <div class="m${comp?" rtog":""}" data-rt="${i}" style="cursor:pointer">${comp?`<b>${a.units.length}</b>/${CAPU} units · <b>${a.men.toLocaleString()}</b> men`:`<b>${a.men.toLocaleString()}</b> men · free-form`}
         ${foreign?`<span style="color:#E5A594"> · ${foreign} foreign unit${foreign===1?"":"s"}</span>`:""}${a.fort?" · ⛨ fort":""}${comp?` · <span class="rarr" style="color:var(--gold);font-weight:600">roster ▾</span>`:""}</div>
       ${comp?`<div class="aroster open" data-ar="${i}">${rosterHTML(a)}</div>`:""}
@@ -3806,7 +3859,7 @@ drawerArmies=function(p){
       };
     }
   });
-  box.querySelectorAll("[data-rec]").forEach(b=>b.onclick=()=>{const a=S.armies[+b.dataset.rec];if(a){cxRealm=a.faction;openCodex(a);}});
+  box.querySelectorAll("[data-rec]").forEach(b=>b.onclick=()=>{const a=S.armies[+b.dataset.rec];if(a){if(window.openReinforce)window.openReinforce(a);else openCodex(a);}});
   box.querySelectorAll("[data-chv]").forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     if(!gm)return;
