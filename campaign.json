@@ -9705,6 +9705,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Rhudaur ends its turn — Dunland to move.",
    "kind": "turn",
    "detail": null
@@ -16481,7 +16488,8 @@
   "Rhurrim",
   "Khand",
   "Rohan",
-  "Rhudaur"
+  "Rhudaur",
+  "Ered Luin"
  ],
  "pendingReview": false
 }
