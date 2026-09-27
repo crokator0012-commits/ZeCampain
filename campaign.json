@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 5000,
+   "treasury": 1900,
    "capital": "Province_17",
    "zeal": 6
   },
@@ -1590,7 +1590,17 @@
     "iron_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Mordor",
+     "cost": 1100,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -2234,7 +2244,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Mordor",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8477,7 +8493,7 @@
    "name": "Host of Province_17",
    "faction": "Mordor",
    "men": 1800,
-   "at": "Province_17",
+   "at": "Province_425",
    "order": null,
    "units": [
     "mordor_mordor_orc_warband",
@@ -9758,6 +9774,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Province_396 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_17 → Province_425",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Iron Mine at Province_405 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13929,7 +13973,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 21,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16588,7 +16632,8 @@
   "Rohan",
   "Rhudaur",
   "Ered Luin",
-  "Dunland"
+  "Dunland",
+  "Mordor"
  ],
  "pendingReview": false
 }
