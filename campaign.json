@@ -27,7 +27,7 @@
    "id": "Dunland",
    "name": "Dunland",
    "color": "#6D4C41",
-   "treasury": 5000,
+   "treasury": 50,
    "capital": "Province_334",
    "zeal": 6
   },
@@ -6231,7 +6231,26 @@
     "barracks": "Dunland"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fur_trappers_camp",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dunland",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Dunland",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9239,7 +9258,7 @@
   {
    "name": "Host of Province_334",
    "faction": "Dunland",
-   "men": 1590,
+   "men": 1950,
    "at": "Province_334",
    "order": null,
    "units": [
@@ -9255,7 +9274,10 @@
     "southern_endwaith_elder_spears",
     "dunlendings_dunleding_hunters",
     "dunlendings_dunleding_hunters",
-    "southern_endwaith_elder_riders"
+    "southern_endwaith_elder_riders",
+    "dunlendings_tribal_warroirs",
+    "dunlendings_tribal_warroirs",
+    "dunlendings_tribal_warroirs"
    ],
    "xp": [
     0,
@@ -9270,9 +9292,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4987.5,
+   "upkeep": 5962.5,
    "_startCost": 10500
   },
   {
@@ -9733,6 +9758,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts upgrading Barracks at Province_334 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts upgrading Fur Trapper's Camp at Province_334 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland reinforced Host of Province_334 at Province_334 (+3 regiments · 1,950 castas)",
+   "kind": "battle",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13876,7 +13929,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16534,7 +16587,8 @@
   "Khand",
   "Rohan",
   "Rhudaur",
-  "Ered Luin"
+  "Ered Luin",
+  "Dunland"
  ],
  "pendingReview": false
 }
