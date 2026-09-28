@@ -6543,7 +6543,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7639,7 +7639,7 @@
    "modern": "Province 461",
    "hex": "#ff7a05",
    "playable": true,
-   "owner": "",
+   "owner": "Imraldris",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8433,7 +8433,7 @@
    "name": "Host of Province_432",
    "faction": "Rhudaur",
    "men": 1820,
-   "at": "Province_432",
+   "at": "Province_447",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -8476,7 +8476,7 @@
    "name": "Host of Province_455",
    "faction": "Rachrohir",
    "men": 1740,
-   "at": "Province_467",
+   "at": "Province_455",
    "order": null,
    "units": [
     "rachrohir_mercs_clan_raiders",
@@ -9845,6 +9845,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_467 → Province_455",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris annexed Province_461 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris occupied Province_461 (held by )",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
