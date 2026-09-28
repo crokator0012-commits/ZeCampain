@@ -179,7 +179,7 @@
    "id": "Gundabad",
    "name": "Gundabad",
    "color": "#58221B",
-   "treasury": 5000,
+   "treasury": 2100,
    "capital": "Province_393",
    "zeal": 6
   },
@@ -7639,7 +7639,17 @@
     "sheep_pen": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Gundabad",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7684,7 +7694,7 @@
    "modern": "Province 443",
    "hex": "#e85d04",
    "playable": true,
-   "owner": "",
+   "owner": "Gundabad",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8079,7 +8089,17 @@
     "barracks": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Gundabad",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9005,7 +9025,7 @@
    "name": "Host of Province_393",
    "faction": "Gundabad",
    "men": 1720,
-   "at": "Province_393",
+   "at": "Province_443",
    "order": null,
    "units": [
     "gundabad_red_citadel_guards",
@@ -9861,6 +9881,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad ends its turn — Khazad-dum to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad annexed Province_443 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad occupied Province_443 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_420 → Province_443",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_393 → Province_420",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts upgrading Sheep Pen at Province_420 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts upgrading Barracks at Province_393 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -14270,7 +14339,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 12,
+ "active": 17,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16934,7 +17003,8 @@
   "Iron Hills",
   "Rachrohir",
   "Imraldris",
-  "Ered Mithrin"
+  "Ered Mithrin",
+  "Gundabad"
  ],
  "pendingReview": false
 }
