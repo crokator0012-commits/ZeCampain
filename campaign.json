@@ -6543,7 +6543,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9845,6 +9845,13 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin ends its turn — Gundabad to move.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -14205,7 +14212,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 9,
+ "active": 12,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16868,7 +16875,8 @@
   "Mordor",
   "Iron Hills",
   "Rachrohir",
-  "Imraldris"
+  "Imraldris",
+  "Ered Mithrin"
  ],
  "pendingReview": false
 }
