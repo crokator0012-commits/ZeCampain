@@ -7611,7 +7611,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_260",
     "Province_334",
@@ -7622,14 +7624,20 @@
     "Province_72"
    ],
    "displayName": "butchers hall",
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 1776.2288611459412,
    "cy": 117.48089189336531,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "sheep_pen"
+   ],
+   "availableBldOwner": {
+    "sheep_pen": "Gundabad"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8042,7 +8050,9 @@
    "value": 1900,
    "move": 2,
    "garrison": 2000,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_260",
     "Province_334",
@@ -8054,14 +8064,20 @@
     "Province_72"
    ],
    "displayName": "gundabad",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 1918.3512017153646,
    "cy": 192.59445706787852,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "barracks": "Gundabad"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9845,6 +9861,48 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_420.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts construction: Sheep Pen at Province_420 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Sheep Pen at Province_420.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_393.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts construction: Barracks at Province_393 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Barracks at Province_393.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
