@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorvinion",
    "color": "#7B1FA2",
-   "treasury": 5000,
+   "treasury": 1950,
    "capital": "Province_22",
    "zeal": 6
   },
@@ -401,7 +401,17 @@
     "grain_farm": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dorvinion",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3312,7 +3322,17 @@
     "grain_farm": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dorvinion",
+     "cost": 900,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -5256,7 +5276,17 @@
     "barracks": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "winery",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dorvinion",
+     "cost": 1250,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -5739,6 +5769,13 @@
    },
    "upg": null,
    "buildQueue": [
+    {
+     "key": "horse_farm",
+     "payer": "Rachrohir",
+     "cost": 0,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
     {
      "key": "horse_farm",
      "payer": "Rachrohir",
@@ -6543,7 +6580,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9813,8 +9850,8 @@
   {
    "name": "Host of Province_22",
    "faction": "Dorvinion",
-   "men": 1440,
-   "at": "Province_22",
+   "men": 1560,
+   "at": "Province_468",
    "order": null,
    "units": [
     "dorwinion_vineland_guards",
@@ -9829,7 +9866,8 @@
     "dorwinion_aor_watchers_of_fennas_gondren",
     "dorwinion_constables_of_dorwinion",
     "dorwinion_gwinion_sentries",
-    "dorwinion_aor_lond_minual_seafarers"
+    "dorwinion_aor_lond_minual_seafarers",
+    "dorwinion_gwinion_sentries"
    ],
    "xp": [
     0,
@@ -9844,9 +9882,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4987.5,
+   "upkeep": 5575,
    "_startCost": 9975
   },
   {
@@ -9881,6 +9920,41 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Horse Farm at Province_456 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_22 moved Province_22 → Province_468",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Grain Farm at Province_468 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Grain Farm at Province_424 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Winery at Province_22 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
