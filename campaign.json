@@ -9884,6 +9884,13 @@
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Mahud ends its turn — Khazad-dum to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
    "txt": "Gundabad ends its turn — Khazad-dum to move.",
    "kind": "turn",
    "detail": null
@@ -17004,7 +17011,8 @@
   "Rachrohir",
   "Imraldris",
   "Ered Mithrin",
-  "Gundabad"
+  "Gundabad",
+  "Mahud"
  ],
  "pendingReview": false
 }
