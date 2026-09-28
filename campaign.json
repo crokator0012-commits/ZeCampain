@@ -139,7 +139,7 @@
    "id": "Rachrohir",
    "name": "Rachrohir",
    "color": "#9B3A21",
-   "treasury": 5000,
+   "treasury": 3000,
    "capital": "Province_455",
    "zeal": 6
   },
@@ -6383,7 +6383,17 @@
     "barracks": "Rachrohir"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Rachrohir",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8450,7 +8460,7 @@
    "name": "Host of Province_455",
    "faction": "Rachrohir",
    "men": 1740,
-   "at": "Province_455",
+   "at": "Province_467",
    "order": null,
    "units": [
     "rachrohir_mercs_clan_raiders",
@@ -9819,6 +9829,27 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_455 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts upgrading Barracks at Province_455 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -14095,7 +14126,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 22,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16756,7 +16787,8 @@
   "Ered Luin",
   "Dunland",
   "Mordor",
-  "Iron Hills"
+  "Iron Hills",
+  "Rachrohir"
  ],
  "pendingReview": false
 }
