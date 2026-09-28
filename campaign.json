@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 5000,
+   "treasury": 800,
    "capital": "Province_9",
    "zeal": 6
   },
@@ -4264,7 +4264,26 @@
     "goat_pen": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Iron Hills",
+     "cost": 1100,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Iron Hills",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -5049,7 +5068,17 @@
     "iron_mine": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Iron Hills",
+     "cost": 1100,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9676,7 +9705,7 @@
    "name": "Host of Province_9",
    "faction": "Iron Hills",
    "men": 1320,
-   "at": "Province_9",
+   "at": "Province_233",
    "order": null,
    "units": [
     "iron_hills_mattock_warriors",
@@ -9778,6 +9807,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts upgrading Barracks at Province_9 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts upgrading Iron Mine at Province_11 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts upgrading Iron Mine at Province_9 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_233",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_233 → Province_9",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_233",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -13977,7 +14055,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 14,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16637,7 +16715,8 @@
   "Rhudaur",
   "Ered Luin",
   "Dunland",
-  "Mordor"
+  "Mordor",
+  "Iron Hills"
  ],
  "pendingReview": false
 }
