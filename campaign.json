@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 5000,
+   "treasury": 0,
    "capital": "Province_409",
    "zeal": 6
   },
@@ -774,7 +774,17 @@
     "healing_herb_garden": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Imraldris",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3081,7 +3091,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Imraldris",
+    "startedTurn": 1,
+    "startedDate": "Spring 1418",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8948,7 +8964,7 @@
    "name": "Host of Province_409",
    "faction": "Imraldris",
    "men": 600,
-   "at": "Province_409",
+   "at": "Province_461",
    "order": null,
    "units": [
     "imraldris_elrond",
@@ -9829,6 +9845,41 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Imladris ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_416 → Province_461",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_409 → Province_416",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Healing Herb Garden at Province_409 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Province_401 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -14126,7 +14177,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 13,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -16788,7 +16839,8 @@
   "Dunland",
   "Mordor",
   "Iron Hills",
-  "Rachrohir"
+  "Rachrohir",
+  "Imraldris"
  ],
  "pendingReview": false
 }
