@@ -5715,10 +5715,22 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "horse_farm"
+   ],
+   "availableBldOwner": {
+    "horse_farm": "Rachrohir"
+   },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "horse_farm",
+     "payer": "Rachrohir",
+     "cost": 0,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6505,7 +6517,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7129,7 +7141,7 @@
    "modern": "Province 233",
    "hex": "#370617",
    "playable": true,
-   "owner": "",
+   "owner": "Iron Hills",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9717,8 +9729,8 @@
     "iron_hills_iron_hill_crossbows",
     "iron_hills_iron_hill_crossbows",
     "iron_hills_iron_hill_crossbows",
-    "iron_hills_iron_guards",
-    "iron_hills_dwarven_lumberjacks"
+    "iron_hills_dwarven_lumberjacks",
+    "iron_hills_ironhorn_cavarly"
    ],
    "xp": [
     0,
@@ -9733,7 +9745,7 @@
     0,
     0
    ],
-   "upkeep": 4887.5,
+   "upkeep": 5150,
    "_startCost": 9775
   },
   {
@@ -9807,6 +9819,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Horse Farm at Province_456 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir may construct Horse Farm at Province_456.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills annexed Province_233 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills occupied Province_233 (held by )",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
