@@ -6476,7 +6476,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8451,7 +8451,7 @@
   {
    "name": "Host of Province_305",
    "faction": "Mordor",
-   "men": 1620,
+   "men": 1860,
    "at": "Province_305",
    "order": null,
    "units": [
@@ -8468,7 +8468,9 @@
     "mordor_mordor_orc_warroirs",
     "mordor_aor_morgul_warband",
     "mordor_warg_riders",
-    "mordor_warg_riders"
+    "mordor_warg_riders",
+    "mordor_mordor_orc_pillagers",
+    "mordor_mordor_orc_pillagers"
    ],
    "xp": [
     0,
@@ -8484,10 +8486,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5050,
-   "_startCost": 9175
+   "upkeep": 5750,
+   "_startCost": 10100
   },
   {
    "name": "Host of Province_17",
