@@ -139,7 +139,7 @@
    "id": "Rachrohir",
    "name": "Rachrohir",
    "color": "#9B3A21",
-   "treasury": 4895,
+   "treasury": 4970,
    "capital": "Province_455",
    "zeal": 7
   },
@@ -5767,7 +5767,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "horse_stables"
+   ],
    "adj": [
     "Province_327",
     "Province_334",
@@ -5779,35 +5781,22 @@
     "Province_468"
    ],
    "displayName": "Esmant grasslands",
-   "bldLevel": {},
+   "bldLevel": {
+    "horse_stables": 2
+   },
    "cx": 2995.4939774724917,
    "cy": 1321.8751437810622,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "horse_farm"
+    "horse_stables"
    ],
    "availableBldOwner": {
-    "horse_farm": "Rachrohir"
+    "horse_stables": "Rachrohir"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "horse_farm",
-     "payer": "Rachrohir",
-     "cost": 0,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "horse_farm",
-     "payer": "Rachrohir",
-     "cost": 0,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6446,7 +6435,7 @@
    ],
    "displayName": "rachrohir",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2689.000782214903,
    "cy": 1366.9524907369287,
@@ -6460,17 +6449,7 @@
     "barracks": "Rachrohir"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Rachrohir",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9967,6 +9946,69 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_455 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Horse Stables at Province_456 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts upgrading Horse Stables at Province_456 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Horse Stables completed at Province_456.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Horse Stables at Province_456 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Horse Farm is no longer available at Province_456.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir may construct Horse Stables at Province_456.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_456: construction declined — Rachrohir refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_456: construction declined — Rachrohir refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -14992,7 +15034,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
