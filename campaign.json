@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 330,
+   "treasury": 340,
    "capital": "Province_390",
    "zeal": 7
   },
@@ -558,7 +558,7 @@
    "displayName": "belogast",
    "bldLevel": {
     "barracks": 2,
-    "silver_mine": 1
+    "silver_mine": 2
    },
    "cx": 731.8617420900038,
    "cy": 468.8372872809782,
@@ -2133,7 +2133,7 @@
    ],
    "displayName": "nogrod",
    "bldLevel": {
-    "gold_mine": 1
+    "gold_mine": 2
    },
    "cx": 1009.9725230373313,
    "cy": 799.329475795817,
@@ -2147,17 +2147,7 @@
     "gold_mine": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "gold_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9966,6 +9956,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine at Province_390 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts upgrading Silver Mine at Province_390 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Province_466 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
