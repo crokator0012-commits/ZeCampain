@@ -155,7 +155,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 2703,
+   "treasury": 53,
    "capital": "Province_442",
    "zeal": 7
   },
@@ -7229,6 +7229,15 @@
      "cost": 1750,
      "startedTurn": 1,
      "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Khazad-dum",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
     }
    ],
    "raid": null
@@ -8845,7 +8854,7 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 1360,
+   "men": 1500,
    "at": "Province_442",
    "order": null,
    "units": [
@@ -8859,7 +8868,8 @@
     "khazad_dum_hunters_of_khazad_dum",
     "khazad_dum_aor_guards_of_durins_gate",
     "khazad_dum_wardens_of_the_deep",
-    "khazad_dum_darrowdelf_axe_throwers"
+    "khazad_dum_darrowdelf_axe_throwers",
+    "khazad_dum_longbeard_spearmen"
    ],
    "xp": [
     0,
@@ -8872,9 +8882,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4937.5,
+   "upkeep": 5262.5,
    "_startCost": 9875
   },
   {
@@ -9956,6 +9967,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum reinforced Host of Province_442 at Province_442 (+1 regiment · 650 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum starts upgrading Barracks at Province_442 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -14960,7 +14992,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 17,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -18906,7 +18938,8 @@
   }
  ],
  "moved": [
-  "Ered Luin"
+  "Ered Luin",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
