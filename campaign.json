@@ -107,7 +107,7 @@
    "id": "Khand",
    "name": "Khand",
    "color": "#A85A25",
-   "treasury": 4088,
+   "treasury": 138,
    "capital": "Province_414",
    "zeal": 7
   },
@@ -2415,7 +2415,7 @@
    ],
    "displayName": "Rhunnic Plains",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 3531.358243430891,
    "cy": 1359.0045796838283,
@@ -2429,17 +2429,7 @@
     "barracks": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Rhurrim",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4950,8 +4940,8 @@
    ],
    "displayName": "Ûbésêsh-ûta-Pavéter",
    "bldLevel": {
-    "timber_yard": 1,
-    "barracks": 1
+    "timber_yard": 2,
+    "barracks": 2
    },
    "cx": 3524.7542193596914,
    "cy": 2205.025574726153,
@@ -4967,26 +4957,7 @@
     "barracks": "Khand"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Khand",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "timber_yard",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Khand",
-     "cost": 850,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5922,7 +5893,7 @@
    ],
    "displayName": "Northern desert wastelands",
    "bldLevel": {
-    "copper_mine": 1
+    "copper_mine": 2
    },
    "cx": 3573.3218185211686,
    "cy": 1697.2624039568234,
@@ -5936,17 +5907,7 @@
     "copper_mine": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhurrim",
-     "cost": 1100,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8839,7 +8800,7 @@
   {
    "name": "Host of Province_414",
    "faction": "Khand",
-   "men": 1400,
+   "men": 2200,
    "at": "Province_414",
    "order": null,
    "units": [
@@ -8854,7 +8815,14 @@
     "khand_akha_spear_fishers",
     "khand_akha_spear_fishers",
     "khand_khandish_berserkers",
-    "khand_khandish_berserkers"
+    "khand_khandish_berserkers",
+    "khand_khandish_bowmen",
+    "khand_khandish_bowmen",
+    "khand_khandish_bowmen",
+    "khand_khandish_outriders",
+    "khand_akha_spear_fishers",
+    "khand_akha_spear_fishers",
+    "khand_khandish_outriders"
    ],
    "xp": [
     0,
@@ -8868,9 +8836,16 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4962.5,
+   "upkeep": 7487.5,
    "_startCost": 9925
   },
   {
@@ -9890,6 +9865,55 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine at Province_362 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_436 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand reinforced Host of Province_414 at Province_414 (+1 regiment · 1,025 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand reinforced Host of Province_414 at Province_414 (+6 regiments · 4,025 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_414 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_414 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15083,7 +15107,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 18,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19032,7 +19056,8 @@
   "Ered Luin",
   "Khazad-dum",
   "Lothlorien",
-  "Rhurrim"
+  "Rhurrim",
+  "Khand"
  ],
  "pendingReview": false
 }
