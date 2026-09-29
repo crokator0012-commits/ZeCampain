@@ -5147,7 +5147,7 @@
    "modern": "Province 33",
    "hex": "#240046",
    "playable": true,
-   "owner": "Haerrim",
+   "owner": "Rhurrim",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -8526,24 +8526,18 @@
   {
    "name": "Host of Province_436",
    "faction": "Rhurrim",
-   "men": 1620,
+   "men": 920,
    "at": "Province_33",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
     "rhurrim_rhunic_savages",
     "rhurrim_rhunic_savages",
-    "rhurrim_clan_axemen",
-    "rhurrim_clan_axemen",
     "rhurrim_rhunic_warroirs",
-    "rhurrim_rhunic_warroirs",
-    "rhurrim_rhunic_warroirs",
-    "rhurrim_clan_spearmen",
     "rhurrim_clan_huntsmen",
     "rhurrim_rhunic_archers",
     "rhurrim_rhunic_archers",
-    "rhurrim_clan_huntsmen",
-    "haerrim_aor_haerrim_outriders"
+    "rhurrim_clan_huntsmen"
    ],
    "xp": [
     0,
@@ -8553,16 +8547,10 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 5025,
-   "_startCost": 9825
+   "upkeep": 3012.5,
+   "_startCost": 10050
   },
   {
    "name": "Host of Province_432",
@@ -9596,31 +9584,6 @@
    "_startCost": 5575
   },
   {
-   "name": "Host of Province_33",
-   "faction": "Haerrim",
-   "men": 600,
-   "at": "Province_33",
-   "order": null,
-   "units": [
-    "haerrim_aor_haerrim_infantry",
-    "haerrim_aor_haerrim_infantry",
-    "haerrim_aor_haerrim_infantry",
-    "haerrim_aor_haerrim_outriders",
-    "haerrim_aor_haerrim_outriders",
-    "haerrim_aor_haerrim_outriders"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 2662.5,
-   "_startCost": 5325
-  },
-  {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
    "men": 1820,
@@ -9966,6 +9929,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim annexed Province_33 (from Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim occupied Province_33 (held by Haerrim)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
