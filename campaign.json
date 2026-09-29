@@ -1941,7 +1941,7 @@
     "Province_442"
    ],
    "bldLevel": {
-    "healing_herb_garden": 1
+    "healing_herb_garden": 2
    },
    "cx": 1930.0185185185185,
    "cy": 882.5265775034294,
@@ -1955,17 +1955,7 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lothlorien",
-     "cost": 1000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2072,8 +2062,8 @@
     "Province_442"
    ],
    "bldLevel": {
-    "healing_herb_garden": 1,
-    "barracks": 1
+    "healing_herb_garden": 2,
+    "barracks": 2
    },
    "cx": 1966.1720251512636,
    "cy": 930.9398505160755,
@@ -2089,26 +2079,7 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lothlorien",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Lothlorien",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2855,7 +2826,7 @@
    ],
    "displayName": "Fields of Celebrant",
    "bldLevel": {
-    "healing_herb_garden": 1
+    "healing_herb_garden": 2
    },
    "cx": 1979.8652489078777,
    "cy": 1031.10412366185,
@@ -2869,17 +2840,7 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lothlorien",
-     "cost": 1000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6603,7 +6564,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9929,6 +9890,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_31 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_16 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_16 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_14 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15094,7 +15083,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 18,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
