@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 375,
+   "treasury": 3000,
    "capital": "Province_400",
    "zeal": 6
   },
@@ -6580,7 +6580,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8913,7 +8913,7 @@
   {
    "name": "Host of Province_400",
    "faction": "Isengard",
-   "men": 1780,
+   "men": 2380,
    "at": "Province_296",
    "order": null,
    "units": [
@@ -8931,7 +8931,12 @@
     "isengard_goblin_men_ruffians_2",
     "isengard_goblin_men_ruffians_2",
     "isengard_mercs_aor_dunleding_tribal_warroirs",
-    "isengard_uruk_hai_raiders"
+    "isengard_uruk_hai_raiders",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians",
+    "isengard_goblin_men_ruffians_2",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_rabble"
    ],
    "xp": [
     0,
@@ -8948,9 +8953,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5000,
+   "upkeep": 6037.5,
    "_startCost": 10000
   },
   {
@@ -9887,39 +9897,30 @@
    ],
    "upkeep": 5575,
    "_startCost": 9975
-  },
-  {
-   "name": "Host of Province_400",
-   "faction": "Isengard",
-   "men": 1080,
-   "at": "Province_400",
-   "order": null,
-   "units": [
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_goblin_men_ruffians_2",
-    "isengard_goblin_men_ruffians",
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_goblin_men_ruffians_2"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 1762.5
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_400 → Province_296",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_423 → Province_296",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_296 → Province_423",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
