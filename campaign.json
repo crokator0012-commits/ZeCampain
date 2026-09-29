@@ -495,7 +495,7 @@
    "modern": "Province 415",
    "hex": "#bbdefb",
    "playable": true,
-   "owner": "",
+   "owner": "Ered Luin",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -557,7 +557,7 @@
    ],
    "displayName": "belogast",
    "bldLevel": {
-    "barracks": 1,
+    "barracks": 2,
     "silver_mine": 1
    },
    "cx": 731.8617420900038,
@@ -574,17 +574,7 @@
     "silver_mine": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1098,7 +1088,7 @@
    ],
    "displayName": "Fire Beard Dwellings",
    "bldLevel": {
-    "silver_mine": 1
+    "silver_mine": 2
    },
    "cx": 710.2347726283294,
    "cy": 190.2588356354138,
@@ -1112,17 +1102,7 @@
     "silver_mine": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "silver_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1477,12 +1457,14 @@
    "hex": "#0096c7",
    "playable": true,
    "owner": "Ered Luin",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "goat_pen"
+   ],
    "adj": [
     "Province_2",
     "Province_20",
@@ -1495,7 +1477,9 @@
     "Province_72"
    ],
    "displayName": "Lune Highlands",
-   "bldLevel": {},
+   "bldLevel": {
+    "goat_pen": 1
+   },
    "cx": 866.145450209338,
    "cy": 280.75698235200593,
    "siege": null,
@@ -1507,22 +1491,8 @@
    "availableBldOwner": {
     "goat_pen": "Ered Luin"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Ered Luin",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 2000
-   },
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "payer": "Ered Luin",
-     "cost": 500,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "upg": null,
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8643,7 +8613,7 @@
    "name": "Host of Province_455",
    "faction": "Rachrohir",
    "men": 1740,
-   "at": "Province_455",
+   "at": "Province_467",
    "order": null,
    "units": [
     "rachrohir_mercs_clan_raiders",
@@ -9996,6 +9966,55 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_455 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine at Province_6 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_4.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_4 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_390 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin annexed Province_415 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin occupied Province_415 (held by )",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -14930,7 +14949,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 17,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
