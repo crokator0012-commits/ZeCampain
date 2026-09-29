@@ -9868,6 +9868,20 @@
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim moves its seat: Province_33 → Province_436",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim moves its seat: Province_436 → Province_33",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Khand ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
@@ -15107,7 +15121,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 18,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
