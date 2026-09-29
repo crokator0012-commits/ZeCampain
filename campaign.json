@@ -9159,7 +9159,7 @@
   {
    "name": "Host of Province_393",
    "faction": "Gundabad",
-   "men": 1720,
+   "men": 1800,
    "at": "Province_443",
    "order": null,
    "units": [
@@ -9177,7 +9177,8 @@
     "gundabad_merc_tunnel_slaves",
     "gundabad_merc_tunnel_slaves",
     "gundabad_mercs_aor_goblin_mercenaries",
-    "gundabad_orc_warband"
+    "gundabad_orc_warband",
+    "gundabad_merc_aor_warg_pack"
    ],
    "xp": [
     0,
@@ -9194,9 +9195,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4950,
+   "upkeep": 5362.5,
    "_startCost": 9900
   },
   {
