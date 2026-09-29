@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 2295,
+   "treasury": 295,
    "capital": "Province_16",
    "zeal": 4
   },
@@ -1955,7 +1955,17 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lothlorien",
+     "cost": 1000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -2859,7 +2869,17 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lothlorien",
+     "cost": 1000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8763,7 +8783,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1260,
-   "at": "Province_14",
+   "at": "Province_399",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9946,6 +9966,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_31 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_31: construction declined — Lothlorien refunded 1,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_31 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_14 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_14 → Province_399",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15034,7 +15096,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 5,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -18981,7 +19043,8 @@
  ],
  "moved": [
   "Ered Luin",
-  "Khazad-dum"
+  "Khazad-dum",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
