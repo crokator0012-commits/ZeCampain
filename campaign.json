@@ -8527,7 +8527,7 @@
    "name": "Host of Province_436",
    "faction": "Rhurrim",
    "men": 1620,
-   "at": "Province_436",
+   "at": "Province_33",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
@@ -9971,13 +9971,6 @@
    "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Rhurrim ends its turn — Anduin Vale to move.",
    "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 2,
-   "d": "Summer · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_436 moved Province_33 → Province_436",
-   "kind": "",
    "detail": null
   },
   {
