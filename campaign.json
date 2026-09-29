@@ -5200,7 +5200,7 @@
    "modern": "Province 434",
    "hex": "#dc3545",
    "playable": true,
-   "owner": "",
+   "owner": "Ered Mithrin",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -9411,7 +9411,7 @@
    "name": "Host of Province_445",
    "faction": "Ered Mithrin",
    "men": 1340,
-   "at": "Province_445",
+   "at": "Province_434",
    "order": null,
    "units": [
     "ered_mithrin_dragon_slayers",
@@ -9594,7 +9594,7 @@
    "name": "Host of Province_460",
    "faction": "Feredrim",
    "men": 840,
-   "at": "Province_460",
+   "at": "Province_379",
    "order": null,
    "units": [
     "feredrim_aor_feredrim_rangers",
@@ -9988,6 +9988,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin annexed Province_434 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin occupied Province_434 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_445 moved Province_445 → Province_434",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_460 moved Province_460 → Province_379",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
