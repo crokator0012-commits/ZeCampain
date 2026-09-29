@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 2330,
+   "treasury": 330,
    "capital": "Province_390",
    "zeal": 7
   },
@@ -1507,7 +1507,13 @@
    "availableBldOwner": {
     "goat_pen": "Ered Luin"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Ered Luin",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [
     {
      "key": "goat_pen",
@@ -9484,7 +9490,7 @@
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
-   "at": "Province_4",
+   "at": "Province_415",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -9990,6 +9996,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Province_4 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_4 → Province_415",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -14903,7 +14930,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 8,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -18848,6 +18875,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Ered Luin"
+ ],
  "pendingReview": false
 }
