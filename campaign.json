@@ -9969,6 +9969,27 @@
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_33 → Province_436",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_436 → Province_33",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Host of Province_16 moved Province_399 → Province_14",
    "kind": "",
    "detail": null
@@ -15103,7 +15124,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 24,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19051,7 +19072,8 @@
  "moved": [
   "Ered Luin",
   "Khazad-dum",
-  "Lothlorien"
+  "Lothlorien",
+  "Rhurrim"
  ],
  "pendingReview": false
 }
