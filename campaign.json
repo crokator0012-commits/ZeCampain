@@ -6603,7 +6603,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8783,7 +8783,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1260,
-   "at": "Province_399",
+   "at": "Province_14",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9966,6 +9966,13 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_399 → Province_14",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15096,7 +15103,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 24,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
