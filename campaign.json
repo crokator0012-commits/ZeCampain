@@ -115,7 +115,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 5000,
+   "treasury": 150,
    "capital": "Province_392",
    "zeal": 6
   },
@@ -4123,7 +4123,17 @@
     "timber_yard": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Woodland Realm",
+     "cost": 850,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -4839,7 +4849,17 @@
     "healing_herb_garden": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Woodland Realm",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -5580,7 +5600,26 @@
     "healing_herb_garden": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Woodland Realm",
+     "cost": 1000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Woodland Realm",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8479,7 +8518,7 @@
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
    "men": 1360,
-   "at": "Province_392",
+   "at": "Province_375",
    "order": null,
    "units": [
     "woodland_realm_legolas",
@@ -9949,6 +9988,55 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm ends its turn — every realm has moved this round. Awaiting GM review.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm starts upgrading Barracks at Province_392 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_392 moved Province_427 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_392 moved Province_392 → Province_427",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm starts upgrading Healing Herb Garden at Province_375 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm starts upgrading Timber Yard at Province_427 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm starts upgrading Healing Herb Garden at Province_392 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -17179,7 +17267,8 @@
   "Ered Mithrin",
   "Gundabad",
   "Mahud",
-  "Khazad-dum"
+  "Khazad-dum",
+  "Woodland Realm"
  ],
- "pendingReview": false
+ "pendingReview": true
 }
