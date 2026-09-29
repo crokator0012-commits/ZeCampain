@@ -1172,7 +1172,7 @@ function drawSettlement(g,cx,base,u,tier){
 }
 function drawLabels(){
   const z=view.z;
-  const CAP={};for(const f of S.factions)if(f.capital)CAP[f.capital]=f.id;
+  const CAP={};for(const f of S.factions)if(f.capital&&P[f.capital]&&P[f.capital].owner===f.id)CAP[f.capital]=f.id;
   ctx.textAlign="center";ctx.textBaseline="middle";ctx.lineJoin="round";
   for(const p of S.provinces){
     if(!p.playable)continue;
@@ -1333,10 +1333,20 @@ function undo(){
 }
 $("bUndo").onclick=undo;
 
+/* Whenever a province changes hands, if it was the PREVIOUS owner's capital, that capital is lost —
+   it must not go on showing as their seat (map marker, realm panel) until the GM names a new one. */
+function loseCapitalIfNeeded(prevOwner,newOwner,pid){
+  if(!prevOwner||prevOwner===newOwner)return;
+  const f=F[prevOwner];
+  if(f&&f.capital===pid){
+    f.capital=null;
+    logIt(`${f.name}'s capital falls — ${pid} is lost.`,"battle");
+  }
+}
 function claim(p,fac){
   if(!fac||p.owner===fac){snap("clear occupation");p.occ=null;}
   else if(p.owner===null){snap("annex "+p.id);p.owner=fac;p.occ=null;logIt(`${fac} annexed ${p.id}`);}
-  else if(p.occ&&p.occ.by===fac){snap("annex "+p.id);logIt(`${fac} annexed ${p.id} (from ${p.owner})`);p.owner=fac;p.occ=null;}
+  else if(p.occ&&p.occ.by===fac){snap("annex "+p.id);logIt(`${fac} annexed ${p.id} (from ${p.owner})`);loseCapitalIfNeeded(p.owner,fac,p.id);p.owner=fac;p.occ=null;}
   else{snap("occupy "+p.id);p.occ={by:fac};logIt(`${fac} occupied ${p.id} (held by ${p.owner})`);}
   paintMap();legend();drawLedger();
   if(sel===p.id)openProv(p);
@@ -1609,7 +1619,7 @@ function openRealm(fid){
       <div class="kv"><b>Host cap</b><span>${(()=>{const mg=held.filter(p=>p.bld&&p.bld.includes("barracks")).length;
         const capF=1+Math.floor(held.length/4);const allowed=Math.min(capF,1+mg);
         return `${allowed} (formula ${capF} · ${mg} barracks${mg===1?"":"es"})`;})()}</span></div>
-      <div class="kv"><b>Capital</b><span>${f.capital||"—"} ${f.capital?`<button class="btn sm" id="rGoCap">→</button>`:""}</span></div>
+      <div class="kv"><b>Capital</b><span>${f.capital||"—"} ${f.capital?`<button class="btn sm" id="rGoCap">→</button><button class="btn sm gm" id="rClearCap" title="Clear this realm's capital without assigning a new one">✕</button>`:""}</span></div>
     </div>
     <div class="sect">
       <span class="lbl">Relations</span>
@@ -1719,6 +1729,13 @@ function openRealm(fid){
     if(window.openMuster)window.openMuster(holyHost);else openRealm(fid);
   };
   const gc=rb.querySelector("#rGoCap");if(gc)gc.onclick=()=>{const p=P[f.capital];if(p){if(view.z<.5)setZoom(.7);goTo(p);openProv(p);}};
+  const cc=rb.querySelector("#rClearCap");if(cc)cc.onclick=()=>{
+    if(!gm)return;
+    snap("clear capital");
+    const was=f.capital;f.capital=null;
+    logIt(`${f.name}'s capital is cleared — ${was} no longer stands as their seat.`);
+    paintMap();legend();draw();openRealm(fid);
+  };
   function crusadeCheck(a,b){
     for(const x of [a,b]){
       if(!S.wars.some(k=>k.split("|").includes(x))){
@@ -1860,7 +1877,7 @@ function bindEdit(id,fn,label){
   $(id).onchange=e=>{if(!sel)return;snap(label);fn(P[sel],e.target.value);
     paintMap();legend();openProv(P[sel]);};
 }
-bindEdit("dOwner",(p,v)=>{p.owner=v||null;p.occ=null;},"holder");
+bindEdit("dOwner",(p,v)=>{loseCapitalIfNeeded(p.owner,v||null,p.id);p.owner=v||null;p.occ=null;},"holder");
 bindEdit("dTierSel",(p,v)=>{p.tier=+v;p.garrison=GARR[+v];p.value=SETTLEMENT_REVENUE[+v];},"settlement tier");
 bindEdit("dTerrSel",(p,v)=>p.terrain=v,"terrain");
 bindEdit("dGarr",(p,v)=>p.garrison=+v,"garrison");
@@ -2054,6 +2071,7 @@ function renderClaimBox(p){
     const by=$("clBy").value;
     snap("annex "+p.id);
     logIt(`${by} annexed ${p.id}${p.owner?` from ${p.owner}`:""}`);
+    loseCapitalIfNeeded(p.owner,by,p.id);
     p.owner=by;p.occ=null;
     paintMap();legend();drawLedger();openProv(p);
   };
@@ -2536,6 +2554,7 @@ $("bTurn").onclick=()=>{
   for(const p of S.provinces){
     if(!p.occ)continue;
     events.push(`${p.occ.by} annexed ${p.id}${p.owner?` from ${p.owner}`:""}`);
+    loseCapitalIfNeeded(p.owner,p.occ.by,p.id);
     p.owner=p.occ.by;p.occ=null;
   }
 
@@ -2544,6 +2563,7 @@ $("bTurn").onclick=()=>{
     p.siege.turns--;
     if(p.siege.turns<=0){
       events.push(`${p.id} starved out — it falls to ${p.siege.by}`);
+      loseCapitalIfNeeded(p.owner,p.siege.by,p.id);
       p.owner=p.siege.by;p.occ=null;p.siege=null;
     }
   }
