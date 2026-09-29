@@ -155,7 +155,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 5000,
+   "treasury": 600,
    "capital": "Province_442",
    "zeal": 6
   },
@@ -6599,7 +6599,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7215,7 +7215,17 @@
     "barracks": "Khazad-dum"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "mithril_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Khazad-dum",
+     "cost": 1750,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7503,7 +7513,17 @@
     "gold_mine": "Khazad-dum"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "gold_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Khazad-dum",
+     "cost": 1250,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7622,7 +7642,17 @@
     "gem_mine": "Khazad-dum"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "gem_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Khazad-dum",
+     "cost": 1400,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9919,6 +9949,34 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum ends its turn — Woodland Realm to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum starts upgrading Gem Mine at Province_391 to Level 2 (1,400 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum starts upgrading Gold Mine at Province_408 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum starts upgrading Mithril Mine at Province_442 to Level 2 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
@@ -14454,7 +14512,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 17,
+ "active": 27,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -17120,7 +17178,8 @@
   "Imraldris",
   "Ered Mithrin",
   "Gundabad",
-  "Mahud"
+  "Mahud",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
