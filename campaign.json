@@ -187,7 +187,7 @@
    "id": "Ered Mithrin",
    "name": "Ered Mithrin",
    "color": "#607D8B",
-   "treasury": 5000,
+   "treasury": 1750,
    "capital": "Province_445",
    "zeal": 6
   },
@@ -2616,7 +2616,26 @@
     "gold_mine": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Mithrin",
+     "cost": 2000,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    },
+    {
+     "key": "gold_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Mithrin",
+     "cost": 1250,
+     "startedTurn": 1,
+     "startedDate": "Spring 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9900,6 +9919,20 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts upgrading Gold Mine at Province_445 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts upgrading Barracks at Province_445 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring · S.R. 1418 (T.A. 3018)",
