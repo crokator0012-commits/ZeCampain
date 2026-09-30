@@ -219,7 +219,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 4300,
+   "treasury": 300,
    "capital": "Province_449",
    "zeal": 7
   },
@@ -1166,7 +1166,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Dol Amroth",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9543,7 +9549,7 @@
    "name": "Host of Province_449",
    "faction": "Dol Amroth",
    "men": 1360,
-   "at": "Province_438",
+   "at": "Province_449",
    "order": null,
    "units": [
     "dol_amroth_knights_of_the_silver_swan",
@@ -9840,6 +9846,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts construction: Province_383 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_383 → Province_449",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_12 → Province_383",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_383 → Province_12",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_438 → Province_383",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15138,7 +15186,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 2,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19088,7 +19136,8 @@
   "Khazad-dum",
   "Lothlorien",
   "Rhurrim",
-  "Khand"
+  "Khand",
+  "Dol Amroth"
  ],
  "pendingReview": false
 }
