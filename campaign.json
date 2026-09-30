@@ -219,7 +219,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 4018,
+   "treasury": 4300,
    "capital": "Province_449",
    "zeal": 7
   },
@@ -1164,14 +1164,8 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [
-    "goat_pen",
-    "sheep_pen"
-   ],
-   "availableBldOwner": {
-    "goat_pen": "Dol Amroth",
-    "sheep_pen": "Dol Amroth"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -2644,7 +2638,7 @@
    ],
    "displayName": "Dor-En Alph",
    "bldLevel": {
-    "fishing_jetties": 1
+    "fishing_jetties": 2
    },
    "cx": 1891.0873060176398,
    "cy": 1891.540247850843,
@@ -4533,8 +4527,8 @@
    ],
    "displayName": "Dol Amroth",
    "bldLevel": {
-    "fishing_jetties": 1,
-    "barracks": 1
+    "fishing_jetties": 2,
+    "barracks": 2
    },
    "cx": 1866.0204049099314,
    "cy": 1793.549019607843,
@@ -4550,26 +4544,7 @@
     "fishing_jetties": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dol Amroth",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Dol Amroth",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9868,6 +9843,48 @@
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen is no longer available at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen is no longer available at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_438 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts upgrading Fishing Jetties at Province_438 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_449 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_449 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Rhurrim moves its seat: Province_33 → Province_436",
    "kind": "",
    "detail": null
@@ -15121,7 +15138,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 18,
+ "active": 2,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
