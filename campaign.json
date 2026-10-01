@@ -2236,7 +2236,7 @@
    "modern": "Province 446",
    "hex": "#efe4b0",
    "playable": true,
-   "owner": "",
+   "owner": "Gondor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3594,7 +3594,7 @@
    ],
    "displayName": "Minas TIrith",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2324.7348470454112,
    "cy": 1592.6062131863955,
@@ -3608,17 +3608,7 @@
     "barracks": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Gondor",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5005,8 +4995,8 @@
    ],
    "displayName": "Lebenin",
    "bldLevel": {
-    "barracks": 1,
-    "fishing_jetties": 1
+    "barracks": 2,
+    "fishing_jetties": 2
    },
    "cx": 2175.6247001968854,
    "cy": 1834.8160014318955,
@@ -5022,26 +5012,7 @@
     "barracks": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gondor",
-     "cost": 1000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Gondor",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6956,7 +6927,7 @@
    "modern": "Province 413",
    "hex": "#b5e61d",
    "playable": true,
-   "owner": "",
+   "owner": "Gondor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9191,7 +9162,7 @@
    "name": "Host of Province_390_split_1",
    "faction": "Gondor",
    "men": 1540,
-   "at": "Province_390_split_1",
+   "at": "Province_446",
    "order": null,
    "units": [
     "gondor_faramir",
@@ -9905,6 +9876,76 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_12 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_12 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_433 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_413 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_413 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_446 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_446 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_413 → Province_446",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_433 → Province_413",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_390_split_1 → Province_433",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
