@@ -2769,8 +2769,8 @@
     "Province_72"
    ],
    "bldLevel": {
-    "pipeweed_fields": 1,
-    "barracks": 1
+    "pipeweed_fields": 2,
+    "barracks": 2
    },
    "cx": 2082.2061892340525,
    "cy": 911.2526677732985,
@@ -2786,26 +2786,7 @@
     "barracks": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Anduin Vale",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "pipeweed_fields",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Anduin Vale",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4203,7 +4184,8 @@
    "occ": null,
    "displayName": "Umbar",
    "bldLevel": {
-    "gold_mine": 1
+    "gold_mine": 2,
+    "barracks": 2
    },
    "bldOwner": {},
    "availableBld": [
@@ -4214,26 +4196,7 @@
     "gold_mine": "Umbar",
     "fishing_jetties": "Umbar"
    },
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Umbar",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "gold_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Umbar",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ]
+   "buildQueue": []
   },
   {
    "id": "Province_9",
@@ -9876,6 +9839,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Harondor reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Harondor reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_23 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Pipe Weed Fields at Province_23 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
