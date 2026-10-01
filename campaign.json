@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 2805,
+   "treasury": 805,
    "capital": "Province_454",
    "zeal": 7
   },
@@ -4017,7 +4017,17 @@
     "barracks": "Dol Gul Dur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Dol Gul Dur",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9504,7 +9514,7 @@
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
    "men": 1820,
-   "at": "Province_454",
+   "at": "Province_342",
    "order": null,
    "units": [
     "dol_gul_dur_aor_wraiths",
@@ -9846,6 +9856,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_454 moved Province_373 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts upgrading Barracks at Province_454 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_454 moved Province_454 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_454 moved Province_373 → Province_454",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_454 moved Province_454 → Province_373",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15186,7 +15238,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 3,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19137,7 +19189,8 @@
   "Lothlorien",
   "Rhurrim",
   "Khand",
-  "Dol Amroth"
+  "Dol Amroth",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
