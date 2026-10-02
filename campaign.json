@@ -5508,8 +5508,8 @@
      "toLevel": 2,
      "payer": "Woodland Realm",
      "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
     }
    ],
    "raid": null
@@ -8397,7 +8397,7 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 1360,
+   "men": 1560,
    "at": "Province_375",
    "order": null,
    "units": [
@@ -8411,7 +8411,9 @@
     "woodland_realm_silvan_archers",
     "woodland_realm_forest_axes",
     "woodland_realm_forest_axes",
-    "woodland_realm_silvan_lookouts"
+    "woodland_realm_silvan_lookouts",
+    "woodland_realm_forest_riders",
+    "woodland_realm_silvan_axes"
    ],
    "xp": [
     0,
@@ -8424,9 +8426,11 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4962.5,
+   "upkeep": 5962.5,
    "_startCost": 9925
   },
   {
@@ -9843,6 +9847,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm ends its turn — every realm has moved this round. Awaiting GM review.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_392: construction declined — Woodland Realm refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Woodland Realm starts upgrading Barracks at Province_392 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15526,7 +15551,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 27,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19481,7 +19506,8 @@
   "Dol Gul Dur",
   "Gondor",
   "Umbar",
-  "Rachrohir"
+  "Rachrohir",
+  "Woodland Realm"
  ],
- "pendingReview": false
+ "pendingReview": true
 }
