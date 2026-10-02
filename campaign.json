@@ -236,7 +236,7 @@
    "name": "Balcoth",
    "color": "#6E1E24",
    "treasury": 37674,
-   "capital": "Province_428",
+   "capital": null,
    "zeal": 7,
    "npc": true
   },
@@ -1308,7 +1308,7 @@
    "modern": "Province 428",
    "hex": "#d0d0d0",
    "playable": true,
-   "owner": "Balcoth",
+   "owner": "Rachrohir",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -6509,7 +6509,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8504,7 +8504,7 @@
   {
    "name": "Host of Province_455",
    "faction": "Rachrohir",
-   "men": 1740,
+   "men": 1380,
    "at": "Province_428",
    "order": null,
    "units": [
@@ -8515,13 +8515,10 @@
     "rachrohir_mercs_clan_axemen",
     "rachrohir_mercs_clan_axemen",
     "rachrohir_mercs_clan_spearmen",
-    "rachrohir_mercs_clan_spearmen",
     "rachrohir_mercs_clan_huntsmen",
     "rachrohir_mercs_clan_huntsmen",
     "rachrohir_mercs_clan_huntsmen",
-    "rachrohir_mercs_clan_spearmen",
     "rachrohir_wainrider_nobles",
-    "rachrohir_wainrider_light_chariots",
     "rachrohir_wainrider_light_chariots"
    ],
    "xp": [
@@ -8536,12 +8533,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 4975,
+   "upkeep": 4037.5,
    "_startCost": 9950
   },
   {
@@ -9852,6 +9846,27 @@
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Balcoth's capital falls — Province_428 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir annexed Province_428 (from Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir occupied Province_428 (held by Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Rachrohir ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
@@ -9860,6 +9875,48 @@
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
    "txt": "Host of Province_455 moved Province_467 → Province_428",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_455 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_467 → Province_455",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_455 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_467 → Province_455",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_455 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_467 → Province_455",
    "kind": "",
    "detail": null
   },
