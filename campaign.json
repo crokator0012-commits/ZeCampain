@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 3798,
+   "treasury": 1798,
    "capital": "Harondor",
    "zeal": 7
   },
@@ -4196,7 +4196,17 @@
     "gold_mine": "Umbar",
     "fishing_jetties": "Umbar"
    },
-   "buildQueue": []
+   "buildQueue": [
+    {
+     "key": "gold_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Umbar",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ]
   },
   {
    "id": "Province_9",
@@ -9620,7 +9630,7 @@
    "name": "Host of Harondor",
    "faction": "Umbar",
    "men": 1820,
-   "at": "South Ithilien",
+   "at": "Harondor",
    "order": null,
    "units": [
     "umbar_ar_pharazons_azgar",
@@ -9839,6 +9849,41 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Near Harad: construction declined — Umbar refunded 600 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved South Ithilien → Harondor",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts upgrading Gold Mine at Harondor to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Fishing Jetties at Near Harad (600 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15410,7 +15455,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 26,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19363,7 +19408,8 @@
   "Khand",
   "Dol Amroth",
   "Dol Gul Dur",
-  "Gondor"
+  "Gondor",
+  "Umbar"
  ],
  "pendingReview": false
 }
