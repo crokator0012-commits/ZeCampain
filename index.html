@@ -740,11 +740,11 @@ const UPG={
 };
 const SETTLEMENT_REVENUE={0:250,1:500,2:850,3:1300,4:1900};
 S.provinces.forEach(p=>{if(p.playable&&SETTLEMENT_REVENUE[p.tier]!==undefined)p.value=SETTLEMENT_REVENUE[p.tier];});
-const BLD={market:{n:"Market",cost:0,tip:"No spreadsheet cost or income"},port:{n:"Port",cost:0,tip:"No spreadsheet cost or income"},barracks:{n:"Barracks",cost:1000,tip:"Level I recruits Tier 1 units; 50 upkeep per season"},road:{n:"Road",cost:0,tip:"No spreadsheet cost or income"},slavemarket:{n:"Slave Market",cost:0,tip:"No spreadsheet cost or income"},moria_mines:{n:"Moria Mines",cost:0,tip:"No spreadsheet cost or income"},erebor_mines:{n:"Erebor Mines",cost:0,tip:"No spreadsheet cost or income"},slavers:{n:"Slavers",cost:0,tip:"No spreadsheet cost or income"},vineyards:{n:"Vineyards",cost:0,tip:"No spreadsheet cost or income"},horse_farm:{n:"Horse Farm",cost:0,tip:"No spreadsheet cost or income"},gem_mine:{n:"Gem Mine",cost:0,tip:"No spreadsheet cost or income"},mithril_mine:{n:"Mithril Mine",cost:0,tip:"No spreadsheet cost or income"},gold_mine:{n:"Gold Mine",cost:0,tip:"No spreadsheet cost or income"},silver_mine:{n:"Silver Mine",cost:0,tip:"No spreadsheet cost or income"},iron_mine:{n:"Iron Mine",cost:0,tip:"No spreadsheet cost or income"},pipeweed:{n:"Pipeweed Farm",cost:0,tip:"No spreadsheet cost or income"},grain_farm:{n:"Grain Farm",cost:0,tip:"No spreadsheet cost or income"},livestock_farm:{n:"Livestock Farm",cost:0,tip:"No spreadsheet cost or income"},wool:{n:"Wool Production",cost:0,tip:"No spreadsheet cost or income"},dwarven_blacksmith:{n:"Dwarven Blacksmith",cost:0,tip:"No spreadsheet cost or income"},timber:{n:"Timber Yard",cost:0,tip:"No spreadsheet cost or income"},elven_workshop:{n:"Elven Craftsmanship Workshop",cost:0,tip:"No spreadsheet cost or income"},healing_herbs:{n:"Healing Herbs",cost:0,tip:"No spreadsheet cost or income"},fishery:{n:"Fishery",cost:0,tip:"No spreadsheet cost or income"},ship_docks:{n:"Ship Docks",cost:0,tip:"No spreadsheet cost or income"},salt_works:{n:"Salt Works",cost:0,tip:"No spreadsheet cost or income"},stone_quarry:{n:"Stone Quarry",cost:0,tip:"No spreadsheet cost or income"},spice_market:{n:"Spice Market",cost:0,tip:"No spreadsheet cost or income"},exotic_goods:{n:"Exotic Goods",cost:0,tip:"No spreadsheet cost or income"},orcish_craftsmanship:{n:"Orcish Craftsmanship",cost:0,tip:"No spreadsheet cost or income"}};
+const BLD={market:{n:"Market",cost:0,tip:"No spreadsheet cost or income"},port:{n:"Port",cost:0,tip:"No spreadsheet cost or income"},barracks:{n:"Barracks",cost:1000,tip:"Level I recruits Tier 1 units; 50 upkeep per season"},road:{n:"Road",cost:0,tip:"No spreadsheet cost or income"},moria_mines:{n:"Moria Mines",cost:0,tip:"No spreadsheet cost or income"},erebor_mines:{n:"Erebor Mines",cost:0,tip:"No spreadsheet cost or income"},slavers:{n:"Slavers",cost:0,tip:"No spreadsheet cost or income"},vineyards:{n:"Vineyards",cost:0,tip:"No spreadsheet cost or income"},horse_farm:{n:"Horse Farm",cost:0,tip:"No spreadsheet cost or income"},gem_mine:{n:"Gem Mine",cost:0,tip:"No spreadsheet cost or income"},mithril_mine:{n:"Mithril Mine",cost:0,tip:"No spreadsheet cost or income"},gold_mine:{n:"Gold Mine",cost:0,tip:"No spreadsheet cost or income"},silver_mine:{n:"Silver Mine",cost:0,tip:"No spreadsheet cost or income"},iron_mine:{n:"Iron Mine",cost:0,tip:"No spreadsheet cost or income"},pipeweed:{n:"Pipeweed Farm",cost:0,tip:"No spreadsheet cost or income"},grain_farm:{n:"Grain Farm",cost:0,tip:"No spreadsheet cost or income"},livestock_farm:{n:"Livestock Farm",cost:0,tip:"No spreadsheet cost or income"},wool:{n:"Wool Production",cost:0,tip:"No spreadsheet cost or income"},dwarven_blacksmith:{n:"Dwarven Blacksmith",cost:0,tip:"No spreadsheet cost or income"},timber:{n:"Timber Yard",cost:0,tip:"No spreadsheet cost or income"},elven_workshop:{n:"Elven Craftsmanship Workshop",cost:0,tip:"No spreadsheet cost or income"},healing_herbs:{n:"Healing Herbs",cost:0,tip:"No spreadsheet cost or income"},fishery:{n:"Fishery",cost:0,tip:"No spreadsheet cost or income"},ship_docks:{n:"Ship Docks",cost:0,tip:"No spreadsheet cost or income"},salt_works:{n:"Salt Works",cost:0,tip:"No spreadsheet cost or income"},stone_quarry:{n:"Stone Quarry",cost:0,tip:"No spreadsheet cost or income"},spice_market:{n:"Spice Market",cost:0,tip:"No spreadsheet cost or income"},exotic_goods:{n:"Exotic Goods",cost:0,tip:"No spreadsheet cost or income"},orcish_craftsmanship:{n:"Orcish Craftsmanship",cost:0,tip:"No spreadsheet cost or income"}};
 const BARRACKS_UPGRADE_COST={2:2000,3:3500,4:5500};
 const BARRACKS_UPKEEP={1:50,2:100,3:175,4:275};
-const TRADE_BUILDING_ALIASES={vineyards:"winery",horse_farm:"horse_stables",livestock_farm:"goat_pen",wool:"sheep_pen",healing_herbs:"healing_herb_garden",timber:"timber_yard",fishery:"fishing_jetties",salt_works:"salt_mine",spice_market:"spice_trader",pipeweed:"pipeweed_fields",exotic_goods:"exotic_animal_pen"};
-Object.entries(TRADE_BUILDINGS).forEach(([key,trade])=>{BLD[key]={n:trade.n,cost:trade.l[0][0],tip:`Level 1 · +${trade.l[0][1]} revenue per season`};});
+const TRADE_BUILDING_ALIASES={slavemarket:"slavers_market",vineyards:"winery",horse_farm:"horse_stables",livestock_farm:"goat_pen",wool:"sheep_pen",healing_herbs:"healing_herb_garden",timber:"timber_yard",fishery:"fishing_jetties",salt_works:"salt_mine",spice_market:"spice_trader",pipeweed:"pipeweed_fields",exotic_goods:"exotic_animal_pen"};
+Object.entries(TRADE_BUILDINGS).forEach(([key,trade])=>{BLD[key]={n:trade.n,cost:trade.l[0][0],tip:trade.note?`Level 1 · ${trade.note}`:`Level 1 · +${trade.l[0][1]} revenue per season`};});
 S.provinces.forEach(p=>{if((p.bld||[]).includes("muster")){p.bld=p.bld.map(k=>k==="muster"?"barracks":k);p.bldLevel=p.bldLevel||{};p.bldLevel.barracks=p.bldLevel.barracks||1;}});
 S.provinces.forEach(p=>{p.bld=p.bld||[];p.bldLevel=p.bldLevel||{};p.bld=p.bld.map(k=>TRADE_BUILDING_ALIASES[k]||k);p.bld.forEach(k=>{if(TRADE_BUILDINGS[k])p.bldLevel[k]=Math.max(1,Math.min(5,Number(p.bldLevel[k])||1));});});
 const barracksLevel=p=>(p&&p.bld||[]).includes("barracks")?Math.max(1,Number((p.bldLevel||{}).barracks)||1):0;
@@ -752,6 +752,8 @@ const barracksUpkeep=p=>(p&&p.bld&&p.bld.includes("barracks"))?(BARRACKS_UPKEEP[
 const factionBldUpkeep=fid=>S.provinces.filter(p=>p.playable&&p.owner===fid&&!p.occ).reduce((s,p)=>s+Math.round(barracksUpkeep(p)*(1-UPKEEP_DISCOUNT)),0);
 const tradeLevel=(p,key)=>TRADE_BUILDINGS[key]&&p&&p.bld&&p.bld.includes(key)?Math.max(1,Math.min(5,Number((p.bldLevel||{})[key])||1)):0;
 const tradeRevenue=(p,key)=>{const level=tradeLevel(p,key),trade=TRADE_BUILDINGS[key];return level&&trade?trade.l[level-1][1]:0;};
+/* Blacksmith: regiments mustered on this tile start with chevrons equal to its level - but only where a Barracks lets the tile recruit at all. */
+const forgeRank=p=>p&&barracksLevel(p)&&p.bld.includes("blacksmith")?Math.min(9,tradeLevel(p,"blacksmith")):0;
 const tradeIncome=p=>Object.keys(TRADE_BUILDINGS).reduce((total,key)=>total+tradeRevenue(p,key),0);
 const isCustomBuilding=k=>BLD[k]&&BLD[k].cost===0&&!['barracks','road'].includes(k);
 function persistCampaign(){try{localStorage.setItem("rqCampaignState",JSON.stringify(S));}catch(e){}}
@@ -1566,7 +1568,7 @@ function facIncomeCalc(fid){
     if(p.owner===fid){
       if(p.raid&&F[p.raid.by]){rows.push({id:p.id,v:0,note:`raided — ${p.raid.by} takes ${v.toLocaleString()}`});continue;}
       const bits=[p.value+"◈"];
-      Object.keys(TRADE_BUILDINGS).forEach(key=>{const level=tradeLevel(p,key);if(level)bits.push(`${TRADE_BUILDINGS[key].n} Lv. ${level} +${tradeRevenue(p,key)}`);});
+      Object.keys(TRADE_BUILDINGS).forEach(key=>{const level=tradeLevel(p,key);if(level)bits.push(`${TRADE_BUILDINGS[key].n} Lv. ${level}${tradeRevenue(p,key)?` +${tradeRevenue(p,key)}`:""}`);});
       rows.push({id:p.id,v,note:bits.join(" · ")});total+=v;
     } else if(p.raid&&p.raid.by===fid){
       rows.push({id:"⚑ raid on "+p.id,v,note:"their revenue, seized"});total+=v;
@@ -1886,7 +1888,7 @@ function renderWorksBox(p){
   const box=$("dWorksBox");if(!box)return;
   if(!p.playable){box.innerHTML="";return;}
   let h='<span class="lbl">Works</span>';
-  const built=p.bld.filter(b=>BLD[b]).map(b=>{const level=tradeLevel(p,b),trade=TRADE_BUILDINGS[b],queued=(p.buildQueue||[]).some(j=>j.key===b&&j.kind==="tradeUpgrade");const detail=trade?`Level ${level} · +${tradeRevenue(p,b)} revenue per season`:BLD[b].tip;return `<div class="kv"><b>${BLD[b].n}</b><span style="font-size:11px;color:var(--dim)">${detail}${p.bldOwner&&p.bldOwner[b]&&F[p.bldOwner[b]]?` · ${F[p.bldOwner[b]].name}`:""}${queued?` · upgrade queued`:canAct(p.owner)&&trade&&level<5?` <button class="btn sm" data-trade-up="${b}" data-trade-level="${level+1}">Upgrade to ${level+1} · ${trade.l[level][0].toLocaleString()}</button>`:""}</span></div>`;}).join("");
+  const built=p.bld.filter(b=>BLD[b]).map(b=>{const level=tradeLevel(p,b),trade=TRADE_BUILDINGS[b],queued=(p.buildQueue||[]).some(j=>j.key===b&&j.kind==="tradeUpgrade");const detail=trade?(trade.note?`Level ${level} · +${level} chevron${level===1?"":"s"} for regiments mustered here`:`Level ${level} · +${tradeRevenue(p,b)} revenue per season`):BLD[b].tip;return `<div class="kv"><b>${BLD[b].n}</b><span style="font-size:11px;color:var(--dim)">${detail}${p.bldOwner&&p.bldOwner[b]&&F[p.bldOwner[b]]?` · ${F[p.bldOwner[b]].name}`:""}${queued?` · upgrade queued`:canAct(p.owner)&&trade&&level<5?` <button class="btn sm" data-trade-up="${b}" data-trade-level="${level+1}">Upgrade to ${level+1} · ${trade.l[level][0].toLocaleString()}</button>`:""}</span></div>`;}).join("");
   h+=built||'<div style="font-size:12px;color:var(--dimmer);padding:5px 0">Nothing built.</div>';
   if(barracksLevel(p)){
     const next=barracksLevel(p)+1;
@@ -1910,7 +1912,7 @@ function renderWorksBox(p){
       if(key==="road"&&p.terrain==="mountain")continue;
       if(key==="port"&&(!p.coastal||p.tier<1))continue;
       if(key==="barracks"&&p.tier<1)continue;
-      if(key==="slavemarket"&&p.tier<1)continue;
+      if(key==="slavers_market"&&p.tier<1)continue;
       if(key==="synagogue"&&p.tier<2)continue;
       if(key==="synagogue"&&p.expelled)continue;
       if(key==="synagogue"&&p.owner&&S.provinces.filter(q=>q.owner===p.owner&&q.bld.includes("synagogue")).length>=2)continue;
@@ -2031,7 +2033,7 @@ function renderConstructionQueue(p){
       logIt(`Barracks at ${p.id} reaches Level ${job.toLevel} — units through Tier ${job.toLevel} are now recruitable.`);
     }else if(job.kind==="tradeUpgrade"){
       p.bldLevel=p.bldLevel||{};p.bldLevel[job.key]=job.toLevel;
-      logIt(`${TRADE_BUILDINGS[job.key].n} at ${p.id} reaches Level ${job.toLevel} — it now yields ${tradeRevenue(p,job.key)} castas each season.`);
+      logIt(`${TRADE_BUILDINGS[job.key].n} at ${p.id} reaches Level ${job.toLevel} — ${TRADE_BUILDINGS[job.key].note?`it now grants +${job.toLevel} chevron${job.toLevel===1?"":"s"} to regiments mustered here.`:`it now yields ${tradeRevenue(p,job.key)} castas each season.`}`);
     }else{
       p.bld.push(job.key);if(job.key==="barracks"){p.bldLevel=p.bldLevel||{};p.bldLevel.barracks=1;}if(TRADE_BUILDINGS[job.key]){p.bldLevel=p.bldLevel||{};p.bldLevel[job.key]=1;}if(isCustomBuilding(job.key)){p.bldOwner=p.bldOwner||{};p.bldOwner[job.key]=job.payer;}
       if(job.key==="synagogue"){const zf=F[p.owner];if(zf){zf.zeal=Math.max(0,(zf.zeal||0)-1);zf.zeal=Math.min(zf.zeal,zealCap(p.owner));}}
@@ -3599,7 +3601,7 @@ function musterPlan(res){
   if(ff.treasury<bill){toast(`${res.fid} cannot pay for this plan — ${bill.toLocaleString()} needed, ${ff.treasury.toLocaleString()} held`);return;}
   snap("muster from plan");
   ff.treasury-=bill;
-  const a={name:"Host of "+at,faction:res.fid,men:0,at,order:null,units:res.keys.slice(),xp:res.keys.map(()=>0)};
+  const a={name:"Host of "+at,faction:res.fid,men:0,at,order:null,units:res.keys.slice(),xp:res.keys.map(()=>forgeRank(P[at]))};
   syncMen(a);S.armies.push(a);
   logIt(`${res.fid} mustered a planned host at ${at} (${res.keys.length} regiments · ${bill.toLocaleString()} castas)`);
   $("cxShare").classList.remove("open");
@@ -3660,6 +3662,7 @@ $("cxMusterMap").onclick=()=>{
     snap("reinforce host");
     ff.treasury-=toCharge;
     tgt.units=cxArmy.units.slice();tgt.xp=cxArmy.xp.slice();
+    {const fr=forgeRank(p);if(fr)for(let i=cxArmy._base.length;i<tgt.xp.length;i++)tgt.xp[i]=Math.max(tgt.xp[i]||0,fr);}
     syncMen(tgt);
     logIt(`${ff.name} reinforced ${tgt.name} at ${tgt.at} (+${added} regiment${added===1?"":"s"} · ${toCharge.toLocaleString()} castas)`,"battle");
     closeCodex();legend();drawLedger();draw();
@@ -3695,7 +3698,7 @@ $("cxMusterMap").onclick=()=>{
   if(!cxArmy._plan&&S.armies.includes(cxArmy)){
     a=cxArmy;
   } else {
-    a={name:"Host of "+at,faction:cxArmy.faction,men:0,at,order:null,units:cxArmy.units.slice(),xp:cxArmy.units.map(()=>0)};
+    a={name:"Host of "+at,faction:cxArmy.faction,men:0,at,order:null,units:cxArmy.units.slice(),xp:cxArmy.units.map(()=>forgeRank(P[at]))};
     S.armies.push(a);
   }
   syncMen(a);

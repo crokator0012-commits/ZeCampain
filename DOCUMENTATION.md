@@ -189,7 +189,11 @@ treasury ← max(0, treasury + income − upkeep)
 | **Church** | Max 2 per realm. +1 ✦ per season each. |
 
 ### Trade buildings (`assets/trade_buildings.js`)
-20 income buildings, **levels 1–5**, each with `[build/upgrade cost, revenue per season]` per level — e.g. Gold Mine `[750,50] → [4500,400]`, Grain Farm `[500,50] → [3500,325]`. Their revenue is added into the province's income. Old ids are auto-migrated (e.g. `vineyards → winery`, `timber → timber_yard`).
+22 buildings, **levels 1–5**, each with `[build/upgrade cost, revenue per season]` per level — e.g. Gold Mine `[750,50] → [4500,400]`, Grain Farm `[500,50] → [3500,325]`. Their revenue is added into the province's income. Two entries are special:
+- **Slavers' Market** (`slavers_market`, replaces the old `slavemarket`; tier ≥ 1): revenue 40 / 75 / 125 / 200 / 300 — deliberately lower at every level than the weakest mine (Copper: 50 / 100 / 150 / 250 / 350). Keep it below every mine if you retune either.
+- **Blacksmith** (`blacksmith`, no revenue, costs 750 / 1,250 / 2,000 / 3,000 / 4,500): regiments **mustered or reinforced on that exact province** start with **chevrons (`xp`) equal to the Blacksmith level** (L1 = +1 … L5 = +5, max 9) — **but only if the province also has a Barracks** (`forgeRank()`). It applies to new hosts, reinforcements (new regiments only) and imported `RQ1` plans; existing regiments are unchanged. Built and upgraded through the normal construction queue.
+
+Old ids are auto-migrated (e.g. `vineyards → winery`, `timber → timber_yard`).
 
 ### How construction works (important)
 

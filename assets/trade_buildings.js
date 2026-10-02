@@ -20,5 +20,7 @@ const TRADE_BUILDINGS={
   spice_trader:{n:"Spice Trader",l:[[750,65],[1250,125],[2000,200],[3000,300],[4500,425]]},
   stone_quarry:{n:"Stone Quarry",l:[[500,40],[850,75],[1400,125],[2200,175],[3250,250]]},
   horse_stables:{n:"Horse Stables",l:[[750,60],[1250,125],[2000,200],[3000,275],[4500,375]]},
+  blacksmith:{n:"Blacksmith",note:"Units recruited here (Barracks required) start with +1 chevron per level",l:[[750,0],[1250,0],[2000,0],[3000,0],[4500,0]]},
+  slavers_market:{n:"Slavers' Market",l:[[500,40],[850,75],[1400,125],[2200,200],[3250,300]]},
   pipeweed_fields:{n:"Pipe Weed Fields",l:[[750,65],[1250,125],[2000,200],[3000,300],[4500,425]]}
 };
