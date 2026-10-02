@@ -1,341 +1,493 @@
-# TDD Age of Men — Complete System & Architecture Documentation
+# TDD Age of Men — Codebase & Gameplay Documentation
 
-> **Version:** Middle-Earth Campaign Engine (Turn 1 — 1418 TA)  
-> **Repository:** `crokator0012-commits/ZeCampain` / `SyedHassamJan/TDD_D-D_Discord_Campaign`  
-> **Setting:** Lord of the Rings / Middle-Earth Grand Campaign  
-> **Base Engine:** Reconquista Turn-Based Grand Strategy Web Engine  
+A browser-based grand-strategy wargame for a Lord of the Rings (Dawnless Days / Total War: Attila) Discord campaign. Players command realms on a Middle-earth map; battles are fought in Total War and recorded here. There is **no backend**: the whole game is one static page plus one JSON file that the page commits to GitHub.
 
----
-
-## 1. Executive Summary & Purpose
-
-**TDD Age of Men** is a browser-based grand strategy wargame application designed to manage a tabletop-style Discord campaign. Rulers (players) command their realms, draft armies, manage settlements, and issue movement orders via Discord. The Game Master (GM) executes the turn on this web tool, simulates strategic movements, resolves sieges and economy, and stages tactical engagements in *Total War: Attila* (or Medieval II).
-
-The entire application runs as a **serverless client-side web application** backed by GitHub's REST API for state persistence and Vercel for continuous deployment.
+> This document describes what the code in `index.html` actually does. Where the in-game Rules text or older notes disagree with the code, the code is described and the difference is called out in [§14 Known gaps](#14-known-gaps--things-the-code-does-not-enforce).
 
 ---
 
-## 2. Technology Stack & Architecture
+## Contents
 
-### 2.1 Core Technologies
-- **Frontend Core:** Pure Vanilla JavaScript (ES6+), HTML5 Canvas, Vanilla CSS3.
-- **Rendering Engine:** Custom 2D Canvas pipeline with zoom, pan, relief height-shading, boundary-fill overlay, and coordinate projection.
-- **State Store:** `campaign.json` (Single Source of Truth) + `<script id="mapdata">` inline fallback.
-- **Persistence & API:** GitHub REST API v3 (`PUT /repos/{owner}/{repo}/contents/campaign.json`) via GM Personal Access Token (PAT).
-- **Deployment:** Vercel static hosting (`vercel.json`) with rewrite routing.
-- **Automation:** Python 3 scripts for tile sync, roster ingestion, map generation, and data repairs.
-
-### 2.2 Key Files & Roles
-| File | Role | Description |
-| :--- | :--- | :--- |
-| `index.html` | **Primary GM Interface** | The main production entry point for Vercel. Includes full GM tools: tile painting, army movement, battle resolution, building editor, economy resolver, and 1-click GitHub publisher. |
-| `gm.html` | **GM Standalone View** | Direct GM interface identical to `index.html`. |
-| `player.html` | **Player Public View** | Read-only version for players. Disables editing/painting/publishing. Features the **Army Codex**, unit browser, and **Army Plan Code Generator** (`RQ1\|faction\|units`). |
-| `campaign.json` | **Live Database** | JSON state holding all active data: factions, provinces, armies, sieges, build queues, turn counters, diplomacy, and logs. |
-| `unit.md` | **Unit Codex Raw Roster** | Text roster listing all units, tiers, classes, recruitment costs, and upkeep for all Middle-Earth factions. |
-| `sync_all.py` | **Master Automation Pipeline** | Ingests unit icons, builds rosters, processes map tile masks, and updates campaign data. |
-| `vercel.json` | **Vercel Config** | Configures rewrites to serve `index.html` as root `/` and provides player routing. |
-
----
-
-## 3. World & Map Geography
-
-### 3.1 Map Dimensions & Projection
-- **Native Resolution:** 3821 × 2687 pixels.
-- **Canvas Rendering:** Dynamic transformation matrix supporting smooth mouse drag panning and cursor-centered wheel zooming.
-- **Relief Shading (Key `R`):** High-resolution grayscale heightmap overlay blended with terrain textures.
-
-### 3.2 Terrains & Movement Point Costs
-Armies receive **3 movement points per season**. Entering a province expends points based on terrain:
-- **Plains:** 1 movement point.
-- **Hills:** 2 movement points.
-- **Mountains:** 3 movement points.
-- **Great Fords (≈):** Crossing one of the 10 great rivers costs **+1 additional movement point** unless connected by a **Road**.
-- **Road:** Reduces entry cost to **1 movement point** regardless of terrain (except impassable mountains) and bridges any ford.
-- **Enemy Territory Rule:** In hostile territory, an army may march at most **one province per season**, regardless of remaining movement points. Entering a province with an enemy army ends movement immediately.
+1. [Architecture at a glance](#1-architecture-at-a-glance)
+2. [Repository layout](#2-repository-layout)
+3. [Data model — `campaign.json`](#3-data-model--campaignjson)
+4. [Factions & realms](#4-factions--realms)
+5. [Provinces, settlements & economy](#5-provinces-settlements--economy)
+6. [Buildings & the construction queue](#6-buildings--the-construction-queue)
+7. [Units & recruitment](#7-units--recruitment)
+8. [Armies & movement](#8-armies--movement)
+9. [Battles, sieges & occupation](#9-battles-sieges--occupation)
+10. [Zeal, war & diplomacy](#10-zeal-war--diplomacy)
+11. [Turn-based play: the round cycle](#11-turn-based-play-the-round-cycle)
+12. [Player controls](#12-player-controls)
+13. [GM controls](#13-gm-controls)
+14. [Known gaps](#14-known-gaps--things-the-code-does-not-enforce)
+15. [Publishing, hosting & secrets](#15-publishing-hosting--secrets)
+16. [Offline tooling (Python scripts)](#16-offline-tooling-python-scripts)
+17. [Developer notes](#17-developer-notes)
 
 ---
 
-## 4. Factions & Realms
+## 1. Architecture at a glance
 
-Middle-Earth is populated by over 40 distinct lore-accurate factions, including:
-- **Gondor** (Capital: Minas Tirith / South Ithilien)
-- **Mordor** (Capital: Barad-dûr / Cirith Ungol)
-- **Rohan** (Capital: Edoras / Meduseld)
-- **Woodland Realm** (Capital: Thranduil's Halls)
-- **Lothlórien** (Capital: Caras Galadhon)
-- **Imladris / Rivendell** (Capital: Rivendell)
-- **Ered Luin** (Capital: Belegost / Nogrod)
-- **Erebor** (Capital: Erebor / The Lonely Mountain)
-- **Dale** (Capital: Dale / Esgaroth)
-- **Isengard** (Capital: Orthanc / Isengard)
-- **Harad / Lostladen / Mahud** (Southron kingdoms and desert clans)
-- **Rhurrim / Balcoth / Dorwinion** (Eastern realms and Rhûn confederations)
-- **Anduin Vale / Beornings / Gundabad / Dol Guldur / Rhudaur**
+```
+                  ┌────────────────────────────────────────────────┐
+  GitHub repo     │  campaign.json  ← single source of truth       │
+  (main branch)   │  index.html + assets/*.js  ← the whole app     │
+                  └───────────▲───────────────────────┬────────────┘
+        PUT contents API      │                       │ Vercel deploy
+   (token in client JS)       │                       ▼
+                  ┌───────────┴────────┐      ┌──────────────────┐
+                  │  Browser (player   │◄─────│ Static site      │
+                  │  or GM) – index.html│ GET  │ (Vercel)         │
+                  └────────────────────┘      └──────────────────┘
+```
 
-Each faction possesses:
-- `id` and `name`: Unique identifier.
-- `color`: Hex color used for province fills, borders, and army tokens.
-- `treasury`: Current liquid wealth in **castas** (gold).
-- `capital`: Key fortress province ID.
-- `zeal`: Current religious / morale fervor bank (0 to 6 max).
+- **One page, two roles.** Everyone opens the same `index.html`. It starts read-only (`body.readonly`). A player can *unlock their own realm* with a passphrase when it is their turn; the GM unlocks *GM mode* with a separate passphrase.
+- **State = one object `S`**, loaded from `campaign.json` at page start and mutated in memory. Nothing is saved until someone presses **End turn** (player) or **⇧ Publish** (GM), which commits the whole of `S` to `campaign.json` on GitHub.
+- **Stack:** vanilla JS, HTML5 canvas, CSS. No framework, no bundler. Heavy binary data (map images, emblems, unit icons) is base64 inside `assets/*.js`.
+- **Hosting:** Vercel static hosting. The build step injects the GitHub token into the page (see [§15](#15-publishing-hosting--secrets)).
 
----
+### Start-up sequence
 
-## 5. Economic & Settlement Systems
+1. An inline script synchronously fetches `./campaign.json?t=<timestamp>` (cache-busted) and overwrites the embedded `<script id="mapdata">` fallback. If that fails and `localStorage.rqRepo` is set, it falls back to `raw.githubusercontent.com/<repo>/main/campaign.json`.
+2. `assets/*.js` define `MAP_B64`/terrain/shade images, `EMBLEMS`, `CODEX_ICONS`, `TRADE_BUILDINGS`.
+3. The main script parses the data, normalises it (see below), builds the province hit-map, then `boot()` paints and shows the map.
 
-### 5.1 Currency
-All financial transactions use **castas** (referred to interchangeably as gold). Income arrives at the **end of each season**.
+Normalisation on load: the legacy realm id `Rhun` is renamed `Rhurrim`; `Harad` and **NPC factions** (`faction.npc`) are dropped from the turn order; `S.active` is re-derived from the faction that was current; wars/alliances are re-keyed canonically; per-realm colours are overridden from a built-in palette; settlement `value` is reset to the tier's standard revenue; legacy building ids are migrated (see `TRADE_BUILDING_ALIASES`).
 
-### 5.2 Settlement Tiers & Base Yields
-Every province has a developmental tier that dictates its economic output and garrison strength:
-
-| Tier | Settlement Classification | Base Seasonal Yield | Default Garrison | Siege Clock |
-| :---: | :--- | :---: | :---: | :---: |
-| **0** | Wilderness / Hamlet / Unfortified | **250 castas** | 50 men | Falls to occupation (No siege) |
-| **1** | Town / Small Settlement | **500 castas** | 200 men | Falls to occupation (No siege) |
-| **2** | Fortified City (Small) | **850 castas** | 600–1,500 men | **3 seasons** |
-| **3** | Fortified City (Standard) | **1,300 castas** | 1,200 men | **3 seasons** |
-| **4** | Great Fortress / Realm Capital | **5,000 castas** | 2,000 men | **4 seasons** |
-
-### 5.3 Buildings & Works
-Provinces can hold infrastructure upgrades that generate income, expand recruitment, or strengthen defense:
-
-| Building Type | Key ID | Cost | Seasonal Benefit / Effect |
-| :--- | :--- | :---: | :--- |
-| **Market** | `market` | 2,400 | +300 castas per season. |
-| **Port** | `port` | 4,000 | +600 castas per season; +1 season to siege defense. |
-| **Muster Ground** | `muster_ground` | 5,000 | +1 army to the realm's Army Cap. |
-| **Road** | `road` | 3,000 | Reduces province entry cost to 1; bridges fords. |
-| **Granary** | `granary` | 2,500 | +1 season to siege defense clock. |
-| **Grain Farm** | `grain_farm` | Variable | +150 to +300 castas per season. |
-| **Silver / Gold Mine** | `silver_mine`, `gold_mine` | 1,250+ (upgrade) | High-value trade income (+500 to +1,000 castas). |
-| **Timber Yard** | `timber_yard` | Standard | Regional forestry output. |
-| **Herbal Garden** | `healing_herb_garden` | Standard | Attrition recovery and defense buff. |
-| **Barracks** | `barracks` | 2,000 (per level) | Unlocks higher tier regiments (Levels 1, 2, 3). |
-| **Animal Pens** | `goat_pen`, `sheep_pen` | 500 | Rural livestock output. |
-
-### 5.4 Settlement Expansion
-- **Village → Town:** 15,000 castas (1 season).
-- **Town → Small City:** 20,000 castas (1 season — stone walls constructed).
-- **Small City → Large City:** 30,000 castas (1 season).
+**Players only see new state after reloading the page** — there is no polling.
 
 ---
 
-## 6. Military & Army Mechanics
+## 2. Repository layout
 
-### 6.1 Army Cap (Host Limit)
-A realm cannot field unlimited armies. The host limit is strictly enforced:
-$$\text{Army Cap} = 1 + \left\lfloor \frac{\text{Provinces Owned}}{4} \right\rfloor$$
-* **Muster Ground Rule:** Every army beyond the **first** requires a designated **Muster Ground** building in a friendly province.
+| Path | Purpose |
+| :-- | :-- |
+| `index.html` | **The entire application** (~4,200 lines of markup/CSS/JS plus the embedded `mapdata` and `codexdata` JSON). The only file that runs in production. |
+| `campaign.json` | Live game state. Written by the page via the GitHub API; each commit is titled `Turn N — Season Year`. |
+| `assets/map_assets.js` | Base64 province colour-map, terrain texture and relief heightmap. |
+| `assets/emblems.js`, `emblems_extra.js`, `emblem_aliases.js` | Faction emblems (`EMBLEMS[factionId]`) and alias mapping. `emblems.js` is ~25 MB. |
+| `assets/codex_icons.js` | Unit icons for the Codex (`CODEX_ICONS`, `CODEX_ICON_MAP`). |
+| `assets/trade_buildings.js` | `TRADE_BUILDINGS`: the 20 level-1–5 income buildings (cost + revenue per level). |
+| `Faction Icons/`, `Unit Icons/`, `Unit Icons.rar` | Source artwork; compiled into the `assets/*.js` files by scripts. |
+| `unit.md` | Raw unit roster (tier, name, recruitment cost per faction). |
+| `vercel.json`, `package.json` | Vercel config; build command runs `scripts/inject-token.js`. |
+| `scripts/inject-token.js` | Build step: replaces `__GH_TOKEN_PLACEHOLDER__` in `index.html` with `$GH_TOKEN`. |
+| `scripts/build_*.py`, root `*.py` | One-off / maintenance Python tools (map sync, roster ingest, icon build, repair). See [§16](#16-offline-tooling-python-scripts). |
+| `TASK.md` | The brief the self-service turn system was built from (kept for context). |
+| `AGENTS.md` | Rules for autonomous AI agents working in this repo. |
 
-### 6.2 Seasonal Upkeep System
-Armies require seasonal maintenance. Upkeep scales based on the realm's total number of fielded hosts, ordered from **most expensive to least expensive**:
+---
 
-| Host Rank (by cost) | Upkeep Percentage Paid |
-| :--- | :---: |
-| **1st Host** (Most expensive) | **0% (FREE)** |
-| **2nd Host** | **25%** of base upkeep |
-| **3rd Host** | **50%** of base upkeep |
-| **4th Host** | **75%** of base upkeep |
-| **5th Host & above** | **100%** of base upkeep |
+## 3. Data model — `campaign.json`
 
-* **Crusade / Jihad Armies:** Hosts sworn to a holy war/crusade via Zeal cost **0 upkeep** and ignore the army cap until the war concludes.
+Top level (`S` in the code):
 
-### 6.3 Army Composition Limits
-Each individual host is restricted by doctrine to prevent unrealistic army spam:
-- **Pike / Heavy Spear Infantry:** Maximum **4** regiments.
-- **Missile Infantry (Archers / Crossbows):** Maximum **5** regiments.
-- **Shock & Heavy Cavalry:** Maximum **2** regiments *(General's Bodyguard does not count against this limit)*.
-- **Missile Cavalry (Horse Archers):** Maximum **2** regiments.
-- **Artillery (Catapults / Onagers):** Maximum **1** engine battery.
-- **Total Regiments:** Capped at `CAPU` (typically 15 to 20 units per host).
+| Key | Type | Meaning |
+| :-- | :-- | :-- |
+| `title`, `w`, `h`, `sea` | misc | Campaign name, map size (3821 × 2687), sea colour. |
+| `turn`, `year`, `season` | int/str | Campaign clock. `season` ∈ Spring, Summer, Autumn, Winter; the year increments when Spring starts. |
+| `factions[]` | array | Realms — see §4. |
+| `provinces[]` | array | The map tiles — see §5. |
+| `armies[]` | array | Hosts in the field — see §8. |
+| `order[]` | array of faction ids | Turn order for the current round (NPC factions excluded). |
+| `active` | int | Index into `order[]` of the realm whose turn it is. |
+| `moved[]` | array of faction ids | Realms that have already ended their turn this round. |
+| `pendingReview` | bool | `true` once every realm has moved; locks all players until the GM resolves the round. |
+| `allowance` | int | Movement points per move (currently `3`). |
+| `wars[]`, `allies[]` | `"A\|B"` strings | Unordered pairs, stored sorted alphabetically. |
+| `truces` | `{ "A\|B": seasonsLeft }` | Truces tick down each season resolution. |
+| `battles[]` | array | Staged battles awaiting an outcome. `fought{}` counts battles per province (for "Second Battle of …"). |
+| `crossings[]`, `rivers[]` | arrays | Province-pair keys with a great-ford river crossing (+1 move). Currently empty in the live data. |
+| `log[]` | array | Chronicle: `{t, d, txt, kind, detail}` newest first. `kind` is `""`, `"turn"` or `"battle"`. |
+| `turnlog[]` | array | Per-turn map snapshots for the **Turn map** timeline (capped at 200). |
+| `hmax` | number | Heightmap max, used by relief shading. |
 
-### 6.4 The Player Codex & Army Plan Codes
-Players open the unit catalog by pressing **`C`** in `player.html`. Clicking units drafts an army and calculates recruitment and upkeep costs.
-When finished, the player clicks **Copy Plan**, which generates a formatted Discord string:
-```text
+**Faction**: `{id, name, color, treasury, capital, zeal, npc?}`.
+
+**Province** (only `playable: true` tiles take part in the game):
+`id`, `modern`, `displayName`, `owner` (faction id or `null`), `tier` (0–4), `terrain` (`plains`/`hills`/`mountain`), `value` (revenue), `move` (entry cost 1–3), `garrison`, `bld[]` (built ids), `bldLevel{}`, `bldOwner{}`, `availableBld[]` / `availableBldOwner{}` (buildings the GM has unlocked for a realm here), `buildQueue[]`, `upg` (pending settlement upgrade), `siege` (`{by, turns}`), `occ` (`{by}`), `raid` (`{by}`), `adj[]`, `cx`/`cy` (label position), `coastal`.
+
+**Army**: `{name, faction, at, men, units[], xp[], upkeep, order, fort?, holy?}`.
+`units[]` holds codex `unit_key`s (one per regiment); `men` and `upkeep` are re-derived from it (`syncMen`). Armies without `units[]` are legacy "free-form" hosts (just a `men` count).
+
+---
+
+## 4. Factions & realms
+
+There are ~38 factions in `campaign.json`; 28 of them are in the playable `order[]` (the rest are NPC/regional factions the GM controls). Playable realms with a turn passphrase: Anduin Vale, Dale, Dol Amroth, Dol Gul Dur, Dorvinion, Dunland, Erebor, Ered Luin, Ered Mithrin, Goblins, Gondor, Gundabad, Imraldris, Iron Hills, Isengard, Khand, Khazad-dum, Lindon, Lostladen Tribes, Lothlorien, Mahud, Mordor, Rachrohir, Rhudaur, Rhurrim, Rohan, Umbar, Woodland Realm.
+
+Each realm has a **treasury** (castas), a **capital** province, and **Zeal**. The *realm sheet* (click a realm in the legend) shows provinces held, income breakdown, upkeep, net income per turn, Zeal, hosts, host cap, capital and diplomatic relations.
+
+- **Capital loss:** if a province that is a realm's capital changes hands (annex, siege fall, GM reassign), the capital is cleared and the chronicle records it. The GM picks a new one (the realm sheet has a "clear capital" ✕).
+- **Realm names / colours / emblems** are editable by the GM (name, colour picker). Realms can be created (**+** in the legend) and dissolved (realm sheet → *Dissolve realm…*, two-click confirm; frees its land and removes its armies, wars, alliances, truces and turn slot).
+
+---
+
+## 5. Provinces, settlements & economy
+
+### Currency
+All money is **castas**. Income and upkeep are settled when the GM resolves the season (§11).
+
+### Settlement tiers
+
+| Tier | Name | Revenue/season | Default garrison | Siege |
+| :-: | :-- | --: | --: | :-- |
+| 0 | Village | 250 | 50 | none — falls by occupation |
+| 1 | Unfortified town | 500 | 200 | none — falls by occupation |
+| 2 | Fortified city · small | 850 | 600 | 3 seasons |
+| 3 | Fortified city · large | 1,300 | 1,200 | 4 seasons |
+| 4 | Grand city | 1,900 | 2,000 | 5 seasons |
+
+Siege length (`holdout`) = base (3 / 4 / 5 for tier 2 / 3 / 4) **+1 Port, +1 Granary, −1 Synagogue**, minimum 1.
+
+### Settlement upgrades
+
+| To tier | Cost | New revenue |
+| :-: | --: | --: |
+| 1 | 2,000 | 500 |
+| 2 | 4,000 | 850 |
+| 3 | 7,000 | 1,300 |
+| 4 | 11,000 | 1,900 |
+
+Upgrades are **queued and paid immediately**, then completed by the GM (§6). Completing sets the tier, garrison and revenue.
+
+### Income formula (per realm, per season)
+
+```
+income  = Σ over owned, un-occupied playable provinces ( province.value + Σ trade-building revenue )
+        + Σ revenue of provinces this realm is raiding            (raided provinces pay the raider, not the owner)
+        + 5% of the above × (number of Synagogues the realm owns)
+upkeep  = round( Σ army upkeep × 0.20 ) + round( Σ barracks upkeep × 0.20 )
+treasury ← max(0, treasury + income − upkeep)
+```
+
+- **Occupied** provinces (`occ` set) pay nobody.
+- **Upkeep discount:** a global constant `UPKEEP_DISCOUNT = 0.80` means every realm pays only **20 %** of nominal upkeep (armies and barracks). It is changed by hand in the source, never automatically.
+- **Army upkeep** = sum of its regiments' codex `upkeep` (falls back to `men × 2.1` for free-form hosts). **Holy (crusade) hosts pay nothing.**
+- **Barracks upkeep** per level: I 50, II 100, III 175, IV 275 (before discount).
+- If a realm cannot pay, the treasury is floored at 0 and the chronicle notes the shortfall — the GM decides what suffers.
+
+---
+
+## 6. Buildings & the construction queue
+
+### Standard buildings (`BLD`)
+
+| Building | Notes (values from code) |
+| :-- | :-- |
+| **Barracks** | Level 1–4. Build cost 1,000; upgrade to L2/L3/L4 costs 2,000 / 3,500 / 5,500. Level N lets a province recruit units of tier ≤ N. Requires tier ≥ 1. Upkeep per level above. |
+| **Road** | Entry cost becomes 1 and bridges a river crossing. Not allowed in mountains. |
+| **Port** | Needs a coastal province, tier ≥ 1. +1 siege season. |
+| **Granary** | +1 siege season. |
+| **Market, Slave Market, Moria Mines, …** | Defined with cost/effect text; several are "custom" buildings (cost 0 in the table) that the GM prices/assigns by hand. |
+| **Synagogue** | Tier ≥ 2, max 2 per realm. +5 % revenue each, −1 siege season, lowers the realm's Zeal ceiling by 1 each. A realm can *expel the community* (1,500 castas, +1 ✦) which permanently bars a new one in that city. |
+| **Church** | Max 2 per realm. +1 ✦ per season each. |
+
+### Trade buildings (`assets/trade_buildings.js`)
+20 income buildings, **levels 1–5**, each with `[build/upgrade cost, revenue per season]` per level — e.g. Gold Mine `[750,50] → [4500,400]`, Grain Farm `[500,50] → [3500,325]`. Their revenue is added into the province's income. Old ids are auto-migrated (e.g. `vineyards → winery`, `timber → timber_yard`).
+
+### How construction works (important)
+
+1. **The GM makes a building *available*** to a realm on a province (province drawer → *Adjust* → "Make buildings available to…"). Players can only see/queue what has been made available to them. (Barracks upgrades, trade-building upgrades and settlement upgrades on one's own provinces are offered directly.)
+2. **Queueing pays up-front.** The cost is deducted from the payer's treasury immediately and a job is added to the province's `buildQueue` (or `upg` for a settlement upgrade).
+3. **The GM completes or declines each job** in the province's *Construction queue* panel. *Complete* applies the effect (new building, level, or tier) and removes the job. *Decline* removes it and **refunds** the payer.
+4. A player may cancel their own queued job (while it is their turn) — handled through the same refund path.
+
+Nothing completes automatically at season end — construction is always a GM decision.
+
+---
+
+## 7. Units & recruitment
+
+### The Codex (unit roster)
+`<script id="codexdata">` holds **575 units** across 36 rosters. Each unit: `unit_key`, `name`, `faction`, `tier` (1–4), `cost` (recruitment, castas), `upkeep`, `men`, `class`/`category`, `missile`, `mounted`. Press **C** (or the *Codex* button) to open it; it can filter by realm/faction/class, sort, and show a stat panel for each regiment.
+
+- **Regional (AOR) and mercenary** units are listed under the realm that recruits them (`AOR_ROSTERS`), e.g. Beorning/Eotheod/Greenwood units under Anduin Vale. Units from the "wrong" roster are allowed but flagged to the GM ("foreign unit(s), your call").
+- **Army size cap: 20 regiments per host** (`CAPU`).
+- **Chevrons (veterancy):** each regiment has an `xp` rank 0–9, edited by the GM.
+
+### How a player recruits (live, on their own turn)
+
+Prerequisites (all enforced in the UI):
+1. It is the realm's turn, the player has unlocked the realm, and no round is pending GM review (`canAct`).
+2. The recruiting province is **owned by that realm** and has a **Barracks**.
+3. Every new regiment's **tier ≤ the Barracks level** there.
+4. The treasury covers the **total cost** (checked per regiment as it is added).
+
+Two ways in:
+- **New host:** select an owned province → **⚔ Muster & Recruit Army Here** (`bMusterTile`) → pick regiments in the Codex → **⚔ Muster to Map**. The host appears at that province and the cost is deducted at once.
+- **Reinforce an existing host:** open a host in the province drawer → *Recruit* → add regiments → **⚔ Muster to Map**. Only regiments added in this session can be taken back; the existing roster is fixed. The host must be standing in its own realm's territory on a Barracks.
+
+Charged cost = total cost of the final roster − the cost already paid for it. Crusade ("holy") hosts are free.
+
+### Army plan codes (offline drafting)
+A player can draft an army without it being their turn using **Build army / planner** — plans are free to draft. **Copy for GM** produces:
+
+```
 ═══ ARMY PLAN — Gondor ═══
-4/15 units · 480 men · 3,450g raise · 1,725g/turn upkeep
+4/20 units · 480 men · 3,450g raise · 1,725g/turn upkeep
   1× Gondor Sword Militia
-  1× Ringlo Vale Men-at-Arms
-  1× Pelargir Marines
-  1× Ithilien Rangers
-
+  …
 ▸ CODE (paste to the GM):
-RQ1|Gondor|gondor_gondor_sword_militia,gondor_aor_ringlovale_men_at_arms,gondor_aor_pelagir_marines,gondor_aor_ithilien_rangers
-```
-The GM can paste this `RQ1` code directly into the GM interface to instantiate the army instantly.
-
----
-
-## 7. War, Sieges & Battle Resolution
-
-### 7.1 Battles
-- **Trigger:** Hostile armies occupying the same province.
-- **Engine:** Battles are resolved manually in *Total War: Attila* or simulated by GM arbitration.
-- **Terrain Mapping:** Battle map selection corresponds to province terrain (Plains, Hills, Mountains, Fort, City).
-- **Alliances:** Allied hosts present in the province may choose to reinforce.
-- **Defeat & Retreat:** A defeated host must retreat to an adjacent friendly province. If no adjacent friendly province is reachable, the entire host is **eliminated**.
-- **Ransom (1✦):** Victor may demand 2,000 castas. If the loser refuses, the victor gains +2✦ Zeal.
-
-### 7.2 Sieges & Assaults
-- **Unfortified (Tier 0 & 1):** Instantly occupied when enemy troops enter without defenders.
-- **Fortified Cities (Tier 2+):**
-  - Small City: 3 seasons siege clock.
-  - Great City: 4 seasons siege clock (+1 season if Port or Granary present).
-  - First season: Siege engines constructed (no assault).
-  - Subsequent seasons: Breaches open; attacker may assault or starve defenders out.
-  - Sally: Besieged garrison and armies may sally out to engage besiegers.
-
----
-
-## 8. The Zeal System (✦)
-
-Zeal represents divine favor, morale, and religious enthusiasm. Each realm accrues **+1✦ per season** (up to a maximum bank of 6✦).
-
-| Cost | Action | Effect |
-| :---: | :--- | :--- |
-| **1✦** | **Force March** | Gives host +1 movement point this season, but causes weariness (enemy chooses the battlefield if attacked). |
-| **1✦** | **Zealous Annex** | Immediately annexes an occupied village/town without waiting for seasonal resolution. |
-| **1✦** | **Ransom** | Demand 2,000 castas after battle victory. |
-| **1✦** | **Declare War** | Lawful declaration of war (free with legitimate GM cause; costs **2✦** against fellow faith). |
-| **2✦** | **Sabotage Siege** | Saboteurs extend an enemy siege clock by +1 season. |
-| **2✦** | **Raid** | Plunders an enemy province; its next season's income is diverted to you. |
-| **3✦ + 1,500g** | **Bribe the Gates** | Infiltrators open the gates, accelerating siege clock by 1 season. |
-| **3✦ + 1,500g** | **Entrench** | Army builds a fortified encampment; fought on a fort battle map. |
-| **10✦** | **Crusade / Jihad** | Summons a sacred host: free to muster, zero upkeep, does not count against army cap. Disbands when war ends. |
-
-* **Losing Capital:** A realm whose capital falls gains **+2✦**.
-* **Betrayal Penalty:** Breaking a truce or betraying an alliance incurs a severe penalty of **−3✦** and chronicled infamy.
-
----
-
-## 9. Turn Sequence & Resolution
-
-Each game year consists of four seasons: **Spring → Summer → Autumn → Winter**.
-
-### 9.1 Player Turn Phase
-Realms submit orders to the GM over Discord in turn order:
-1. Movement orders (from province A to B).
-2. Muster orders (drafting units via `RQ1` codes).
-3. Construction orders (starting buildings or settlement upgrades).
-4. Diplomatic declarations (wars, peace, alliances, truces).
-
-### 9.2 Season Resolution (GM Automation)
-When all players have acted, the GM resolves the turn in `index.html`:
-1. **Battles Resolved:** Casualties applied, victors awarded territory or ransoms.
-2. **Sieges Advanced:** Clocks decrement by 1; breached holds surrendered.
-3. **Occupations Annexed:** Occupied territories officially transfer ownership.
-4. **Economy Executed:**
-   $$\text{Treasury}_{\text{new}} = \text{Treasury}_{\text{old}} + \sum \text{Province Value} + \sum \text{Building Incomes} - \sum \text{Scaled Upkeeps}$$
-5. **Zeal Accrual:** +1✦ added to all qualifying realms (capped at 6).
-6. **Chronicle Written:** Turn events, diplomatic changes, and conquests logged.
-7. **1-Button Publish:** GM clicks **⇧ Publish** to commit `campaign.json` directly to GitHub.
-
----
-
-## 10. Data Schema Reference (`campaign.json`)
-
-The entire state is structured as a clean JSON object:
-
-```json
-{
-  "title": "TDD Age of Men",
-  "turn": 1,
-  "year": 1418,
-  "season": "Spring",
-  "w": 3821,
-  "h": 2687,
-  "sea": "#162838",
-  "factions": [
-    {
-      "id": "Gondor",
-      "name": "Gondor",
-      "color": "#1F5E99",
-      "treasury": 5000,
-      "capital": "Province_433",
-      "zeal": 6
-    }
-  ],
-  "provinces": [
-    {
-      "id": "Province_433",
-      "modern": "Province 433",
-      "displayName": "Minas Tirith",
-      "owner": "Gondor",
-      "tier": 4,
-      "terrain": "plains",
-      "value": 5000,
-      "move": 2,
-      "garrison": 2000,
-      "bld": ["barracks", "market"],
-      "bldLevel": { "barracks": 3, "market": 1 },
-      "adj": ["Province_305", "Province_446"],
-      "cx": 2350.5,
-      "cy": 1650.2,
-      "siege": null,
-      "occ": null,
-      "buildQueue": []
-    }
-  ],
-  "armies": [
-    {
-      "name": "Host of South Ithilien",
-      "faction": "Gondor",
-      "at": "Province_446",
-      "men": 480,
-      "order": null,
-      "units": [
-        "gondor_gondor_sword_militia",
-        "gondor_aor_ringlovale_men_at_arms"
-      ],
-      "xp": [0, 1],
-      "upkeep": 1725.0
-    }
-  ],
-  "wars": [],
-  "battles": [],
-  "truces": {},
-  "allies": [],
-  "order": ["Gondor", "Mordor", "Rohan"],
-  "active": 0,
-  "log": []
-}
+RQ1|Gondor|gondor_gondor_sword_militia,gondor_aor_ringlovale_men_at_arms,…
 ```
 
----
-
-## 11. GitHub & Vercel Publishing Pipeline
-
-### 11.1 How 1-Click Publishing Works
-1. In `index.html` / `gm.html`, `publishTurn()` executes:
-   - Targets `https://api.github.com/repos/crokator0012-commits/ZeCampain/contents/campaign.json`.
-   - Sends `Authorization: Bearer <TOKEN>`.
-   - Fetches current file `sha`.
-   - Sends `PUT` request with base64-encoded campaign JSON and commit message (`Turn X — Season Year`).
-2. GitHub updates `main` branch.
-3. Vercel webhook detects commit and triggers deployment within 30 seconds.
-4. Players refresh `player.html` and receive updated turn state via cache-busted fetch:
-   ```javascript
-   pull("./campaign.json?t=" + Date.now());
-   ```
-
-### 11.2 Required GitHub Token Scopes
-- **Scope required:** `repo` (Full control of private repositories).
-- Created at [github.com/settings/tokens/new](https://github.com/settings/tokens/new).
-- Tokens without `repo` scope will be rejected by GitHub with HTTP 404.
+The GM pastes the `RQ1|<realm>|<unit_key,…>` line into **Import plan**; it validates the realm, unit keys and the 20-unit cap, then musters at the selected province (or the realm's capital). The GM bypasses the Barracks rules; the treasury must still cover the bill.
 
 ---
 
-## 12. Instructions for Future AI Agents & Developers
+## 8. Armies & movement
 
-When making modifications or adding new features:
-1. **Never break Canvas performance:** Do not attach heavy event listeners inside the main render loop `draw()`.
-2. **Preserve `campaign.json` integrity:** When adding provinces or factions, maintain all schema fields (`id`, `owner`, `tier`, `value`, `garrison`, `adj`, `bld`, `bldLevel`, `buildQueue`).
-3. **Synchronize both views:** Any gameplay logic or UI improvements applied to `index.html` must be reflected in `gm.html`, and read-only player elements must be verified in `player.html`.
-4. **Git Remote Sync:** Both remotes (`origin` -> `crokator0012-commits/ZeCampain` and `syed` -> `SyedHassamJan/TDD_D-D_Discord_Campaign`) must be kept in sync by pushing commits to both:
-   ```bash
-   git push origin main; git push syed main
-   ```
-5. **No CLI cd commands:** Antigravity agents must always execute commands directly in working directory without changing paths.
+### Movement
+- **Allowance:** `S.allowance` = **3 movement points** per move.
+- **Entry cost** of a province = its `move` (plains 1, hills 2, mountain 3); **1** if it has a **Road**; **+1** to cross a river crossing unless the destination has a Road.
+- **Enemy ground:** a realm at war with the owner of a province may enter it but cannot move on from it in the same move (it ends the march).
+- Selecting one of your hosts on your turn highlights every province in reach (Dijkstra over the allowance). Clicking a highlighted province moves the host **immediately** and logs `X moved A → B`. Out-of-reach clicks are rejected for players.
+- Moving a host abandons its fort (see Entrench, §10).
+- The GM can move any host **anywhere with no limit** (click host, click destination).
+
+> The code does **not** track movement spent across multiple moves in one turn — see §14.
+
+### Managing hosts
+Each host card (province drawer) shows regiments, men, and — for the GM — reassign realm, edit men, rename, **Split** (halves the men into a detachment), **Merge here** (combines same-realm hosts in a province), disband, chevron editing and Entrench. Clicking a host name opens its full muster roll in the Codex.
+
+---
+
+## 9. Battles, sieges & occupation
+
+### Battles
+- When hosts of two or more realms share a province, the GM presses **⚔ Stage battle**. The battle is **fought in Total War: Attila** (the map matches the province terrain; an entrenched host gets the fort map) and the outcome is recorded here.
+- **Record outcome:** the GM picks the victor and enters each side's losses. Losses are spread across that side's hosts proportionally and removed **regiment by regiment, cheapest first** (`applyLoss`); each struck regiment is named in the chronicle. A draw ends "without decision".
+- **Defeat:** each losing host with men left retreats to an adjacent province owned by its realm; hosts reduced to 0 men are destroyed.
+- Ransom, force-march battlefield choice and allied reinforcement are story rules adjudicated by the GM, not coded.
+
+### Occupation
+Realm sheet / province drawer → **Claim**:
+- **Occupy** — stripes the province; it pays nobody and **annexes automatically** when the GM resolves the season.
+- **Annex now** — immediate ownership change. **Zealous annex (1 ✦)** — immediate annex of an occupied province.
+- **Raid (2 ✦)** — the province's next season of revenue goes to the raider instead of its owner.
+
+### Sieges (tier ≥ 2 only)
+- **Besiege** starts a siege clock = `holdout` seasons. At each season resolution every siege clock drops by 1; at 0 the city falls to the besieger.
+- GM tools: ±1 season, lift siege, **Sabotage (2 ✦ from the defender; +1 season)**, **Bribe the gates (3 ✦ + 1,500 castas from the besieger; −1 season)**.
+
+---
+
+## 10. Zeal, war & diplomacy
+
+### Zeal (✦)
+- **Gain:** +1 per season, **+1 per Church** the realm owns, resolved with the season.
+- **Cap:** `10 − (number of Synagogues owned)`. (The in-game Rules text says "bank of 6"; the code's ceiling is 10.)
+- **Spending (coded):**
+
+| Cost | Action |
+| :-: | :-- |
+| 1 ✦ | Declare war (waived if the GM grants cause — then free); Zealous annex |
+| 2 ✦ | Raid; Sabotage a siege |
+| 3 ✦ + 1,500 | Bribe the gates; **Entrench** (host raises a fort — battles there use the fort map until it marches) |
+| 10 ✦ | **Crusade / Jihad** — spawns a free "holy" host above the cap, no upkeep; disbands when the realm is no longer at war with anyone |
+| −3 ✦ | Penalty applied when the GM records *breaking a truce* or *betraying an ally* ("INFAMY") |
+
+Force March, Ransom and the +2 ✦ for losing a capital are in the Rules text but are applied by the GM by hand (edit Zeal on the realm sheet).
+
+### Diplomacy (realm sheet → *Relations*, GM-only buttons)
+War, Peace, **Truce (2 seasons, ticks down automatically)**, End truce, Ally, Unally, and the two infamy actions above. All are written to the chronicle. Realms can also **gift castas** to each other (GM-recorded, chronicled). Official talks happen on Discord; the GM opens private channels.
+
+### Victory
+Per the Rules: conquer the capitals of three other realms. Not tracked in code.
+
+---
+
+## 11. Turn-based play: the round cycle
+
+A **round** = every realm in `order[]` takes one turn; then the GM resolves the **season**. Four seasons make a year.
+
+```
+ ┌──────────── round (one season) ────────────┐
+ │ realm 1 → realm 2 → … → realm N            │   players, each on their own turn
+ └──────────────────────┬─────────────────────┘
+                        ▼
+        pendingReview = true   (everyone locked)
+                        ▼
+        GM presses "Next realm ▸"  → season resolution
+                        ▼
+        turn++, season advances, moved[] cleared, active → first realm
+```
+
+### 11.1 State that drives it
+- `order[]` — who goes in what order. `active` — index of the current realm. `moved[]` — realms that have finished this round. `pendingReview` — end-of-round lock.
+- The "next" realm is always **the first realm in `order[]` that is not in `moved[]`**, not simply `active + 1`. This means the GM can reshuffle the order mid-round without anyone being skipped or getting a second turn.
+
+### 11.2 The turn gate (top bar, players only)
+`renderTurnGate()` shows one of:
+
+| State | Message | Controls |
+| :-- | :-- | :-- |
+| It is *not* your realm's turn | `Waiting for <Realm>` | **This is my realm — unlock** (opens the passphrase prompt for the *current* realm) |
+| You unlocked the active realm | `Your turn, <Realm> — unlocked` | **End turn** |
+| Round complete | `Turn complete — awaiting GM review` | none |
+
+`canAct(fid)` is the single permission check used for every player action (move, recruit, reinforce, build, upgrade, cancel):
+
+```js
+canAct(fid) = gm
+           || ( factionAuth && !S.pendingReview
+                && factionAuth === activeFactionId() && factionAuth === fid )
+```
+
+### 11.3 Unlocking a realm
+- The passphrase map `FACTION_PASSWORDS` lives in `index.html`: faction id → **SHA-256 hex digest** of the passphrase (never plaintext).
+- To set or change one, open the browser console on the page and run `await sha256("the passphrase")`, then paste the result into `FACTION_PASSWORDS`. Keys must match faction ids exactly.
+- A correct passphrase sets `factionAuth` (stored in `sessionStorage`, so it lasts for that tab/session). Because `canAct` also requires `factionAuth === activeFactionId()`, an unlocked tab goes read-only as soon as the turn passes, and becomes active again automatically when that realm's turn next comes round in the same session.
+- Only the realm whose turn it is can be unlocked; every other realm sees the read-only "waiting" view.
+
+### 11.4 Taking a turn (player)
+With the realm unlocked, the player may, in any order: **move hosts**, **recruit/reinforce**, **queue buildings, barracks/trade-building upgrades and settlement upgrades**, and cancel their own queued work. All of this happens **locally in the browser** and is written to the chronicle — nothing is shared until **End turn**. (Diplomacy, claims, sieges, battle staging, treasury edits and everything else listed in §13 remain GM-only.)
+
+### 11.5 End turn (`endTurn()`)
+1. Requires `canAct(active realm)`. Shows a **confirm dialog** ("This publishes immediately and locks <Realm> out…").
+2. Takes an undo snapshot, adds the realm to `moved[]`.
+3. Advances `active` to the first un-moved realm and logs `"<Realm> ends its turn — <Next> to move."` — **or**, if it was the last realm / nobody is left, sets `pendingReview = true` and logs `"…every realm has moved this round. Awaiting GM review."`
+4. Calls `publishTurn()` (§15).
+5. **On success:** toast, UI re-renders for the next realm. **On failure:** `active`, `moved`, `pendingReview` and the log line are rolled back, and the player is told to try again. *(Only the turn bookkeeping is rolled back — the player's own moves/recruits for that turn remain in the in-memory state.)*
+
+### 11.6 Season resolution (GM, "Next realm ▸" after the round is complete)
+When no realm is left un-moved, the GM's **Next realm ▸** runs the season, in this order:
+
+1. Queued **army orders** (`a.order`, legacy) execute.
+2. **Occupations annex** — each striped province changes owner (capital-loss handling applies).
+3. **Siege clocks −1**; clocks reaching 0 are starved out and the city changes hands.
+4. **Income** is gathered per realm: province values + trade-building revenue; raids redirect revenue to the raider; Synagogue +5 % each.
+5. **Upkeep** (armies + barracks, ×0.20) is deducted; treasury floored at 0 with a chronicle warning.
+6. **Zeal** `+1 + churches`, capped at `10 − synagogues`.
+7. **Truces tick down**; expired truces are announced.
+8. `turn++`, season advances (Spring → Summer → Autumn → Winter → Spring, year++ on Spring), `moved[] = []`, `pendingReview = false`, `active` returns to the first realm. A chronicle line "`<Season> <Year> opens — the round begins with <Realm>.`" is written, followed by the events above.
+
+Construction is **not** part of this step (§6). The GM should then press **⇧ Publish** to push the resolved season.
+
+### 11.7 GM overrides to the automated flow
+- **Set active** (Order dialog) — hand the turn to a specific un-moved realm, e.g. an AFK player's next neighbour, without marking anyone as moved.
+- **Next realm ▸** — skips/finishes the current realm (marks it moved and passes the turn): this is the "force-skip" for a stuck or inactive player.
+- **Order** — reorder realms with ↑↑ / ↑ / ↓; new realms can be inserted at a chosen slot.
+- **Set turn** — manually set the campaign turn number.
+- **Load / Save** — load a `campaign.json` from disk (restores turn state, factions, provinces, armies, wars…) or download the current state.
+- **Undo** (Ctrl+Z) — step back through the GM's/players' edits this session.
+- GM mode ignores `canAct`, so the GM can edit anything at any time, regardless of turn or `pendingReview`.
+
+---
+
+## 12. Player controls
+
+| Action | How |
+| :-- | :-- |
+| Pan / zoom | Drag; mouse wheel zooms to cursor; double-click zooms in; `+`/`-`; **F** fits the map |
+| Open a province | Click it (drawer shows owner, tier, garrison, revenue, terrain, movement cost, hosts, works, construction) |
+| Find a province | **/** then type, Enter to jump |
+| Map modes | **1** Political · **2** Settlements · **3** Wealth · **4** Terrain; **R** toggles relief shading |
+| Realm sheet | Click a realm in the left legend |
+| Codex (unit browser) | **C** / *Codex* button |
+| Chronicle / Wars / Battles | **Ledger** button |
+| Turn map timeline | **Turn map** — how the map stood each turn |
+| Help / Rules | **?** panel; **Rules** opens the full campaign rules document |
+| Unlock realm | When it is your realm's turn: **This is my realm — unlock** → passphrase |
+| Move a host | Click host → click a highlighted province (≤ 3 movement) |
+| Recruit | Own province with Barracks → *Muster & Recruit Army Here* → Codex → **⚔ Muster to Map** |
+| Reinforce | Host card → *Recruit* → add regiments → **⚔ Muster to Map** |
+| Build / upgrade | Province drawer → Works: queue an available building, upgrade Barracks / trade building / settlement |
+| End your turn | **End turn** → confirm. Irreversible; publishes to GitHub |
+| Draft for later | Codex planner → **Copy for GM** (an `RQ1|…` code) |
+
+Players cannot act on other realms, change diplomacy, claim land, stage battles, edit numbers or publish manually.
+
+---
+
+## 13. GM controls
+
+Enter **GM mode** with the **GM** button (or **G**) and the GM passphrase (SHA-256 hash `GM_HASH` in `index.html`; session-remembered). In GM mode the `.gm` elements appear and the `canAct` check is bypassed.
+
+| Area | Capability |
+| :-- | :-- |
+| **Turn flow** | **Next realm ▸** (advance / skip / resolve season), **Order** (reorder, *Set active*), **Set turn**, `pendingReview` handled by resolving the season |
+| **Publish** | **⇧ Publish** — commit current state to GitHub (§15) |
+| **Files** | **Save** (download `campaign.json`), **Load** (from disk), **Export** (full-map PNG), **Undo** (Ctrl+Z) |
+| **Map editing** | Province drawer *Adjust*: holder, display name, tier, terrain, garrison, revenue, notes. **Claim brush** ✎ (click provinces to claim for a realm); **Shift-drag** box-select, **Ctrl-click** multi-select, then click a realm to claim many (stripes annex at season end); right-click clears selection |
+| **Realms** | Create/dissolve realms, rename, recolour, edit treasury and Zeal, **Gift castas**, **GM treasury adjustment**, clear/reassign capital |
+| **Armies** | Move any host anywhere, edit men, reassign realm, rename, split, merge, disband, chevron ranks, Entrench, raise a free-form host, import `RQ1` plans, convert a free-form host to a codex host |
+| **Construction** | Make buildings available to a realm per province, **Complete** / **Decline (refund)** queued jobs, set custom building cost/owner |
+| **War** | Stage battles, record outcomes (victor + losses), call off, start/lift/adjust sieges, occupy/annex/zeal-annex/raid, diplomacy (war, peace, truce, ally, break/betray) |
+| **Zeal** | Edit directly; Crusade/Jihad button (10 ✦) |
+| **Passwords** | Edit `FACTION_PASSWORDS` / `GM_HASH` in source (hashes only) |
+
+A typical GM session between rounds: pull latest → review the chronicle and queued constructions → complete/decline works → stage and record battles → adjudicate diplomacy/claims → press **Next realm ▸** to resolve the season → review → **⇧ Publish**.
+
+---
+
+## 14. Known gaps — things the code does not enforce
+
+These are accurate as of this writing; they are *design realities*, not necessarily bugs, but are worth knowing before relying on them.
+
+- **Host cap is informational.** The realm sheet shows `min(1 + ⌊provinces/4⌋, 1 + barracks count)`, but no code stops a player mustering more hosts than that. Older notes describing per-class composition limits (pike/missile/cavalry/artillery caps) and rank-based upkeep percentages are **not implemented** — the only limits are 20 regiments per host and the flat 80 % upkeep discount.
+- **Movement is not cumulative.** Each move is checked against the full 3-point allowance from the host's current position; spent points are not remembered, so a host can be moved repeatedly in one turn. The GM review step (and trust) is the control.
+- **Rules text vs. code:** the Rules document lists Barracks at 5,000 and a Zeal bank of 6; the code uses Barracks 1,000 (+ upgrades) and a Zeal cap of 10 (− synagogues). Market/Port/Road are listed as cost 0 in `BLD` and are priced by the GM. Force March, Ransom, "capital lost +2 ✦" and victory conditions are narrative.
+- **Publishing overwrites the whole file** from the publisher's in-memory state after fetching only the latest `sha`. There is no merge. If two people publish from stale pages the later write wins; the turn gate (one active realm at a time) is what prevents this in practice. Players should reload before their turn.
+- **Players do not auto-refresh.** A player must reload to see others' turns.
+- **Client-side secrets (accepted trade-off).** The GitHub token and all passphrase hashes are readable in the page. This was a deliberate decision (burner token account; trusted players) — see [§15](#15-publishing-hosting--secrets). The GM gate also contains a hard-coded plaintext passphrase fallback in `gmTry()`; removing it so only `GM_HASH` is accepted is an easy hardening step.
+- **A failed End turn** rolls back only turn bookkeeping, not the player's moves/recruitment that turn.
+- **Construction never auto-completes** — it waits for the GM.
+
+---
+
+## 15. Publishing, hosting & secrets
+
+### `publishTurn()`
+1. Target: `crokator0012-commits/ZeCampain`, file `campaign.json` (`ghTarget()`).
+2. `GET /repos/{o}/{r}/contents/campaign.json` to fetch the current `sha` (HTTP 401/403/404 → "Token rejected — the GitHub token in index.html needs to be updated").
+3. `PUT` the same path with the base64 of `JSON.stringify(S, null, 1)`, the `sha`, and the message `Turn <turn> — <Season> <year>`.
+4. Returns `true`/`false`; the **⇧ Publish** button shows "Publishing…" meanwhile. The GM button requires GM mode; **End turn** calls the same function for players.
+5. Vercel redeploys on the new commit; players see it after a reload (≈ a minute).
+
+Required token scope: **`repo`** (contents write).
+
+### Token handling
+`GH_TOKEN` in `index.html` is the literal placeholder `__GH_TOKEN_PLACEHOLDER__` in git. GitHub secret scanning auto-revokes any real token committed to the repo, so the real value lives only in the **Vercel project environment variable `GH_TOKEN`**. On every build (`vercel.json` → `npm run build` → `scripts/inject-token.js`) the placeholder is replaced in the deployed copy. The script aborts the build if `GH_TOKEN` is unset or the placeholder doesn't occur exactly once. **Never paste a real token into the source.** To rotate: update the env var in Vercel and redeploy.
+
+Deliberately, there is no serverless function or backend (see `TASK.md`).
+
+### Other persistence
+- `sessionStorage`: GM unlock flag (`gmOK`) and realm unlock (`rqFactionAuth`).
+- `localStorage`: `rqCampaignState` (cached province display names), `rqRepo` (fallback raw-GitHub source).
+
+---
+
+## 16. Offline tooling (Python scripts)
+
+Run from the repository root; most need Pillow/numpy. These regenerate data and assets, they are not part of the running game.
+
+| Script | Role |
+| :-- | :-- |
+| `sync_all.py` | Master pipeline: ingest unit icons, rebuild rosters, process map-tile masks, update campaign data. |
+| `update_unit_roster.py` | Build the codex roster from the Dawnless Days CSV (`DAWNLESS_DAYS_CSV` or `dawnless_days.csv`). |
+| `implement_factions.py`, `add_regional_factions.py` | Inject new factions/rosters. |
+| `generate_middle_earth_map.py`, `sync_middle_earth.py`, `sync_painted_tiles.py` | Build/refresh the province map, terrain texture and relief shading from source images. |
+| `compress_icons.py`, `scripts/build_unit_icons.py`, `scripts/build_emblems_extra.py`, `fix_emblems_dedup.py` | Compress and encode emblem/unit icons into `assets/*.js`. |
+| `deploy_campaign.py` | Embed `campaign.json` into `index.html`'s fallback `mapdata`. |
+| `split_province_*.py`, `patch_unclaimed_white.py`, `apply_armies_fix.py`, `fix_script_order.py` | One-off repairs of specific map/data problems. |
+| `check_*.py`, `verify_sync.py`, `compare_layers.py`, `analyze_test_map.py`, `inspect_*`/`tools_inspect.py` | Diagnostics and validation. |
+| `modularize.py` | Historical: split large inline data out of `index.html` into `assets/`. |
+
+Because several scripts rewrite `index.html`, back it up first and review the diff.
+
+---
+
+## 17. Developer notes
+
+- **Always pull first.** Players publish `campaign.json` commits straight to `main` from the live site. Run `git fetch`, inspect, and `git pull --rebase --autostash origin main` **before committing and again before pushing**. Never overwrite `campaign.json` with a stale local copy and never force-push `main`.
+- Gameplay code lives in `index.html`; `campaign.json` should only change via the app (or deliberate GM data fixes).
+- Preserve the schema (§3) when adding provinces/factions; new playable tiles need `adj`, `tier`, `value`, `garrison`, `bld`, `bldLevel`, `buildQueue`.
+- Don't put heavy work or new listeners inside the render loop `draw()`.
+- Any new player-facing action must be gated through `canAct(fid)`; GM-only UI uses the `.gm` class.
+- Don't commit a real GitHub token; keep the placeholder (§15).
+- `gm.html`/`player.html`/`index.html.bak` from earlier versions no longer exist as active files; everything is `index.html`.
+- The in-game **Rules** button links to the campaign rules Google Doc; gameplay text embedded in `#rulesBody` is legacy (still lists the old Iberian realm order) and should not be treated as authoritative.
