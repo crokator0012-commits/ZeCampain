@@ -2,6 +2,8 @@
 
 A browser-based grand-strategy wargame for a Lord of the Rings (Dawnless Days / Total War: Attila) Discord campaign. Players command realms on a Middle-earth map; battles are fought in Total War and recorded here. There is **no backend**: the whole game is one static page plus one JSON file that the page commits to GitHub.
 
+> **AI agents / new developers: do NOT read `index.html`, `campaign.json` or `assets/*.js` whole** — they total ~30 MB (~900k tokens), almost all of it base64 images and data. Read this file, then use the [Code map](#18-code-map-for-agents-navigate-dont-read) to jump to the exact lines you need.
+
 > This document describes what the code in `index.html` actually does. Where the in-game Rules text or older notes disagree with the code, the code is described and the difference is called out in [§14 Known gaps](#14-known-gaps--things-the-code-does-not-enforce).
 
 ---
@@ -25,6 +27,7 @@ A browser-based grand-strategy wargame for a Lord of the Rings (Dawnless Days / 
 15. [Publishing, hosting & secrets](#15-publishing-hosting--secrets)
 16. [Offline tooling (Python scripts)](#16-offline-tooling-python-scripts)
 17. [Developer notes](#17-developer-notes)
+18. [Code map for agents](#18-code-map-for-agents-navigate-dont-read)
 
 ---
 
@@ -491,3 +494,72 @@ Because several scripts rewrite `index.html`, back it up first and review the di
 - Don't commit a real GitHub token; keep the placeholder (§15).
 - `gm.html`/`player.html`/`index.html.bak` from earlier versions no longer exist as active files; everything is `index.html`.
 - The in-game **Rules** button links to the campaign rules Google Doc; gameplay text embedded in `#rulesBody` is legacy (still lists the old Iberian realm order) and should not be treated as authoritative.
+
+---
+
+## 18. Code map for agents (navigate, don't read)
+
+### What is huge (never open these in full)
+| File / lines | Size | What it is |
+| :-- | --: | :-- |
+| `index.html` line 667 | ~196 KB, one line | embedded `mapdata` JSON copy of `campaign.json` |
+| `index.html` line 3004 | ~154 KB, one line | `codexdata` — all 575 units |
+| `index.html` line 3005 | ~196 KB, one line | `FLAG_LIBRARY` base64 flags |
+| `assets/emblems.js` | 25 MB | faction emblems (base64) |
+| `assets/codex_icons.js`, `map_assets.js`, `emblems_extra.js` | 2.4 MB / 1.8 MB / 0.7 MB | icons & map images (base64) |
+| `campaign.json` | ~380 KB | live state; inspect with a script, e.g. `python -c "import json;d=json.load(open('campaign.json',encoding='utf-8'));print(d['turn'],d['active'],d['order'][d['active']])"` |
+
+Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limit` (≈50–150 lines). Add `| cut -c1-300` in shell greps, because lines 667/3004/3005 will flood the output.
+
+### `index.html` layout (line numbers at time of writing — re-grep the function name if they drift)
+| Lines | Content |
+| :-- | :-- |
+| 1–396 | CSS (`.readonly .gm{display:none}` hides GM UI; `.player-view` shows turn-gate) |
+| 397–666 | HTML: top bar (`#bTurn`, `#bPub`, `#turnGate`, `#tgUnlock`, `#tgEndTurn`), legend, ledger, drawer, modals (`#gmask` GM prompt, `#pwGate` realm prompt, `#help`, `#ordM` order dialog) |
+| 667–682 | embedded data + `<script src="assets/…">` tags |
+| 683–830 | load-time normalisation, `reconcileTurnOrder`, `UPG`, `BLD`, barracks/trade helpers (`barracksLevel`, `tradeIncome`), `atWar/isAllied`, `chargeZeal`, `toggleFort`, `holdout` (763), `effMove` (762) |
+| 830–1110 | `boot`, map painting (`paintMap`, `colourOf`), view/zoom (`draw`) |
+| 1173–1340 | labels, armies, settlements drawing; `snap`/`undo` (1311/1323), `loseCapitalIfNeeded`, `claim` |
+| 1355–1512 | `reachableFrom` (movement), mouse/keyboard handlers, **`click` (1423 — player/GM move logic)**, `provAt` |
+| 1513–1560 | `openProv` (province drawer) |
+| 1561–1780 | `facIncomeCalc`, **`openRealm` (realm sheet, diplomacy, crusade, dissolve)** |
+| 1785–1884 | `drawerArmies`, `bMusterTile` (legacy copy), `bRaise` |
+| 1885–2163 | **`renderWorksBox`, `renderConstructionQueue`, `renderClaimBox`, `renderSiegeBox`** |
+| 2169–2300 | `legend`, `stats`, `normalizeCampaignClock`, search, map modes |
+| 2298–2368 | `GM_HASH`, `store` (sessionStorage), `sha256`, `setGM`, `gmTry` |
+| **2369–2503** | **Turn gate:** `FACTION_PASSWORDS` (2373), `canAct` (2409), `reinforceBlocker`, `renderTurnGate` (2420), `endTurn` (2449), `pwGateTry` (2486) |
+| 2504–2535 | `logIt`, `UPKEEP_DISCOUNT`, `armyUpkeep`, `stageBattle` |
+| **2536–2635** | **`bTurn` onclick — season resolution** (movement, annex, sieges, income, upkeep, zeal, truces, clock) |
+| 2636–2820 | ledger (`openLedger`, `drawLedger`), turn-map timeline |
+| **2822–2890** | **`GH_TOKEN` placeholder, `publishTurn`, `bPub`, Load/Save handlers** |
+| 2934–2967 | turn snapshots (`turnlog`) |
+| 3006–3350 | Codex: `AOR_ROSTERS`, `canServe`, `unitTier`, `cxRender`, `openCodex` |
+| 3355–3545 | `.army_setup` export for Attila |
+| **3547–3714** | **Recruitment:** `planText`, `parsePlan`, `musterPlan` (3591), **`cxMusterMap` onclick (3643)**, add/remove regiment handlers |
+| 3786–3945 | Recruit-here button, drawer armies/roster, split/merge |
+| 3946–4005 | `applyLoss`, battle-result handler (wrapped `drawLedger`) |
+| 4026–4088 | flag library + new-realm picker |
+| **4097–4201** | **Turn-order module:** wrapper around `bTurn` (4108) that uses `moved[]`, `paintOrder`, `setActiveManually`, `insertRealmAt` |
+
+Note that some handlers are **wrapped later in the file** (`bTurn` is assigned at 2536, wrapped at 3960 and again at 4108; `drawLedger` is wrapped at ~3962; `bMusterTile` is assigned at 1856 and 3787 — the later one wins). Always grep for every assignment (`grep -n '\$("bTurn").onclick' index.html`) before editing.
+
+### "Where do I change…?"
+| Task | Go to |
+| :-- | :-- |
+| Realm passphrase | `FACTION_PASSWORDS` (~2373); generate with `await sha256("pw")` in the browser console |
+| What a player may do / when | `canAct` (~2409) and its call sites (`grep -n 'canAct(' index.html`) |
+| End turn / round-complete logic | `endTurn` (~2449) and the `bTurn` wrapper (~4108) |
+| Season income, upkeep, zeal, clock | `bTurn` handler (~2536) |
+| Upkeep discount | `UPKEEP_DISCOUNT` (~2506) |
+| Settlement costs / revenue | `UPG` (~735), `SETTLEMENT_REVENUE`, `GARR` |
+| Building costs / barracks levels | `BLD`, `BARRACKS_UPGRADE_COST`, `BARRACKS_UPKEEP` (~743), `assets/trade_buildings.js` |
+| Movement allowance / terrain | `campaign.json` `allowance`, province `move`; `reachableFrom` (~1355), `effMove` (~762) |
+| Siege length | `holdout` (~763) |
+| Recruitment rules (barracks, tier, cost) | `cxMusterMap` (~3643), `musterPlan` (~3591), `reinforceBlocker` (~2412) |
+| Army size cap | `CAPU` from `codexdata.cap` (20) |
+| Publish target / commit message | `ghTarget`, `publishTurn` (~2824–2868) |
+| New unit / roster | `unit.md` + `update_unit_roster.py`/`sync_all.py` → regenerates `codexdata` |
+
+### Cheap verification
+- Syntax check without a browser: extract the main `<script>` blocks and run `node --check` on them (skip the giant data lines).
+- State sanity: load `campaign.json` with Python and check `order`, `active`, `moved`, `pendingReview` consistency (`moved` ⊆ `order`; if `pendingReview` then every realm is in `moved`).
