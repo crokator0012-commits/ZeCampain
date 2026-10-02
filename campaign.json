@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 1798,
+   "treasury": 698,
    "capital": "Harondor",
    "zeal": 7
   },
@@ -4047,7 +4047,7 @@
    ],
    "displayName": "tolerant",
    "bldLevel": {
-    "timber_yard": 1
+    "timber_yard": 2
    },
    "cx": 2275.6290879605995,
    "cy": 467.73894110934265,
@@ -4061,17 +4061,7 @@
     "timber_yard": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "timber_yard",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Woodland Realm",
-     "cost": 850,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4746,7 +4736,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "healing_herb_garden": 1
+    "healing_herb_garden": 2
    },
    "cx": 2313.4099506399334,
    "cy": 611.5595160092605,
@@ -4760,17 +4750,7 @@
     "healing_herb_garden": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Woodland Realm",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5476,7 +5456,7 @@
    "displayName": "The Elvenking’s Halls",
    "bldLevel": {
     "barracks": 1,
-    "healing_herb_garden": 1
+    "healing_herb_garden": 2
    },
    "cx": 2276.0049363671424,
    "cy": 374.33011955264175,
@@ -5493,15 +5473,6 @@
    },
    "upg": null,
    "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Woodland Realm",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
     {
      "key": "barracks",
      "kind": "barracksUpgrade",
@@ -6509,7 +6480,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -6745,12 +6716,29 @@
    "bldLevel": {},
    "bldOwner": {},
    "availableBld": [
-    "fishing_jetties"
+    "fishing_jetties",
+    "slavers_market"
    ],
    "availableBldOwner": {
-    "fishing_jetties": "Umbar"
+    "fishing_jetties": "Umbar",
+    "slavers_market": "Umbar"
    },
-   "buildQueue": []
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "payer": "Umbar",
+     "cost": 600,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    },
+    {
+     "key": "slavers_market",
+     "payer": "Umbar",
+     "cost": 500,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ]
   },
   {
    "id": "Province_296",
@@ -7336,7 +7324,9 @@
    "raid": null,
    "occ": null,
    "displayName": "lesser umbar",
-   "bldLevel": {},
+   "bldLevel": {
+    "blacksmith": 1
+   },
    "bldOwner": {},
    "availableBld": [
     "fishing_jetties"
@@ -9847,6 +9837,76 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_392 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_427 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_375 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Slavers' Market at South Ithilien (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Fishing Jetties at South Ithilien (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "South Ithilien: construction declined — Umbar refunded 600 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "South Ithilien: construction declined — Umbar refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Fishing Jetties at South Ithilien (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Slavers' Market at South Ithilien (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar may construct Slavers' Market at South Ithilien.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
