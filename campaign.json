@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 3850,
+   "treasury": 200,
    "capital": "Province_364",
    "zeal": 7
   },
@@ -625,7 +625,17 @@
     "barracks": "Lindon"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Lindon",
+     "cost": 1650,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -4100,7 +4110,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Lindon",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8672,7 +8688,7 @@
    "name": "Host of Province_364",
    "faction": "Lindon",
    "men": 1340,
-   "at": "Province_430",
+   "at": "Province_411",
    "order": null,
    "units": [
     "lindon_falathrim_seafarers",
@@ -9808,6 +9824,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts upgrading Fishing Jetties at Province_364 to Level 3 (1,650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Province_430 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_364 moved Province_430 → Province_411",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15603,7 +15647,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 18,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19559,7 +19603,8 @@
   "Gondor",
   "Umbar",
   "Rachrohir",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Lindon"
  ],
  "pendingReview": false
 }
