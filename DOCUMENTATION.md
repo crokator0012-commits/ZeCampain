@@ -441,6 +441,7 @@ These are accurate as of this writing; they are *design realities*, not necessar
 - **Publishing overwrites the whole file** from the publisher's in-memory state after fetching only the latest `sha`. There is no merge. If two people publish from stale pages the later write wins; the turn gate (one active realm at a time) is what prevents this in practice. Players should reload before their turn.
 - **Players do not auto-refresh.** A player must reload to see others' turns.
 - **Client-side secrets (accepted trade-off).** The GitHub token and all passphrase hashes are readable in the page. This was a deliberate decision (burner token account; trusted players) — see [§15](#15-publishing-hosting--secrets). The GM gate also contains a hard-coded plaintext passphrase fallback in `gmTry()`; removing it so only `GM_HASH` is accepted is an easy hardening step.
+- **Stuck-round repair:** on load, if `pendingReview` is set but some realm is not in `moved[]`, the lock is cleared and `active` is set to the first un-moved realm (`index.html` ~697). Earlier versions closed the round when the *last slot* realm ended its turn early; now only an empty un-moved list closes it (`endTurn` and the `bTurn` wrapper).
 - **A failed End turn** rolls back only turn bookkeeping, not the player's moves/recruitment that turn.
 - **Construction never auto-completes** — it waits for the GM.
 
@@ -531,7 +532,7 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | 1885–2163 | **`renderWorksBox`, `renderConstructionQueue`, `renderClaimBox`, `renderSiegeBox`** |
 | 2169–2300 | `legend`, `stats`, `normalizeCampaignClock`, search, map modes |
 | 2298–2368 | `GM_HASH`, `store` (sessionStorage), `sha256`, `setGM`, `gmTry` |
-| **2369–2503** | **Turn gate:** `FACTION_PASSWORDS` (2373), `canAct` (2409), `reinforceBlocker`, `renderTurnGate` (2420), `endTurn` (2449), `pwGateTry` (2486) |
+| **2375–2509** | **Turn gate:** `FACTION_PASSWORDS` (2379), `canAct` (2415), `reinforceBlocker`, `renderTurnGate` (2426), `endTurn` (2455), `pwGateTry` (2491) |
 | 2504–2535 | `logIt`, `UPKEEP_DISCOUNT`, `armyUpkeep`, `stageBattle` |
 | **2536–2635** | **`bTurn` onclick — season resolution** (movement, annex, sieges, income, upkeep, zeal, truces, clock) |
 | 2636–2820 | ledger (`openLedger`, `drawLedger`), turn-map timeline |
@@ -543,25 +544,25 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | 3786–3945 | Recruit-here button, drawer armies/roster, split/merge |
 | 3946–4005 | `applyLoss`, battle-result handler (wrapped `drawLedger`) |
 | 4026–4088 | flag library + new-realm picker |
-| **4097–4201** | **Turn-order module:** wrapper around `bTurn` (4108) that uses `moved[]`, `paintOrder`, `setActiveManually`, `insertRealmAt` |
+| **4104–4209** | **Turn-order module:** wrapper around `bTurn` (4114) that uses `moved[]`, `paintOrder`, `setActiveManually`, `insertRealmAt` |
 
 Note that some handlers are **wrapped later in the file** (`bTurn` is assigned at 2536, wrapped at 3960 and again at 4108; `drawLedger` is wrapped at ~3962; `bMusterTile` is assigned at 1856 and 3787 — the later one wins). Always grep for every assignment (`grep -n '\$("bTurn").onclick' index.html`) before editing.
 
 ### "Where do I change…?"
 | Task | Go to |
 | :-- | :-- |
-| Realm passphrase | `FACTION_PASSWORDS` (~2373); generate with `await sha256("pw")` in the browser console |
-| What a player may do / when | `canAct` (~2409) and its call sites (`grep -n 'canAct(' index.html`) |
-| End turn / round-complete logic | `endTurn` (~2449) and the `bTurn` wrapper (~4108) |
-| Season income, upkeep, zeal, clock | `bTurn` handler (~2536) |
-| Upkeep discount | `UPKEEP_DISCOUNT` (~2506) |
+| Realm passphrase | `FACTION_PASSWORDS` (~2379); generate with `await sha256("pw")` in the browser console |
+| What a player may do / when | `canAct` (~2415) and its call sites (`grep -n 'canAct(' index.html`) |
+| End turn / round-complete logic | `endTurn` (~2455) and the `bTurn` wrapper (~4114) |
+| Season income, upkeep, zeal, clock | `bTurn` handler (~2541) |
+| Upkeep discount | `UPKEEP_DISCOUNT` (~2511) |
 | Settlement costs / revenue | `UPG` (~735), `SETTLEMENT_REVENUE`, `GARR` |
 | Building costs / barracks levels | `BLD`, `BARRACKS_UPGRADE_COST`, `BARRACKS_UPKEEP` (~743), `assets/trade_buildings.js` |
 | Movement allowance / terrain | `campaign.json` `allowance`, province `move`; `reachableFrom` (~1355), `effMove` (~762) |
 | Siege length | `holdout` (~763) |
 | Recruitment rules (barracks, tier, cost) | `cxMusterMap` (~3643), `musterPlan` (~3591), `reinforceBlocker` (~2412) |
 | Army size cap | `CAPU` from `codexdata.cap` (20) |
-| Publish target / commit message | `ghTarget`, `publishTurn` (~2824–2868) |
+| Publish target / commit message | `ghTarget`, `publishTurn` (~2846) |
 | New unit / roster | `unit.md` + `update_unit_roster.py`/`sync_all.py` → regenerates `codexdata` |
 
 ### Cheap verification
