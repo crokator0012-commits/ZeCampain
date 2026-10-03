@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 5315,
+   "treasury": 265,
    "capital": "Province_388",
    "zeal": 7
   },
@@ -1216,7 +1216,17 @@
     "fishing_jetties": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 1650,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6677,7 +6687,17 @@
     "timber_yard": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 1400,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7878,7 +7898,17 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 1500,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8223,7 +8253,15 @@
     "goat_pen": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "goat_pen",
+     "payer": "Dale",
+     "cost": 500,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9569,7 +9607,7 @@
    "name": "Host of Province_388",
    "faction": "Dale",
    "men": 1700,
-   "at": "Province_421",
+   "at": "Province_13",
    "order": null,
    "units": [
     "dale_northmen_scouts",
@@ -9855,6 +9893,83 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_406 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_13 → Province_406",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Timber Yard at Province_406 to Level 3 (1400 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Grain Farm at Province_404 to Level 3 (1500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Fishing Jetties at Province_465 to Level 3 (1650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_455_split_1: construction declined — Dale refunded 500 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Goat Pen at Province_455_split_1 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Goat Pen at Province_455_split_1 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_451 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_421 → Province_451",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15993,7 +16108,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19956,7 +20071,8 @@
   "Dorvinion",
   "Isengard",
   "Rohan",
-  "Erebor"
+  "Erebor",
+  "Dale"
  ],
  "pendingReview": false
 }
