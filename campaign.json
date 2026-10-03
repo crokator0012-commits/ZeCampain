@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 5338,
+   "treasury": 163,
    "capital": "Province_260",
    "zeal": 7
   },
@@ -8319,7 +8319,7 @@
   {
    "name": "Host of Province_44",
    "faction": "Rohan",
-   "men": 1020,
+   "men": 2100,
    "at": "Province_260",
    "order": null,
    "units": [
@@ -8332,7 +8332,16 @@
     "rohan_aor_eored_of_the_east_fold",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark"
+    "rohan_yeomen_of_the_mark",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen"
    ],
    "xp": [
     0,
@@ -8344,9 +8353,18 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5025,
+   "upkeep": 7612.5,
    "_startCost": 9075
   },
   {
@@ -9831,6 +9849,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan reinforced Host of Province_44 at Province_260 (+9 regiments · 5 175 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_19 → Province_260",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_260 → Province_19",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15927,7 +15973,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 25,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19888,7 +19934,8 @@
   "Anduin Vale",
   "Lostladen Tribes",
   "Dorvinion",
-  "Isengard"
+  "Isengard",
+  "Rohan"
  ],
  "pendingReview": false
 }
