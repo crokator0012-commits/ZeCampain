@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 3958,
+   "treasury": 308,
    "capital": "Province_23",
    "zeal": 7
   },
@@ -2767,7 +2767,17 @@
     "barracks": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "pipeweed_fields",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9821,9 +9831,95 @@
    ],
    "upkeep": 5575,
    "_startCost": 9975
+  },
+  {
+   "name": "Host of Province_23",
+   "faction": "Anduin Vale",
+   "men": 240,
+   "at": "Province_26",
+   "order": null,
+   "units": [
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_axemen"
+   ],
+   "xp": [
+    0,
+    0
+   ],
+   "upkeep": 825
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_23 → Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_23 → Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale mustered Host of Province_23 at Province_23 (2 regiments · 1,650 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_26 → Province_23",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_23 → Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_26 → Province_23",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Pipe Weed Fields at Province_23 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_26: construction declined — Anduin Vale refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Province_26 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15647,7 +15743,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19604,7 +19700,8 @@
   "Umbar",
   "Rachrohir",
   "Woodland Realm",
-  "Lindon"
+  "Lindon",
+  "Anduin Vale"
  ],
  "pendingReview": false
 }
