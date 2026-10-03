@@ -4537,7 +4537,7 @@
    "modern": "Province 27",
    "hex": "#1f7d50",
    "playable": true,
-   "owner": "Rohan",
+   "owner": "Isengard",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -6485,7 +6485,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8279,7 +8279,7 @@
    "name": "Host of Province_127",
    "faction": "Rohan",
    "men": 1600,
-   "at": "Province_127",
+   "at": "Province_374",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -8320,7 +8320,7 @@
    "name": "Host of Province_44",
    "faction": "Rohan",
    "men": 1020,
-   "at": "Province_44",
+   "at": "Province_260",
    "order": null,
    "units": [
     "rohan_eomer",
@@ -8588,7 +8588,7 @@
   {
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
-   "men": 1720,
+   "men": 1600,
    "at": "Province_359",
    "order": null,
    "units": [
@@ -8596,16 +8596,15 @@
     "lostladen_tribes_desert_spearmen",
     "lostladen_tribes_desert_spearmen",
     "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_desert_archers",
-    "lostladen_tribes_desert_archers",
     "lostladen_tribes_haradrim_glaives",
     "lostladen_tribes_haradrim_lancers",
     "lostladen_tribes_haradrim_archers",
     "lostladen_tribes_haradrim_archers",
     "lostladen_tribes_camel_riders",
-    "lostladen_tribes_desert_trackers",
     "lostladen_tribes_haradrim_swordsmen",
-    "lostladen_tribes_haradrim_swordsmen"
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_desert_archers",
+    "lostladen_tribes_desert_archers"
    ],
    "xp": [
     0,
@@ -8620,10 +8619,9 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 4987.5,
+   "upkeep": 4687.5,
    "_startCost": 9975
   },
   {
@@ -9833,6 +9831,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_127 → Province_374",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_44 → Province_260",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard annexed Province_27 (from Rohan)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard occupied Province_27 (held by Rohan)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15901,7 +15927,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 25,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
