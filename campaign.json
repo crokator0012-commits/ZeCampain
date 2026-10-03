@@ -608,8 +608,8 @@
     "Province_72"
    ],
    "bldLevel": {
-    "fishing_jetties": 1,
-    "barracks": 1
+    "fishing_jetties": 2,
+    "barracks": 2
    },
    "cx": 909.3366897077233,
    "cy": 594.6528601752572,
@@ -625,26 +625,7 @@
     "barracks": "Lindon"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Lindon",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lindon",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1276,7 +1257,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 719.2886974435809,
    "cy": 835.5061335331023,
@@ -1290,17 +1271,7 @@
     "grain_farm": "Lindon"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lindon",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9837,6 +9808,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_364 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_364 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_24 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
