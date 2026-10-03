@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 4658,
+   "treasury": 2658,
    "capital": "Province_359",
    "zeal": 7
   },
@@ -3942,7 +3942,17 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9830,6 +9840,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_359: construction declined — Lostladen Tribes refunded 2,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts upgrading Barracks at Province_359 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts upgrading Barracks at Province_359 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_359 moved Province_426 → Province_359",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_359 moved Province_359 → Province_426",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15737,7 +15789,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 19,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19695,7 +19747,8 @@
   "Rachrohir",
   "Woodland Realm",
   "Lindon",
-  "Anduin Vale"
+  "Anduin Vale",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
