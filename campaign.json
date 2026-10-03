@@ -3925,7 +3925,7 @@
    ],
    "displayName": "Caras Sulmegor",
    "bldLevel": {
-    "spice_trader": 1,
+    "spice_trader": 2,
     "barracks": 1
    },
    "cx": 3297.164446091145,
@@ -3942,17 +3942,7 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "spice_trader",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lostladen Tribes",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6561,7 +6551,7 @@
    ],
    "displayName": "Near Harad",
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 2488.565657694261,
    "cy": 2391.0772676485526,
@@ -6575,17 +6565,7 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Lostladen Tribes",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9850,6 +9830,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_462 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Spice Trader at Province_359 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15743,7 +15737,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 19,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
