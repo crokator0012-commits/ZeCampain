@@ -356,7 +356,7 @@ With the realm unlocked, the player may, in any order: **move hosts**, **recruit
 ### 11.5 End turn (`endTurn()`)
 1. Requires `canAct(active realm)`. Shows a **confirm dialog** ("This publishes immediately and locks <Realm> out…").
 2. Takes an undo snapshot, adds the realm to `moved[]`.
-3. Advances `active` to the first un-moved realm and logs `"<Realm> ends its turn — <Next> to move."` — **or**, if it was the last realm / nobody is left, sets `pendingReview = true` and logs `"…every realm has moved this round. Awaiting GM review."`
+3. Advances `active` to the first un-moved realm (the round only closes when *no* realm is left un-moved, regardless of who sits in the last slot) and logs `"<Realm> ends its turn — <Next> to move."` — **or**, if it was the last realm / nobody is left, sets `pendingReview = true` and logs `"…every realm has moved this round. Awaiting GM review."`
 4. Calls `publishTurn()` (§15).
 5. **On success:** toast, UI re-renders for the next realm. **On failure:** `active`, `moved`, `pendingReview` and the log line are rolled back, and the player is told to try again. *(Only the turn bookkeeping is rolled back — the player's own moves/recruits for that turn remain in the in-memory state.)*
 

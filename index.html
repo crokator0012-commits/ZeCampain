@@ -695,6 +695,10 @@ const npcIds=new Set((S.factions||[]).filter(f=>f.npc).map(f=>f.id));
 S.order=[...new Set((S.order||[]).map(id=>id==="Rhun"?"Rhurrim":id).filter(id=>id!=="Harad"&&!npcIds.has(id)))];
 S.moved=(S.moved||[]).filter(id=>!npcIds.has(id));
 S.active=Math.max(0,S.order.indexOf(currentTurn));
+/* Repair a round wrongly locked for review (old bug: the last slot ending early closed the round): if any realm
+   has not moved, the round is still open and the first unmoved realm has the turn. */
+{const left=S.order.findIndex(id=>S.moved.indexOf(id)<0);
+ if(S.pendingReview&&left>=0){S.pendingReview=false;S.active=left;}}
 const canonicalRealm=id=>id==="Rhun"?"Rhurrim":id;
 S.allies=(S.allies||[]).map(pair=>pair.split("|").map(canonicalRealm).sort().join("|"));
 S.wars=(S.wars||[]).map(pair=>pair.split("|").map(canonicalRealm).sort().join("|"));
@@ -2459,8 +2463,7 @@ async function endTurn(){
   S.moved=S.moved||[];
   if(S.moved.indexOf(fid)<0)S.moved.push(fid);
   const remaining=S.order.filter(id=>S.moved.indexOf(id)<0);
-  const wasLastSlot=(S.active>=S.order.length-1);
-  if(remaining.length&&!wasLastSlot){
+  if(remaining.length){
     S.active=S.order.indexOf(remaining[0]);
     logIt(`${name} ends its turn — ${(F[S.order[S.active]]||{}).name||S.order[S.active]} to move.`,"turn");
   }else{
@@ -4111,12 +4114,11 @@ const _bTurn=$("bTurn").onclick;
 $("bTurn").onclick=function(){
   const mover=S.order[S.active];
   if(mover&&S.moved.indexOf(mover)<0)S.moved.push(mover);
-  /* Resolve the round when ALL factions are in S.moved, OR when the current
-     mover was the last slot in the turn order (handles fresh page-load where
-     S.moved was empty but S.active already pointed at the final faction). */
+  /* Resolve the round only when ALL factions are in S.moved. Being in the last slot
+     of the order is irrelevant: a realm that played early from that slot must not
+     end the round while others are still waiting. */
   const remaining=S.order.filter(id=>S.moved.indexOf(id)<0);
-  const wasLastSlot=(S.active>=S.order.length-1);
-  if(remaining.length&&!wasLastSlot){
+  if(remaining.length){
     /* Advance to the next realm that has NOT moved. The engine's own S.active++
        would walk back onto realms already played whenever the queue was reshuffled,
        handing them a second turn. */
