@@ -1202,7 +1202,7 @@
    ],
    "displayName": "esgoroth",
    "bldLevel": {
-    "fishing_jetties": 1
+    "fishing_jetties": 2
    },
    "cx": 2440.345934866773,
    "cy": 487.0481667046231,
@@ -1216,17 +1216,7 @@
     "fishing_jetties": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dale",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6646,7 +6636,7 @@
     "Province_9"
    ],
    "bldLevel": {
-    "timber_yard": 1
+    "timber_yard": 2
    },
    "cx": 2918.8466890873246,
    "cy": 521.2617128609533,
@@ -6660,17 +6650,7 @@
     "timber_yard": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "timber_yard",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dale",
-     "cost": 850,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7857,7 +7837,7 @@
    ],
    "displayName": "dalian grasslands",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2714.709562814566,
    "cy": 537.3609197670976,
@@ -7871,17 +7851,7 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dale",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7909,7 +7879,7 @@
    ],
    "displayName": "dale",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2544.417806952663,
    "cy": 437.6750647189349,
@@ -7923,17 +7893,7 @@
     "barracks": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Dale",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9827,6 +9787,34 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_406 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_404 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_465 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_388 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
