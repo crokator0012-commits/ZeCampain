@@ -9645,45 +9645,6 @@
    "_startCost": 9900
   },
   {
-   "name": "Host of Province_23",
-   "faction": "Anduin Vale",
-   "men": 1620,
-   "at": "Province_26",
-   "order": null,
-   "units": [
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_valesmen_archer_levy",
-    "anduin_vale_valesmen_archer_levy",
-    "anduin_vale_vale_yeomen",
-    "anduin_vale_vale_yeomen",
-    "eotheod_aor_eotheod_nobles"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 4987.5,
-   "_startCost": 9125
-  },
-  {
    "name": "Host of Province_208",
    "faction": "Beorings",
    "men": 1020,
@@ -9825,18 +9786,44 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 240,
+   "men": 1860,
    "at": "Province_26",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen"
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_axemen",
+    "anduin_vale_vale_axemen",
+    "anduin_vale_valesmen_archer_levy",
+    "anduin_vale_valesmen_archer_levy",
+    "anduin_vale_vale_yeomen",
+    "anduin_vale_vale_yeomen",
+    "eotheod_aor_eotheod_nobles"
    ],
    "xp": [
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 825
+   "upkeep": 5812.5
   }
  ],
  "log": [
