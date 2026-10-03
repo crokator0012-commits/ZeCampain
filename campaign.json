@@ -8904,7 +8904,7 @@
     0
    ],
    "upkeep": 6037.5,
-   "_startCost": 10000
+   "_startCost": 12075
   },
   {
    "name": "Host of Province_389",
@@ -9824,28 +9824,25 @@
   {
    "name": "Host of Province_400",
    "faction": "Isengard",
-   "men": 840,
+   "men": 600,
    "at": "Province_400",
    "order": null,
    "units": [
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
     "isengard_mercs_aor_mordor_rabble",
     "isengard_mercs_aor_mordor_rabble",
     "isengard_mercs_aor_mordor_rabble",
-    "isengard_goblin_men_ruffians_2"
+    "isengard_goblin_men_ruffians_2",
+    "isengard_mercs_aor_mordor_bow_rabble"
    ],
    "xp": [
     0,
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 1250
+   "upkeep": 925,
+   "_startCost": 1525
   }
  ],
  "log": [
@@ -15973,7 +15970,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 7,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
