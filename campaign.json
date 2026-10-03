@@ -6369,11 +6369,11 @@
    "hex": "#bf292c",
    "playable": true,
    "owner": "Goblins",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
     "iron_mine"
    ],
@@ -6404,13 +6404,7 @@
    "availableBldOwner": {
     "iron_mine": "Goblins"
    },
-   "upg": {
-    "to": 2,
-    "payer": "Goblins",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 4000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6527,7 +6521,7 @@
    "terrain": "plains",
    "value": 1300,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 4500,
    "bld": [
     "gem_mine"
    ],
@@ -9863,6 +9857,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_418 completes its works — now a fortified city (small).",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_418 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_418",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16099,7 +16114,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 10,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
