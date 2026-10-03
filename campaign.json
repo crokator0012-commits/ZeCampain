@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 2960,
+   "treasury": 960,
    "capital": "Province_9",
    "zeal": 7
   },
@@ -6517,7 +6517,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7186,7 +7186,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Iron Hills",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9709,7 +9715,7 @@
    "name": "Host of Province_9",
    "faction": "Iron Hills",
    "men": 1320,
-   "at": "Province_233",
+   "at": "Province_1",
    "order": null,
    "units": [
     "iron_hills_mattock_warriors",
@@ -9837,6 +9843,41 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts construction: Province_233 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_233 → Province_1",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_233",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_233 → Province_9",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16150,7 +16191,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 14,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -20115,7 +20156,8 @@
   "Rohan",
   "Erebor",
   "Dale",
-  "Rhudaur"
+  "Rhudaur",
+  "Iron Hills"
  ],
  "pendingReview": false
 }
