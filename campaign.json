@@ -8728,14 +8728,12 @@
   {
    "name": "Host of Province_414",
    "faction": "Khand",
-   "men": 2200,
+   "men": 2400,
    "at": "Province_414",
    "order": null,
    "units": [
     "khand_bane_of_the_steppes",
     "khand_khandish_bowmen",
-    "khand_khandish_horse_archers",
-    "khand_khandish_horse_archers",
     "khand_akha_tribalists",
     "khand_khandish_sentries",
     "khand_khandish_sentries",
@@ -8750,7 +8748,10 @@
     "khand_khandish_outriders",
     "khand_akha_spear_fishers",
     "khand_akha_spear_fishers",
-    "khand_khandish_outriders"
+    "khand_khandish_outriders",
+    "khand_khandish_raiders",
+    "khand_khandish_raiders",
+    "khand_khandish_raiders"
    ],
    "xp": [
     0,
@@ -8771,10 +8772,11 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 7487.5,
-   "_startCost": 9925
+   "upkeep": 7512.5,
+   "_startCost": 14975
   },
   {
    "name": "Host of Province_426",
