@@ -15611,7 +15611,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 27,
+ "active": 18,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19569,5 +19569,5 @@
   "Rachrohir",
   "Woodland Realm"
  ],
- "pendingReview": true
+ "pendingReview": false
 }
