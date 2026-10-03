@@ -203,7 +203,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 3370,
+   "treasury": 1370,
    "capital": "Province_10",
    "zeal": 7
   },
@@ -5431,6 +5431,15 @@
      "cost": 1400,
      "startedTurn": 1,
      "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Erebor",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
     }
    ],
    "raid": null
@@ -6485,7 +6494,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9846,6 +9855,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Barracks at Province_10 to Level 2 (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15970,7 +15993,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 7,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19932,7 +19955,8 @@
   "Lostladen Tribes",
   "Dorvinion",
   "Isengard",
-  "Rohan"
+  "Rohan",
+  "Erebor"
  ],
  "pendingReview": false
 }
