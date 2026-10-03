@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 4833,
+   "treasury": 333,
    "capital": "Province_400",
    "zeal": 7
   },
@@ -2495,6 +2495,15 @@
      "cost": 1100,
      "startedTurn": 1,
      "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Isengard",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
     }
    ],
    "raid": null
@@ -6476,7 +6485,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8832,7 +8841,7 @@
    "name": "Host of Province_400",
    "faction": "Isengard",
    "men": 2380,
-   "at": "Province_296",
+   "at": "Province_27",
    "order": null,
    "units": [
     "isengard_lurtz",
@@ -9795,9 +9804,63 @@
     0
    ],
    "upkeep": 5812.5
+  },
+  {
+   "name": "Host of Province_400",
+   "faction": "Isengard",
+   "men": 840,
+   "at": "Province_400",
+   "order": null,
+   "units": [
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians_2"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1250
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard mustered Host of Province_400 at Province_400 (7 regiments · 2,500 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Barracks at Province_400 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_296 → Province_27",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -15838,7 +15901,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 15,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -19798,7 +19861,8 @@
   "Lindon",
   "Anduin Vale",
   "Lostladen Tribes",
-  "Dorvinion"
+  "Dorvinion",
+  "Isengard"
  ],
  "pendingReview": false
 }
