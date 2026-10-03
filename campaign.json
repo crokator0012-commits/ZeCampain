@@ -1689,7 +1689,7 @@
    "modern": "Province 422",
    "hex": "#c4c2c0",
    "playable": true,
-   "owner": "",
+   "owner": "Rhudaur",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -6517,7 +6517,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9671,34 +9671,6 @@
    "_startCost": 9900
   },
   {
-   "name": "Host of Province_208",
-   "faction": "Beorings",
-   "men": 1020,
-   "at": "Province_103",
-   "order": null,
-   "units": [
-    "beorings_aor_beoring_warroirs",
-    "beorings_aor_beoring_warroirs",
-    "beorings_aor_pass_sentries",
-    "beorings_aor_pass_sentries",
-    "beorings_aor_pass_sentries",
-    "beorings_aor_carrock_wardens",
-    "beorings_aor_carrock_wardens",
-    "beorings_aor_carrock_wardens"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 4300
-  },
-  {
    "name": "Host of Province_10",
    "faction": "Erebor",
    "men": 1300,
@@ -9812,16 +9784,10 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 1860,
+   "men": 1080,
    "at": "Province_26",
    "order": null,
    "units": [
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_axemen",
     "anduin_vale_vale_axemen",
     "anduin_vale_vale_axemen",
     "anduin_vale_vale_axemen",
@@ -9833,23 +9799,18 @@
     "eotheod_aor_eotheod_nobles"
    ],
    "xp": [
+    1,
+    1,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    1,
+    1,
+    2
    ],
-   "upkeep": 5812.5
+   "upkeep": 3562.5,
+   "_startCost": 11625
   },
   {
    "name": "Host of Province_400",
@@ -9876,6 +9837,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_208 moved Province_103 → Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur annexed Province_422 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur occupied Province_422 (held by )",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
