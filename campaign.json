@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorvinion",
    "color": "#7B1FA2",
-   "treasury": 3885,
+   "treasury": 1885,
    "capital": "Province_22",
    "zeal": 7
   },
@@ -5183,6 +5183,15 @@
      "cost": 1250,
      "startedTurn": 1,
      "startedDate": "Spring 1418"
+    },
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Dorvinion",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
     }
    ],
    "raid": null
@@ -9787,6 +9796,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Barracks at Province_22 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -19772,7 +19795,8 @@
   "Woodland Realm",
   "Lindon",
   "Anduin Vale",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Dorvinion"
  ],
  "pendingReview": false
 }
