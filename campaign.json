@@ -934,7 +934,7 @@
    "modern": "Province 398",
    "hex": "#9d4edd",
    "playable": true,
-   "owner": "",
+   "owner": "Dorvinion",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -3054,7 +3054,7 @@
    "modern": "Province 411",
    "hex": "#b38b7d",
    "playable": true,
-   "owner": "",
+   "owner": "Lindon",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -6467,7 +6467,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9383,7 +9383,7 @@
    "name": "Host of Province_428",
    "faction": "Balcoth",
    "men": 1260,
-   "at": "Province_450",
+   "at": "Province_437",
    "order": null,
    "units": [
     "balcoth_aor_balcoth_nobles",
@@ -9706,7 +9706,7 @@
    "name": "Host of Province_22",
    "faction": "Dorvinion",
    "men": 1560,
-   "at": "Province_468",
+   "at": "Province_398",
    "order": null,
    "units": [
     "dorwinion_vineland_guards",
@@ -9787,6 +9787,55 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon annexed Province_411 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon occupied Province_411 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion annexed Province_398 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion occupied Province_398 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_22 moved Province_468 → Province_398",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_428 moved Province_376 → Province_437",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_428 moved Province_450 → Province_376",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
