@@ -6517,7 +6517,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7947,7 +7947,7 @@
    "modern": "Province 1",
    "hex": "#006400",
    "playable": true,
-   "owner": "",
+   "owner": "Iron Hills",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9843,6 +9843,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills annexed Province_1 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills occupied Province_1 (held by )",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
