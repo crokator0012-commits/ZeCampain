@@ -35,7 +35,7 @@
    "id": "Goblins",
    "name": "Goblins",
    "color": "#5B6B21",
-   "treasury": 3790,
+   "treasury": 40,
    "capital": "Province_435",
    "zeal": 7
   },
@@ -6877,7 +6877,17 @@
     "barracks": "Goblins"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Goblins",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9266,8 +9276,8 @@
   {
    "name": "Host of Province_435",
    "faction": "Goblins",
-   "men": 1640,
-   "at": "Province_435",
+   "men": 2120,
+   "at": "Province_418",
    "order": null,
    "units": [
     "goblins_goblin_light_infantry",
@@ -9283,7 +9293,11 @@
     "goblins_mountain_pass_scouts",
     "goblins_scavenged_crossbows",
     "goblins_scavenged_crossbows",
-    "goblins_warg_pack"
+    "goblins_warg_pack",
+    "goblins_snaga_javelins",
+    "goblins_snaga_javelins",
+    "goblins_goblin_scrappers",
+    "goblins_goblin_scrappers"
    ],
    "xp": [
     0,
@@ -9299,9 +9313,13 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5000,
+   "upkeep": 5875,
    "_startCost": 9200
   },
   {
@@ -9847,6 +9865,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_418",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins reinforced Host of Province_435 at Province_435 (+4 regiments · 1,750 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins starts upgrading Barracks at Province_435 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_410 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_410",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16230,7 +16290,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 10,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -20196,7 +20256,8 @@
   "Erebor",
   "Dale",
   "Rhudaur",
-  "Iron Hills"
+  "Iron Hills",
+  "Goblins"
  ],
  "pendingReview": false
 }
