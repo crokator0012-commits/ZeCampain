@@ -1572,7 +1572,7 @@
    ],
    "displayName": "Gorgoroth",
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 2832.540972621099,
    "cy": 1551.2090433339715,
@@ -1586,17 +1586,7 @@
     "iron_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Mordor",
-     "cost": 1100,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2170,11 +2160,11 @@
    "hex": "#9b94b3",
    "playable": true,
    "owner": "Mordor",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [],
    "adj": [
     "Province_17",
@@ -2211,13 +2201,7 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": {
-    "to": 1,
-    "payer": "Mordor",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -9865,6 +9849,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_405 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_396 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
