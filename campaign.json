@@ -7621,7 +7621,7 @@
    ],
    "displayName": "butchers hall",
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 1776.2288611459412,
    "cy": 117.48089189336531,
@@ -7635,17 +7635,7 @@
     "sheep_pen": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gundabad",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8061,7 +8051,7 @@
    ],
    "displayName": "gundabad",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 1918.3512017153646,
    "cy": 192.59445706787852,
@@ -8075,17 +8065,7 @@
     "barracks": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Gundabad",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9849,6 +9829,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_420 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_393 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16288,7 +16282,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 21,
+ "active": 12,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
