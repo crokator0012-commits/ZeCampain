@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 5723,
+   "treasury": 373,
    "capital": "Province_17",
    "zeal": 7
   },
@@ -1585,7 +1585,13 @@
    "availableBldOwner": {
     "iron_mine": "Mordor"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Mordor",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6140,7 +6146,17 @@
     "barracks": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Mordor",
+     "cost": 2000,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9826,9 +9842,83 @@
    ],
    "upkeep": 925,
    "_startCost": 1525
+  },
+  {
+   "name": "Host of Province_17",
+   "faction": "Mordor",
+   "men": 360,
+   "at": "Province_305",
+   "order": null,
+   "units": [
+    "mordor_mordor_orc_pillagers",
+    "mordor_mordor_orc_bow_rabble",
+    "mordor_mordor_orc_bow_rabble"
+   ],
+   "xp": [
+    0,
+    0,
+    0
+   ],
+   "upkeep": 675
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_425 → Province_305",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_17 → Province_425",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_17 → Province_425",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor mustered Host of Province_17 at Province_17 (3 regiments · 1,350 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Barracks at Province_17 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_425 → Province_17",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Province_405 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16282,7 +16372,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 21,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -20249,7 +20339,8 @@
   "Dale",
   "Rhudaur",
   "Iron Hills",
-  "Goblins"
+  "Goblins",
+  "Mordor"
  ],
  "pendingReview": false
 }
