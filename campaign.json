@@ -8455,7 +8455,7 @@
    "name": "Host of Province_436",
    "faction": "Rhurrim",
    "men": 920,
-   "at": "Province_466",
+   "at": "Province_33",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
@@ -9878,6 +9878,13 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_466 → Province_33",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
