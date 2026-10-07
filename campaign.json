@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 3640,
+   "treasury": 65,
    "capital": "Province_390",
    "zeal": 8
   },
@@ -1482,7 +1482,17 @@
     "goat_pen": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "goat_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 900,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9395,8 +9405,8 @@
   {
    "name": "Host of Province_390",
    "faction": "Ered Luin",
-   "men": 1370,
-   "at": "Province_415",
+   "men": 1730,
+   "at": "Province_390",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -9409,7 +9419,10 @@
     "ered_luin_s_broadbeam_axe_warriors",
     "ered_luin_s_broadbeam_axe_warriors",
     "ered_luin_aor_s_bridge_wardens",
-    "ered_luin_s_tumunzahar_distinguished"
+    "ered_luin_s_tumunzahar_distinguished",
+    "ered_luin_mercs_mercs_s_noldorian_borderguards",
+    "ered_luin_s_broadbeam_axe_warriors",
+    "ered_luin_s_firebeard_scouts"
    ],
    "xp": [
     0,
@@ -9422,9 +9435,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4900,
+   "upkeep": 6237.5,
    "_startCost": 9800
   },
   {
@@ -9868,6 +9884,55 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_4 → Province_390",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_390 → Province_4",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin reinforced Host of Province_390 at Province_390 (+3 regiments · 2,675 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts upgrading Goat Pen at Province_4 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_4 → Province_390",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_415 → Province_4",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -16804,7 +16869,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 8,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -23345,6 +23410,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Ered Luin"
+ ],
  "pendingReview": false
 }
