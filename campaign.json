@@ -8178,7 +8178,9 @@
    "cx": 1276.889152177258,
    "cy": 1797.748422834282,
    "siege": null,
-   "occ": null,
+   "occ": {
+    "by": "Umbar"
+   },
    "bldOwner": {},
    "availableBld": [
     "grain_farm"
@@ -9649,7 +9651,7 @@
    "name": "Host of Harondor",
    "faction": "Umbar",
    "men": 1820,
-   "at": "Harondor",
+   "at": "Province_340",
    "order": null,
    "units": [
     "umbar_ar_pharazons_azgar",
@@ -9855,6 +9857,20 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar occupied Province_340 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Harondor → Province_340",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
