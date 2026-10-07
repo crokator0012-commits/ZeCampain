@@ -8455,7 +8455,7 @@
    "name": "Host of Province_436",
    "faction": "Rhurrim",
    "men": 920,
-   "at": "Province_33",
+   "at": "Province_466",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
@@ -9405,13 +9405,12 @@
   {
    "name": "Host of Province_390",
    "faction": "Ered Luin",
-   "men": 1730,
+   "men": 1370,
    "at": "Province_390",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
     "ered_luin_s_merchant_swordsmen",
-    "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_broadbeam_pikes",
@@ -9420,28 +9419,23 @@
     "ered_luin_s_broadbeam_axe_warriors",
     "ered_luin_aor_s_bridge_wardens",
     "ered_luin_s_tumunzahar_distinguished",
-    "ered_luin_mercs_mercs_s_noldorian_borderguards",
-    "ered_luin_s_broadbeam_axe_warriors",
-    "ered_luin_s_firebeard_scouts"
+    "ered_luin_mercs_mercs_s_noldorian_borderguards"
    ],
    "xp": [
     0,
     0,
+    1,
+    1,
+    1,
+    2,
     0,
+    1,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    1,
     0
    ],
-   "upkeep": 6237.5,
-   "_startCost": 9800
+   "upkeep": 4975,
+   "_startCost": 12475
   },
   {
    "name": "Host of Province_334",
@@ -9884,6 +9878,13 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_33 → Province_466",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
