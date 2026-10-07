@@ -1001,7 +1001,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 6700,
    "bld": [
     "grain_farm"
    ],
