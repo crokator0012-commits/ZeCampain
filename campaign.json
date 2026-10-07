@@ -27,7 +27,7 @@
    "id": "Dunland",
    "name": "Dunland",
    "color": "#6D4C41",
-   "treasury": 1848,
+   "treasury": 373,
    "capital": "Province_334",
    "zeal": 7
   },
@@ -8548,7 +8548,7 @@
   {
    "name": "Host of Province_305",
    "faction": "Mordor",
-   "men": 1860,
+   "men": 2220,
    "at": "Province_305",
    "order": null,
    "units": [
@@ -8567,7 +8567,10 @@
     "mordor_warg_riders",
     "mordor_warg_riders",
     "mordor_mordor_orc_pillagers",
-    "mordor_mordor_orc_pillagers"
+    "mordor_mordor_orc_pillagers",
+    "mordor_mordor_orc_pillagers",
+    "mordor_mordor_orc_bow_rabble",
+    "mordor_mordor_orc_bow_rabble"
    ],
    "xp": [
     0,
@@ -8585,9 +8588,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5750,
+   "upkeep": 6425,
    "_startCost": 10100
   },
   {
@@ -9411,7 +9417,7 @@
   {
    "name": "Host of Province_334",
    "faction": "Dunland",
-   "men": 1950,
+   "men": 2190,
    "at": "Province_334",
    "order": null,
    "units": [
@@ -9430,7 +9436,9 @@
     "southern_endwaith_elder_riders",
     "dunlendings_tribal_warroirs",
     "dunlendings_tribal_warroirs",
-    "dunlendings_tribal_warroirs"
+    "dunlendings_tribal_warroirs",
+    "dunlendings_tribal_youths",
+    "dunlendings_tribal_raiders"
    ],
    "xp": [
     0,
@@ -9448,9 +9456,11 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5962.5,
+   "upkeep": 6700,
    "_startCost": 10500
   },
   {
@@ -9842,27 +9852,23 @@
    ],
    "upkeep": 925,
    "_startCost": 1525
-  },
-  {
-   "name": "Host of Province_17",
-   "faction": "Mordor",
-   "men": 360,
-   "at": "Province_305",
-   "order": null,
-   "units": [
-    "mordor_mordor_orc_pillagers",
-    "mordor_mordor_orc_bow_rabble",
-    "mordor_mordor_orc_bow_rabble"
-   ],
-   "xp": [
-    0,
-    0,
-    0
-   ],
-   "upkeep": 675
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland reinforced Host of Province_334 at Province_334 (+2 regiments · 1,475 castas)",
+   "kind": "battle",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16372,7 +16378,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 9,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -20340,7 +20346,8 @@
   "Rhudaur",
   "Iron Hills",
   "Goblins",
-  "Mordor"
+  "Mordor",
+  "Dunland"
  ],
  "pendingReview": false
 }
