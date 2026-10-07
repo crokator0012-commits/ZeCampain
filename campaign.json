@@ -6510,7 +6510,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9857,6 +9857,41 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Province_459 → Province_340",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Province_340 → Province_459",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Province_459 → Province_340",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Province_340 → Province_459",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -16954,7 +16989,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 26,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -23497,7 +23532,8 @@
  ],
  "moved": [
   "Ered Luin",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Umbar"
  ],
  "pendingReview": false
 }
