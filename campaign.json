@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 6636,
+   "treasury": 5136,
    "capital": "Province_359",
    "zeal": 8
   },
@@ -6520,7 +6520,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -6618,7 +6618,17 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Lostladen Tribes",
+     "cost": 1500,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8642,7 +8652,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 1600,
-   "at": "Province_359",
+   "at": "Province_341",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -9862,6 +9872,27 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts upgrading Sheep Pen at Province_462 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_359 moved Province_359 → Province_341",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -16875,7 +16906,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 19,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -23417,7 +23448,8 @@
   }
  ],
  "moved": [
-  "Ered Luin"
+  "Ered Luin",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
