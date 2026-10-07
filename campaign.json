@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 2185,
+   "treasury": 300,
    "capital": "Province_409",
    "zeal": 7
   },
@@ -749,7 +749,7 @@
    "displayName": "Rivendell",
    "bldLevel": {
     "barracks": 3,
-    "healing_herb_garden": 1
+    "healing_herb_garden": 2
    },
    "cx": 1883.6418552757411,
    "cy": 574.5635957921581,
@@ -765,17 +765,7 @@
     "healing_herb_garden": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Imraldris",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2295,10 +2285,22 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Imraldris"
+   },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "payer": "Imraldris",
+     "cost": 500,
+     "startedTurn": 2,
+     "startedDate": "Summer 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -2992,11 +2994,11 @@
    "hex": "#a1887f",
    "playable": true,
    "owner": "Imraldris",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [],
    "adj": [
     "Harondor",
@@ -3048,13 +3050,7 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": {
-    "to": 2,
-    "payer": "Imraldris",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 4000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -7690,7 +7686,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Imraldris",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9866,6 +9868,48 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Imladris ends its turn — Mahud to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Province_461 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Grain Farm at Province_416 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Grain Farm at Province_416.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_409 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_401 completes its works — now a fortified city (small).",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -16501,7 +16545,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 13,
+ "active": 20,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -21770,7 +21814,8 @@
   "Mordor",
   "Dunland",
   "Gundabad",
-  "Ered Mithrin"
+  "Ered Mithrin",
+  "Imraldris"
  ],
  "pendingReview": false
 }
