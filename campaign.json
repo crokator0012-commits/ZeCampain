@@ -179,7 +179,7 @@
    "id": "Gundabad",
    "name": "Gundabad",
    "color": "#58221B",
-   "treasury": 4218,
+   "treasury": 300,
    "capital": "Province_393",
    "zeal": 7
   },
@@ -5527,7 +5527,7 @@
    "modern": "Province 384",
    "hex": "#8a0f3a",
    "playable": true,
-   "owner": "",
+   "owner": "Gundabad",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -5559,7 +5559,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Gundabad",
+    "startedTurn": 2,
+    "startedDate": "Summer 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9050,8 +9056,8 @@
   {
    "name": "Host of Province_393",
    "faction": "Gundabad",
-   "men": 1800,
-   "at": "Province_443",
+   "men": 2280,
+   "at": "Province_384",
    "order": null,
    "units": [
     "gundabad_red_citadel_guards",
@@ -9069,7 +9075,11 @@
     "gundabad_merc_tunnel_slaves",
     "gundabad_mercs_aor_goblin_mercenaries",
     "gundabad_orc_warband",
-    "gundabad_merc_aor_warg_pack"
+    "gundabad_merc_aor_warg_pack",
+    "gundabad_merc_tunnel_slaves",
+    "gundabad_night_hunters",
+    "gundabad_night_hunters",
+    "gundabad_night_hunters"
    ],
    "xp": [
     0,
@@ -9087,9 +9097,13 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5362.5,
+   "upkeep": 6537.5,
    "_startCost": 9900
   },
   {
@@ -9855,6 +9869,90 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad ends its turn — Ered Mithrin to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts construction: Province_384 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad annexed Province_384 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad occupied Province_384 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_443 → Province_384",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_380 → Province_443",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_393 → Province_380",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad reinforced Host of Province_393 at Province_393 (+4 regiments · 2,350 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_420 → Province_393",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_443 → Province_420",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_384 → Province_443",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_393 moved Province_443 → Province_384",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer · S.R. 1418 (T.A. 3018)",
@@ -20347,7 +20445,8 @@
   "Iron Hills",
   "Goblins",
   "Mordor",
-  "Dunland"
+  "Dunland",
+  "Gundabad"
  ],
  "pendingReview": false
 }
