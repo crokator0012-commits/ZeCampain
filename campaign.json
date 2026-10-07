@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 2686,
+   "treasury": 2086,
    "capital": "Harondor",
    "zeal": 8
   },
@@ -4166,7 +4166,7 @@
    "occ": null,
    "displayName": "Umbar",
    "bldLevel": {
-    "gold_mine": 2,
+    "gold_mine": 3,
     "barracks": 2
    },
    "bldOwner": {},
@@ -4178,17 +4178,7 @@
     "gold_mine": "Umbar",
     "fishing_jetties": "Umbar"
    },
-   "buildQueue": [
-    {
-     "key": "gold_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Umbar",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ]
+   "buildQueue": []
   },
   {
    "id": "Province_9",
@@ -6748,12 +6738,18 @@
    ],
    "siege": null,
    "elev": 151,
-   "bld": [],
+   "bld": [
+    "slavers_market",
+    "fishing_jetties"
+   ],
    "upg": null,
    "raid": null,
    "occ": null,
    "displayName": "upper umbar",
-   "bldLevel": {},
+   "bldLevel": {
+    "slavers_market": 1,
+    "fishing_jetties": 1
+   },
    "bldOwner": {},
    "availableBld": [
     "fishing_jetties",
@@ -6763,22 +6759,7 @@
     "fishing_jetties": "Umbar",
     "slavers_market": "Umbar"
    },
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "payer": "Umbar",
-     "cost": 600,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    },
-    {
-     "key": "slavers_market",
-     "payer": "Umbar",
-     "cost": 500,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ]
+   "buildQueue": []
   },
   {
    "id": "Province_296",
@@ -7354,14 +7335,16 @@
    "elev": 153,
    "bld": [
     "blacksmith",
-    "stables"
+    "stables",
+    "fishing_jetties"
    ],
    "upg": null,
    "raid": null,
    "occ": null,
    "displayName": "lesser umbar",
    "bldLevel": {
-    "blacksmith": 1
+    "blacksmith": 1,
+    "fishing_jetties": 1
    },
    "bldOwner": {},
    "availableBld": [
@@ -9872,6 +9855,41 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at South Ithilien.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Slavers' Market completed at South Ithilien.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Harondor reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Near Harad.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Fishing Jetties at Near Harad (600 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -16920,7 +16938,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 18,
+ "active": 26,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
