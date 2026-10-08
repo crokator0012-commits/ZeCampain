@@ -3395,7 +3395,7 @@
    "modern": "Province 127",
    "hex": "#2cb071",
    "playable": true,
-   "owner": "Rohan",
+   "owner": "Isengard",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -5279,7 +5279,7 @@
    "modern": "Province 458",
    "hex": "#fee440",
    "playable": true,
-   "owner": "Haerrim",
+   "owner": "Rhurrim",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -6534,7 +6534,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8319,7 +8319,7 @@
    "name": "Host of Province_127",
    "faction": "Rohan",
    "men": 1600,
-   "at": "Province_374",
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -8360,7 +8360,7 @@
    "name": "Host of Province_44",
    "faction": "Rohan",
    "men": 2100,
-   "at": "Province_260",
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_eomer",
@@ -8740,7 +8740,7 @@
    "name": "Host of Province_364",
    "faction": "Lindon",
    "men": 1340,
-   "at": "Province_411",
+   "at": "Province_430",
    "order": null,
    "units": [
     "lindon_falathrim_seafarers",
@@ -9865,54 +9865,72 @@
    ],
    "upkeep": 3562.5,
    "_startCost": 11625
-  },
-  {
-   "name": "Host of Province_400",
-   "faction": "Isengard",
-   "men": 600,
-   "at": "Province_27",
-   "order": null,
-   "units": [
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_goblin_men_ruffians_2",
-    "isengard_mercs_aor_mordor_bow_rabble"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 925,
-   "_startCost": 1525
-  },
-  {
-   "name": "Host of Province_400",
-   "faction": "Isengard",
-   "men": 600,
-   "at": "Province_27",
-   "order": null,
-   "units": [
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_bow_rabble",
-    "isengard_mercs_aor_mordor_rabble",
-    "isengard_goblin_men_ruffians_2"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 900
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_364 moved Province_411 → Province_430",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim annexed Province_458 (from Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim occupied Province_458 (held by Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_27 → Province_458",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard annexed Province_127 (from Rohan)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard occupied Province_127 (held by Rohan)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_374 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_21 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_260 → Province_21",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
