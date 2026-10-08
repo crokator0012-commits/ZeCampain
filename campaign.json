@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 2450,
+   "treasury": 700,
    "capital": "Province_16",
    "zeal": 5
   },
@@ -2083,7 +2083,17 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Lothlorien",
+     "cost": 1750,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8694,7 +8704,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1260,
-   "at": "Province_14",
+   "at": "Province_31",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9903,6 +9913,41 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien starts upgrading Healing Herb Garden at Province_16 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_16 → Province_31",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_14 → Province_16",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -23793,7 +23838,8 @@
   "Imraldris",
   "Rhurrim",
   "Rachrohir",
-  "Isengard"
+  "Isengard",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
