@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 5230,
+   "treasury": 2930,
    "capital": "Province_388",
    "zeal": 8
   },
@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorvinion",
    "color": "#7B1FA2",
-   "treasury": 4670,
+   "treasury": 670,
    "capital": "Province_22",
    "zeal": 8
   },
@@ -139,7 +139,7 @@
    "id": "Rachrohir",
    "name": "Rachrohir",
    "color": "#9B3A21",
-   "treasury": 8018,
+   "treasury": 4518,
    "capital": "Province_455",
    "zeal": 8
   },
@@ -387,7 +387,7 @@
    ],
    "displayName": "Arnand GUin",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 3
    },
    "cx": 2877.627415390433,
    "cy": 924.3329930043486,
@@ -401,17 +401,7 @@
     "grain_farm": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dorvinion",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -688,7 +678,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "timber"
+   ],
    "adj": [
     "Province_1",
     "Province_233",
@@ -713,9 +705,15 @@
    "cy": 831.0951311441553,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "bldOwner": {
+    "timber": "Dorvinion"
+   },
+   "availableBld": [
+    "timber"
+   ],
+   "availableBldOwner": {
+    "timber": "Dorvinion"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -938,7 +936,9 @@
    "value": 850,
    "move": 2,
    "garrison": 1500,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_260",
     "Province_334",
@@ -948,14 +948,20 @@
     "Province_455_split_1"
    ],
    "displayName": "eastern Rovanion",
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 2747.3421292498406,
    "cy": 784.4804028803209,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "sheep_pen"
+   ],
+   "availableBldOwner": {
+    "sheep_pen": "Dorvinion"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1200,7 +1206,7 @@
    ],
    "displayName": "esgoroth",
    "bldLevel": {
-    "fishing_jetties": 2
+    "fishing_jetties": 3
    },
    "cx": 2440.345934866773,
    "cy": 487.0481667046231,
@@ -1214,17 +1220,7 @@
     "fishing_jetties": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Dale",
-     "cost": 1650,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1293,7 +1289,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_327",
     "Province_376",
@@ -1310,7 +1308,9 @@
     "Province_467"
    ],
    "displayName": "balcoth",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 2
+   },
    "cx": 2620.0028541462493,
    "cy": 1120.7006757105278,
    "siege": null,
@@ -3285,7 +3285,7 @@
    ],
    "displayName": "Ered Winlon",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2988.447416592855,
    "cy": 1093.3968113374667,
@@ -3299,17 +3299,7 @@
     "grain_farm": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dorvinion",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3323,7 +3313,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_103",
     "Province_11",
@@ -3378,16 +3370,30 @@
     "Province_7",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2551.999320164671,
    "cy": 947.4563205801262,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rachrohir"
+   },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "road",
+     "payer": "Rachrohir",
+     "cost": 0,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3434,7 +3440,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_260",
     "Province_327",
@@ -3445,14 +3453,20 @@
     "Province_451"
    ],
    "displayName": "Stonehall",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2901.024890510949,
    "cy": 747.5347810218979,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Dale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3713,8 +3727,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "gold_mine"
+   ],
+   "availableBldOwner": {
+    "gold_mine": "Rhurrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5190,8 +5208,8 @@
    ],
    "displayName": "caras gwinerth",
    "bldLevel": {
-    "winery": 1,
-    "barracks": 1
+    "winery": 3,
+    "barracks": 2
    },
    "cx": 3013.5720799500314,
    "cy": 922.835165521549,
@@ -5207,26 +5225,7 @@
     "barracks": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "winery",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dorvinion",
-     "cost": 1250,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Dorvinion",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5298,8 +5297,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rhurrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6670,7 +6673,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2749.2434571383797,
    "cy": 669.0554771979314,
@@ -7479,7 +7482,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "road"
+   ],
    "adj": [
     "Province_13",
     "Province_233",
@@ -7495,8 +7500,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Dale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7845,7 +7854,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2560.916207611058,
    "cy": 611.1938141203821,
@@ -7887,7 +7896,7 @@
    ],
    "displayName": "dalian grasslands",
    "bldLevel": {
-    "grain_farm": 2
+    "grain_farm": 3
    },
    "cx": 2714.709562814566,
    "cy": 537.3609197670976,
@@ -7901,17 +7910,7 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Dale",
-     "cost": 1500,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7926,7 +7925,8 @@
    "move": 2,
    "garrison": 1200,
    "bld": [
-    "barracks"
+    "barracks",
+    "market"
    ],
    "adj": [
     "Province_10",
@@ -7945,12 +7945,16 @@
    "cy": 437.6750647189349,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "market": "Dale"
+   },
    "availableBld": [
-    "barracks"
+    "barracks",
+    "market"
    ],
    "availableBldOwner": {
-    "barracks": "Dale"
+    "barracks": "Dale",
+    "market": "Dale"
    },
    "upg": null,
    "buildQueue": [],
@@ -8219,7 +8223,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "goat_pen"
+   ],
    "adj": [
     "Province_260",
     "Province_296",
@@ -8233,7 +8239,9 @@
     "Province_450"
    ],
    "displayName": "northern Rhovanion",
-   "bldLevel": {},
+   "bldLevel": {
+    "goat_pen": 1
+   },
    "cx": 2534.471342997909,
    "cy": 707.238436181902,
    "siege": null,
@@ -8246,15 +8254,7 @@
     "goat_pen": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "payer": "Dale",
-     "cost": 500,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9803,6 +9803,328 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim may construct Grain Farm at Province_458.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim may construct Gold Mine at Province_357.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_13.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Grain Farm at Province_13 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Grain Farm at Province_13.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Market completed at Province_388.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_388: construction declined — Dale refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Market at Province_388 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Market at Province_388 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Market at Province_388.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road completed at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Road at Province_370 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Road at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_451 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Grain Farm at Province_451 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_455_split_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_421 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Grain Farm at Province_421 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_404 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_465 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Province_376.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Road at Province_376 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir may construct Road at Province_376.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Winery at Province_22 reaches Level 3 — it now yields 200 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Winery at Province_22 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_424 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Grain Farm at Province_424 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_468 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_22 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Winery at Province_22 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_424 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard completed at Province_450.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts construction: Timber Yard at Province_450 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion may construct Timber Yard at Province_450.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_398.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts construction: Sheep Pen at Province_398 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion may construct Sheep Pen at Province_398.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_376.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Grain Farm at Province_376 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir may construct Grain Farm at Province_376.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_428 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts upgrading Barracks at Province_428 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_428.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks is no longer available at Province_428.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Barracks at Province_428 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir may construct Barracks at Province_428.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
