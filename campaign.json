@@ -8438,8 +8438,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Gondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8464,8 +8468,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Gondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9960,6 +9968,20 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Road at Osgiliath.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Road at Province_390_split_1.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
