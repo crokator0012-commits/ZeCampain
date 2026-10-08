@@ -891,7 +891,7 @@
    "modern": "Province 437",
    "hex": "#e0e0e0",
    "playable": true,
-   "owner": "Balcoth",
+   "owner": "Rachrohir",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3317,7 +3317,7 @@
    "modern": "Province 376",
    "hex": "#757575",
    "playable": true,
-   "owner": "Balcoth",
+   "owner": "Rachrohir",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3694,7 +3694,7 @@
    "modern": "Province 357",
    "hex": "#610266",
    "playable": true,
-   "owner": "Haerrim",
+   "owner": "Rhurrim",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3789,7 +3789,7 @@
    "modern": "Province 381",
    "hex": "#800363",
    "playable": true,
-   "owner": "Haerrim",
+   "owner": "Iron Hills",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9261,7 +9261,7 @@
    "name": "Host of Province_5",
    "faction": "Harondor",
    "men": 1640,
-   "at": "Province_5",
+   "at": "Province_469",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -9836,6 +9836,83 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_5 moved Province_5 → Province_469",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills annexed Province_381 (from Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills occupied Province_381 (held by Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim annexed Province_357 (from Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim occupied Province_357 (held by Haerrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir annexed Province_376 (from Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir occupied Province_376 (held by Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir annexed Province_437 (from Khand)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir occupied Province_437 (held by Khand)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand annexed Province_437 (from Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand occupied Province_437 (held by Balcoth)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
