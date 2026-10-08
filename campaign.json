@@ -253,7 +253,7 @@
    "id": "Feredrim",
    "name": "Feredrim",
    "color": "#4F7A4E",
-   "treasury": 16511,
+   "treasury": 15111,
    "capital": "Province_460",
    "zeal": 8,
    "npc": true
@@ -854,8 +854,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Harondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1057,10 +1061,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "availableBldOwner": {
-    "grain_farm": "Gondor"
+    "grain_farm": "Gondor",
+    "barracks": "Gondor"
    },
    "upg": null,
    "buildQueue": [
@@ -1388,8 +1394,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "wool"
+   ],
+   "availableBldOwner": {
+    "wool": "Lostladen Tribes"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null,
@@ -1857,8 +1867,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Feredrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1903,8 +1917,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Lostladen Tribes"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1935,10 +1953,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "horse_stables"
+    "horse_stables",
+    "livestock_farm"
    ],
    "availableBldOwner": {
-    "horse_stables": "Anduin Vale"
+    "horse_stables": "Anduin Vale",
+    "livestock_farm": "Anduin Vale"
    },
    "upg": null,
    "buildQueue": [],
@@ -2479,10 +2499,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "barracks"
+    "barracks",
+    "exotic_goods"
    ],
    "availableBldOwner": {
-    "barracks": "Rhurrim"
+    "barracks": "Rhurrim",
+    "exotic_goods": "Rhurrim"
    },
    "upg": null,
    "buildQueue": [],
@@ -2544,11 +2566,17 @@
    "bldOwner": {},
    "availableBld": [
     "barracks",
-    "iron_mine"
+    "iron_mine",
+    "stone_quarry",
+    "copper_mine",
+    "blacksmith"
    ],
    "availableBldOwner": {
     "barracks": "Isengard",
-    "iron_mine": "Isengard"
+    "iron_mine": "Isengard",
+    "stone_quarry": "Isengard",
+    "copper_mine": "Isengard",
+    "blacksmith": "Isengard"
    },
    "upg": null,
    "buildQueue": [],
@@ -2644,8 +2672,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "silver_mine"
+   ],
+   "availableBldOwner": {
+    "silver_mine": "Feredrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3017,8 +3049,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "barracks": "Anduin Vale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3564,8 +3600,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Anduin Vale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3841,8 +3881,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "copper_mine"
+   ],
+   "availableBldOwner": {
+    "copper_mine": "Iron Hills"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4526,8 +4570,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Lostladen Tribes"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4756,8 +4804,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "ship_docks"
+   ],
+   "availableBldOwner": {
+    "ship_docks": "Harondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4856,8 +4908,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Anduin Vale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5200,8 +5256,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "fishery"
+   ],
+   "availableBldOwner": {
+    "fishery": "Rhurrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5789,7 +5849,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_1",
     "Province_208",
@@ -5805,14 +5867,20 @@
     "Province_450",
     "Province_458"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 2
+   },
    "cx": 3372.000628585949,
    "cy": 843.2915836353667,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Feredrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6583,8 +6651,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "copper_mine"
+   ],
+   "availableBldOwner": {
+    "copper_mine": "Khand"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7059,10 +7131,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "iron_mine"
+    "iron_mine",
+    "goat_pen"
    ],
    "availableBldOwner": {
-    "iron_mine": "Goblins"
+    "iron_mine": "Goblins",
+    "goat_pen": "Goblins"
    },
    "upg": null,
    "buildQueue": [],
@@ -7092,8 +7166,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Khand"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7193,11 +7271,13 @@
    "bldOwner": {},
    "availableBld": [
     "mithril_mine",
-    "barracks"
+    "barracks",
+    "moria_mines"
    ],
    "availableBldOwner": {
     "mithril_mine": "Khazad-dum",
-    "barracks": "Khazad-dum"
+    "barracks": "Khazad-dum",
+    "moria_mines": "Khazad-dum"
    },
    "upg": null,
    "buildQueue": [
@@ -7254,8 +7334,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Iron Hills"
+   },
    "upg": {
     "to": 1,
     "payer": "Iron Hills",
@@ -7491,10 +7575,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "gold_mine"
+    "gold_mine",
+    "moria_mines"
    ],
    "availableBldOwner": {
-    "gold_mine": "Khazad-dum"
+    "gold_mine": "Khazad-dum",
+    "moria_mines": "Khazad-dum"
    },
    "upg": null,
    "buildQueue": [
@@ -7580,8 +7666,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "copper_mine"
+   ],
+   "availableBldOwner": {
+    "copper_mine": "Lostladen Tribes"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7620,10 +7710,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "gem_mine"
+    "gem_mine",
+    "moria_mines"
    ],
    "availableBldOwner": {
-    "gem_mine": "Khazad-dum"
+    "gem_mine": "Khazad-dum",
+    "moria_mines": "Khazad-dum"
    },
    "upg": null,
    "buildQueue": [
@@ -7869,8 +7961,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "fishing_jetties"
+   ],
+   "availableBldOwner": {
+    "fishing_jetties": "Harondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8037,8 +8133,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Iron Hills"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9860,6 +9960,265 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Livestock Farm at Province_29.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Grain Farm at Province_103.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Grain Farm at Province_26.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Barracks at Province_208.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins may construct Goat Pen at Province_410.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum may construct Moria Mines at Province_442.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum may construct Moria Mines at Province_391.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum may construct Moria Mines at Province_408.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard may construct Blacksmith at Province_400.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard may construct Copper Mine at Province_400.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard may construct Stone Quarry at Province_400.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Barracks at Province_459.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor may construct Grain Farm at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor may construct Fishing Jetties at Province_469.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor may construct Ship Docks at Province_32.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Wool Production at Province_463.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry is no longer available at Province_463.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Copper Mine at Province_464.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Stone Quarry at Province_417.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Stone Quarry at Province_463.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Stone Quarry at Province_341.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand may construct Grain Farm at Province_385.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand may construct Copper Mine at Province_403.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim may construct Exotic Goods at Province_436.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim may construct Fishery at Province_386.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Silver Mine at Province_348.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine is no longer available at Province_348.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Iron Mine at Province_348.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_460 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Grain Farm at Province_460 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_460.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Grain Farm at Province_460 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Grain Farm at Province_460.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Road at Province_379.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills may construct Copper Mine at Province_381.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills may construct Grain Farm at Province_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills may construct Grain Farm at Province_233.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
