@@ -682,7 +682,7 @@
    "modern": "Province 450",
    "hex": "#f5f5f5",
    "playable": true,
-   "owner": "Balcoth",
+   "owner": "Dorvinion",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8539,18 +8539,19 @@
    "units": [
     "rachrohir_mercs_clan_raiders",
     "rachrohir_mercs_clan_raiders",
-    "rachrohir_mercs_clan_raiders",
     "rachrohir_mercs_clan_axemen",
     "rachrohir_mercs_clan_axemen",
-    "rachrohir_mercs_clan_axemen",
-    "rachrohir_mercs_clan_spearmen",
     "rachrohir_mercs_clan_huntsmen",
     "rachrohir_mercs_clan_huntsmen",
     "rachrohir_mercs_clan_huntsmen",
     "rachrohir_wainrider_nobles",
-    "rachrohir_wainrider_light_chariots"
+    "rachrohir_wainrider_light_chariots",
+    "balcoth_aor_balcoth_raiders",
+    "balcoth_aor_balcoth_raiders",
+    "balcoth_aor_balcoth_spears"
    ],
    "xp": [
+    1,
     0,
     0,
     0,
@@ -8559,13 +8560,12 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
+    1,
+    1,
     0
    ],
-   "upkeep": 4037.5,
-   "_startCost": 9950
+   "upkeep": 4237.5,
+   "_startCost": 8075
   },
   {
    "name": "Host of Province_305",
@@ -9500,38 +9500,6 @@
    "_startCost": 10500
   },
   {
-   "name": "Host of Province_428",
-   "faction": "Balcoth",
-   "men": 1260,
-   "at": "Province_437",
-   "order": null,
-   "units": [
-    "balcoth_aor_balcoth_nobles",
-    "balcoth_aor_balcoth_nobles",
-    "balcoth_aor_balcoth_spears",
-    "balcoth_aor_balcoth_spears",
-    "balcoth_aor_balcoth_spears",
-    "balcoth_aor_balcoth_raiders",
-    "balcoth_aor_balcoth_raiders",
-    "balcoth_aor_balcoth_nobles",
-    "balcoth_aor_balcoth_raiders",
-    "balcoth_aor_balcoth_nobles"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 4087.5
-  },
-  {
    "name": "Host of Province_460",
    "faction": "Feredrim",
    "men": 840,
@@ -9798,7 +9766,7 @@
    "name": "Host of Province_22",
    "faction": "Dorvinion",
    "men": 1560,
-   "at": "Province_398",
+   "at": "Province_450",
    "order": null,
    "units": [
     "dorwinion_vineland_guards",
@@ -9868,6 +9836,27 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion annexed Province_450 (from Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion occupied Province_450 (held by Balcoth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_22 moved Province_398 → Province_450",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
