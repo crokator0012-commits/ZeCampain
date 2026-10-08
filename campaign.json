@@ -6510,7 +6510,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8154,7 +8154,7 @@
    "modern": "Province 340",
    "hex": "#540000",
    "playable": true,
-   "owner": "Gondor",
+   "owner": "Umbar",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8178,9 +8178,7 @@
    "cx": 1276.889152177258,
    "cy": 1797.748422834282,
    "siege": null,
-   "occ": {
-    "by": "Umbar"
-   },
+   "occ": null,
    "bldOwner": {},
    "availableBld": [
     "grain_farm"
@@ -9857,6 +9855,13 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar annexed Province_340 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
