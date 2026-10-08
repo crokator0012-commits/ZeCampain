@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 2231,
+   "treasury": 431,
    "capital": "Province_400",
    "zeal": 8
   },
@@ -8905,7 +8905,7 @@
    "name": "Host of Province_400",
    "faction": "Isengard",
    "men": 2380,
-   "at": "Province_27",
+   "at": "Province_127",
    "order": null,
    "units": [
     "isengard_lurtz",
@@ -9860,7 +9860,7 @@
    "name": "Host of Province_400",
    "faction": "Isengard",
    "men": 600,
-   "at": "Province_400",
+   "at": "Province_27",
    "order": null,
    "units": [
     "isengard_mercs_aor_mordor_rabble",
@@ -9878,9 +9878,73 @@
    ],
    "upkeep": 925,
    "_startCost": 1525
+  },
+  {
+   "name": "Host of Province_400",
+   "faction": "Isengard",
+   "men": 600,
+   "at": "Province_27",
+   "order": null,
+   "units": [
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians_2"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 900
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_400 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_400 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_400 moved Province_27 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard mustered Host of Province_400 at Province_400 (5 regiments · 1,800 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -23728,7 +23792,8 @@
   "Umbar",
   "Imraldris",
   "Rhurrim",
-  "Rachrohir"
+  "Rachrohir",
+  "Isengard"
  ],
  "pendingReview": false
 }
