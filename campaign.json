@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 5103,
+   "treasury": 153,
    "capital": "Province_436",
    "zeal": 8
   },
@@ -8439,8 +8439,8 @@
   {
    "name": "Host of Province_436",
    "faction": "Rhurrim",
-   "men": 920,
-   "at": "Province_33",
+   "men": 1560,
+   "at": "Province_458",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
@@ -8450,7 +8450,13 @@
     "rhurrim_clan_huntsmen",
     "rhurrim_rhunic_archers",
     "rhurrim_rhunic_archers",
-    "rhurrim_clan_huntsmen"
+    "rhurrim_clan_huntsmen",
+    "haerrim_aor_haerrim_outriders",
+    "haerrim_aor_haerrim_outriders",
+    "haerrim_aor_haerrim_infantry",
+    "haerrim_aor_haerrim_infantry",
+    "haerrim_aor_haerrim_infantry",
+    "rhurrim_rhunic_archers"
    ],
    "xp": [
     0,
@@ -8460,9 +8466,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 3012.5,
+   "upkeep": 5487.5,
    "_startCost": 10050
   },
   {
@@ -9869,6 +9881,48 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_33 → Province_458",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_436 → Province_33",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim reinforced Host of Province_436 at Province_436 (+6 regiments · 4,950 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_436 moved Province_33 → Province_436",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -23616,7 +23670,8 @@
   "Ered Luin",
   "Lostladen Tribes",
   "Umbar",
-  "Imraldris"
+  "Imraldris",
+  "Rhurrim"
  ],
  "pendingReview": false
 }
