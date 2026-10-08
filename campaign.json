@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 2900,
+   "treasury": 1250,
    "capital": "Province_409",
    "zeal": 8
   },
@@ -730,7 +730,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 9000,
    "bld": [
     "barracks",
     "healing_herb_garden"
@@ -765,7 +765,15 @@
     "healing_herb_garden": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "blacksmith",
+     "payer": "Imraldris",
+     "cost": 750,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -2261,7 +2269,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 6700,
    "bld": [
     "grain_farm"
    ],
@@ -2306,7 +2314,17 @@
     "grain_farm": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Imraldris",
+     "cost": 900,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3004,7 +3022,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 7500,
    "bld": [],
    "adj": [
     "Harondor",
@@ -9007,8 +9025,8 @@
   {
    "name": "Host of Province_409",
    "faction": "Imraldris",
-   "men": 600,
-   "at": "Province_461",
+   "men": 960,
+   "at": "Province_409",
    "order": null,
    "units": [
     "imraldris_elrond",
@@ -9016,7 +9034,10 @@
     "imraldris_noldorin_rangers",
     "imraldris_noldorin_horsemen",
     "imraldris_noldorin_horsemen",
-    "imraldris_noldorin_horsemen"
+    "imraldris_noldorin_horsemen",
+    "imraldris_rivendell_bows",
+    "imraldris_rivendell_bows",
+    "imraldris_rivendell_bows"
    ],
    "xp": [
     0,
@@ -9024,10 +9045,13 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4950,
-   "_startCost": 9900
+   "upkeep": 6525,
+   "_startCost": 12000
   },
   {
    "name": "Host of Province_393",
@@ -9845,6 +9869,55 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imladris ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Blacksmith is no longer available at Province_409.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Blacksmith at Province_409 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Blacksmith at Province_409.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Grain Farm at Province_416 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_416 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_461 → Province_416",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -16998,7 +17071,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 13,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -23542,7 +23615,8 @@
  "moved": [
   "Ered Luin",
   "Lostladen Tribes",
-  "Umbar"
+  "Umbar",
+  "Imraldris"
  ],
  "pendingReview": false
 }
