@@ -332,7 +332,7 @@ A **round** = every realm in `order[]` takes one turn; then the GM resolves the 
 
 | State | Message | Controls |
 | :-- | :-- | :-- |
-| It is *not* your realm's turn | `Waiting for <Realm>` | **This is my realm — unlock** (opens the passphrase prompt for the *current* realm) |
+| It is *not* your realm's turn | `Waiting for <Realm>` | **This is my realm — unlock** (opens the passphrase prompt for the *current* realm) · **Just skip to mine** (§11.4a; shown while any other un-moved realm has a passphrase) |
 | You unlocked the active realm | `Your turn, <Realm> — unlocked` | **End turn** |
 | Round complete | `Turn complete — awaiting GM review` | none |
 
@@ -348,7 +348,16 @@ canAct(fid) = gm
 - The passphrase map `FACTION_PASSWORDS` lives in `index.html`: faction id → **SHA-256 hex digest** of the passphrase (never plaintext).
 - To set or change one, open the browser console on the page and run `await sha256("the passphrase")`, then paste the result into `FACTION_PASSWORDS`. Keys must match faction ids exactly.
 - A correct passphrase sets `factionAuth` (stored in `sessionStorage`, so it lasts for that tab/session). Because `canAct` also requires `factionAuth === activeFactionId()`, an unlocked tab goes read-only as soon as the turn passes, and becomes active again automatically when that realm's turn next comes round in the same session.
-- Only the realm whose turn it is can be unlocked; every other realm sees the read-only "waiting" view.
+- Normally only the realm whose turn it is can be unlocked; every other realm sees the read-only "waiting" view — unless it uses **Just skip to mine** (§11.4a).
+
+### 11.4a Just skip to mine (player skip-ahead)
+For when the active player is AFK and everyone is stuck waiting. Next to *This is my realm — unlock*, a waiting player presses **Just skip to mine**:
+1. The passphrase dialog opens with a realm picker listing `skipCandidates()` — every realm in `order[]` that is **not** the active realm, **not** in `moved[]`, and has a `FACTION_PASSWORDS` entry. The player picks their realm and enters **their own** passphrase (they can only skip as a realm whose passphrase they know).
+2. On success (`pwGateTry` in `"skip"` mode): undo snapshot, `S.active` is set to the chosen realm, the realm is unlocked (`factionAuth`), and the chronicle records `"<Realm> grew tired of waiting on <Slow realm> and skips ahead — <Slow realm> keeps its turn for later this round."`
+3. It works exactly like the GM's **Set active**: the skipped realm is **not** marked as moved. The skipper plays and presses **End turn**, which adds them to `moved[]` and hands the turn to the first un-moved realm — normally the skipped realm, which gets its turn back.
+4. Nothing is published until End turn; if the skipper reloads without ending, the skip is lost.
+
+Because a skip means two people may be playing at once (the skipper and the slow player in a stale tab), player **End turn** publishes with a **stale-page guard** (`publishTurn({guard:true})`): it reads the live `campaign.json` and refuses to write if its `turn` differs or its `moved[]` contains a realm this page doesn't know has moved. Whoever ends second is told to reload and redo their turn, instead of silently wiping the other's. The GM's **⇧ Publish** is not guarded.
 
 ### 11.4 Taking a turn (player)
 With the realm unlocked, the player may, in any order: **move hosts**, **recruit/reinforce**, **queue buildings, barracks/trade-building upgrades and settlement upgrades**, and cancel their own queued work. All of this happens **locally in the browser** and is written to the chronicle — nothing is shared until **End turn**. (Diplomacy, claims, sieges, battle staging, treasury edits and everything else listed in §13 remain GM-only.)
@@ -376,6 +385,7 @@ Construction is **not** part of this step (§6). The GM should then press **⇧ 
 
 ### 11.7 GM overrides to the automated flow
 - **Set active** (Order dialog) — hand the turn to a specific un-moved realm, e.g. an AFK player's next neighbour, without marking anyone as moved.
+- Players can skip ahead of a stalled realm themselves with **Just skip to mine** (§11.4a), so most AFK cases no longer need the GM.
 - **Next realm ▸** — skips/finishes the current realm (marks it moved and passes the turn): this is the "force-skip" for a stuck or inactive player.
 - **Order** — reorder realms with ↑↑ / ↑ / ↓; new realms can be inserted at a chosen slot.
 - **Set turn** — manually set the campaign turn number.
@@ -399,6 +409,7 @@ Construction is **not** part of this step (§6). The GM should then press **⇧ 
 | Turn map timeline | **Turn map** — how the map stood each turn |
 | Help / Rules | **?** panel; **Rules** opens the full campaign rules document |
 | Unlock realm | When it is your realm's turn: **This is my realm — unlock** → passphrase |
+| Skip a slow realm | **Just skip to mine** → pick your realm → your passphrase → play → **End turn** (the skipped realm moves after you) |
 | Move a host | Click host → click a highlighted province (≤ 3 movement) |
 | Recruit | Own province with Barracks → *Muster & Recruit Army Here* → Codex → **⚔ Muster to Map** |
 | Reinforce | Host card → *Recruit* → add regiments → **⚔ Muster to Map** |
@@ -438,7 +449,7 @@ These are accurate as of this writing; they are *design realities*, not necessar
 - **Host cap is informational.** The realm sheet shows `min(1 + ⌊provinces/4⌋, 1 + barracks count)`, but no code stops a player mustering more hosts than that. Older notes describing per-class composition limits (pike/missile/cavalry/artillery caps) and rank-based upkeep percentages are **not implemented** — the only limits are 20 regiments per host and the flat 80 % upkeep discount.
 - **Movement is not cumulative.** Each move is checked against the full 3-point allowance from the host's current position; spent points are not remembered, so a host can be moved repeatedly in one turn. The GM review step (and trust) is the control.
 - **Rules text vs. code:** the Rules document lists Barracks at 5,000 and a Zeal bank of 6; the code uses Barracks 1,000 (+ upgrades) and a Zeal cap of 10 (− synagogues). Market/Port/Road are listed as cost 0 in `BLD` and are priced by the GM. Force March, Ransom, "capital lost +2 ✦" and victory conditions are narrative.
-- **Publishing overwrites the whole file** from the publisher's in-memory state after fetching only the latest `sha`. There is no merge. If two people publish from stale pages the later write wins; the turn gate (one active realm at a time) is what prevents this in practice. Players should reload before their turn.
+- **Publishing overwrites the whole file** from the publisher's in-memory state after fetching only the latest `sha`. There is no merge. If two people publish from stale pages the later write wins; the turn gate (one active realm at a time) is what prevents this in practice. Player **End turn** has a stale-page guard (§11.4a) that refuses if another realm ended its turn since the page loaded; GM publishes are unguarded. Players should reload before their turn.
 - **Players do not auto-refresh.** A player must reload to see others' turns.
 - **Client-side secrets (accepted trade-off).** The GitHub token and all passphrase hashes are readable in the page. This was a deliberate decision (burner token account; trusted players) — see [§15](#15-publishing-hosting--secrets). The GM gate also contains a hard-coded plaintext passphrase fallback in `gmTry()`; removing it so only `GM_HASH` is accepted is an easy hardening step.
 - **Stuck-round repair:** on load, if `pendingReview` is set but some realm is not in `moved[]`, the lock is cleared and `active` is set to the first un-moved realm (`index.html` ~697). Earlier versions closed the round when the *last slot* realm ended its turn early; now only an empty un-moved list closes it (`endTurn` and the `bTurn` wrapper).
@@ -520,7 +531,7 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | Lines | Content |
 | :-- | :-- |
 | 1–396 | CSS (`.readonly .gm{display:none}` hides GM UI; `.player-view` shows turn-gate) |
-| 397–666 | HTML: top bar (`#bTurn`, `#bPub`, `#turnGate`, `#tgUnlock`, `#tgEndTurn`), legend, ledger, drawer, modals (`#gmask` GM prompt, `#pwGate` realm prompt, `#help`, `#ordM` order dialog) |
+| 397–666 | HTML: top bar (`#bTurn`, `#bPub`, `#turnGate`, `#tgUnlock`, `#tgSkip`, `#tgEndTurn`), legend, ledger, drawer, modals (`#gmask` GM prompt, `#pwGate` realm prompt + skip-ahead realm picker `#pwGateRealm`, `#help`, `#ordM` order dialog) |
 | 667–682 | embedded data + `<script src="assets/…">` tags |
 | 683–830 | load-time normalisation, `reconcileTurnOrder`, `UPG`, `BLD`, barracks/trade helpers (`barracksLevel`, `tradeIncome`), `atWar/isAllied`, `chargeZeal`, `toggleFort`, `holdout` (763), `effMove` (762) |
 | 830–1110 | `boot`, map painting (`paintMap`, `colourOf`), view/zoom (`draw`) |
@@ -532,11 +543,11 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | 1885–2163 | **`renderWorksBox`, `renderConstructionQueue`, `renderClaimBox`, `renderSiegeBox`** |
 | 2169–2300 | `legend`, `stats`, `normalizeCampaignClock`, search, map modes |
 | 2298–2368 | `GM_HASH`, `store` (sessionStorage), `sha256`, `setGM`, `gmTry` |
-| **2375–2509** | **Turn gate:** `FACTION_PASSWORDS` (2379), `canAct` (2415), `reinforceBlocker`, `renderTurnGate` (2426), `endTurn` (2455), `pwGateTry` (2491) |
-| 2504–2535 | `logIt`, `UPKEEP_DISCOUNT`, `armyUpkeep`, `stageBattle` |
-| **2536–2635** | **`bTurn` onclick — season resolution** (movement, annex, sieges, income, upkeep, zeal, truces, clock) |
+| **2379–2553** | **Turn gate:** `FACTION_PASSWORDS` (2383), `canAct` (2419), `reinforceBlocker`, `renderTurnGate` (2430), `skipCandidates` (2454), `tgSkip` "Just skip to mine" (2472), `endTurn` (2487), `pwGateTry` (2524, unlock + skip modes) |
+| 2554–2585 | `logIt`, `UPKEEP_DISCOUNT`, `armyUpkeep`, `stageBattle` |
+| **2586–2685** | **`bTurn` onclick — season resolution** (movement, annex, sieges, income, upkeep, zeal, truces, clock) |
 | 2636–2820 | ledger (`openLedger`, `drawLedger`), turn-map timeline |
-| **2822–2890** | **`GH_TOKEN` placeholder, `publishTurn`, `bPub`, Load/Save handlers** |
+| **2870–2940** | **`GH_TOKEN` placeholder (2890), `publishTurn` (2894, stale-page guard), `bPub`, Load/Save handlers** |
 | 2934–2967 | turn snapshots (`turnlog`) |
 | 3006–3350 | Codex: `AOR_ROSTERS`, `canServe`, `unitTier`, `cxRender`, `openCodex` |
 | 3355–3545 | `.army_setup` export for Attila |
@@ -544,25 +555,26 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | 3786–3945 | Recruit-here button, drawer armies/roster, split/merge |
 | 3946–4005 | `applyLoss`, battle-result handler (wrapped `drawLedger`) |
 | 4026–4088 | flag library + new-realm picker |
-| **4104–4209** | **Turn-order module:** wrapper around `bTurn` (4114) that uses `moved[]`, `paintOrder`, `setActiveManually`, `insertRealmAt` |
+| **4157–4260** | **Turn-order module:** wrapper around `bTurn` (4169) that uses `moved[]`, `setActiveManually` (4215), `paintOrder`, `insertRealmAt` |
 
 Note that some handlers are **wrapped later in the file** (`bTurn` is assigned at 2536, wrapped at 3960 and again at 4108; `drawLedger` is wrapped at ~3962; `bMusterTile` is assigned at 1856 and 3787 — the later one wins). Always grep for every assignment (`grep -n '\$("bTurn").onclick' index.html`) before editing.
 
 ### "Where do I change…?"
 | Task | Go to |
 | :-- | :-- |
-| Realm passphrase | `FACTION_PASSWORDS` (~2379); generate with `await sha256("pw")` in the browser console |
-| What a player may do / when | `canAct` (~2415) and its call sites (`grep -n 'canAct(' index.html`) |
-| End turn / round-complete logic | `endTurn` (~2455) and the `bTurn` wrapper (~4114) |
-| Season income, upkeep, zeal, clock | `bTurn` handler (~2541) |
-| Upkeep discount | `UPKEEP_DISCOUNT` (~2511) |
+| Realm passphrase | `FACTION_PASSWORDS` (~2383); generate with `await sha256("pw")` in the browser console |
+| What a player may do / when | `canAct` (~2419) and its call sites (`grep -n 'canAct(' index.html`) |
+| End turn / round-complete logic | `endTurn` (~2487) and the `bTurn` wrapper (~4169) |
+| Player skip-ahead | `skipCandidates` (~2454), `tgSkip` onclick (~2472), skip branch of `pwGateTry` (~2524) |
+| Season income, upkeep, zeal, clock | `bTurn` handler (~2586) |
+| Upkeep discount | `UPKEEP_DISCOUNT` (~2556) |
 | Settlement costs / revenue | `UPG` (~735), `SETTLEMENT_REVENUE`, `GARR` |
 | Building costs / barracks levels | `BLD`, `BARRACKS_UPGRADE_COST`, `BARRACKS_UPKEEP` (~743), `assets/trade_buildings.js` |
 | Movement allowance / terrain | `campaign.json` `allowance`, province `move`; `reachableFrom` (~1355), `effMove` (~762) |
 | Siege length | `holdout` (~763) |
 | Recruitment rules (barracks, tier, cost) | `cxMusterMap` (~3643), `musterPlan` (~3591), `reinforceBlocker` (~2412) |
 | Army size cap | `CAPU` from `codexdata.cap` (20) |
-| Publish target / commit message | `ghTarget`, `publishTurn` (~2846) |
+| Publish target / commit message | `ghTarget`, `publishTurn` (~2894) |
 | New unit / roster | `unit.md` + `update_unit_roster.py`/`sync_all.py` → regenerates `codexdata` |
 
 ### Cheap verification

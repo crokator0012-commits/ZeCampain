@@ -414,7 +414,7 @@ input[type=file]{display:none}
   <div class="stat"><div class="k">Acting</div><div class="v" id="sAct" style="display:flex;align-items:center;gap:6px">—</div></div>
   <div class="stat player-view"><div class="k">Viewing as</div><select id="playerFaction" class="v" style="background:transparent;border:0;max-width:130px"></select></div>
   <div class="stat player-view" id="turnGate"><div class="k" id="tgLabel">Turn</div><div class="v" id="tgStatus" style="display:flex;align-items:center;gap:8px">
-    <span id="tgMsg">—</span><button class="btn" id="tgUnlock" style="display:none;padding:4px 8px;font-size:11px">Unlock</button><button class="btn primary" id="tgEndTurn" style="display:none;padding:4px 8px;font-size:11px">End turn</button>
+    <span id="tgMsg">—</span><button class="btn" id="tgUnlock" style="display:none;padding:4px 8px;font-size:11px">Unlock</button><button class="btn" id="tgSkip" style="display:none;padding:4px 8px;font-size:11px" title="The current realm is taking too long — take your turn now; they keep theirs for later this round">Just skip to mine</button><button class="btn primary" id="tgEndTurn" style="display:none;padding:4px 8px;font-size:11px">End turn</button>
   </div></div>
   <div class="acts">
     <button class="btn primary gm" id="bTurn">Next realm ▸</button><button class="btn gm" id="bClock" title="Set the current campaign turn">Set turn</button><button class="btn gm" id="bOrder" title="Set the order realms move in">Order</button>
@@ -571,6 +571,10 @@ input[type=file]{display:none}
 
 <div id="pwGate"><div class="hcard" style="width:340px">
   <h2 id="pwGateTitle">Realm passphrase</h2>
+  <div id="pwGateSkip" style="display:none;margin-bottom:10px">
+    <div style="font-size:12px;opacity:.8;margin-bottom:6px" id="pwGateSkipNote"></div>
+    <select id="pwGateRealm"></select>
+  </div>
   <input type="password" id="pwGatePass" placeholder="passphrase" autocomplete="off" style="margin-bottom:12px">
   <div id="pwGateErr" style="color:#E5A594;font-size:12px;min-height:16px;margin-bottom:6px"></div>
   <div class="row">
@@ -2425,7 +2429,8 @@ function reinforceBlocker(a){
 }
 function renderTurnGate(){
   const el=$("turnGate");if(!el)return;
-  const msg=$("tgMsg"),ubtn=$("tgUnlock"),ebtn=$("tgEndTurn");if(!msg||!ubtn||!ebtn)return;
+  const msg=$("tgMsg"),ubtn=$("tgUnlock"),ebtn=$("tgEndTurn"),sbtn=$("tgSkip");if(!msg||!ubtn||!ebtn||!sbtn)return;
+  sbtn.style.display="none";
   if(S.pendingReview){
     msg.textContent="Turn complete — awaiting GM review";
     ubtn.style.display="none";ebtn.style.display="none";
@@ -2442,14 +2447,41 @@ function renderTurnGate(){
     ubtn.textContent="This is my realm — unlock";
     ubtn.style.display="";
     ebtn.style.display="none";
+    if(skipCandidates().length)sbtn.style.display="";
   }
 }
+/* Realms a waiting player may jump the queue with: un-moved, not the active realm, and with a passphrase set. */
+function skipCandidates(){
+  const moved=S.moved||[],cur=activeFactionId();
+  return (S.order||[]).filter(id=>id!==cur&&moved.indexOf(id)<0&&FACTION_PASSWORDS[id]&&F[id]);
+}
+/* "pwGateMode": "unlock" = passphrase for the active realm; "skip" = pick your own un-moved realm and take the turn now. */
+let pwGateMode="unlock";
 $("tgUnlock").onclick=()=>{
   const fid=activeFactionId();if(!fid)return;
+  pwGateMode="unlock";
+  $("pwGateSkip").style.display="none";
+  $("pwGateGo").textContent="Unlock";
   $("pwGateTitle").textContent=`${F[fid]?F[fid].name:fid} passphrase`;
   $("pwGateErr").textContent="";$("pwGatePass").value="";
   $("pwGate").classList.add("open");
   setTimeout(()=>$("pwGatePass").focus(),40);
+};
+/* Skip-ahead: a waiting player takes their own turn now instead of waiting on a slow realm. Works like the GM's
+   "Set active" — the skipped realm is NOT marked as moved and gets the turn back once the skipper ends theirs. */
+$("tgSkip").onclick=()=>{
+  const cur=activeFactionId(),list=skipCandidates();if(!cur||!list.length)return;
+  pwGateMode="skip";
+  $("pwGateTitle").textContent="Just skip to mine";
+  $("pwGateSkipNote").textContent=`Take your turn now instead of waiting for ${(F[cur]||{}).name||cur}. They keep their turn for after yours.`;
+  const rs=$("pwGateRealm");rs.innerHTML="";
+  rs.add(new Option("— choose your realm —",""));
+  list.forEach(id=>rs.add(new Option((F[id]||{}).name||id,id)));
+  $("pwGateSkip").style.display="";
+  $("pwGateGo").textContent="Skip to my turn";
+  $("pwGateErr").textContent="";$("pwGatePass").value="";
+  $("pwGate").classList.add("open");
+  setTimeout(()=>$("pwGateRealm").focus(),40);
 };
 /* ---------- self-service End Turn (Stage 3) ---------- */
 async function endTurn(){
@@ -2474,7 +2506,7 @@ async function endTurn(){
   stats();drawLedger();draw();
   if(sel)openProv(P[sel]);
   if(window.cxIsOpen&&window.cxIsOpen())window.cxRefresh();
-  const ok=await publishTurn();
+  const res=await publishTurn({guard:true}),ok=res===true;
   if(btn)btn.disabled=false;
   if(!ok){
     S.active=prevActive;S.moved=prevMoved;S.pendingReview=prevPending;
@@ -2482,16 +2514,29 @@ async function endTurn(){
     stats();drawLedger();draw();
     if(sel)openProv(P[sel]);
     if(window.cxIsOpen&&window.cxIsOpen())window.cxRefresh();
-    toast(`Publish failed — ${name}'s turn has not been ended. Try again.`);
+    toast(res==="stale"?`Another realm ended its turn while ${name} was playing — this page is out of date. Reload and take your turn again.`
+                       :`Publish failed — ${name}'s turn has not been ended. Try again.`);
     return;
   }
   toast(`${name}'s turn ended and published.`);
 }
 $("tgEndTurn").onclick=endTurn;
 async function pwGateTry(){
-  const fid=activeFactionId();if(!fid)return;
+  const skip=pwGateMode==="skip";
+  const fid=skip?$("pwGateRealm").value:activeFactionId();
+  if(!fid){if(skip)$("pwGateErr").textContent="Choose your realm first.";return;}
   const t=$("pwGatePass").value;if(!t)return;
   if(FACTION_PASSWORDS[fid]&&await sha256(t)===FACTION_PASSWORDS[fid]){
+    if(skip){
+      if(S.pendingReview||skipCandidates().indexOf(fid)<0){$("pwGateErr").textContent="That realm can no longer skip ahead this round.";return;}
+      const cur=activeFactionId(),curName=(F[cur]||{}).name||cur,name=(F[fid]||{}).name||fid;
+      snap("skip ahead — "+name);
+      S.active=S.order.indexOf(fid);
+      logIt(`${name} grew tired of waiting on ${curName} and skips ahead — ${curName} keeps its turn for later this round.`,"turn");
+      stats();drawLedger();draw();
+      if(sel)openProv(P[sel]);
+      if(window.cxIsOpen&&window.cxIsOpen())window.cxRefresh();
+    }
     factionAuth=fid;
     try{store.set("rqFactionAuth",fid);}catch(e){}
     $("pwGate").classList.remove("open");
@@ -2843,7 +2888,10 @@ function ghTarget(){
    GH_TOKEN env var in the Vercel dashboard and redeploying; do not paste a
    real token back into this source file. */
 const GH_TOKEN="__GH_TOKEN_PLACEHOLDER__";
-async function publishTurn(){
+/* opts.guard (player End turn): refuse to publish if the live file shows a different turn, or a realm that has moved
+   which this page doesn't know about — i.e. someone else ended a turn since this page loaded (e.g. after a skip-ahead),
+   and writing would wipe their turn. */
+async function publishTurn(opts){
   const tgt=ghTarget();
   const api=`https://api.github.com/repos/${tgt.o}/${tgt.r}/contents/campaign.json`;
   const H={Authorization:"Bearer "+GH_TOKEN,Accept:"application/vnd.github+json"};
@@ -2852,7 +2900,15 @@ async function publishTurn(){
     let sha=null;
     const g=await fetch(api,{headers:H});
     if(g.status===200){
-      sha=(await g.json()).sha;
+      const j=await g.json();sha=j.sha;
+      if(opts&&opts.guard&&j.content){
+        let remote=null;
+        try{remote=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content.replace(/\s/g,"")),c=>c.charCodeAt(0))));}catch(e){}
+        const mine=S.moved||[];
+        if(remote&&(remote.turn!==S.turn||(remote.moved||[]).some(id=>mine.indexOf(id)<0))){
+          return "stale";
+        }
+      }
     }else if(g.status===401||g.status===403||g.status===404){
       toast("Token rejected ("+g.status+") — the GitHub token in index.html needs to be updated");
       return false;
