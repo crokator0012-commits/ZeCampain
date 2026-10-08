@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 3460,
+   "treasury": 2460,
    "capital": "Province_454",
    "zeal": 8
   },
@@ -894,8 +894,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "livestock_farm"
+   ],
+   "availableBldOwner": {
+    "livestock_farm": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1367,8 +1371,14 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks",
+    "gem_mine"
+   ],
+   "availableBldOwner": {
+    "barracks": "Mordor",
+    "gem_mine": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -2272,8 +2282,14 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "fishing_jetties",
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "fishing_jetties": "Mordor",
+    "grain_farm": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3280,8 +3296,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "fishing_jetties"
+   ],
+   "availableBldOwner": {
+    "fishing_jetties": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3569,8 +3589,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "copper_mine"
+   ],
+   "availableBldOwner": {
+    "copper_mine": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3649,8 +3673,14 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks",
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "barracks": "Mordor",
+    "stone_quarry": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4100,7 +4130,7 @@
    ],
    "displayName": "Dol Gul Dur",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2193.4881258415962,
    "cy": 926.2420124862284,
@@ -4114,17 +4144,7 @@
     "barracks": "Dol Gul Dur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Dol Gul Dur",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4385,12 +4405,14 @@
    "hex": "#adaa54",
    "playable": true,
    "owner": "Dol Gul Dur",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_22",
     "Province_373",
@@ -4399,21 +4421,21 @@
     "Province_454",
     "Province_468"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 2288.209239641447,
    "cy": 953.2012160722121,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
-   "upg": {
-    "to": 1,
-    "payer": "Dol Gul Dur",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 2000
+   "availableBld": [
+    "sheep_pen"
+   ],
+   "availableBldOwner": {
+    "sheep_pen": "Dol Gul Dur"
    },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -4428,7 +4450,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Harondor",
     "Province_359",
@@ -4446,14 +4470,20 @@
     "Province_463",
     "South Ithilien"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2381.224869964921,
    "cy": 902.3899237933954,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Dol Gul Dur"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4547,8 +4577,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "iron_mine"
+   ],
+   "availableBldOwner": {
+    "iron_mine": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5457,12 +5491,14 @@
    "hex": "#6e543b",
    "playable": true,
    "owner": "Dol Gul Dur",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "road"
+   ],
    "adj": [
     "Near Harad",
     "Province_11",
@@ -5510,15 +5546,13 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
-   "upg": {
-    "to": 1,
-    "payer": "Dol Gul Dur",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 2000
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Dol Gul Dur"
    },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6047,7 +6081,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "road"
+   ],
    "adj": [
     "Province_11",
     "Province_12",
@@ -6125,8 +6161,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Dol Gul Dur"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6234,8 +6274,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "sheep_pen"
+   ],
+   "availableBldOwner": {
+    "sheep_pen": "Mordor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6482,8 +6526,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "barracks": "Dol Gul Dur"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -10003,6 +10051,195 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_454 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_407 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_407.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_397.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Grain Farm at Province_397 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Sheep Pen at Province_407 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur may construct Sheep Pen at Province_407.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur may construct Grain Farm at Province_397.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road completed at Province_351.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Road at Province_351 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_373 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road completed at Province_373.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Road at Province_373 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur may construct Road at Province_373.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur may construct Road at Province_351.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur may construct Barracks at Province_342.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Grain Farm at Province_396.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Fishing Jetties at Province_396.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Fishing Jetties at Province_371.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Iron Mine at Province_327.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Sheep Pen at Province_72.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Livestock Farm at Province_425.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Copper Mine at Province_453.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Stone Quarry at Province_347.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Gem Mine at Province_305.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Barracks at Province_305.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor may construct Barracks at Province_347.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -18500,7 +18737,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
