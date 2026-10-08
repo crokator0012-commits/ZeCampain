@@ -7473,7 +7473,7 @@
    "modern": "Province 370",
    "hex": "#6a040f",
    "playable": true,
-   "owner": "Feredrim",
+   "owner": "Dale",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9500,33 +9500,6 @@
    "_startCost": 10500
   },
   {
-   "name": "Host of Province_460",
-   "faction": "Feredrim",
-   "men": 840,
-   "at": "Province_379",
-   "order": null,
-   "units": [
-    "feredrim_aor_feredrim_rangers",
-    "feredrim_aor_feredrim_rangers",
-    "feredrim_aor_feredrim_rangers",
-    "feredrim_aor_feredrim_woodsmen",
-    "feredrim_aor_feredrim_woodsmen",
-    "feredrim_aor_feredrim_woodsmen",
-    "feredrim_aor_feredrim_woodsmen"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 2787.5,
-   "_startCost": 5575
-  },
-  {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
    "men": 1820,
@@ -9611,18 +9584,15 @@
   {
    "name": "Host of Province_388",
    "faction": "Dale",
-   "men": 1700,
-   "at": "Province_13",
+   "men": 1340,
+   "at": "Province_370",
    "order": null,
    "units": [
-    "dale_northmen_scouts",
-    "dale_rivermen",
     "dale_spear_militia",
     "dale_shipmen",
     "dale_shipmen",
     "dale_shipmen",
     "dale_shipmen",
-    "dale_merchant_escorts",
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
@@ -9631,14 +9601,11 @@
     "dale_watch_post_sentries"
    ],
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    2,
+    1,
+    1,
+    1,
+    1,
     0,
     0,
     0,
@@ -9646,8 +9613,8 @@
     0,
     0
    ],
-   "upkeep": 4950,
-   "_startCost": 9775
+   "upkeep": 3800,
+   "_startCost": 7600
   },
   {
    "name": "Host of Harondor",
@@ -9836,6 +9803,27 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale annexed Province_370 (from Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale occupied Province_370 (held by Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_13 → Province_370",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
