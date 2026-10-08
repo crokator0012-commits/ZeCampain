@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 1250,
+   "treasury": 100,
    "capital": "Province_409",
    "zeal": 8
   },
@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 3290,
+   "treasury": 2290,
    "capital": "Province_364",
    "zeal": 8
   },
@@ -263,7 +263,7 @@
    "name": "Beorings",
    "color": "#8A6A2E",
    "treasury": 3640,
-   "capital": "Province_208",
+   "capital": null,
    "zeal": 8,
    "npc": true
   },
@@ -440,8 +440,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Lindon"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -516,8 +520,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "iron_mine"
+   ],
+   "availableBldOwner": {
+    "iron_mine": "Ered Luin"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -731,7 +739,9 @@
    "garrison": 9000,
    "bld": [
     "barracks",
-    "healing_herb_garden"
+    "healing_herb_garden",
+    "blacksmith",
+    "elven_workshop"
    ],
    "adj": [
     "Province_327",
@@ -747,31 +757,28 @@
    "displayName": "Rivendell",
    "bldLevel": {
     "barracks": 3,
-    "healing_herb_garden": 2
+    "healing_herb_garden": 2,
+    "blacksmith": 1
    },
    "cx": 1883.6418552757411,
    "cy": 574.5635957921581,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "elven_workshop": "Imraldris"
+   },
    "availableBld": [
     "barracks",
-    "healing_herb_garden"
+    "healing_herb_garden",
+    "elven_workshop"
    ],
    "availableBldOwner": {
     "barracks": "Imraldris",
-    "healing_herb_garden": "Imraldris"
+    "healing_herb_garden": "Imraldris",
+    "elven_workshop": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "blacksmith",
-     "payer": "Imraldris",
-     "cost": 750,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -804,8 +811,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "road"
+   ],
+   "availableBldOwner": {
+    "road": "Rhudaur"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1381,7 +1392,8 @@
    "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "South West Harad"
   },
   {
    "id": "Province_432",
@@ -1717,8 +1729,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rhudaur"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -1751,8 +1767,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "market"
+   ],
+   "availableBldOwner": {
+    "market": "Lindon"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -2514,8 +2534,8 @@
    ],
    "displayName": "Isengard",
    "bldLevel": {
-    "iron_mine": 1,
-    "barracks": 1
+    "iron_mine": 2,
+    "barracks": 2
    },
    "cx": 1711.646375766318,
    "cy": 1248.3677605481428,
@@ -2531,26 +2551,7 @@
     "iron_mine": "Isengard"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Isengard",
-     "cost": 1100,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Isengard",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2974,7 +2975,7 @@
    "modern": "Province 208",
    "hex": "#334980",
    "playable": true,
-   "owner": "Beorings",
+   "owner": "Anduin Vale",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -3033,7 +3034,9 @@
    "value": 850,
    "move": 2,
    "garrison": 7500,
-   "bld": [],
+   "bld": [
+    "iron_mine"
+   ],
    "adj": [
     "Harondor",
     "Province_19",
@@ -3076,14 +3079,20 @@
     "Province_72"
    ],
    "displayName": "Eregion",
-   "bldLevel": {},
+   "bldLevel": {
+    "iron_mine": 1
+   },
    "cx": 1746.4308975001015,
    "cy": 816.0118565840586,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "iron_mine"
+   ],
+   "availableBldOwner": {
+    "iron_mine": "Imraldris"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3099,7 +3108,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_327",
     "Province_359",
@@ -3123,14 +3134,20 @@
     "Province_466",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1105.7781130497133,
    "cy": 1089.4826272705545,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Lindon"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3514,7 +3531,7 @@
    "modern": "Province 103",
    "hex": "#2b3d6b",
    "playable": true,
-   "owner": "Beorings",
+   "owner": "Anduin Vale",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -4117,8 +4134,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "silver_mine"
+   ],
+   "availableBldOwner": {
+    "silver_mine": "Ered Mithrin"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4129,12 +4150,14 @@
    "hex": "#d41759",
    "playable": true,
    "owner": "Lindon",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [
     "Province_260",
     "Province_295",
@@ -4149,21 +4172,21 @@
     "Province_466",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 1344.8020306001467,
    "cy": 852.2277226791125,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
-   "upg": {
-    "to": 1,
-    "payer": "Lindon",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 2000
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Lindon"
    },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -5131,8 +5154,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Ered Mithrin"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5267,8 +5294,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "livestock_farm"
+   ],
+   "availableBldOwner": {
+    "livestock_farm": "Dunland"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5561,8 +5592,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "goat_pen"
+   ],
+   "availableBldOwner": {
+    "goat_pen": "Gundabad"
+   },
    "upg": {
     "to": 1,
     "payer": "Gundabad",
@@ -5809,8 +5844,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "goat_pen"
+   ],
+   "availableBldOwner": {
+    "goat_pen": "Ered Mithrin"
+   },
    "upg": {
     "to": 1,
     "payer": "Ered Mithrin",
@@ -7534,7 +7573,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {},
    "cx": 2913.2893047494968,
    "cy": 2619.793829207628,
@@ -7684,7 +7723,9 @@
    "value": 500,
    "move": 2,
    "garrison": 6700,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_2",
     "Province_25",
@@ -7698,14 +7739,20 @@
     "Province_430",
     "Province_466"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1431.9597626343893,
    "cy": 595.7673284070062,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Imraldris"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7738,8 +7785,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "goat_pen"
+   ],
+   "availableBldOwner": {
+    "goat_pen": "Gundabad"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8089,10 +8140,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "barracks"
+    "barracks",
+    "orcish_craftsmanship"
    ],
    "availableBldOwner": {
-    "barracks": "Gundabad"
+    "barracks": "Gundabad",
+    "orcish_craftsmanship": "Gundabad"
    },
    "upg": null,
    "buildQueue": [],
@@ -8128,8 +8181,12 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "goat_pen"
+   ],
+   "availableBldOwner": {
+    "goat_pen": "Gundabad"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9774,7 +9831,7 @@
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
    "men": 1080,
-   "at": "Province_26",
+   "at": "Province_103",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -9803,6 +9860,286 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Beorings's capital falls — Province_208 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale annexed Province_208 (from Beorings)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale occupied Province_208 (held by Beorings)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_26 → Province_103",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale annexed Province_103 (from Beorings)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale occupied Province_103 (held by Beorings)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin may construct Silver Mine at Province_356.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin may construct Grain Farm at Province_434.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin may construct Goat Pen at Province_441.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Goat Pen at Province_380.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Orcish Craftsmanship at Province_393.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Goat Pen at Province_443.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Goat Pen at Province_384.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur may construct Grain Farm at Province_422.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur may construct Road at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland may construct Livestock Farm at Province_372.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Market at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Grain Farm at Province_439.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Elven Craftsmanship Workshop is no longer available at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Elven Craftsmanship Workshop at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin may construct Iron Mine at Province_415.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Elven Craftsmanship Workshop completed at Province_409.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Elven Craftsmanship Workshop at Province_409 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Elven Craftsmanship Workshop at Province_409.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_411.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Grain Farm at Province_411 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Grain Farm at Province_411.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_430.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Stone Quarry at Province_430 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Stone Quarry at Province_430.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_461.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Grain Farm at Province_461 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Grain Farm at Province_461.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine completed at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Iron Mine at Province_401 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Iron Mine at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Blacksmith completed at Province_409.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_430 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_400 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_400 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
