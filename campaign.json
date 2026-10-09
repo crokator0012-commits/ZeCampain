@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorvinion",
    "color": "#7B1FA2",
-   "treasury": 670,
+   "treasury": 170,
    "capital": "Province_22",
    "zeal": 8
   },
@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 65,
+   "treasury": 615,
    "capital": "Province_390",
    "zeal": 8
   },
@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 2460,
+   "treasury": 1660,
    "capital": "Province_454",
    "zeal": 8
   },
@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 2851,
+   "treasury": 851,
    "capital": "Province_23",
    "zeal": 8
   },
@@ -495,7 +495,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "iron_mine"
+   ],
    "adj": [
     "Province_103",
     "Province_208",
@@ -514,7 +516,9 @@
     "Province_72",
     "Province_8"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "iron_mine": 2
+   },
    "cx": 886.4996635436617,
    "cy": 89.67829597805269,
    "siege": null,
@@ -1516,7 +1520,7 @@
    ],
    "displayName": "Lune Highlands",
    "bldLevel": {
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 866.145450209338,
    "cy": 280.75698235200593,
@@ -1530,17 +1534,7 @@
     "goat_pen": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3045,7 +3039,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -3075,7 +3071,9 @@
     "Province_72"
    ],
    "displayName": "beoring hall",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 2040.5971040575917,
    "cy": 624.1329352094241,
    "siege": null,
@@ -3613,7 +3611,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_18",
     "Province_208",
@@ -3634,7 +3634,9 @@
     "Province_419",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2040.6391441700173,
    "cy": 736.2268811028144,
    "siege": null,
@@ -4427,7 +4429,7 @@
     "Province_468"
    ],
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 2288.209239641447,
    "cy": 953.2012160722121,
@@ -4476,7 +4478,7 @@
     "South Ithilien"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2381.224869964921,
    "cy": 902.3899237933954,
@@ -4929,7 +4931,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -4958,7 +4962,9 @@
     "Province_6",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2150.479100033087,
    "cy": 784.6536340575714,
    "siege": null,
@@ -5337,7 +5343,8 @@
    "garrison": 2000,
    "bld": [
     "winery",
-    "barracks"
+    "barracks",
+    "market"
    ],
    "adj": [
     "Province_17",
@@ -5354,20 +5361,24 @@
    "displayName": "caras gwinerth",
    "bldLevel": {
     "winery": 3,
-    "barracks": 2
+    "barracks": 3
    },
    "cx": 3013.5720799500314,
    "cy": 922.835165521549,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "market": "Dorvinion"
+   },
    "availableBld": [
     "winery",
-    "barracks"
+    "barracks",
+    "market"
    ],
    "availableBldOwner": {
     "winery": "Dorvinion",
-    "barracks": "Dorvinion"
+    "barracks": "Dorvinion",
+    "market": "Dorvinion"
    },
    "upg": null,
    "buildQueue": [],
@@ -5580,7 +5591,8 @@
    "garrison": 2000,
    "bld": [
     "gem_mine",
-    "barracks"
+    "barracks",
+    "erebor_mines"
    ],
    "adj": [
     "Province_11",
@@ -5589,43 +5601,28 @@
    ],
    "displayName": "Erebor",
    "bldLevel": {
-    "gem_mine": 1,
-    "barracks": 1
+    "gem_mine": 2,
+    "barracks": 2
    },
    "cx": 2463.8692858907834,
    "cy": 360.0347170743761,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "erebor_mines": "Erebor"
+   },
    "availableBld": [
     "barracks",
-    "gem_mine"
+    "gem_mine",
+    "erebor_mines"
    ],
    "availableBldOwner": {
     "barracks": "Erebor",
-    "gem_mine": "Erebor"
+    "gem_mine": "Erebor",
+    "erebor_mines": "Erebor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "gem_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 1400,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6501,7 +6498,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_260",
     "Province_296",
@@ -6512,7 +6511,9 @@
     "Province_455_split_1",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 2368.8197732913004,
    "cy": 703.6626869676035,
    "siege": null,
@@ -8238,8 +8239,8 @@
     "Province_445"
    ],
    "bldLevel": {
-    "goat_pen": 1,
-    "sheep_pen": 1
+    "goat_pen": 2,
+    "sheep_pen": 2
    },
    "cx": 2343.4854101321166,
    "cy": 328.31099705351204,
@@ -8255,26 +8256,7 @@
     "goat_pen": "Erebor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9981,6 +9963,209 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_415 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts upgrading Iron Mine at Province_415 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine completed at Province_415.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Iron Mine at Province_415 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_4 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_208.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Barracks at Province_208 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_103.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Grain Farm at Province_103 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_26.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Grain Farm at Province_26 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor Mines completed at Province_10.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts construction: Erebor Mines at Province_10 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor may construct Erebor Mines at Province_10.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_10 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gem Mine at Province_10 reaches Level 2 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_378 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_378 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_22 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Barracks at Province_22 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Market completed at Province_22.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts construction: Market at Province_22 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion may construct Market at Province_22.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_397 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts upgrading Grain Farm at Province_397 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_407 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts upgrading Sheep Pen at Province_407 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_342.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Barracks at Province_342 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
