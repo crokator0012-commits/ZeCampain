@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 2930,
+   "treasury": 2030,
    "capital": "Province_388",
    "zeal": 8
   },
@@ -5400,7 +5400,7 @@
    "garrison": 200,
    "bld": [
     "goat_pen",
-    "livestock_farm"
+    "goat_pen"
    ],
    "adj": [
     "Province_103",
@@ -8489,7 +8489,7 @@
    ],
    "displayName": "northern Rhovanion",
    "bldLevel": {
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 2534.471342997909,
    "cy": 707.238436181902,
@@ -10024,6 +10024,20 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_455_split_1 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Goat Pen at Province_455_split_1 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
