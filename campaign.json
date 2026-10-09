@@ -27,7 +27,7 @@
    "id": "Dunland",
    "name": "Dunland",
    "color": "#6D4C41",
-   "treasury": 2023,
+   "treasury": 173,
    "capital": "Province_334",
    "zeal": 8
   },
@@ -3888,8 +3888,8 @@
    ],
    "displayName": "northern endwaith",
    "bldLevel": {
-    "timber_yard": 1,
-    "fishing_jetties": 1
+    "timber_yard": 2,
+    "fishing_jetties": 2
    },
    "cx": 1341.4611517154694,
    "cy": 1151.2695870769517,
@@ -6467,8 +6467,8 @@
    ],
    "displayName": "Dunlending Heartlands",
    "bldLevel": {
-    "barracks": 1,
-    "fur_trappers_camp": 1
+    "barracks": 2,
+    "fur_trappers_camp": 2
    },
    "cx": 1593.4096342276714,
    "cy": 1240.9327450879803,
@@ -6484,26 +6484,7 @@
     "barracks": "Dunland"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fur_trappers_camp",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dunland",
-     "cost": 1000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Dunland",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9997,6 +9978,48 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_389 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_389 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts upgrading Fishing Jetties at Province_389 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts upgrading Timber Yard at Province_389 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_334 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fur Trapper's Camp at Province_334 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
