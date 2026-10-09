@@ -187,7 +187,7 @@
    "id": "Ered Mithrin",
    "name": "Ered Mithrin",
    "color": "#607D8B",
-   "treasury": 955,
+   "treasury": 55,
    "capital": "Province_445",
    "zeal": 8
   },
@@ -2648,7 +2648,7 @@
    ],
    "displayName": "Dain's Halls",
    "bldLevel": {
-    "gold_mine": 2,
+    "gold_mine": 3,
     "barracks": 2
    },
    "cx": 2305.017163334591,
@@ -2665,17 +2665,7 @@
     "gold_mine": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "gold_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Ered Mithrin",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4218,7 +4208,9 @@
    "value": 850,
    "move": 2,
    "garrison": 1500,
-   "bld": [],
+   "bld": [
+    "silver_mine"
+   ],
    "adj": [
     "Province_11",
     "Province_351",
@@ -4226,7 +4218,9 @@
     "Province_376",
     "Province_445"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "silver_mine": 1
+   },
    "cx": 2553.3206541515938,
    "cy": 207.18785452833015,
    "siege": null,
@@ -4239,15 +4233,7 @@
     "silver_mine": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "silver_mine",
-     "payer": "Ered Mithrin",
-     "cost": 750,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5275,7 +5261,9 @@
    "value": 850,
    "move": 2,
    "garrison": 1500,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_365",
     "Province_382",
@@ -5284,7 +5272,9 @@
     "Province_429",
     "Province_441"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 2
+   },
    "cx": 2091.292907889817,
    "cy": 308.0774024679048,
    "siege": null,
@@ -5297,15 +5287,7 @@
     "grain_farm": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "payer": "Ered Mithrin",
-     "cost": 500,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5990,12 +5972,14 @@
    "hex": "#e53935",
    "playable": true,
    "owner": "Ered Mithrin",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "goat_pen"
+   ],
    "adj": [
     "Province_260",
     "Province_378",
@@ -6005,7 +5989,9 @@
     "Province_434",
     "Province_445"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "goat_pen": 1
+   },
    "cx": 2129.1584928409948,
    "cy": 215.87077618688772,
    "siege": null,
@@ -6017,22 +6003,8 @@
    "availableBldOwner": {
     "goat_pen": "Ered Mithrin"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Ered Mithrin",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 2000
-   },
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "payer": "Ered Mithrin",
-     "cost": 500,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "upg": null,
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10050,6 +10022,55 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine completed at Province_356.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Province_445 reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_434 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts upgrading Grain Farm at Province_434 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_434.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_441.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_441 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
