@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 6040,
+   "treasury": 415,
    "capital": "Province_433",
    "zeal": 8
   },
@@ -1079,13 +1079,11 @@
    "upg": null,
    "buildQueue": [
     {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
+     "key": "barracks",
      "payer": "Gondor",
-     "cost": 900,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
+     "cost": 1000,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
     }
    ],
    "raid": null
@@ -1585,7 +1583,15 @@
     "startedDate": "Spring 1418",
     "cost": 2000
    },
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "road",
+     "payer": "Gondor",
+     "cost": 0,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3767,7 +3773,15 @@
     "road": "Gondor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "road",
+     "payer": "Gondor",
+     "cost": 0,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6707,7 +6721,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7728,7 +7742,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {},
    "cx": 2913.2893047494968,
    "cy": 2619.793829207628,
@@ -9371,8 +9385,8 @@
   {
    "name": "Host of Province_390_split_1",
    "faction": "Gondor",
-   "men": 1540,
-   "at": "Province_446",
+   "men": 2340,
+   "at": "Province_433",
    "order": null,
    "units": [
     "gondor_faramir",
@@ -9387,7 +9401,14 @@
     "gondor_aor_anfalas_coast_levies",
     "gondor_aor_anfalas_coast_levies",
     "gondor_aor_blackroot_vale_archers",
-    "gondor_aor_blackroot_vale_archers"
+    "gondor_aor_blackroot_vale_archers",
+    "gondor_aor_anorien_patrollers",
+    "gondor_aor_ringlovale_men_at_arms",
+    "gondor_aor_blackroot_vale_archers",
+    "gondor_aor_princes_coast_guard",
+    "gondor_aor_princes_coast_guard",
+    "gondor_aor_ringlovale_men_at_arms",
+    "gondor_aor_ringlovale_men_at_arms"
    ],
    "xp": [
     0,
@@ -9402,9 +9423,16 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4950,
+   "upkeep": 7712.5,
    "_startCost": 10900
   },
   {
@@ -9989,6 +10017,153 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor reinforced Host of Province_390_split_1 at Province_433 (+7 regiments · 5,525 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Osgiliath → Province_433",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_433 → Osgiliath",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_395 → Province_433",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_12 → Province_395",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_361 → Province_12",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_459 → Province_361",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_361 → Province_459",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_457 → Province_361",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_395 → Province_457",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_433 → Province_395",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Osgiliath → Province_433",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_446 → Osgiliath",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_459: construction declined — Gondor refunded 900 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_457: construction declined — Gondor refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Road at Province_457 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Barracks at Province_459 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Road at Province_395 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Road at Province_457 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -29171,7 +29346,8 @@
   "Dunland",
   "Dorvinion",
   "Mahud",
-  "Dol Amroth"
+  "Dol Amroth",
+  "Gondor"
  ],
  "pendingReview": false
 }
