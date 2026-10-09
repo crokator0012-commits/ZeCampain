@@ -9966,6 +9966,13 @@
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin occupied Province_364 (held by Lindon)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
    "txt": "Iron Mine at Province_415 reaches Level 2 — it now yields 100 castas each season.",
    "kind": "",
    "detail": null
