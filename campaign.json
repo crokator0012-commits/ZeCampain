@@ -187,7 +187,7 @@
    "id": "Ered Mithrin",
    "name": "Ered Mithrin",
    "color": "#607D8B",
-   "treasury": 3580,
+   "treasury": 955,
    "capital": "Province_445",
    "zeal": 8
   },
@@ -4239,7 +4239,15 @@
     "silver_mine": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "silver_mine",
+     "payer": "Ered Mithrin",
+     "cost": 750,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -5289,7 +5297,15 @@
     "grain_farm": "Ered Mithrin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "payer": "Ered Mithrin",
+     "cost": 500,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6008,7 +6024,15 @@
     "startedDate": "Summer 1418",
     "cost": 2000
    },
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "goat_pen",
+     "payer": "Ered Mithrin",
+     "cost": 500,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9570,8 +9594,8 @@
   {
    "name": "Host of Province_445",
    "faction": "Ered Mithrin",
-   "men": 1340,
-   "at": "Province_434",
+   "men": 1480,
+   "at": "Province_445",
    "order": null,
    "units": [
     "ered_mithrin_dragon_slayers",
@@ -9584,7 +9608,8 @@
     "ered_mithrin_troll_hunters",
     "ered_mithrin_troll_hunters",
     "ered_mithrin_troll_hunters",
-    "ered_mithrin_ered_mithrin_cohort"
+    "ered_mithrin_ered_mithrin_cohort",
+    "ered_mithrin_grey_mountain_sentinels"
    ],
    "xp": [
     0,
@@ -9597,9 +9622,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4975,
+   "upkeep": 5412.5,
    "_startCost": 9950
   },
   {
@@ -10024,6 +10050,76 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin reinforced Host of Province_445 at Province_445 (+1 regiment · 875 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_445 moved Province_441 → Province_445",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_445 moved Province_434 → Province_441",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_445 moved Province_441 → Province_434",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_445 moved Province_434 → Province_441",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts construction: Grain Farm at Province_434 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts construction: Goat Pen at Province_441 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin starts construction: Silver Mine at Province_356 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Mithrin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -30688,7 +30784,8 @@
   "Mahud",
   "Dol Amroth",
   "Gondor",
-  "Dale"
+  "Dale",
+  "Ered Mithrin"
  ],
  "pendingReview": false
 }
