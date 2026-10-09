@@ -299,7 +299,7 @@
    "name": "Northern Endwaith",
    "color": "#4C5963",
    "treasury": 4980,
-   "capital": "Province_389",
+   "capital": null,
    "zeal": 8,
    "npc": true
   },
@@ -308,7 +308,7 @@
    "name": "Southern Endwaith",
    "color": "#8B6B3C",
    "treasury": 5016,
-   "capital": "Province_377",
+   "capital": null,
    "zeal": 8,
    "npc": true
   },
@@ -688,7 +688,7 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "timber"
+    "timber_yard"
    ],
    "adj": [
     "Province_1",
@@ -709,7 +709,9 @@
     "Province_460"
    ],
    "displayName": "southern rovanion",
-   "bldLevel": {},
+   "bldLevel": {
+    "timber_yard": 1
+   },
    "cx": 2544.151796778191,
    "cy": 831.0951311441553,
    "siege": null,
@@ -3846,7 +3848,7 @@
    "modern": "Province 389",
    "hex": "#8d6e63",
    "playable": true,
-   "owner": "Northern Endwaith",
+   "owner": "Dunland",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -4974,7 +4976,7 @@
    "modern": "Province 377",
    "hex": "#795548",
    "playable": true,
-   "owner": "Southern Endwaith",
+   "owner": "Dunland",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -5026,10 +5028,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "timber_yard"
+    "timber_yard",
+    "barracks"
    ],
    "availableBldOwner": {
-    "timber_yard": "Southern Endwaith"
+    "timber_yard": "Southern Endwaith",
+    "barracks": "Dunland"
    },
    "upg": null,
    "buildQueue": [],
@@ -5377,7 +5381,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "livestock_farm"
+   ],
    "adj": [
     "Province_103",
     "Province_26",
@@ -5404,7 +5410,9 @@
    "cy": 1020.0104806212275,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "livestock_farm": "Dunland"
+   },
    "availableBld": [
     "livestock_farm"
    ],
@@ -9213,54 +9221,6 @@
    "_startCost": 12075
   },
   {
-   "name": "Host of Province_389",
-   "faction": "Northern Endwaith",
-   "men": 720,
-   "at": "Province_389",
-   "order": null,
-   "units": [
-    "northern_endwaith_mercs_orthanc_servants",
-    "northern_endwaith_mercs_orthanc_servants",
-    "northern_endwaith_mercs_orthanc_servants",
-    "northern_endwaith_mercs_orthanc_servants",
-    "northern_endwaith_mercs_orthanc_servants",
-    "northern_endwaith_mercs_orthanc_servants"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 3000
-  },
-  {
-   "name": "Host of Province_377",
-   "faction": "Southern Endwaith",
-   "men": 660,
-   "at": "Province_377",
-   "order": null,
-   "units": [
-    "southern_endwaith_elder_riders",
-    "southern_endwaith_elder_riders",
-    "southern_endwaith_elder_riders",
-    "southern_endwaith_elder_spears",
-    "southern_endwaith_elder_spears",
-    "southern_endwaith_elder_spears"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 2662.5
-  },
-  {
    "name": "Host of Province_3",
    "faction": "Drudain",
    "men": 1020,
@@ -9701,51 +9661,37 @@
   {
    "name": "Host of Province_334",
    "faction": "Dunland",
-   "men": 2190,
-   "at": "Province_334",
+   "men": 1320,
+   "at": "Province_377",
    "order": null,
    "units": [
     "dunlendings_huscarls",
     "dunlendings_bloodsworn",
-    "dunlendings_bloodsworn",
     "dunlendings_tribal_warroirs",
-    "dunlendings_tribal_youths",
     "dunlendings_tribal_spearmen",
     "dunlendings_dunlending_slingers",
     "dunlendings_dunlending_slingers",
-    "dunlendings_dunleding_pikemen",
-    "southern_endwaith_elder_spears",
     "dunlendings_dunleding_hunters",
     "dunlendings_dunleding_hunters",
     "southern_endwaith_elder_riders",
-    "dunlendings_tribal_warroirs",
-    "dunlendings_tribal_warroirs",
-    "dunlendings_tribal_warroirs",
-    "dunlendings_tribal_youths",
-    "dunlendings_tribal_raiders"
+    "northern_endwaith_mercs_orthanc_servants",
+    "southern_endwaith_elder_spears"
    ],
    "xp": [
+    2,
+    1,
+    1,
     0,
+    1,
     0,
+    1,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    1,
     0,
     0
    ],
-   "upkeep": 6700,
-   "_startCost": 10500
+   "upkeep": 4400,
+   "_startCost": 8800
   },
   {
    "name": "Host of Province_454",
@@ -10051,6 +9997,76 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Livestock Farm completed at Province_372.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts construction: Livestock Farm at Province_372 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland may construct Barracks at Province_377.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Northern Endwaith's capital falls — Province_389 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland annexed Province_389 (from Northern Endwaith)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland occupied Province_389 (held by Northern Endwaith)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Southern Endwaith's capital falls — Province_377 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland annexed Province_377 (from Southern Endwaith)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland occupied Province_377 (held by Southern Endwaith)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_334 moved Province_334 → Province_377",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
