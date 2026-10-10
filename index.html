@@ -9,9 +9,7 @@
 <meta property="og:title" content="TDD Age of Men">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
+<link href="https:/i 
  --ink:#0A1017; --panel:rgba(17,25,32,.95); --panel2:#1B2730; --line:#33454F; --soft:#22303A;
  --bone:#EDE8DB; --dim:#8FA0AC; --dimmer:#5F6E7A; --brass:#C9A03C; --verd:#5E9C8F; --dang:#B3543F;
 }
@@ -3882,12 +3880,34 @@ function rosterHTML(a){
   const g={};
   (a.units||[]).forEach((k,i)=>{const r=(a.xp&&a.xp[i])||0;const id=k+"|"+r;(g[id]=g[id]||{k,r,n:0}).n++;});
   const ai=S.armies.indexOf(a);
+  const own=ai>-1&&canAct(a.faction),mates=own?armyMates(a):[];
   const rows=Object.values(g).map(({k,r,n})=>{
     const u=cxBy[k],nm=u?unitDisplayName(u):k;
     const gmc=`<span class="gm chevbtns"><button class="btn xs" data-chv="${ai}|${k}|${r}|-1" title="One regiment of this rank loses a chevron">−</button><button class="btn xs" data-chv="${ai}|${k}|${r}|1" title="One regiment of this rank gains a chevron">+</button></span>`;
-    return `<div class="ru"><span class="un">${n>1?n+"× ":""}${nm}${chevMark(r)}</span><span class="us">${u?(u.class_name||"")+" · "+((u.men||0)*n).toLocaleString()+" men":""}${gmc}</span></div>`;
+    const refund=a.holy?0:((u&&u.cost)||0);
+    const pc=own?`<span class="chevbtns">${mates.length?`<button class="btn xs" data-xfr="${ai}|${k}|${r}" title="Transfer one regiment to the host chosen below">→</button>`:""}<button class="btn xs" data-dsb="${ai}|${k}|${r}" title="Disband one regiment — ${refund.toLocaleString()}g back to the treasury, its upkeep ends" style="color:#E5A594">✕</button></span>`:"";
+    return `<div class="ru"><span class="un">${n>1?n+"× ":""}${nm}${chevMark(r)}</span><span class="us">${u?(u.class_name||"")+" · "+((u.men||0)*n).toLocaleString()+" men":""}${gmc}${pc}</span></div>`;
   }).join("");
   return rows||'<div class="ru"><span class="us">Empty rolls.</span></div>';
+}
+const XFER_PICK=new WeakMap(); // source host -> last chosen transfer target
+/* Same-realm codex hosts standing with `a` that it may trade regiments with
+   (holy hosts only mix with holy hosts, so free upkeep can't be laundered). */
+function armyMates(a){
+  return S.armies.filter(o=>o!==a&&o.at===a.at&&o.faction===a.faction&&Array.isArray(o.units)&&!!o.holy===!!a.holy);
+}
+/* Move regiment idx of src into dst, chevrons and all. */
+function moveRegiment(src,dst,idx){
+  ensureXp(src);ensureXp(dst);
+  dst.units.push(src.units[idx]);dst.xp.push(src.xp[idx]||0);
+  src.units.splice(idx,1);src.xp.splice(idx,1);
+}
+/* Drop a host that has no regiments left. */
+function dropIfEmpty(a,why){
+  if(!Array.isArray(a.units)||a.units.length)return;
+  const i=S.armies.indexOf(a);if(i<0)return;
+  S.armies.splice(i,1);if(selArmy===a){selArmy=null;setReach(null);}
+  logIt(`${a.name} ${why}`);
 }
 window.openRosterFor=function(a){
   const i=S.armies.indexOf(a);if(i<0)return;
@@ -3904,12 +3924,17 @@ drawerArmies=function(p){
     const i=S.armies.indexOf(a),el=document.createElement("div");el.className="armyc";
     const comp=Array.isArray(a.units);
     const foreign=comp?a.units.filter(k=>!canServe(cxBy[k],a.faction)).length:0;
+    const xfer=comp&&canAct(a.faction)?armyMates(a):[];
     el.innerHTML=`<div class="t"><span class="sw" style="background:${F[a.faction]?F[a.faction].color:'#777'}"></span>
       <b><input class="nm" data-nm="${i}" value="${a.name.replace(/"/g,'&quot;')}" style="background:none;border:none;padding:0;width:100%"></b>
       <button class="btn sm gm${a.fort?" on":""}" data-fort="${i}" title="${a.fort?"Fortified — click to abandon":"Entrench · 3✦ + 1,500 — battles here fight on the fort map"}">⛨</button>${canAct(a.faction)?`<button class="btn sm primary" data-rec="${i}" ${reinforceBlocker(a)?`disabled title="${esc(reinforceBlocker(a))}"`:`title="Add reinforcements - new regiments are paid for from the treasury"`} aria-label="Add reinforcements" style="background:#2D6A4F;border-color:#52B788">＋</button>`:""}<button class="btn sm" data-insp="${i}" title="Muster roll">⚔</button><button class="btn sm gm" data-del="${i}">✕</button></div>
       <div class="m${comp?" rtog":""}" data-rt="${i}" style="cursor:pointer">${comp?`<b>${a.units.length}</b>/${CAPU} units · <b>${a.men.toLocaleString()}</b> men`:`<b>${a.men.toLocaleString()}</b> men · free-form`}
         ${foreign?`<span style="color:#E5A594"> · ${foreign} foreign unit${foreign===1?"":"s"}</span>`:""}${a.fort?" · ⛨ fort":""}${comp?` · <span class="rarr" style="color:var(--gold);font-weight:600">roster ▾</span>`:""}</div>
       ${comp?`<div class="aroster open" data-ar="${i}">${rosterHTML(a)}</div>`:""}
+      ${xfer.length?`<div class="row" style="margin-top:7px;align-items:center;gap:5px">
+        <span style="font-size:11px;color:var(--dimmer)">Transfer to</span>
+        <select data-xto="${i}" style="flex:1">${xfer.map(o=>`<option value="${S.armies.indexOf(o)}"${XFER_PICK.get(a)===o?" selected":""}>${esc(o.name)} (${o.units.length}/${CAPU})</option>`).join("")}</select>
+        <button class="btn sm" data-mrg="${i}" title="Move every regiment of this host into the chosen host">Merge into</button></div>`:""}
       <div class="row gm" style="margin-top:7px">
         <select data-fac="${i}" style="flex:1">${S.factions.map(f=>
           `<option value="${f.id}"${f.id===a.faction?" selected":""}>${f.name}</option>`).join("")}</select>
@@ -3955,6 +3980,47 @@ drawerArmies=function(p){
     snap("chevron");a.xp[i]=nr;
     openProv(P[a.at]);window.openRosterFor&&window.openRosterFor(a);
   });
+  /* player + GM: disband one regiment (refunds its raise cost) / transfer / merge between own hosts */
+  const regAt=(a,k,r)=>{ensureXp(a);return a.units.findIndex((uk,ix)=>uk===k&&((a.xp[ix]||0)===r));};
+  const xferTarget=(si)=>{const a=S.armies[si],sl=box.querySelector(`[data-xto="${si}"]`),t=sl&&S.armies[+sl.value];
+    return a&&t&&armyMates(a).includes(t)?t:null;};
+  box.querySelectorAll("[data-xto]").forEach(s=>s.onchange=()=>{const a=S.armies[+s.dataset.xto],t=S.armies[+s.value];if(a&&t)XFER_PICK.set(a,t);});
+  box.querySelectorAll("[data-dsb]").forEach(b=>b.onclick=e=>{
+    e.stopPropagation();
+    const pr=b.dataset.dsb.split("|"),a=S.armies[+pr[0]];
+    if(!a||!Array.isArray(a.units)||!canAct(a.faction))return;
+    const k=pr[1],i=regAt(a,k,+pr[2]);if(i<0)return;
+    const u=cxBy[k],nm=u?unitDisplayName(u):k,refund=a.holy?0:((u&&u.cost)||0);
+    if(!confirm(`Disband one ${nm} from ${a.name}?\n${refund.toLocaleString()}g returns to the ${F[a.faction]?F[a.faction].name:a.faction} treasury and its upkeep ends.`))return;
+    snap("disband regiment");
+    a.units.splice(i,1);a.xp.splice(i,1);syncMen(a);
+    if(F[a.faction])F[a.faction].treasury+=refund;
+    logIt(`${a.name} disbands ${nm} at ${a.at}${refund?` — ${refund.toLocaleString()}g returned to the treasury`:""}`);
+    dropIfEmpty(a,"is disbanded — no regiments remain");
+    re();legend();drawLedger();
+  });
+  box.querySelectorAll("[data-xfr]").forEach(b=>b.onclick=e=>{
+    e.stopPropagation();
+    const pr=b.dataset.xfr.split("|"),a=S.armies[+pr[0]];
+    if(!a||!canAct(a.faction))return;
+    const t=xferTarget(+pr[0]);if(!t)return;
+    if(t.units.length>=CAPU){toast(`${t.name} already fields ${CAPU} units`);return;}
+    const k=pr[1],i=regAt(a,k,+pr[2]);if(i<0)return;
+    snap("transfer");moveRegiment(a,t,i);syncMen(a);syncMen(t);XFER_PICK.set(a,t);
+    const u=cxBy[k];logIt(`${u?unitDisplayName(u):k} transfers from ${a.name} to ${t.name} at ${a.at}`);
+    dropIfEmpty(a,`is absorbed into ${t.name}`);
+    re();
+  });
+  box.querySelectorAll("[data-mrg]").forEach(b=>b.onclick=()=>{
+    const a=S.armies[+b.dataset.mrg];
+    if(!a||!canAct(a.faction))return;
+    const t=xferTarget(+b.dataset.mrg);if(!t)return;
+    const n=a.units.length,total=n+t.units.length;
+    if(total>CAPU){toast(`Merged host would field ${total} units — the cap is ${CAPU}. Move regiments one at a time with → instead.`);return;}
+    snap("merge");while(a.units.length)moveRegiment(a,t,0);syncMen(t);
+    dropIfEmpty(a,`merges into ${t.name} at ${t.at} (${n} regiment${n===1?"":"s"})`);
+    re();
+  });
   box.querySelectorAll("[data-fort]").forEach(b=>b.onclick=()=>{
     const a=S.armies[+b.dataset.fort];if(!a)return;
     const f=F[a.faction];if(!f)return;
@@ -3980,8 +4046,9 @@ drawerArmies=function(p){
     const a=S.armies[+b.dataset.split];snap("split");
     if(Array.isArray(a.units)){
       if(a.units.length<2){toast("Too few units to split");return;}
-      const det=a.units.splice(Math.ceil(a.units.length/2));
-      const d={name:a.name+" (det.)",faction:a.faction,men:0,at:a.at,order:null,units:det};
+      ensureXp(a);const cut=Math.ceil(a.units.length/2);
+      const det=a.units.splice(cut),dxp=a.xp.splice(cut);
+      const d={name:a.name+" (det.)",faction:a.faction,men:0,at:a.at,order:null,units:det,xp:dxp};
       syncMen(a);syncMen(d);S.armies.push(d);
     }else{
       const half=Math.floor(a.men/2);a.men-=half;
@@ -3996,7 +4063,7 @@ drawerArmies=function(p){
       if(comp){
         const total=a.units.length+others.reduce((s,o)=>s+o.units.length,0);
         if(total>CAPU){toast(`Merged host would field ${total} units — the cap is ${CAPU}`);return;}
-        snap("merge");others.forEach(o=>{a.units.push(...o.units);S.armies.splice(S.armies.indexOf(o),1);});
+        snap("merge");others.forEach(o=>{while(o.units.length)moveRegiment(o,a,0);S.armies.splice(S.armies.indexOf(o),1);if(selArmy===o)selArmy=null;});
         syncMen(a);
       }else{
         snap("merge");others.forEach(o=>{a.men+=o.men;S.armies.splice(S.armies.indexOf(o),1);});

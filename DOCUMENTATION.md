@@ -229,6 +229,9 @@ Two ways in:
 
 Charged cost = total cost of the final roster − the cost already paid for it. Crusade ("holy") hosts are free.
 
+### Disbanding a regiment (player or GM)
+Each roster row in the province drawer has a red **✕** for whoever `canAct` for that host's realm. It removes **one** regiment of that unit and chevron rank (after a confirm), **refunds its full recruitment `cost` to the realm's treasury** (nothing for holy hosts), and its upkeep stops at once because `men`/`upkeep` are re-derived (`syncMen`). The chronicle records it. A host left with no regiments is removed.
+
 ### Army plan codes (offline drafting)
 A player can draft an army without it being their turn using **Build army / planner** — plans are free to draft. **Copy for GM** produces:
 
@@ -258,7 +261,12 @@ The GM pastes the `RQ1|<realm>|<unit_key,…>` line into **Import plan**; it val
 > The code does **not** track movement spent across multiple moves in one turn — see §14.
 
 ### Managing hosts
-Each host card (province drawer) shows regiments, men, and — for the GM — reassign realm, edit men, rename, **Split** (halves the men into a detachment), **Merge here** (combines same-realm hosts in a province), disband, chevron editing and Entrench. Clicking a host name opens its full muster roll in the Codex.
+Each host card (province drawer) shows regiments, men, and — for the GM — reassign realm, edit men, rename, **Split** (halves the regiments into a detachment), **Merge here** (combines same-realm hosts in a province), disband, chevron editing and Entrench. Clicking a host name opens its full muster roll in the Codex. Split and merge keep each regiment's chevrons.
+
+**Transfer & merge (players on their turn, and the GM).** When two or more codex hosts of the same realm stand in the same province, each host card shows a **Transfer to** picker listing the others (`armyMates`; holy hosts only pair with holy hosts):
+- **→** on a roster row moves one regiment (with its chevrons) into the chosen host, refused if that host already has 20 regiments.
+- **Merge into** moves every regiment into the chosen host, refused if the total would pass 20.
+A host emptied this way is removed. Every transfer/merge is chronicled. Typical use: recruit fresh regiments as a new host on a Barracks province, march them to the main army, and fold them in, without moving the main army.
 
 ---
 
@@ -360,7 +368,7 @@ For when the active player is AFK and everyone is stuck waiting. Next to *This i
 Because a skip means two people may be playing at once (the skipper and the slow player in a stale tab), player **End turn** publishes with a **stale-page guard** (`publishTurn({guard:true})`): it reads the live `campaign.json` and refuses to write if its `turn` differs or its `moved[]` contains a realm this page doesn't know has moved. Whoever ends second is told to reload and redo their turn, instead of silently wiping the other's. The GM's **⇧ Publish** is not guarded.
 
 ### 11.4 Taking a turn (player)
-With the realm unlocked, the player may, in any order: **move hosts**, **recruit/reinforce**, **queue buildings, barracks/trade-building upgrades and settlement upgrades**, and cancel their own queued work. All of this happens **locally in the browser** and is written to the chronicle — nothing is shared until **End turn**. (Diplomacy, claims, sieges, battle staging, treasury edits and everything else listed in §13 remain GM-only.)
+With the realm unlocked, the player may, in any order: **move hosts**, **recruit/reinforce**, **disband regiments (refunded)**, **transfer regiments between / merge their own hosts in one province**, **queue buildings, barracks/trade-building upgrades and settlement upgrades**, and cancel their own queued work. All of this happens **locally in the browser** and is written to the chronicle — nothing is shared until **End turn**. (Diplomacy, claims, sieges, battle staging, treasury edits and everything else listed in §13 remain GM-only.)
 
 ### 11.5 End turn (`endTurn()`)
 1. Requires `canAct(active realm)`. Shows a **confirm dialog** ("This publishes immediately and locks <Realm> out…").
@@ -413,6 +421,8 @@ Construction is **not** part of this step (§6). The GM should then press **⇧ 
 | Move a host | Click host → click a highlighted province (≤ 3 movement) |
 | Recruit | Own province with Barracks → *Muster & Recruit Army Here* → Codex → **⚔ Muster to Map** |
 | Reinforce | Host card → *Recruit* → add regiments → **⚔ Muster to Map** |
+| Disband a regiment | Host card roster → red **✕** on the row → confirm (cost refunded, upkeep ends) |
+| Transfer / merge hosts | Two own hosts in one province → host card **Transfer to** picker → **→** per regiment, or **Merge into** |
 | Build / upgrade | Province drawer → Works: queue an available building, upgrade Barracks / trade building / settlement |
 | End your turn | **End turn** → confirm. Irreversible; publishes to GitHub |
 | Draft for later | Codex planner → **Copy for GM** (an `RQ1|…` code) |
@@ -552,10 +562,10 @@ Use `Grep` with `-n` and `output_mode: content`, then `Read` with `offset`/`limi
 | 3006–3350 | Codex: `AOR_ROSTERS`, `canServe`, `unitTier`, `cxRender`, `openCodex` |
 | 3355–3545 | `.army_setup` export for Attila |
 | **3547–3714** | **Recruitment:** `planText`, `parsePlan`, `musterPlan` (3591), **`cxMusterMap` onclick (3643)**, add/remove regiment handlers |
-| 3786–3945 | Recruit-here button, drawer armies/roster, split/merge |
-| 3946–4005 | `applyLoss`, battle-result handler (wrapped `drawLedger`) |
-| 4026–4088 | flag library + new-realm picker |
-| **4157–4260** | **Turn-order module:** wrapper around `bTurn` (4169) that uses `moved[]`, `setActiveManually` (4215), `paintOrder`, `insertRealmAt` |
+| 3786–4073 | Recruit-here button, `rosterHTML` (3878, per-row disband ✕ / transfer →), `armyMates`/`moveRegiment`/`dropIfEmpty` (3896), **`drawerArmies` (3919)** with split/merge and the player disband/transfer/merge handlers (~3983) |
+| 4075–4140 | `applyLoss`, battle-result handler (wrapped `drawLedger`) |
+| 4155–4225 | flag library + new-realm picker |
+| **4226–4330** | **Turn-order module:** wrapper around `bTurn` (4237) that uses `moved[]`, `setActiveManually` (4282), `paintOrder`, `insertRealmAt` |
 
 Note that some handlers are **wrapped later in the file** (`bTurn` is assigned at 2536, wrapped at 3960 and again at 4108; `drawLedger` is wrapped at ~3962; `bMusterTile` is assigned at 1856 and 3787 — the later one wins). Always grep for every assignment (`grep -n '\$("bTurn").onclick' index.html`) before editing.
 
@@ -574,6 +584,7 @@ Note that some handlers are **wrapped later in the file** (`bTurn` is assigned a
 | Siege length | `holdout` (~763) |
 | Recruitment rules (barracks, tier, cost) | `cxMusterMap` (~3643), `musterPlan` (~3591), `reinforceBlocker` (~2412) |
 | Army size cap | `CAPU` from `codexdata.cap` (20) |
+| Disband refund / transfer / merge rules | `rosterHTML` (~3878), `armyMates` (~3896), handlers in `drawerArmies` (~3983) |
 | Publish target / commit message | `ghTarget`, `publishTurn` (~2894) |
 | New unit / roster | `unit.md` + `update_unit_roster.py`/`sync_all.py` → regenerates `codexdata` |
 
