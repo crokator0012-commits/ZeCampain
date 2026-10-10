@@ -27,7 +27,7 @@
    "id": "Dunland",
    "name": "Dunland",
    "color": "#6D4C41",
-   "treasury": 2323,
+   "treasury": 1323,
    "capital": "Province_334",
    "zeal": 8
   },
@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 3559,
+   "treasury": 2559,
    "capital": "Province_260",
    "zeal": 8
   },
@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 4636,
+   "treasury": 3636,
    "capital": "Province_359",
    "zeal": 8
   },
@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 2851,
+   "treasury": 1851,
    "capital": "Province_23",
    "zeal": 8
   },
@@ -3030,7 +3030,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -3060,7 +3062,9 @@
     "Province_72"
    ],
    "displayName": "beoring hall",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 2040.5971040575917,
    "cy": 624.1329352094241,
    "siege": null,
@@ -3082,11 +3086,11 @@
    "hex": "#a1887f",
    "playable": true,
    "owner": "Imraldris",
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 7500,
+   "garrison": 200,
    "bld": [
     "iron_mine"
    ],
@@ -3940,12 +3944,14 @@
    "hex": "#269962",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 2,
    "terrain": "plains",
-   "value": 250,
+   "value": 850,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 600,
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_127",
     "Province_19",
@@ -3959,14 +3965,20 @@
     "Province_359"
    ],
    "displayName": "Eastern Riddermark",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 2128.246662936616,
    "cy": 1432.823675165854,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "barracks": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -4597,13 +4609,14 @@
    "hex": "#543c52",
    "playable": true,
    "owner": "Lostladen Tribes",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
-    "stone_quarry"
+    "stone_quarry",
+    "barracks"
    ],
    "adj": [
     "Province_334",
@@ -4622,7 +4635,8 @@
    ],
    "displayName": "Upper harad",
    "bldLevel": {
-    "stone_quarry": 1
+    "stone_quarry": 1,
+    "barracks": 1
    },
    "cx": 2842.0626749178646,
    "cy": 2143.001034296939,
@@ -4630,10 +4644,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "stone_quarry"
+    "stone_quarry",
+    "barracks"
    ],
    "availableBldOwner": {
-    "stone_quarry": "Lostladen Tribes"
+    "stone_quarry": "Lostladen Tribes",
+    "barracks": "Lostladen Tribes"
    },
    "upg": null,
    "buildQueue": [],
@@ -4973,13 +4989,14 @@
    "hex": "#795548",
    "playable": true,
    "owner": "Dunland",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
-    "timber_yard"
+    "timber_yard",
+    "barracks"
    ],
    "adj": [
     "Harondor",
@@ -5016,7 +5033,8 @@
    ],
    "displayName": "southern endwaith",
    "bldLevel": {
-    "timber_yard": 2
+    "timber_yard": 2,
+    "barracks": 1
    },
    "cx": 1444.1497569584199,
    "cy": 1251.6462119570265,
@@ -6581,11 +6599,11 @@
    "hex": "#bf292c",
    "playable": true,
    "owner": "Goblins",
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 600,
+   "garrison": 200,
    "bld": [
     "iron_mine"
    ],
@@ -6774,11 +6792,11 @@
    "hex": "#ff7f27",
    "playable": true,
    "owner": "Lostladen Tribes",
-   "tier": 3,
+   "tier": 0,
    "terrain": "plains",
-   "value": 1300,
+   "value": 250,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 50,
    "bld": [
     "sheep_pen"
    ],
@@ -7220,11 +7238,11 @@
    "hex": "#8b1a1a",
    "playable": true,
    "owner": "Khand",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [],
    "adj": [
     "Province_362",
@@ -7428,11 +7446,11 @@
    "hex": "#395415",
    "playable": true,
    "owner": "Rohan",
-   "tier": 3,
+   "tier": 4,
    "terrain": "plains",
-   "value": 1300,
+   "value": 1900,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 2000,
    "bld": [
     "barracks",
     "horse_stables"
@@ -10014,6 +10032,76 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_44.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Barracks at Province_44 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Barracks at Province_44.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_341.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts construction: Barracks at Province_341 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes may construct Barracks at Province_341.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_377.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dunland starts construction: Barracks at Province_377 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_208.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Barracks at Province_208 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
