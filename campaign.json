@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 415,
+   "treasury": 265,
    "capital": "Province_433",
    "zeal": 8
   },
@@ -1058,7 +1058,8 @@
    "move": 2,
    "garrison": 6700,
    "bld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "adj": [
     "Province_208",
@@ -1079,7 +1080,8 @@
    ],
    "displayName": "Anfalas",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 1,
+    "barracks": 1
    },
    "cx": 1617.2261876464397,
    "cy": 1735.8973140004755,
@@ -1095,15 +1097,7 @@
     "barracks": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "payer": "Gondor",
-     "cost": 1000,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1162,7 +1156,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "ship_docks"
+   ],
    "adj": [
     "Province_17"
    ],
@@ -1172,7 +1168,9 @@
    "cy": 1967.1606027195885,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "ship_docks": "Gondor"
+   },
    "availableBld": [
     "ship_docks"
    ],
@@ -1552,12 +1550,14 @@
    "hex": "#9ae6c6",
    "playable": true,
    "owner": "Gondor",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_12",
     "Province_208",
@@ -1569,34 +1569,22 @@
     "Province_457"
    ],
    "displayName": "Eastern Losnarch",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2271.2090302027814,
    "cy": 1720.3561232616553,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "grain_farm"
    ],
    "availableBldOwner": {
-    "road": "Gondor"
+    "grain_farm": "Gondor"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Gondor",
-    "startedTurn": 1,
-    "startedDate": "Spring 1418",
-    "cost": 2000
-   },
-   "buildQueue": [
-    {
-     "key": "road",
-     "payer": "Gondor",
-     "cost": 0,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "upg": null,
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2503,7 +2491,7 @@
    ],
    "displayName": "Pinneth Gilen",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 1637.1212406316488,
    "cy": 1601.836645889686,
@@ -2517,17 +2505,7 @@
     "grain_farm": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gondor",
-     "cost": 900,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3739,11 +3717,11 @@
    "hex": "#d89267",
    "playable": true,
    "owner": "Gondor",
-   "tier": 3,
+   "tier": 4,
    "terrain": "plains",
-   "value": 1300,
+   "value": 1900,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 2000,
    "bld": [
     "barracks"
    ],
@@ -3785,7 +3763,10 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "road",
+    "grain_farm"
+   ],
    "adj": [
     "Province_12",
     "Province_296",
@@ -3799,28 +3780,24 @@
     "Province_8"
    ],
    "displayName": "Western Losnarch",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2126.2240341468755,
    "cy": 1725.7638721681076,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "road",
+    "grain_farm"
    ],
    "availableBldOwner": {
-    "road": "Gondor"
+    "road": "Gondor",
+    "grain_farm": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "road",
-     "payer": "Gondor",
-     "cost": 0,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6725,7 +6702,7 @@
    ],
    "displayName": "Blackroot Vale",
    "bldLevel": {
-    "stone_quarry": 1
+    "stone_quarry": 2
    },
    "cx": 2018.3021602595072,
    "cy": 1654.8412588860515,
@@ -6739,17 +6716,7 @@
     "stone_quarry": "Gondor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "stone_quarry",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gondor",
-     "cost": 850,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7886,7 +7853,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "iron_mine"
+   ],
    "adj": [
     "Province_361",
     "Province_459",
@@ -7894,7 +7863,9 @@
     "Province_8"
    ],
    "displayName": "Ringovale",
-   "bldLevel": {},
+   "bldLevel": {
+    "iron_mine": 1
+   },
    "cx": 1905.805707147084,
    "cy": 1631.3906239726477,
    "siege": null,
@@ -8450,7 +8421,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_296",
     "Province_334",
@@ -8464,7 +8437,9 @@
     "Province_8"
    ],
    "displayName": "Lamedon",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 1982.7405281285878,
    "cy": 1755.2240014502386,
    "siege": null,
@@ -8590,12 +8565,8 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [
-    "road"
-   ],
-   "availableBldOwner": {
-    "road": "Gondor"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8620,12 +8591,8 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [
-    "road"
-   ],
-   "availableBldOwner": {
-    "road": "Gondor"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -10086,6 +10053,153 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_395.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Grain Farm at Province_395 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_395: construction declined — Gondor refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_395 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_457.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Grain Farm at Province_457 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_361.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Barracks at Province_361 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine completed at Province_452.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Iron Mine at Province_452 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Osgiliath.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Province_390_split_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ship Docks completed at Province_90.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Ship Docks at Province_90 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Grain Farm at Province_457.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Grain Farm at Province_395.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Province_395.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road completed at Province_457.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry at Province_8 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_7 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_459.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
