@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 4450,
+   "treasury": 3950,
    "capital": "Province_432",
    "zeal": 8
   },
@@ -179,7 +179,7 @@
    "id": "Gundabad",
    "name": "Gundabad",
    "color": "#58221B",
-   "treasury": 2473,
+   "treasury": 2973,
    "capital": "Province_393",
    "zeal": 8
   },
@@ -796,7 +796,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_25",
     "Province_334",
@@ -809,17 +811,19 @@
     "Province_432",
     "Province_440"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 1817.5136413241178,
    "cy": 420.70261913423064,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "sheep_pen"
    ],
    "availableBldOwner": {
-    "road": "Rhudaur"
+    "sheep_pen": "Rhudaur"
    },
    "upg": null,
    "buildQueue": [],
@@ -5683,12 +5687,15 @@
    "hex": "#8a0f3a",
    "playable": true,
    "owner": "Gundabad",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
-   "bld": [],
+   "garrison": 200,
+   "bld": [
+    "barracks",
+    "goat_pen"
+   ],
    "adj": [
     "Province_2",
     "Province_260",
@@ -5706,27 +5713,27 @@
     "Province_443",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1,
+    "goat_pen": 1
+   },
    "cx": 1285.1546527395512,
    "cy": 208.4398721855994,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "goat_pen"
+    "goat_pen",
+    "barracks"
    ],
    "availableBldOwner": {
-    "goat_pen": "Gundabad"
+    "goat_pen": "Gundabad",
+    "barracks": "Gundabad"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Gundabad",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Fornhost"
   },
   {
    "id": "Province_399",
@@ -10001,6 +10008,76 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur starts construction: Sheep Pen at Province_447 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur may construct Sheep Pen at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_384.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_384 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts construction: Goat Pen at Province_384 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_384.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad starts construction: Barracks at Province_384 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gundabad may construct Barracks at Province_384.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
