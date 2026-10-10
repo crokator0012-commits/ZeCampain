@@ -812,7 +812,7 @@
     "Province_440"
    ],
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 1817.5136413241178,
    "cy": 420.70261913423064,
@@ -826,17 +826,7 @@
     "sheep_pen": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1737,11 +1727,11 @@
    "hex": "#c4c2c0",
    "playable": true,
    "owner": "Rhudaur",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -1757,7 +1747,7 @@
     "Province_461"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 1507.8895647935883,
    "cy": 329.7044711998412,
@@ -1770,24 +1760,8 @@
    "availableBldOwner": {
     "grain_farm": "Rhudaur"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rhudaur",
-    "startedTurn": 3,
-    "startedDate": "Autumn 1418",
-    "cost": 2000
-   },
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "upg": null,
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10053,6 +10027,27 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_447 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_422 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_422 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
