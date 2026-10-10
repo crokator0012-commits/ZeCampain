@@ -35,7 +35,7 @@
    "id": "Goblins",
    "name": "Goblins",
    "color": "#5B6B21",
-   "treasury": 2205,
+   "treasury": 605,
    "capital": "Province_435",
    "zeal": 8
   },
@@ -6574,7 +6574,7 @@
    ],
    "displayName": "gobl",
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 1928.1925194217215,
    "cy": 734.4792920718218,
@@ -7136,7 +7136,8 @@
    "move": 2,
    "garrison": 200,
    "bld": [
-    "iron_mine"
+    "iron_mine",
+    "goat_pen"
    ],
    "adj": [
     "Province_25",
@@ -7156,7 +7157,8 @@
     "Province_72"
    ],
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 1,
+    "goat_pen": 1
    },
    "cx": 1949.394584139265,
    "cy": 399.13754566946056,
@@ -9969,6 +9971,34 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_410.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins starts construction: Goat Pen at Province_410 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_418 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins starts upgrading Iron Mine at Province_418 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
