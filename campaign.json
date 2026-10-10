@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 65,
+   "treasury": 415,
    "capital": "Province_390",
    "zeal": 8
   },
@@ -499,7 +499,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "iron_mine"
+   ],
    "adj": [
     "Province_103",
     "Province_208",
@@ -518,7 +520,9 @@
     "Province_72",
     "Province_8"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "iron_mine": 2
+   },
    "cx": 886.4996635436617,
    "cy": 89.67829597805269,
    "siege": null,
@@ -1501,7 +1505,7 @@
    ],
    "displayName": "Lune Highlands",
    "bldLevel": {
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 866.145450209338,
    "cy": 280.75698235200593,
@@ -1515,17 +1519,7 @@
     "goat_pen": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9975,6 +9969,41 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_4 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_415 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts upgrading Iron Mine at Province_415 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine completed at Province_415.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Iron Mine at Province_415 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
