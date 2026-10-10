@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 5136,
+   "treasury": 4636,
    "capital": "Province_359",
    "zeal": 8
   },
@@ -1419,7 +1419,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "South West Harad"
+   "displayName": "West Far Harad"
   },
   {
    "id": "Province_432",
@@ -4611,7 +4611,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [
     "Province_334",
     "Province_351",
@@ -4628,7 +4630,9 @@
     "Province_5"
    ],
    "displayName": "Upper harad",
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 2842.0626749178646,
    "cy": 2143.001034296939,
    "siege": null,
@@ -6718,7 +6722,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7739,7 +7743,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "Central far harad",
    "bldLevel": {},
    "cx": 2913.2893047494968,
    "cy": 2619.793829207628,
@@ -10022,6 +10026,20 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_341.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts construction: Stone Quarry at Province_341 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
