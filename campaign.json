@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 1290,
+   "treasury": 1540,
    "capital": "Province_364",
    "zeal": 8
   },
@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 1851,
+   "treasury": 1901,
    "capital": "Province_23",
    "zeal": 8
   },
@@ -415,7 +415,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_17",
     "Province_19",
@@ -434,7 +436,9 @@
     "Province_72",
     "Province_8"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 554.521998495217,
    "cy": 439.5385511088818,
    "siege": null,
@@ -607,7 +611,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "fishing_jetties": 2,
+    "fishing_jetties": 3,
     "barracks": 2
    },
    "cx": 909.3366897077233,
@@ -624,17 +628,7 @@
     "barracks": "Lindon"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Lindon",
-     "cost": 1650,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1775,7 +1769,10 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "market",
+    "silver_mine"
+   ],
    "adj": [
     "Province_17",
     "Province_364",
@@ -1786,17 +1783,23 @@
     "Province_6"
    ],
    "displayName": "Lindon",
-   "bldLevel": {},
+   "bldLevel": {
+    "silver_mine": 1
+   },
    "cx": 645.2905438752344,
    "cy": 543.8252887177969,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "market": "Lindon"
+   },
    "availableBld": [
-    "market"
+    "market",
+    "silver_mine"
    ],
    "availableBldOwner": {
-    "market": "Lindon"
+    "market": "Lindon",
+    "silver_mine": "Lindon"
    },
    "upg": null,
    "buildQueue": [],
@@ -1953,7 +1956,10 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "horse_stables",
+    "livestock_farm"
+   ],
    "adj": [
     "Province_23",
     "Province_431",
@@ -1961,12 +1967,16 @@
     "Province_72"
    ],
    "displayName": "Forest Bough",
-   "bldLevel": {},
+   "bldLevel": {
+    "horse_stables": 1
+   },
    "cx": 2082.1902397802896,
    "cy": 1003.3999154959332,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "livestock_farm": "Anduin Vale"
+   },
    "availableBld": [
     "horse_stables",
     "livestock_farm"
@@ -2829,7 +2839,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "pipeweed_fields": 2,
+    "pipeweed_fields": 3,
     "barracks": 2
    },
    "cx": 2082.2061892340525,
@@ -2846,17 +2856,7 @@
     "barracks": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "pipeweed_fields",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Anduin Vale",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3604,7 +3604,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_18",
     "Province_208",
@@ -3625,7 +3627,9 @@
     "Province_419",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2040.6391441700173,
    "cy": 736.2268811028144,
    "siege": null,
@@ -3785,7 +3789,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_103",
     "Province_16",
@@ -3798,7 +3804,9 @@
     "Province_418",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 2007.7672571292399,
    "cy": 831.347922789737,
    "siege": null,
@@ -4380,8 +4388,8 @@
    ],
    "displayName": "iron hills",
    "bldLevel": {
-    "iron_mine": 1,
-    "barracks": 1,
+    "iron_mine": 2,
+    "barracks": 2,
     "goat_pen": 1
    },
    "cx": 2822.597925952879,
@@ -4400,26 +4408,7 @@
     "goat_pen": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Iron Hills",
-     "cost": 1100,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Iron Hills",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4949,7 +4938,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -4978,7 +4969,9 @@
     "Province_6",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2150.479100033087,
    "cy": 784.6536340575714,
    "siege": null,
@@ -5192,7 +5185,7 @@
    ],
    "bldLevel": {
     "sheep_pen": 1,
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 2578.1362750716335,
    "cy": 326.10215854823304,
@@ -5208,17 +5201,7 @@
     "iron_mine": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Iron Hills",
-     "cost": 1100,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5618,8 +5601,8 @@
    ],
    "displayName": "Erebor",
    "bldLevel": {
-    "gem_mine": 1,
-    "barracks": 1
+    "gem_mine": 2,
+    "barracks": 2
    },
    "cx": 2463.8692858907834,
    "cy": 360.0347170743761,
@@ -5635,26 +5618,7 @@
     "gem_mine": "Erebor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "gem_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 1400,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5682,7 +5646,7 @@
    ],
    "displayName": "The Elvenking’s Halls",
    "bldLevel": {
-    "barracks": 1,
+    "barracks": 2,
     "healing_herb_garden": 2
    },
    "cx": 2276.0049363671424,
@@ -5699,17 +5663,7 @@
     "healing_herb_garden": "Woodland Realm"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Woodland Realm",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7393,11 +7347,11 @@
    "hex": "#370617",
    "playable": true,
    "owner": "Iron Hills",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [],
    "adj": [
     "Province_1",
@@ -7425,13 +7379,7 @@
    "availableBldOwner": {
     "grain_farm": "Iron Hills"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Iron Hills",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -10027,6 +9975,188 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_233 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_9 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_9 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_11 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_10 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gem Mine at Province_10 reaches Level 2 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_392 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_439.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Grain Farm at Province_439 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_364 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine completed at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Silver Mine at Province_20 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon may construct Silver Mine at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Market completed at Province_20.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Market at Province_20 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Livestock Farm completed at Province_29.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Horse Stables completed at Province_29.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Horse Stables at Province_29 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Livestock Farm at Province_29 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_18.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Sheep Pen at Province_18 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Pipe Weed Fields at Province_23 reaches Level 3 — it now yields 200 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_26.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Grain Farm at Province_26 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_103.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Grain Farm at Province_103 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
