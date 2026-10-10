@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 4361,
+   "treasury": 4000,
    "capital": "Province_17",
    "zeal": 8
   },
@@ -893,7 +893,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "livestock_farm"
+   ],
    "adj": [
     "Province_17",
     "Province_305",
@@ -910,7 +912,9 @@
    "cy": 1633.6285287818807,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "livestock_farm": "Mordor"
+   },
    "availableBld": [
     "livestock_farm"
    ],
@@ -1374,13 +1378,19 @@
    "value": 1300,
    "move": 2,
    "garrison": 1200,
-   "bld": [],
+   "bld": [
+    "gem_mine",
+    "barracks"
+   ],
    "adj": [
     "Province_413",
     "Province_425"
    ],
    "displayName": "Minas Morgul",
-   "bldLevel": {},
+   "bldLevel": {
+    "gem_mine": 1,
+    "barracks": 1
+   },
    "cx": 2467.4323858742464,
    "cy": 1589.2644272179157,
    "siege": null,
@@ -2272,7 +2282,10 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm",
+    "fishing_jetties"
+   ],
    "adj": [
     "Province_17",
     "Province_208",
@@ -2300,7 +2313,10 @@
     "Province_449"
    ],
    "displayName": "Nurn",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1,
+    "fishing_jetties": 1
+   },
    "cx": 2743.9545296011,
    "cy": 1815.2164103994978,
    "siege": null,
@@ -3246,7 +3262,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "fishing_jetties"
+   ],
    "adj": [
     "Harondor",
     "Osgiliath",
@@ -3308,7 +3326,9 @@
     "Province_72"
    ],
    "displayName": "coast of nurn",
-   "bldLevel": {},
+   "bldLevel": {
+    "fishing_jetties": 1
+   },
    "cx": 3111.7534661401896,
    "cy": 1825.8397114271295,
    "siege": null,
@@ -3586,7 +3606,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "copper_mine"
+   ],
    "adj": [
     "Province_17",
     "Province_233",
@@ -3601,7 +3623,9 @@
     "Province_72"
    ],
    "displayName": "Mordor Heartlands",
-   "bldLevel": {},
+   "bldLevel": {
+    "copper_mine": 1
+   },
    "cx": 2518.2264150943397,
    "cy": 1487.1181727904668,
    "siege": null,
@@ -3676,7 +3700,10 @@
    "value": 1300,
    "move": 2,
    "garrison": 1200,
-   "bld": [],
+   "bld": [
+    "barracks",
+    "stone_quarry"
+   ],
    "adj": [
     "Province_334",
     "Province_400",
@@ -3685,7 +3712,10 @@
     "Province_453"
    ],
    "displayName": "The Black Gate",
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1,
+    "stone_quarry": 1
+   },
    "cx": 2479.548387096774,
    "cy": 1427.502688172043,
    "siege": null,
@@ -4541,7 +4571,9 @@
    "value": 1300,
    "move": 2,
    "garrison": 1200,
-   "bld": [],
+   "bld": [
+    "iron_mine"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -4613,7 +4645,9 @@
     "Province_8"
    ],
    "displayName": "Lithlad",
-   "bldLevel": {},
+   "bldLevel": {
+    "iron_mine": 1
+   },
    "cx": 3028.759515253259,
    "cy": 1651.6482700731842,
    "siege": null,
@@ -6238,7 +6272,9 @@
    "value": 500,
    "move": 2,
    "garrison": 200,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -6324,7 +6360,9 @@
     "Province_9"
    ],
    "displayName": "Mordia",
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 3226.1178550931454,
    "cy": 1534.347500349005,
    "siege": null,
@@ -6376,7 +6414,7 @@
    ],
    "displayName": "Barad- Dur",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2631.845382963493,
    "cy": 1579.3507516105942,
@@ -6390,17 +6428,7 @@
     "barracks": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Mordor",
-     "cost": 2000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10058,6 +10086,167 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_72.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Sheep Pen at Province_72 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_371.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Fishing Jetties at Province_371 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine completed at Province_327.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Iron Mine at Province_327 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_396.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_396.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Fishing Jetties at Province_396 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Grain Farm at Province_396 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Livestock Farm completed at Province_425.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Livestock Farm at Province_425 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_17 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine completed at Province_453.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Copper Mine at Province_453 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_305.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gem Mine completed at Province_305.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Barracks at Province_305 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Gem Mine at Province_305 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_347.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_347.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Stone Quarry at Province_347 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts construction: Barracks at Province_347 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
