@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 4950,
+   "treasury": 4450,
    "capital": "Province_432",
    "zeal": 8
   },
@@ -1419,7 +1419,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "West Far Harad"
+   "displayName": "South West Harad"
   },
   {
    "id": "Province_432",
@@ -1448,8 +1448,8 @@
    ],
    "displayName": "Rhudar",
    "bldLevel": {
-    "barracks": 1,
-    "fur_trappers_camp": 1
+    "barracks": 2,
+    "fur_trappers_camp": 2
    },
    "cx": 1856.7605374077978,
    "cy": 469.0630488233228,
@@ -1465,26 +1465,7 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 2000,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "fur_trappers_camp",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 1000,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1749,7 +1730,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_2",
     "Province_25",
@@ -1761,7 +1744,9 @@
     "Province_443",
     "Province_461"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1507.8895647935883,
    "cy": 329.7044711998412,
    "siege": null,
@@ -4812,7 +4797,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 1685.8185428374813,
    "cy": 398.9897207248538,
@@ -4826,17 +4811,7 @@
     "iron_mine": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 1100,
-     "startedTurn": 2,
-     "startedDate": "Summer 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6722,7 +6697,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7743,7 +7718,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "Central far harad",
+   "displayName": "East Harad",
    "bldLevel": {},
    "cx": 2913.2893047494968,
    "cy": 2619.793829207628,
@@ -10026,6 +10001,41 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_422.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur starts construction: Grain Farm at Province_422 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_25 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_432 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fur Trapper's Camp at Province_432 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
