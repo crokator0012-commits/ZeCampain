@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 2290,
+   "treasury": 1290,
    "capital": "Province_364",
    "zeal": 8
   },
@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 2460,
+   "treasury": 1460,
    "capital": "Province_454",
    "zeal": 8
   },
@@ -958,11 +958,11 @@
    "hex": "#9d4edd",
    "playable": true,
    "owner": "Dorvinion",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [
     "sheep_pen"
    ],
@@ -1218,11 +1218,11 @@
    "hex": "#ffcdd2",
    "playable": true,
    "owner": "Dale",
-   "tier": 3,
+   "tier": 1,
    "terrain": "plains",
-   "value": 1300,
+   "value": 500,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 200,
    "bld": [
     "fishing_jetties"
    ],
@@ -3509,11 +3509,11 @@
    "hex": "#08156e",
    "playable": true,
    "owner": "Dale",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
     "grain_farm"
    ],
@@ -4192,11 +4192,11 @@
    "hex": "#60c45a",
    "playable": true,
    "owner": "Ered Mithrin",
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 200,
    "bld": [
     "silver_mine"
    ],
@@ -4231,13 +4231,14 @@
    "hex": "#d41759",
    "playable": true,
    "owner": "Lindon",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
-    "stone_quarry"
+    "stone_quarry",
+    "barracks"
    ],
    "adj": [
     "Province_260",
@@ -4254,7 +4255,8 @@
     "Province_72"
    ],
    "bldLevel": {
-    "stone_quarry": 1
+    "stone_quarry": 1,
+    "barracks": 1
    },
    "cx": 1344.8020306001467,
    "cy": 852.2277226791125,
@@ -5136,11 +5138,11 @@
    "hex": "#065f46",
    "playable": true,
    "owner": "Iron Hills",
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 200,
    "bld": [
     "sheep_pen",
     "iron_mine"
@@ -5239,11 +5241,11 @@
    "hex": "#dc3545",
    "playable": true,
    "owner": "Ered Mithrin",
-   "tier": 2,
+   "tier": 0,
    "terrain": "plains",
-   "value": 850,
+   "value": 250,
    "move": 2,
-   "garrison": 1500,
+   "garrison": 50,
    "bld": [
     "grain_farm"
    ],
@@ -6500,7 +6502,9 @@
    "value": 850,
    "move": 2,
    "garrison": 600,
-   "bld": [],
+   "bld": [
+    "barracks"
+   ],
    "adj": [
     "Province_260",
     "Province_296",
@@ -6511,7 +6515,9 @@
     "Province_455_split_1",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1
+   },
    "cx": 2368.8197732913004,
    "cy": 703.6626869676035,
    "siege": null,
@@ -8136,11 +8142,11 @@
    "hex": "#8d6e00",
    "playable": true,
    "owner": "Dale",
-   "tier": 3,
+   "tier": 4,
    "terrain": "plains",
-   "value": 1300,
+   "value": 1900,
    "move": 2,
-   "garrison": 1200,
+   "garrison": 2000,
    "bld": [
     "barracks",
     "market"
@@ -8449,11 +8455,11 @@
    "hex": "#3f51b5",
    "playable": true,
    "owner": "Dale",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "bld": [
     "goat_pen"
    ],
@@ -10008,6 +10014,34 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_342.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Barracks at Province_342 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_430.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Lindon starts construction: Barracks at Province_430 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
