@@ -8552,7 +8552,7 @@
    "name": "Host of Province_127",
    "faction": "Rohan",
    "men": 1480,
-   "at": "Province_127",
+   "at": "Province_27",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -9955,6 +9955,13 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_127 → Province_27",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
