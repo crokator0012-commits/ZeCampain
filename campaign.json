@@ -6732,7 +6732,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7727,7 +7727,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8583,19 +8583,19 @@
     0,
     0,
     0,
+    1,
     0,
     0,
     0,
     0,
-    0,
-    0,
+    1,
     0,
     0,
     0,
     0
    ],
    "upkeep": 4962.5,
-   "_startCost": 10725
+   "_startCost": 9925
   },
   {
    "name": "Host of Province_44",
@@ -8629,11 +8629,11 @@
     0,
     0,
     0,
+    1,
+    1,
     0,
-    0,
-    0,
-    0,
-    0,
+    1,
+    1,
     0,
     0,
     0,
@@ -8646,7 +8646,7 @@
     0
    ],
    "upkeep": 7612.5,
-   "_startCost": 9075
+   "_startCost": 15225
   },
   {
    "name": "Host of Province_392",
@@ -9965,20 +9965,6 @@
   }
  ],
  "log": [
-  {
-   "t": 3,
-   "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Rohan ends its turn — Erebor to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 3,
-   "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Rohan grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -33880,8 +33866,7 @@
   "Anduin Vale",
   "Khand",
   "Iron Hills",
-  "Lindon",
-  "Rohan"
+  "Lindon"
  ],
  "pendingReview": false
 }
