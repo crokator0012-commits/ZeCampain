@@ -9968,6 +9968,20 @@
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
    "txt": "Lindon ends its turn — Erebor to move.",
    "kind": "turn",
    "detail": null
@@ -33866,7 +33880,8 @@
   "Anduin Vale",
   "Khand",
   "Iron Hills",
-  "Lindon"
+  "Lindon",
+  "Rohan"
  ],
  "pendingReview": false
 }
