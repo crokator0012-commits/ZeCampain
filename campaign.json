@@ -253,7 +253,7 @@
    "id": "Feredrim",
    "name": "Feredrim",
    "color": "#4F7A4E",
-   "treasury": 15111,
+   "treasury": 14361,
    "capital": "Province_460",
    "zeal": 8,
    "npc": true
@@ -316,7 +316,7 @@
    "id": "Harondor",
    "name": "Harondor",
    "color": "#52efa7",
-   "treasury": 9870,
+   "treasury": 8770,
    "capital": "Province_5",
    "zeal": 2,
    "npc": true
@@ -837,8 +837,10 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
-   "bld": [],
+   "garrison": 10000,
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_32",
     "Province_341",
@@ -854,7 +856,9 @@
     "Province_72"
    ],
    "displayName": "Harandor",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2401.4060549501273,
    "cy": 2075.7259216890443,
    "siege": null,
@@ -1865,7 +1869,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "healing_herbs"
+   ],
    "adj": [
     "Province_233",
     "Province_260",
@@ -1884,12 +1890,14 @@
    "cy": 808.5279632465544,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "healing_herbs": "Feredrim"
+   },
    "availableBld": [
-    "road"
+    "healing_herbs"
    ],
    "availableBldOwner": {
-    "road": "Feredrim"
+    "healing_herbs": "Feredrim"
    },
    "upg": null,
    "buildQueue": [],
@@ -2694,7 +2702,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "silver_mine"
+   ],
    "adj": [
     "Province_208",
     "Province_295",
@@ -2709,7 +2719,9 @@
     "Province_460"
    ],
    "displayName": "Sehair-Ru-Rust",
-   "bldLevel": {},
+   "bldLevel": {
+    "silver_mine": 1
+   },
    "cx": 3395.9697845507094,
    "cy": 1045.2062720516478,
    "siege": null,
@@ -3324,11 +3336,11 @@
    "hex": "#c97a7a",
    "playable": true,
    "owner": "Mahud",
-   "tier": 0,
+   "tier": 2,
    "terrain": "plains",
-   "value": 250,
+   "value": 850,
    "move": 2,
-   "garrison": 50,
+   "garrison": 10000,
    "bld": [
     "exotic_animal_pen"
    ],
@@ -4906,12 +4918,8 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [
-    "ship_docks"
-   ],
-   "availableBldOwner": {
-    "ship_docks": "Harondor"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5951,7 +5959,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "grain_farm"
    ],
@@ -8009,7 +8017,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "fishing_jetties"
+   ],
    "adj": [
     "Province_32",
     "Province_351",
@@ -8017,7 +8027,9 @@
     "Province_5"
    ],
    "displayName": "southern harandor",
-   "bldLevel": {},
+   "bldLevel": {
+    "fishing_jetties": 1
+   },
    "cx": 2154.34706870634,
    "cy": 2182.3536121673005,
    "siege": null,
@@ -9953,6 +9965,97 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine completed at Province_348.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Silver Mine at Province_348 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs completed at Province_379.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Healing Herbs at Province_379 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Healing Herbs at Province_379.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Road is no longer available at Province_379.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_469.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor starts construction: Fishing Jetties at Province_469 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_32: construction declined — Harondor refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Ship Docks is no longer available at Province_32.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor starts construction: Ship Docks at Province_32 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor starts construction: Grain Farm at Province_5 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
