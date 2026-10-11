@@ -2405,7 +2405,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 1756.0460938984984,
    "cy": 592.2616105936768,
@@ -2419,17 +2419,7 @@
     "grain_farm": "Imraldris"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Imraldris",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9965,6 +9955,13 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_416 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
