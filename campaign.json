@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 3370,
+   "treasury": 195,
    "capital": "Province_9",
    "zeal": 8
   },
@@ -4405,7 +4405,17 @@
     "goat_pen": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Iron Hills",
+     "cost": 1750,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7379,7 +7389,15 @@
     "grain_farm": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "payer": "Iron Hills",
+     "cost": 500,
+     "startedTurn": 3,
+     "startedDate": "Autumn 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9872,8 +9890,8 @@
   {
    "name": "Host of Province_9",
    "faction": "Iron Hills",
-   "men": 1320,
-   "at": "Province_1",
+   "men": 1440,
+   "at": "Province_9",
    "order": null,
    "units": [
     "iron_hills_mattock_warriors",
@@ -9886,7 +9904,8 @@
     "iron_hills_iron_hill_crossbows",
     "iron_hills_iron_hill_crossbows",
     "iron_hills_dwarven_lumberjacks",
-    "iron_hills_ironhorn_cavarly"
+    "iron_hills_ironhorn_cavarly",
+    "iron_hills_iron_hill_crossbows"
    ],
    "xp": [
     0,
@@ -9899,9 +9918,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 5150,
+   "upkeep": 5612.5,
    "_startCost": 9775
   },
   {
@@ -9978,6 +9998,118 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_233 → Province_9",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts construction: Grain Farm at Province_233 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_233",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills reinforced Host of Province_9 at Province_9 (+1 regiment · 925 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts upgrading Iron Mine at Province_9 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 is disbanded — no regiments remain",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 disbands Iron Hill Crossbows at Province_9 — 925g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 disbands Mattock Warriors at Province_9 — 1,025g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 disbands Mattock Warriors at Province_9 — 1,025g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills mustered Host of Province_9 at Province_9 (3 regiments · 2,975 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_11 → Province_9",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_11",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_233 → Province_9",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_1 → Province_233",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -33163,7 +33295,8 @@
   "Rhudaur",
   "Dol Gul Dur",
   "Anduin Vale",
-  "Khand"
+  "Khand",
+  "Iron Hills"
  ],
  "pendingReview": false
 }
