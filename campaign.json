@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 2403,
+   "treasury": 1903,
    "capital": "Province_436",
    "zeal": 8
   },
@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 195,
+   "treasury": 695,
    "capital": "Province_9",
    "zeal": 8
   },
@@ -371,7 +371,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -680,11 +680,11 @@
    "hex": "#f5f5f5",
    "playable": true,
    "owner": "Dorvinion",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "timber_yard",
     "timber_yard"
@@ -1224,7 +1224,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "fishing_jetties"
    ],
@@ -1321,7 +1321,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "barracks"
    ],
@@ -2510,7 +2510,8 @@
    "move": 2,
    "garrison": 15000,
    "bld": [
-    "barracks"
+    "barracks",
+    "timber_yard"
    ],
    "adj": [
     "Province_33",
@@ -2528,7 +2529,8 @@
    ],
    "displayName": "Rhunnic Plains",
    "bldLevel": {
-    "barracks": 2
+    "barracks": 2,
+    "timber_yard": 1
    },
    "cx": 3531.358243430891,
    "cy": 1359.0045796838283,
@@ -2537,11 +2539,11 @@
    "bldOwner": {},
    "availableBld": [
     "barracks",
-    "exotic_goods"
+    "timber_yard"
    ],
    "availableBldOwner": {
     "barracks": "Rhurrim",
-    "exotic_goods": "Rhurrim"
+    "timber_yard": "Rhurrim"
    },
    "upg": null,
    "buildQueue": [],
@@ -2629,7 +2631,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "gold_mine",
     "barracks"
@@ -3350,7 +3352,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -3522,7 +3524,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "grain_farm"
    ],
@@ -4144,7 +4146,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "barracks"
    ],
@@ -4191,7 +4193,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "timber_yard"
    ],
@@ -4234,7 +4236,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "silver_mine"
    ],
@@ -4378,7 +4380,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "iron_mine",
     "barracks",
@@ -4442,7 +4444,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "sheep_pen"
    ],
@@ -4910,7 +4912,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "healing_herb_garden"
    ],
@@ -5195,7 +5197,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "sheep_pen",
     "iron_mine"
@@ -5245,7 +5247,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "copper_mine",
     "barracks"
@@ -5328,7 +5330,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "fishing_jetties"
    ],
@@ -5378,7 +5380,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "winery",
     "barracks"
@@ -5517,11 +5519,11 @@
    "hex": "#ffeb3b",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [],
    "adj": [
     "Province_428",
@@ -5557,7 +5559,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "road"
    ],
@@ -5628,7 +5630,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "gem_mine",
     "barracks"
@@ -5670,7 +5672,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "barracks",
     "healing_herb_garden"
@@ -5896,7 +5898,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "horse_stables"
    ],
@@ -5986,7 +5988,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "goat_pen"
    ],
@@ -6517,7 +6519,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "barracks"
    ],
@@ -6559,7 +6561,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "barracks"
    ],
@@ -6843,7 +6845,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -6885,7 +6887,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "timber_yard"
    ],
@@ -7382,8 +7384,11 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
-   "bld": [],
+   "garrison": 7500,
+   "bld": [
+    "grain_farm",
+    "grain_farm"
+   ],
    "adj": [
     "Province_1",
     "Province_260",
@@ -7398,7 +7403,9 @@
     "Province_72",
     "Province_9"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 3240.94287109375,
    "cy": 514.9537760416666,
    "siege": null,
@@ -7411,15 +7418,7 @@
     "grain_farm": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "payer": "Iron Hills",
-     "cost": 500,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8065,7 +8064,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -8112,7 +8111,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -8154,7 +8153,7 @@
    "terrain": "plains",
    "value": 1900,
    "move": 2,
-   "garrison": 2000,
+   "garrison": 15000,
    "bld": [
     "barracks",
     "market"
@@ -8237,7 +8236,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "goat_pen",
     "sheep_pen"
@@ -8471,7 +8470,7 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
+   "garrison": 10000,
    "bld": [
     "goat_pen"
    ],
@@ -9971,6 +9970,55 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_233.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_233.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts construction: Grain Farm at Province_233 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard completed at Province_436.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim starts construction: Timber Yard at Province_436 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhurrim may construct Timber Yard at Province_436.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Exotic Goods is no longer available at Province_436.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
