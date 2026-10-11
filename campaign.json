@@ -17,7 +17,7 @@
   },
   {
    "id": "Dorvinion",
-   "name": "Dorvinion",
+   "name": "Dorwinion",
    "color": "#7B1FA2",
    "treasury": 670,
    "capital": "Province_22",
@@ -9955,6 +9955,20 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_22 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_127 → Province_22",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
