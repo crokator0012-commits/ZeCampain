@@ -35,7 +35,7 @@
    "id": "Goblins",
    "name": "Goblins",
    "color": "#5B6B21",
-   "treasury": 1655,
+   "treasury": 2255,
    "capital": "Province_435",
    "zeal": 8
   },
@@ -6742,7 +6742,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9462,7 +9462,7 @@
   {
    "name": "Host of Province_435",
    "faction": "Goblins",
-   "men": 2120,
+   "men": 2000,
    "at": "Province_418",
    "order": null,
    "units": [
@@ -9476,7 +9476,6 @@
     "goblins_night_raiders",
     "goblins_night_raiders",
     "goblins_night_raiders",
-    "goblins_mountain_pass_scouts",
     "goblins_scavenged_crossbows",
     "goblins_scavenged_crossbows",
     "goblins_warg_pack",
@@ -9502,10 +9501,9 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 5875,
+   "upkeep": 5575,
    "_startCost": 9200
   },
   {
@@ -9975,6 +9973,34 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Goblins ends its turn — Gundabad to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_435 → Province_418",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 moved Province_418 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_435 disbands Mountain Pass Scouts at Province_418 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
@@ -21027,7 +21053,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 10,
+ "active": 12,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -33905,7 +33931,8 @@
   "Khand",
   "Iron Hills",
   "Lindon",
-  "Erebor"
+  "Erebor",
+  "Goblins"
  ],
  "pendingReview": false
 }
