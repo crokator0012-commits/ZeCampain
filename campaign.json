@@ -1870,7 +1870,7 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "healing_herbs"
+    "healing_herb_garden"
    ],
    "adj": [
     "Province_233",
@@ -1885,7 +1885,9 @@
     "Province_72"
    ],
    "displayName": "North coast",
-   "bldLevel": {},
+   "bldLevel": {
+    "healing_herb_garden": 1
+   },
    "cx": 3159.4973353751916,
    "cy": 808.5279632465544,
    "siege": null,
@@ -1971,7 +1973,7 @@
    "bld": [
     "horse_stables",
     "goat_pen",
-    "livestock_farm"
+    "goat_pen"
    ],
    "adj": [
     "Province_23",
@@ -2331,7 +2333,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Osgiliath",
     "Province_208",
@@ -2348,7 +2352,9 @@
     "Province_72"
    ],
    "displayName": "Southern Ithilien",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 2378.543791637951,
    "cy": 1790.9014472777394,
    "siege": null,
@@ -7139,7 +7145,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "sheep_pen"
+   ],
    "adj": [
     "Osgiliath",
     "Province_260",
@@ -7155,7 +7163,9 @@
     "Province_72"
    ],
    "displayName": "Northern Ithilien",
-   "bldLevel": {},
+   "bldLevel": {
+    "sheep_pen": 1
+   },
    "cx": 2406.0400492914355,
    "cy": 1560.7565003080715,
    "siege": null,
@@ -9955,6 +9965,34 @@
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_446.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Grain Farm at Province_446 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen completed at Province_413.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Sheep Pen at Province_413 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
