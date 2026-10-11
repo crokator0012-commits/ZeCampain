@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 2559,
+   "treasury": 559,
    "capital": "Province_260",
    "zeal": 8
   },
@@ -1954,8 +1954,7 @@
    "garrison": 200,
    "bld": [
     "horse_stables",
-    "goat_pen",
-    "livestock_farm"
+    "goat_pen"
    ],
    "adj": [
     "Province_23",
@@ -2928,7 +2927,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 3,
+    "startedDate": "Autumn 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -3475,7 +3480,7 @@
    "modern": "Province 127",
    "hex": "#2cb071",
    "playable": true,
-   "owner": "Rohan",
+   "owner": "Isengard",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3501,8 +3506,7 @@
    "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "EastFold"
+   "raid": null
   },
   {
    "id": "Province_13",
@@ -6696,7 +6700,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7711,7 +7715,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {},
    "cx": 2913.2893047494968,
    "cy": 2619.793829207628,
@@ -8543,11 +8547,12 @@
   {
    "name": "Host of Province_127",
    "faction": "Rohan",
-   "men": 1480,
+   "men": 1600,
    "at": "Province_127",
    "order": null,
    "units": [
     "rohan_prince_theodred",
+    "rohan_sword_theigns",
     "rohan_sword_theigns",
     "rohan_musterd_axemen",
     "rohan_axe_theigns",
@@ -8574,9 +8579,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4962.5,
+   "upkeep": 5362.5,
    "_startCost": 10725
   },
   {
@@ -9133,6 +9139,59 @@
     0
    ],
    "upkeep": 7900
+  },
+  {
+   "name": "Host of Province_400",
+   "faction": "Isengard",
+   "men": 2380,
+   "at": "Province_127",
+   "order": null,
+   "units": [
+    "isengard_lurtz",
+    "isengard_uruk_hai_raiders",
+    "isengard_uruk_hai_raiders",
+    "isengard_uruk_hai_raiders",
+    "isengard_half_orc_spears",
+    "isengard_half_orc_axes",
+    "isengard_wargs_of_isengrad",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians",
+    "isengard_goblin_men_ruffians_2",
+    "isengard_goblin_men_ruffians_2",
+    "isengard_mercs_aor_dunleding_tribal_warroirs",
+    "isengard_uruk_hai_raiders",
+    "isengard_mercs_aor_mordor_rabble",
+    "isengard_goblin_men_ruffians",
+    "isengard_goblin_men_ruffians_2",
+    "isengard_mercs_aor_mordor_bow_rabble",
+    "isengard_mercs_aor_mordor_rabble"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 6037.5,
+   "_startCost": 12075
   },
   {
    "name": "Host of Province_3",
@@ -9915,8 +9974,8 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 1200,
-   "at": "Province_208",
+   "men": 1080,
+   "at": "Province_103",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -9927,8 +9986,7 @@
     "anduin_vale_valesmen_archer_levy",
     "anduin_vale_vale_yeomen",
     "anduin_vale_vale_yeomen",
-    "eotheod_aor_eotheod_nobles",
-    "beorings_aor_beoring_warroirs"
+    "eotheod_aor_eotheod_nobles"
    ],
    "xp": [
     1,
@@ -9939,47 +9997,32 @@
     0,
     1,
     1,
-    2,
-    0
+    2
    ],
-   "upkeep": 4250,
-   "_startCost": 7125
+   "upkeep": 3562.5,
+   "_startCost": 11625
   }
  ],
  "log": [
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Livestock Farm completed at Province_29.",
+   "txt": "Rohan ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Province_197 → unfortified city (2 000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 3,
    "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Anduin Vale starts construction: Livestock Farm at Province_29 (0 castas)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 3,
-   "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_23 moved Province_103 → Province_208",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 3,
-   "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Rohan annexed Province_127 (from Isengard)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 3,
-   "d": "Autumn · S.R. 1418 (T.A. 3018)",
-   "txt": "Rohan occupied Province_127 (held by Isengard)",
-   "kind": "",
+   "txt": "Rohan grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
    "detail": null
   },
   {
@@ -33280,7 +33323,8 @@
   "Dol Gul Dur",
   "Anduin Vale",
   "Khand",
-  "Iron Hills"
+  "Iron Hills",
+  "Rohan"
  ],
  "pendingReview": false
 }
