@@ -2290,7 +2290,8 @@
    "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "East Far Harad"
   },
   {
    "id": "Province_396",
@@ -3421,7 +3422,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
