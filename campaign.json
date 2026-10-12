@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 38,
+   "treasury": 6188,
    "capital": "Province_433",
    "zeal": 9
   },
@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 5470,
+   "treasury": 5270,
    "capital": "Province_364",
    "zeal": 9
   },
@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 3850,
+   "treasury": 4150,
    "capital": "Province_390",
    "zeal": 9
   },
@@ -9406,7 +9406,7 @@
    "name": "Host of Province_390_split_1",
    "faction": "Gondor",
    "men": 2340,
-   "at": "Province_12",
+   "at": "Province_433",
    "order": null,
    "units": [
     "gondor_faramir",
@@ -10048,92 +10048,9 @@
    ],
    "upkeep": 4250,
    "_startCost": 7125
-  },
-  {
-   "name": "Host of Province_459",
-   "faction": "Gondor",
-   "men": 1280,
-   "at": "Province_459",
-   "order": null,
-   "units": [
-    "gondor_aor_anorien_patrollers",
-    "gondor_aor_anorien_patrollers",
-    "gondor_gondorbow_militia",
-    "gondor_gondorbow_militia",
-    "gondor_gondorbow_militia",
-    "gondor_gondor_sword_militia",
-    "gondor_gondor_sword_militia",
-    "gondor_gondor_spear_militia",
-    "gondor_aor_men_of_lamedon",
-    "gondor_gondor_spear_militia",
-    "gondor_aor_men_of_lamedon"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 3075
   }
  ],
  "log": [
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Gondor ends its turn — Anduin Vale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_390_split_1 moved Province_395 → Province_12",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_390_split_1 moved Province_12 → Province_395",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_390_split_1 moved Province_395 → Province_12",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_390_split_1 moved Province_433 → Province_395",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Gondor mustered Host of Province_459 at Province_459 (11 regiments · 6,150 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Gondor grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -40644,8 +40561,6 @@
    }
   }
  ],
- "moved": [
-  "Gondor"
- ],
+ "moved": [],
  "pendingReview": false
 }
