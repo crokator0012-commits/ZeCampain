@@ -6856,7 +6856,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7851,7 +7851,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8099,8 +8099,12 @@
    "terrain": "plains",
    "value": 850,
    "move": 2,
-   "garrison": 600,
-   "bld": [],
+   "garrison": 10000,
+   "bld": [
+    "barracks",
+    "goat_pen",
+    "blacksmith"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -8126,7 +8130,11 @@
     "Province_72",
     "Province_8"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "barracks": 1,
+    "goat_pen": 1,
+    "blacksmith": 1
+   },
    "cx": 1053.7625644655677,
    "cy": 242.40576398018,
    "siege": null,
@@ -8143,29 +8151,7 @@
     "barracks": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "payer": "Ered Luin",
-     "cost": 1000,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    },
-    {
-     "key": "goat_pen",
-     "payer": "Ered Luin",
-     "cost": 500,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    },
-    {
-     "key": "blacksmith",
-     "payer": "Ered Luin",
-     "cost": 750,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null,
    "displayName": "Dragon's Bane"
   },
@@ -10172,6 +10158,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Blacksmith completed at Province_419.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_419.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_419.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
