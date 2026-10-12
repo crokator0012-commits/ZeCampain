@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 425,
+   "treasury": 0,
    "capital": "Province_388",
    "zeal": 9
   },
@@ -155,7 +155,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 329,
+   "treasury": 2429,
    "capital": "Province_442",
    "zeal": 9
   },
@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 5731,
+   "treasury": 181,
    "capital": "Province_23",
    "zeal": 9
   },
@@ -452,7 +452,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Glittering Coast"
   },
   {
    "id": "Province_365",
@@ -633,7 +634,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Grey Havans"
   },
   {
    "id": "Province_440",
@@ -1323,7 +1325,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Shipwrights bay"
   },
   {
    "id": "Province_428",
@@ -1925,12 +1928,8 @@
    "bldOwner": {
     "healing_herbs": "Feredrim"
    },
-   "availableBld": [
-    "healing_herbs"
-   ],
-   "availableBldOwner": {
-    "healing_herbs": "Feredrim"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -2019,7 +2018,7 @@
    ],
    "displayName": "Forest Bough",
    "bldLevel": {
-    "horse_stables": 1,
+    "horse_stables": 2,
     "goat_pen": 1
    },
    "cx": 2082.1902397802896,
@@ -2030,12 +2029,10 @@
     "livestock_farm": "Anduin Vale"
    },
    "availableBld": [
-    "horse_stables",
-    "livestock_farm"
+    "horse_stables"
    ],
    "availableBldOwner": {
-    "horse_stables": "Anduin Vale",
-    "livestock_farm": "Anduin Vale"
+    "horse_stables": "Anduin Vale"
    },
    "upg": null,
    "buildQueue": [],
@@ -2850,13 +2847,16 @@
    "modern": "Province 295",
    "hex": "#3d5796",
    "playable": true,
-   "owner": "GreenWood",
+   "owner": "Anduin Vale",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "healing_herbs",
+    "healing_herb_garden"
+   ],
    "adj": [
     "Harondor",
     "Province_12",
@@ -2894,14 +2894,24 @@
     "Province_461",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "healing_herb_garden": 2
+   },
    "cx": 2149.148884639898,
    "cy": 618.5989165073295,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "bldOwner": {
+    "healing_herbs": "Anduin Vale"
+   },
+   "availableBld": [
+    "healing_herbs",
+    "healing_herb_garden"
+   ],
+   "availableBldOwner": {
+    "healing_herbs": "Anduin Vale",
+    "healing_herb_garden": "Anduin Vale"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3295,7 +3305,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "The Darkwood"
   },
   {
    "id": "Province_371",
@@ -3743,7 +3754,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2040.6391441700173,
    "cy": 736.2268811028144,
@@ -3934,7 +3945,17 @@
     "sheep_pen": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Anduin Vale",
+     "cost": 900,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -4429,7 +4450,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Feänor Pass"
   },
   {
    "id": "Harondor",
@@ -5115,7 +5137,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2150.479100033087,
    "cy": 784.6536340575714,
@@ -6856,7 +6878,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7498,17 +7520,7 @@
     "silver_mine": "Khazad-dum"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "silver_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Khazad-dum",
-     "cost": 1250,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7808,7 +7820,8 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "road"
+    "road",
+    "timber_yard"
    ],
    "adj": [
     "Province_13",
@@ -7819,17 +7832,21 @@
     "Province_406",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "timber_yard": 1
+   },
    "cx": 3044.082697468207,
    "cy": 677.1063353167658,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "road",
+    "timber_yard"
    ],
    "availableBldOwner": {
-    "road": "Dale"
+    "road": "Dale",
+    "timber_yard": "Dale"
    },
    "upg": null,
    "buildQueue": [],
@@ -7861,7 +7878,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9204,7 +9221,7 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 1620,
+   "men": 1500,
    "at": "Province_442",
    "order": null,
    "units": [
@@ -9219,8 +9236,7 @@
     "khazad_dum_aor_guards_of_durins_gate",
     "khazad_dum_wardens_of_the_deep",
     "khazad_dum_darrowdelf_axe_throwers",
-    "khazad_dum_longbeard_spearmen",
-    "khazad_dum_dwarrowdelf_swordsmen"
+    "khazad_dum_longbeard_spearmen"
    ],
    "xp": [
     0,
@@ -9234,10 +9250,9 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 5687.5,
+   "upkeep": 5262.5,
    "_startCost": 9875
   },
   {
@@ -10123,7 +10138,7 @@
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
    "men": 1200,
-   "at": "Province_208",
+   "at": "Province_295",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -10173,29 +10188,162 @@
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Khazad-dum ends its turn — Anduin Vale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Khazad-dum reinforced Host of Province_442 at Province_442 (+1 regiment · 850 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Khazad-dum starts upgrading Silver Mine at Province_442 to Level 2 (1,250 castas)",
+   "txt": "Horse Stables at Province_29 reaches Level 2 — it now yields 125 castas each season.",
    "kind": "",
    "detail": null
   },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Khazad-dum grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
+   "txt": "Anduin Vale starts upgrading Horse Stables at Province_29 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Livestock Farm is no longer available at Province_29.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Sheep Pen at Province_18 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_26 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Grain Farm at Province_26 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_103 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Grain Farm at Province_103 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_295 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Healing Herb Garden at Province_295 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden completed at Province_295.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Healing Herb Garden at Province_295 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Healing Herb Garden at Province_295.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs completed at Province_295.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Healing Herbs at Province_295 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Healing Herbs at Province_295.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale annexed Province_295 (from GreenWood)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale occupied Province_295 (held by GreenWood)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_208 → Province_295",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard completed at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Timber Yard at Province_370 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Timber Yard at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs is no longer available at Province_379.",
+   "kind": "",
    "detail": null
   },
   {
@@ -40915,8 +41063,7 @@
   "Ered Luin",
   "Dale",
   "Lostladen Tribes",
-  "Isengard",
-  "Khazad-dum"
+  "Isengard"
  ],
  "pendingReview": false
 }
