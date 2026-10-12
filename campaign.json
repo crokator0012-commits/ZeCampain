@@ -617,7 +617,7 @@
    ],
    "bldLevel": {
     "fishing_jetties": 3,
-    "barracks": 2
+    "barracks": 3
    },
    "cx": 909.3366897077233,
    "cy": 594.6528601752572,
@@ -633,17 +633,7 @@
     "barracks": "Lindon"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Lindon",
-     "cost": 3500,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null,
    "displayName": "Grey Havens"
   },
@@ -10089,6 +10079,13 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_364 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
