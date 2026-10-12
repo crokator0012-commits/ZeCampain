@@ -6802,7 +6802,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -9661,7 +9661,7 @@
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
-   "at": "Province_390",
+   "at": "Province_419",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -10051,6 +10051,34 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_4 → Province_419",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390 moved Province_390 → Province_4",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -40561,6 +40589,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Ered Luin"
+ ],
  "pendingReview": false
 }
