@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 5534,
+   "treasury": 1534,
    "capital": "Province_359",
    "zeal": 9
   },
@@ -1459,7 +1459,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "South West Harad"
+   "displayName": "West Far Harad"
   },
   {
    "id": "Province_432",
@@ -1985,7 +1985,13 @@
    "availableBldOwner": {
     "stone_quarry": "Lostladen Tribes"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Lostladen Tribes",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7817,7 +7823,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "Central far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9051,7 +9057,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 2520,
-   "at": "Province_359",
+   "at": "Province_426",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -10122,6 +10128,34 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes starts construction: Province_417 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_359 moved Province_359 → Province_426",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -40746,7 +40780,8 @@
  ],
  "moved": [
   "Ered Luin",
-  "Dale"
+  "Dale",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
