@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorwinion",
    "color": "#7B1FA2",
-   "treasury": 3725,
+   "treasury": 575,
    "capital": "Province_22",
    "zeal": 9
   },
@@ -711,7 +711,7 @@
    ],
    "displayName": "southern rovanion",
    "bldLevel": {
-    "timber_yard": 1
+    "timber_yard": 3
    },
    "cx": 2544.151796778191,
    "cy": 831.0951311441553,
@@ -720,12 +720,8 @@
    "bldOwner": {
     "timber": "Dorvinion"
    },
-   "availableBld": [
-    "timber"
-   ],
-   "availableBldOwner": {
-    "timber": "Dorvinion"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -955,7 +951,7 @@
    ],
    "displayName": "dorwinion plains",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2810.4608000990834,
    "cy": 1048.686896210057,
@@ -975,17 +971,7 @@
     "startedDate": "Winter 1418",
     "cost": 2000
    },
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rachrohir",
-     "cost": 900,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -994,11 +980,11 @@
    "hex": "#9d4edd",
    "playable": true,
    "owner": "Dorvinion",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "sheep_pen"
    ],
@@ -1012,7 +998,7 @@
    ],
    "displayName": "eastern Rovanion",
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 2747.3421292498406,
    "cy": 784.4804028803209,
@@ -3438,7 +3424,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3573,7 +3559,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2551.999320164671,
    "cy": 947.4563205801262,
@@ -3593,24 +3579,7 @@
     "startedDate": "Winter 1418",
     "cost": 2000
    },
-   "buildQueue": [
-    {
-     "key": "road",
-     "payer": "Rachrohir",
-     "cost": 0,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    },
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rachrohir",
-     "cost": 900,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5431,7 +5400,7 @@
    "displayName": "Gorgryth",
    "bldLevel": {
     "copper_mine": 1,
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 3670.6266183838484,
    "cy": 1084.457388759363,
@@ -5447,17 +5416,7 @@
     "barracks": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Rhurrim",
-     "cost": 2000,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5579,7 +5538,7 @@
    ],
    "displayName": "caras gwinerth",
    "bldLevel": {
-    "winery": 3,
+    "winery": 4,
     "barracks": 2
    },
    "cx": 3013.5720799500314,
@@ -5715,12 +5674,8 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [
-    "timber"
-   ],
-   "availableBldOwner": {
-    "timber": "Rachrohir"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": {
     "to": 1,
     "payer": "Rachrohir",
@@ -6920,7 +6875,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7920,7 +7875,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10060,7 +10015,7 @@
   {
    "name": "Host of Province_22",
    "faction": "Dorvinion",
-   "men": 1560,
+   "men": 1880,
    "at": "Province_450",
    "order": null,
    "units": [
@@ -10073,10 +10028,13 @@
     "dorwinion_vineland_yardpatrollers",
     "dorwinion_vineland_yardpatrollers",
     "dorwinion_vineland_yardpatrollers",
-    "dorwinion_aor_watchers_of_fennas_gondren",
-    "dorwinion_constables_of_dorwinion",
-    "dorwinion_gwinion_sentries",
-    "dorwinion_aor_lond_minual_seafarers",
+    "dorwinion_vineland_men_at_arms",
+    "dorwinion_watch_post_sentries",
+    "dorwinion_avari_wanderers_2",
+    "dorwinion_vineland_yardpatrollers",
+    "dorwinion_mercs_merchant_escorts",
+    "dorwinion_mercs_merchant_escorts",
+    "dorwinion_mercs_merchant_escorts",
     "dorwinion_gwinion_sentries"
    ],
    "xp": [
@@ -10093,10 +10051,13 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5575,
-   "_startCost": 9975
+   "upkeep": 7425,
+   "_startCost": 13675
   },
   {
    "name": "Host of Province_23",
@@ -10149,6 +10110,132 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Winery at Province_22 reaches Level 4 — it now yields 300 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Winery at Province_22 to Level 4 (3,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_450 reaches Level 3 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Timber Yard at Province_450 to Level 3 (1,400 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_450 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Timber Yard at Province_450 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard is no longer available at Province_450.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_398 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_398 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts construction: Province_398 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dorvinion starts upgrading Sheep Pen at Province_398 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_33 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard is no longer available at Province_467.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_467: construction declined — Rachrohir refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Timber Yard at Province_467 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_437 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_376 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_376: construction declined — Rachrohir refunded 0 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
