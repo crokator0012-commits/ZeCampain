@@ -76,7 +76,7 @@
    "name": "Mahud",
    "color": "#8E2F1B",
    "treasury": 1540,
-   "capital": "Province_426",
+   "capital": null,
    "zeal": 9
   },
   {
@@ -2264,7 +2264,7 @@
    "modern": "Province 444",
    "hex": "#e8b4b4",
    "playable": true,
-   "owner": "Mahud",
+   "owner": "Lostladen Tribes",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3406,7 +3406,7 @@
    "modern": "Province 426",
    "hex": "#c97a7a",
    "playable": true,
-   "owner": "Mahud",
+   "owner": "Lostladen Tribes",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -10093,6 +10093,41 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes annexed Province_444 (from Mahud)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes occupied Province_444 (held by Mahud)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mahud's capital falls — Province_426 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes annexed Province_426 (from Mahud)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lostladen Tribes occupied Province_426 (held by Mahud)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
