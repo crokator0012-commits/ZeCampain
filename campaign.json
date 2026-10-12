@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 6188,
+   "treasury": 5588,
    "capital": "Province_433",
    "zeal": 9
   },
@@ -219,7 +219,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 1991,
+   "treasury": 1291,
    "capital": "Province_449",
    "zeal": 9
   },
@@ -1148,20 +1148,23 @@
    "modern": "Province 90",
    "hex": "#00f5d4",
    "playable": true,
-   "owner": "Gondor",
-   "tier": 1,
+   "owner": "Dol Amroth",
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
-    "ship_docks"
+    "ship_docks",
+    "fishing_jetties"
    ],
    "adj": [
     "Province_17"
    ],
    "displayName": "Tol'falas",
-   "bldLevel": {},
+   "bldLevel": {
+    "fishing_jetties": 2
+   },
    "cx": 1982.6214626975377,
    "cy": 1967.1606027195885,
    "siege": null,
@@ -1170,10 +1173,12 @@
     "ship_docks": "Gondor"
    },
    "availableBld": [
-    "ship_docks"
+    "ship_docks",
+    "fishing_jetties"
    ],
    "availableBldOwner": {
-    "ship_docks": "Gondor"
+    "ship_docks": "Gondor",
+    "fishing_jetties": "Gondor"
    },
    "upg": null,
    "buildQueue": [],
@@ -1190,7 +1195,10 @@
    "value": 500,
    "move": 2,
    "garrison": 7500,
-   "bld": [],
+   "bld": [
+    "fishing_jetties",
+    "silver_mine"
+   ],
    "adj": [
     "Province_103",
     "Province_12",
@@ -1204,21 +1212,24 @@
     "Province_72"
    ],
    "displayName": "southern lamedon",
-   "bldLevel": {},
+   "bldLevel": {
+    "fishing_jetties": 2,
+    "silver_mine": 1
+   },
    "cx": 1957.0055208833414,
    "cy": 1836.4729956793087,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
-   "upg": {
-    "to": 2,
-    "payer": "Dol Amroth",
-    "startedTurn": 2,
-    "startedDate": "Summer 1418",
-    "cost": 4000
+   "availableBld": [
+    "fishing_jetties",
+    "silver_mine"
+   ],
+   "availableBldOwner": {
+    "fishing_jetties": "Dol Amroth",
+    "silver_mine": "Dol Amroth"
    },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -2761,7 +2772,8 @@
    "move": 2,
    "garrison": 7500,
    "bld": [
-    "fishing_jetties"
+    "fishing_jetties",
+    "grain_farm"
    ],
    "adj": [
     "Harondor",
@@ -2780,7 +2792,8 @@
    ],
    "displayName": "Dor-En Alph",
    "bldLevel": {
-    "fishing_jetties": 2
+    "fishing_jetties": 2,
+    "grain_farm": 1
    },
    "cx": 1891.0873060176398,
    "cy": 1891.540247850843,
@@ -2788,13 +2801,25 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "fishing_jetties"
+    "fishing_jetties",
+    "grain_farm"
    ],
    "availableBldOwner": {
-    "fishing_jetties": "Dol Amroth"
+    "fishing_jetties": "Dol Amroth",
+    "grain_farm": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dol Amroth",
+     "cost": 900,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -4805,7 +4830,17 @@
     "fishing_jetties": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dol Amroth",
+     "cost": 1650,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -9713,7 +9748,7 @@
    "name": "Host of Province_449",
    "faction": "Dol Amroth",
    "men": 1720,
-   "at": "Province_449",
+   "at": "Province_90",
    "order": null,
    "units": [
     "dol_amroth_knights_of_the_silver_swan",
@@ -10044,6 +10079,202 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_90 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts upgrading Fishing Jetties at Province_90 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth annexed Province_90 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth occupied Province_90 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_449 → Province_90",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_90.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Fishing Jetties at Province_90 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Fishing Jetties at Province_90.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_457 (from Dol Amroth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_457 (held by Dol Amroth)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_457 → Province_449",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth annexed Province_457 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth occupied Province_457 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_449 moved Province_449 → Province_457",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Silver Mine completed at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts construction: Silver Mine at Province_383 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth may construct Silver Mine at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts upgrading Fishing Jetties at Province_449 to Level 3 (1,650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts upgrading Grain Farm at Province_438 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_438.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts construction: Grain Farm at Province_438 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth may construct Grain Farm at Province_438.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_383 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts upgrading Fishing Jetties at Province_383 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth starts construction: Fishing Jetties at Province_383 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Amroth may construct Fishing Jetties at Province_383.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_383: construction declined — Dol Amroth refunded 4,000 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
