@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 351,
+   "treasury": 4351,
    "capital": "Province_400",
    "zeal": 9
   },
@@ -2652,9 +2652,9 @@
    "bldLevel": {
     "iron_mine": 2,
     "barracks": 2,
-    "stone_quarry": 1,
-    "copper_mine": 1,
-    "blacksmith": 1
+    "stone_quarry": 2,
+    "copper_mine": 2,
+    "blacksmith": 2
    },
    "cx": 1711.646375766318,
    "cy": 1248.3677605481428,
@@ -2676,35 +2676,7 @@
     "blacksmith": "Isengard"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "stone_quarry",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Isengard",
-     "cost": 850,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    },
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Isengard",
-     "cost": 1100,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    },
-    {
-     "key": "blacksmith",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Isengard",
-     "cost": 1250,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10086,6 +10058,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry at Province_400 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine at Province_400 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Blacksmith at Province_400 reaches Level 2 — it now grants +2 chevrons to regiments mustered here.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
