@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 4150,
+   "treasury": 400,
    "capital": "Province_390",
    "zeal": 9
   },
@@ -1549,7 +1549,17 @@
     "goat_pen": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "goat_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Ered Luin",
+     "cost": 1500,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -6802,7 +6812,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -8040,12 +8050,12 @@
    "modern": "Province 419",
    "hex": "#bf4d03",
    "playable": true,
-   "owner": "",
-   "tier": 0,
+   "owner": "Ered Luin",
+   "tier": 2,
    "terrain": "plains",
-   "value": 250,
+   "value": 850,
    "move": 2,
-   "garrison": 50,
+   "garrison": 600,
    "bld": [],
    "adj": [
     "Province_103",
@@ -8078,11 +8088,42 @@
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "blacksmith",
+    "goat_pen",
+    "barracks"
+   ],
+   "availableBldOwner": {
+    "blacksmith": "Ered Luin",
+    "goat_pen": "Ered Luin",
+    "barracks": "Ered Luin"
+   },
    "upg": null,
-   "buildQueue": [],
-   "raid": null
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "payer": "Ered Luin",
+     "cost": 1000,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    },
+    {
+     "key": "goat_pen",
+     "payer": "Ered Luin",
+     "cost": 500,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    },
+    {
+     "key": "blacksmith",
+     "payer": "Ered Luin",
+     "cost": 750,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
+   "raid": null,
+   "displayName": "Uslukhubzag"
   },
   {
    "id": "Province_469",
@@ -10051,6 +10092,55 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts upgrading Goat Pen at Province_4 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Blacksmith at Province_419 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Goat Pen at Province_419 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin starts construction: Barracks at Province_419 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin may construct Barracks at Province_419.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin may construct Goat Pen at Province_419.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Ered Luin may construct Blacksmith at Province_419.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
