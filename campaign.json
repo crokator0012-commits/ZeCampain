@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 425,
+   "treasury": 0,
    "capital": "Province_388",
    "zeal": 9
   },
@@ -633,7 +633,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "GreyHaven"
   },
   {
    "id": "Province_440",
@@ -1925,12 +1926,8 @@
    "bldOwner": {
     "healing_herbs": "Feredrim"
    },
-   "availableBld": [
-    "healing_herbs"
-   ],
-   "availableBldOwner": {
-    "healing_herbs": "Feredrim"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7798,7 +7795,8 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "road"
+    "road",
+    "timber_yard"
    ],
    "adj": [
     "Province_13",
@@ -7809,17 +7807,21 @@
     "Province_406",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "timber_yard": 1
+   },
    "cx": 3044.082697468207,
    "cy": 677.1063353167658,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "road",
+    "timber_yard"
    ],
    "availableBldOwner": {
-    "road": "Dale"
+    "road": "Dale",
+    "timber_yard": "Dale"
    },
    "upg": null,
    "buildQueue": [],
@@ -10158,6 +10160,34 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard completed at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Timber Yard at Province_370 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale may construct Timber Yard at Province_370.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs is no longer available at Province_379.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
