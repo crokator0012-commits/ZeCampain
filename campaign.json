@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 6023,
+   "treasury": 1123,
    "capital": "Province_17",
    "zeal": 9
   },
@@ -460,7 +460,7 @@
    "modern": "Province 365",
    "hex": "#6592fd",
    "playable": true,
-   "owner": "GreenWood",
+   "owner": "Anduin Vale",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -898,7 +898,7 @@
    ],
    "displayName": "Cirith ungol",
    "bldLevel": {
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 2549.528846777857,
    "cy": 1633.6285287818807,
@@ -907,24 +907,10 @@
    "bldOwner": {
     "livestock_farm": "Mordor"
    },
-   "availableBld": [
-    "livestock_farm"
-   ],
-   "availableBldOwner": {
-    "livestock_farm": "Mordor"
-   },
+   "availableBld": [],
+   "availableBldOwner": {},
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Mordor",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -1400,7 +1386,7 @@
    "displayName": "Minas Morgul",
    "bldLevel": {
     "gem_mine": 1,
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 2467.4323858742464,
    "cy": 1589.2644272179157,
@@ -1416,17 +1402,7 @@
     "gem_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Mordor",
-     "cost": 2000,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2342,8 +2318,8 @@
    ],
    "displayName": "Nurn",
    "bldLevel": {
-    "grain_farm": 1,
-    "fishing_jetties": 1
+    "grain_farm": 2,
+    "fishing_jetties": 2
    },
    "cx": 2743.9545296011,
    "cy": 1815.2164103994978,
@@ -3367,7 +3343,7 @@
    ],
    "displayName": "coast of nurn",
    "bldLevel": {
-    "fishing_jetties": 1
+    "fishing_jetties": 2
    },
    "cx": 3111.7534661401896,
    "cy": 1825.8397114271295,
@@ -3667,7 +3643,7 @@
    ],
    "displayName": "Mordor Heartlands",
    "bldLevel": {
-    "copper_mine": 1
+    "copper_mine": 2
    },
    "cx": 2518.2264150943397,
    "cy": 1487.1181727904668,
@@ -3681,17 +3657,7 @@
     "copper_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Mordor",
-     "cost": 1100,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4722,7 +4688,7 @@
    ],
    "displayName": "Lithlad",
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 3028.759515253259,
    "cy": 1651.6482700731842,
@@ -6444,7 +6410,7 @@
    ],
    "displayName": "Mordia",
    "bldLevel": {
-    "sheep_pen": 1
+    "sheep_pen": 2
    },
    "cx": 3226.1178550931454,
    "cy": 1534.347500349005,
@@ -9034,7 +9000,7 @@
    "name": "Host of Province_17",
    "faction": "Mordor",
    "men": 1800,
-   "at": "Province_425",
+   "at": "Province_305",
    "order": null,
    "units": [
     "mordor_mordor_orc_warband",
@@ -10063,6 +10029,125 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_305 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_425 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine at Province_453 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_72 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Sheep Pen at Province_72 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_327 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Iron Mine at Province_327 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_396 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_396 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Grain Farm at Province_396 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Fishing Jetties at Province_396 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_371 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor starts upgrading Fishing Jetties at Province_371 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_425 → Province_305",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Livestock Farm is no longer available at Province_425.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale annexed Province_365 (from GreenWood)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale occupied Province_365 (held by GreenWood)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
