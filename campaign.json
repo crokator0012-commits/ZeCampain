@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 5470,
+   "treasury": 5270,
    "capital": "Province_364",
    "zeal": 9
   },
@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 3850,
+   "treasury": 4100,
    "capital": "Province_390",
    "zeal": 9
   },
