@@ -9101,36 +9101,18 @@
   {
    "name": "Host of Province_364",
    "faction": "Lindon",
-   "men": 1340,
-   "at": "Province_430",
+   "men": 240,
+   "at": "Province_411",
    "order": null,
    "units": [
-    "lindon_falathrim_seafarers",
-    "lindon_lindon_scouts",
-    "lindon_falathrim_spearmen",
-    "lindon_falathrim_swordsmen",
-    "lindon_falathrim_swordsmen",
-    "lindon_falathrim_swordsmen",
-    "lindon_falathrim_greatswords",
-    "lindon_haven_watchers",
-    "lindon_haven_watchers",
     "lindon_haven_watchers",
     "lindon_aor_shipwrigh_s_nobles"
    ],
    "xp": [
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 4950,
+   "upkeep": 1100,
    "_startCost": 9900
   },
   {
@@ -10059,44 +10041,16 @@
     0
    ],
    "_startCost": 6675
-  },
-  {
-   "name": "Host of Province_432",
-   "faction": "Rhudaur",
-   "men": 1220,
-   "at": "Province_411",
-   "order": null,
-   "units": [
-    "rhudaur_trev_duvardain_reavers",
-    "rhudaur_creothean_retainers",
-    "rhudaur_cocurian_axe_hird",
-    "rhudaur_cocurian_axe_hird",
-    "rhudaur_cocurian_axe_hird",
-    "rhudaur_bondi_axes",
-    "rhudaur_bondi_axes",
-    "rhudaur_weather_hill_scavengers",
-    "rhudaur_weather_hill_scavengers",
-    "rhudaur_weather_hill_scavengers",
-    "rhudaur_creothean_hill_riders"
-   ],
-   "upkeep": 4962.5,
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "_startCost": 8450
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_364 moved Province_430 → Province_411",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
