@@ -452,7 +452,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Glittering Coast"
   },
   {
    "id": "Province_365",
@@ -634,7 +635,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "GreyHaven"
+   "displayName": "Grey Havans"
   },
   {
    "id": "Province_440",
@@ -1324,7 +1325,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Shipwrights bay"
   },
   {
    "id": "Province_428",
@@ -3292,7 +3294,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "The Darkwood"
   },
   {
    "id": "Province_371",
@@ -4426,7 +4429,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Feänor Pass"
   },
   {
    "id": "Harondor",
