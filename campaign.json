@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 1181,
+   "treasury": 200,
    "capital": "Province_23",
    "zeal": 9
   },
@@ -281,7 +281,7 @@
    "name": "GreenWood",
    "color": "#246B47",
    "treasury": 456555,
-   "capital": "Province_345",
+   "capital": null,
    "zeal": 9,
    "npc": true
   },
@@ -1020,14 +1020,15 @@
    "modern": "Province 345",
    "hex": "#587fdb",
    "playable": true,
-   "owner": "GreenWood",
-   "tier": 1,
+   "owner": "Anduin Vale",
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 10000,
    "bld": [
-    "timber_yard"
+    "timber_yard",
+    "barracks"
    ],
    "adj": [
     "Province_295",
@@ -1037,7 +1038,8 @@
    ],
    "displayName": "greenwood forest",
    "bldLevel": {
-    "timber_yard": 1
+    "timber_yard": 2,
+    "barracks": 1
    },
    "cx": 2128.3519317936543,
    "cy": 495.3011547593352,
@@ -1045,10 +1047,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "timber_yard"
+    "timber_yard",
+    "barracks"
    ],
    "availableBldOwner": {
-    "timber_yard": "GreenWood"
+    "timber_yard": "GreenWood",
+    "barracks": "Anduin Vale"
    },
    "upg": null,
    "buildQueue": [],
@@ -9659,43 +9663,6 @@
    "_startCost": 9950
   },
   {
-   "name": "Host of Province_345",
-   "faction": "GreenWood",
-   "men": 1440,
-   "at": "Province_345",
-   "order": null,
-   "units": [
-    "greenwood_aor_woodland_axemen",
-    "greenwood_aor_woodland_axemen",
-    "greenwood_aor_woodland_axemen",
-    "greenwood_greenwood_foresters",
-    "greenwood_greenwood_foresters",
-    "greenwood_greenwood_foresters",
-    "greenwood_aor_greenwood_rangers",
-    "greenwood_aor_greenwood_rangers",
-    "greenwood_aor_greenwood_rangers",
-    "greenwood_aor_stoor_shirrifs",
-    "greenwood_aor_greenwood_rangers",
-    "greenwood_aor_woodland_axemen"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 5025,
-   "_startCost": 10050
-  },
-  {
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
@@ -10063,39 +10030,43 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 1460,
-   "at": "Province_295",
+   "men": 1700,
+   "at": "Province_345",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
     "anduin_vale_vale_axemen",
     "anduin_vale_vale_axemen",
-    "anduin_vale_vale_axemen",
-    "anduin_vale_valesmen_archer_levy",
     "anduin_vale_valesmen_archer_levy",
     "anduin_vale_vale_yeomen",
     "anduin_vale_vale_yeomen",
     "eotheod_aor_eotheod_nobles",
     "beorings_aor_beoring_warroirs",
     "beorings_aor_pass_sentries",
-    "beorings_aor_carrock_wardens"
+    "beorings_aor_carrock_wardens",
+    "greenwood_aor_greenwood_rangers",
+    "greenwood_aor_stoor_shirrifs",
+    "anduin_vale_aor_greenwood_axemen",
+    "greenwood_aor_woodland_axemen"
    ],
    "xp": [
-    1,
-    1,
-    0,
-    0,
-    0,
-    0,
+    2,
+    2,
     1,
     1,
     2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
     0,
     0,
     0
    ],
-   "upkeep": 5225,
-   "_startCost": 8500
+   "upkeep": 6075,
+   "_startCost": 11600
   },
   {
    "name": "Host of Province_400",
@@ -10115,6 +10086,69 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_345.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts construction: Barracks at Province_345 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale may construct Barracks at Province_345.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Timber Yard at Province_345 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale starts upgrading Timber Yard at Province_345 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "GreenWood's capital falls — Province_345 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale annexed Province_345 (from GreenWood)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale occupied Province_345 (held by GreenWood)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_23 moved Province_295 → Province_345",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
