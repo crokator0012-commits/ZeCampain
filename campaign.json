@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 181,
+   "treasury": 1181,
    "capital": "Province_23",
    "zeal": 9
   },
@@ -9692,7 +9692,8 @@
     0,
     0
    ],
-   "upkeep": 5025
+   "upkeep": 5025,
+   "_startCost": 10050
   },
   {
    "name": "Host of Province_390",
@@ -10062,7 +10063,7 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 1200,
+   "men": 1460,
    "at": "Province_295",
    "order": null,
    "units": [
@@ -10075,7 +10076,9 @@
     "anduin_vale_vale_yeomen",
     "anduin_vale_vale_yeomen",
     "eotheod_aor_eotheod_nobles",
-    "beorings_aor_beoring_warroirs"
+    "beorings_aor_beoring_warroirs",
+    "beorings_aor_pass_sentries",
+    "beorings_aor_carrock_wardens"
    ],
    "xp": [
     1,
@@ -10087,10 +10090,12 @@
     1,
     1,
     2,
+    0,
+    0,
     0
    ],
-   "upkeep": 4250,
-   "_startCost": 7125
+   "upkeep": 5225,
+   "_startCost": 8500
   },
   {
    "name": "Host of Province_400",
