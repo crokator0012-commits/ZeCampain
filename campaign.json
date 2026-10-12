@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 5366,
+   "treasury": 2566,
    "capital": "Province_436",
    "zeal": 9
   },
@@ -8871,7 +8871,7 @@
   {
    "name": "Host of Province_436",
    "faction": "Rhurrim",
-   "men": 1560,
+   "men": 2080,
    "at": "Province_458",
    "order": null,
    "units": [
@@ -8882,13 +8882,17 @@
     "rhurrim_clan_huntsmen",
     "rhurrim_rhunic_archers",
     "rhurrim_rhunic_archers",
-    "rhurrim_clan_huntsmen",
     "haerrim_aor_haerrim_outriders",
     "haerrim_aor_haerrim_outriders",
     "haerrim_aor_haerrim_infantry",
     "haerrim_aor_haerrim_infantry",
     "haerrim_aor_haerrim_infantry",
-    "rhurrim_rhunic_archers"
+    "rhurrim_rhunic_archers",
+    "rhurrim_clan_axemen",
+    "rhurrim_clan_axemen",
+    "rhurrim_clan_raiders",
+    "rhurrim_clan_spearmen",
+    "rhurrim_clan_spearmen"
    ],
    "xp": [
     0,
@@ -8904,10 +8908,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5487.5,
-   "_startCost": 10050
+   "upkeep": 6662.5,
+   "_startCost": 10975
   },
   {
    "name": "Host of Province_432",
