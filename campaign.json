@@ -1893,7 +1893,7 @@
    "modern": "Province 379",
    "hex": "#7b2cbf",
    "playable": true,
-   "owner": "Feredrim",
+   "owner": "Dale",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9050,7 +9050,7 @@
   {
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
-   "men": 1600,
+   "men": 2520,
    "at": "Province_359",
    "order": null,
    "units": [
@@ -9066,7 +9066,14 @@
     "lostladen_tribes_haradrim_swordsmen",
     "lostladen_tribes_haradrim_swordsmen",
     "lostladen_tribes_desert_archers",
-    "lostladen_tribes_desert_archers"
+    "lostladen_tribes_desert_archers",
+    "lostladen_tribes_desert_spearmen",
+    "lostladen_tribes_desert_spearmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_glaives",
+    "lostladen_tribes_haradrim_glaives",
+    "lostladen_tribes_haradrim_lancers"
    ],
    "xp": [
     0,
@@ -9081,10 +9088,17 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4687.5,
-   "_startCost": 9975
+   "upkeep": 7100,
+   "_startCost": 9375
   },
   {
    "name": "Host of Province_16",
