@@ -3636,7 +3636,7 @@
    ],
    "displayName": "Stonehall",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 2901.024890510949,
    "cy": 747.5347810218979,
@@ -3650,17 +3650,7 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dale",
-     "cost": 900,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8647,11 +8637,11 @@
    "hex": "#3f51b5",
    "playable": true,
    "owner": "Dale",
-   "tier": 2,
+   "tier": 3,
    "terrain": "plains",
-   "value": 850,
+   "value": 1300,
    "move": 2,
-   "garrison": 10000,
+   "garrison": 12500,
    "bld": [
     "goat_pen"
    ],
@@ -8682,13 +8672,7 @@
    "availableBldOwner": {
     "goat_pen": "Dale"
    },
-   "upg": {
-    "to": 3,
-    "payer": "Dale",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 7000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -10185,6 +10169,20 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_13 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_455_split_1 completes its works — now a fortified city (large).",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
