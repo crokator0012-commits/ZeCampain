@@ -227,7 +227,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 200,
+   "treasury": 800,
    "capital": "Province_23",
    "zeal": 9
   },
@@ -10082,9 +10082,56 @@
     0
    ],
    "_startCost": 6675
+  },
+  {
+   "name": "Host of Province_26",
+   "faction": "Anduin Vale",
+   "men": 360,
+   "at": "Province_2",
+   "order": null,
+   "units": [
+    "greenwood_aor_stoor_shirrifs",
+    "greenwood_aor_stoor_shirrifs",
+    "greenwood_aor_stoor_shirrifs"
+   ],
+   "upkeep": 562.5,
+   "xp": [
+    0,
+    0,
+    0
+   ],
+   "_startCost": 750
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_26 moved Province_26 → Province_2",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Anduin Vale raised a host at Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_373 moved Province_295 → Province_461",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_373 moved Province_461 → Province_295",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
