@@ -10026,9 +10026,112 @@
    ],
    "upkeep": 1362.5,
    "_startCost": 1400
+  },
+  {
+   "name": "Host of Province_373",
+   "faction": "Dol Gul Dur",
+   "men": 1140,
+   "at": "Province_461",
+   "order": null,
+   "units": [
+    "dol_gul_dur_aor_barrow_wights",
+    "dol_gul_dur_aor_barrow_wights",
+    "dol_gul_dur_aor_barrow_wights",
+    "dol_gul_dur_aor_wraiths",
+    "dol_gul_dur_aor_wraiths",
+    "dol_gul_dur_aor_wraiths",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_khamul"
+   ],
+   "upkeep": 4075,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "_startCost": 6675
+  },
+  {
+   "name": "Host of Province_432",
+   "faction": "Rhudaur",
+   "men": 1220,
+   "at": "Province_411",
+   "order": null,
+   "units": [
+    "rhudaur_trev_duvardain_reavers",
+    "rhudaur_creothean_retainers",
+    "rhudaur_cocurian_axe_hird",
+    "rhudaur_cocurian_axe_hird",
+    "rhudaur_cocurian_axe_hird",
+    "rhudaur_bondi_axes",
+    "rhudaur_bondi_axes",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_creothean_hill_riders"
+   ],
+   "upkeep": 4962.5,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "_startCost": 8450
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_432 → Province_411",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur raised a host at Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_373 moved Province_373 → Province_461",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur raised a host at Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris raised a host at Province_461",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
