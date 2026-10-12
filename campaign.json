@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 0,
+   "treasury": 425,
    "capital": "Province_388",
    "zeal": 9
   },
@@ -155,7 +155,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 2429,
+   "treasury": 329,
    "capital": "Province_442",
    "zeal": 9
   },
@@ -452,8 +452,7 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "Glittering Coast"
+   "raid": null
   },
   {
    "id": "Province_365",
@@ -634,8 +633,7 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "Grey Havans"
+   "raid": null
   },
   {
    "id": "Province_440",
@@ -1325,8 +1323,7 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "Shipwrights bay"
+   "raid": null
   },
   {
    "id": "Province_428",
@@ -1928,8 +1925,12 @@
    "bldOwner": {
     "healing_herbs": "Feredrim"
    },
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "healing_herbs"
+   ],
+   "availableBldOwner": {
+    "healing_herbs": "Feredrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -3294,8 +3295,7 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "The Darkwood"
+   "raid": null
   },
   {
    "id": "Province_371",
@@ -4429,8 +4429,7 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null,
-   "displayName": "Feänor Pass"
+   "raid": null
   },
   {
    "id": "Harondor",
@@ -6857,7 +6856,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7499,7 +7498,17 @@
     "silver_mine": "Khazad-dum"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "silver_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Khazad-dum",
+     "cost": 1250,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7799,8 +7808,7 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "road",
-    "timber_yard"
+    "road"
    ],
    "adj": [
     "Province_13",
@@ -7811,21 +7819,17 @@
     "Province_406",
     "Province_72"
    ],
-   "bldLevel": {
-    "timber_yard": 1
-   },
+   "bldLevel": {},
    "cx": 3044.082697468207,
    "cy": 677.1063353167658,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road",
-    "timber_yard"
+    "road"
    ],
    "availableBldOwner": {
-    "road": "Dale",
-    "timber_yard": "Dale"
+    "road": "Dale"
    },
    "upg": null,
    "buildQueue": [],
@@ -7857,7 +7861,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9200,7 +9204,7 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 1500,
+   "men": 1620,
    "at": "Province_442",
    "order": null,
    "units": [
@@ -9215,7 +9219,8 @@
     "khazad_dum_aor_guards_of_durins_gate",
     "khazad_dum_wardens_of_the_deep",
     "khazad_dum_darrowdelf_axe_throwers",
-    "khazad_dum_longbeard_spearmen"
+    "khazad_dum_longbeard_spearmen",
+    "khazad_dum_dwarrowdelf_swordsmen"
    ],
    "xp": [
     0,
@@ -9229,9 +9234,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 5262.5,
+   "upkeep": 5687.5,
    "_startCost": 9875
   },
   {
@@ -10167,29 +10173,29 @@
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Timber Yard completed at Province_370.",
+   "txt": "Khazad-dum ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum reinforced Host of Province_442 at Province_442 (+1 regiment · 850 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khazad-dum starts upgrading Silver Mine at Province_442 to Level 2 (1,250 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Dale starts construction: Timber Yard at Province_370 (500 castas)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Dale may construct Timber Yard at Province_370.",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Healing Herbs is no longer available at Province_379.",
-   "kind": "",
+   "txt": "Khazad-dum grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
    "detail": null
   },
   {
@@ -40909,7 +40915,8 @@
   "Ered Luin",
   "Dale",
   "Lostladen Tribes",
-  "Isengard"
+  "Isengard",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
