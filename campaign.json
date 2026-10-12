@@ -75,7 +75,7 @@
    "id": "Mahud",
    "name": "Mahud",
    "color": "#8E2F1B",
-   "treasury": 2540,
+   "treasury": 1540,
    "capital": "Province_426",
    "zeal": 9
   },
@@ -2854,7 +2854,7 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "healing_herbs",
+    "healing_herb_garden",
     "healing_herb_garden"
    ],
    "adj": [
@@ -3413,7 +3413,8 @@
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "exotic_animal_pen"
+    "exotic_animal_pen",
+    "barracks"
    ],
    "adj": [
     "Province_359",
@@ -3422,7 +3423,8 @@
    ],
    "displayName": "Far Harad",
    "bldLevel": {
-    "exotic_animal_pen": 1
+    "exotic_animal_pen": 1,
+    "barracks": 1
    },
    "cx": 3598.672394534497,
    "cy": 2437.9191474438903,
@@ -3430,10 +3432,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "exotic_animal_pen"
+    "exotic_animal_pen",
+    "barracks"
    ],
    "availableBldOwner": {
-    "exotic_animal_pen": "Mahud"
+    "exotic_animal_pen": "Mahud",
+    "barracks": "Mahud"
    },
    "upg": null,
    "buildQueue": [],
@@ -9081,55 +9085,25 @@
   {
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
-   "men": 2520,
+   "men": 600,
    "at": "Province_426",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
-    "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_haradrim_glaives",
-    "lostladen_tribes_haradrim_lancers",
     "lostladen_tribes_haradrim_archers",
     "lostladen_tribes_haradrim_archers",
-    "lostladen_tribes_camel_riders",
-    "lostladen_tribes_haradrim_swordsmen",
-    "lostladen_tribes_haradrim_swordsmen",
     "lostladen_tribes_desert_archers",
-    "lostladen_tribes_desert_archers",
-    "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_desert_spearmen",
-    "lostladen_tribes_haradrim_swordsmen",
-    "lostladen_tribes_haradrim_swordsmen",
-    "lostladen_tribes_haradrim_glaives",
-    "lostladen_tribes_haradrim_glaives",
-    "lostladen_tribes_haradrim_lancers"
+    "lostladen_tribes_desert_archers"
    ],
    "xp": [
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7100,
-   "_startCost": 9375
+   "upkeep": 1875,
+   "_startCost": 4800
   },
   {
    "name": "Host of Province_16",
@@ -9291,56 +9265,6 @@
    ],
    "upkeep": 7512.5,
    "_startCost": 14975
-  },
-  {
-   "name": "Host of Province_426",
-   "faction": "Mahud",
-   "men": 2300,
-   "at": "Province_426",
-   "order": null,
-   "units": [
-    "lostladen_tribes_aor_far_harad_bow_mutants",
-    "lostladen_tribes_aor_far_harad_bow_mutants",
-    "lostladen_tribes_aor_far_harad_bow_mutants",
-    "lostladen_tribes_aor_far_harad_mutants",
-    "lostladen_tribes_aor_far_harad_mutants",
-    "lostladen_tribes_aor_far_harad_mutants",
-    "lostladen_tribes_aor_mahud_spearmen",
-    "lostladen_tribes_aor_mahud_spearmen",
-    "lostladen_tribes_aor_mahud_spearmen",
-    "lostladen_tribes_aor_mahud_beast_tamers",
-    "lostladen_tribes_aor_mahud_beast_tamers",
-    "lostladen_tribes_aor_mahud_beast_tamers",
-    "lostladen_tribes_aor_mahud_clubmen",
-    "lostladen_tribes_aor_mahud_clubmen",
-    "lostladen_tribes_aor_mahud_clubmen",
-    "lostladen_tribes_aor_mahud_hunters",
-    "lostladen_tribes_aor_mahud_hunters",
-    "lostladen_tribes_aor_mahud_hunters",
-    "lostladen_tribes_aor_baby_mumakil"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 7900
   },
   {
    "name": "Host of Province_3",
@@ -10169,6 +10093,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_426.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mahud starts construction: Barracks at Province_426 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mahud may construct Barracks at Province_426.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
