@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 4589,
+   "treasury": 589,
    "capital": "Harondor",
    "zeal": 9
   },
@@ -3405,7 +3405,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6856,7 +6856,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7686,7 +7686,13 @@
     "stables",
     "fishing_jetties"
    ],
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Umbar",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 4000
+   },
    "raid": null,
    "occ": null,
    "displayName": "lesser umbar",
@@ -7856,7 +7862,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9826,7 +9832,7 @@
    "name": "Host of Harondor",
    "faction": "Umbar",
    "men": 1820,
-   "at": "Province_340",
+   "at": "Province_7",
    "order": null,
    "units": [
     "umbar_ar_pharazons_azgar",
@@ -10079,6 +10085,34 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar ends its turn — Dol Gul Dur to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar starts construction: Near Harad → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Harondor moved Province_340 → Province_7",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Umbar grew tired of waiting on Dol Gul Dur and skips ahead — Dol Gul Dur keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -49440,7 +49474,8 @@
   "Dunland",
   "Mahud",
   "Imraldris",
-  "Lindon"
+  "Lindon",
+  "Umbar"
  ],
  "pendingReview": false
 }
