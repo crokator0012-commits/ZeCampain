@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 2485,
+   "treasury": 85,
    "capital": "Province_409",
    "zeal": 9
   },
@@ -10058,9 +10058,46 @@
    ],
    "upkeep": 1362.5,
    "_startCost": 1400
+  },
+  {
+   "name": "Host of Province_409",
+   "faction": "Imraldris",
+   "men": 240,
+   "at": "Province_409",
+   "order": null,
+   "units": [
+    "imraldris_imladris_swordsmen",
+    "imraldris_imladris_swordsmen"
+   ],
+   "xp": [
+    1,
+    1
+   ],
+   "upkeep": 1200
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imladris ends its turn — Dol Gul Dur to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris mustered Host of Province_409 at Province_409 (2 regiments · 2,400 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imladris grew tired of waiting on Dol Gul Dur and skips ahead — Dol Gul Dur keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -47611,7 +47648,8 @@
   "Dorvinion",
   "Dol Amroth",
   "Dunland",
-  "Mahud"
+  "Mahud",
+  "Imraldris"
  ],
  "pendingReview": false
 }
