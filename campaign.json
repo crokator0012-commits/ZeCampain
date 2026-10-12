@@ -139,7 +139,7 @@
    "id": "Rachrohir",
    "name": "Rachrohir",
    "color": "#9B3A21",
-   "treasury": 7856,
+   "treasury": 56,
    "capital": "Province_455",
    "zeal": 9
   },
@@ -968,8 +968,24 @@
    "availableBldOwner": {
     "grain_farm": "Balcoth"
    },
-   "upg": null,
-   "buildQueue": [],
+   "upg": {
+    "to": 1,
+    "payer": "Rachrohir",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rachrohir",
+     "cost": 900,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3570,7 +3586,13 @@
    "availableBldOwner": {
     "grain_farm": "Rachrohir"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rachrohir",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
    "buildQueue": [
     {
      "key": "road",
@@ -3578,6 +3600,15 @@
      "cost": 0,
      "startedTurn": 3,
      "startedDate": "Autumn 1418"
+    },
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rachrohir",
+     "cost": 900,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
     }
    ],
    "raid": null
@@ -5690,7 +5721,13 @@
    "availableBldOwner": {
     "timber": "Rachrohir"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rachrohir",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8974,7 +9011,7 @@
    "name": "Host of Province_455",
    "faction": "Rachrohir",
    "men": 1380,
-   "at": "Province_428",
+   "at": "Province_456",
    "order": null,
    "units": [
     "rachrohir_mercs_clan_raiders",
@@ -10112,6 +10149,69 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts upgrading Grain Farm at Province_437 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts upgrading Grain Farm at Province_376 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Province_376 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Province_437 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir starts construction: Province_467 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_467 → Province_456",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_455 moved Province_428 → Province_467",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rachrohir grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -41082,7 +41182,8 @@
   "Dale",
   "Lostladen Tribes",
   "Isengard",
-  "Rhurrim"
+  "Rhurrim",
+  "Rachrohir"
  ],
  "pendingReview": false
 }
