@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 4951,
+   "treasury": 351,
    "capital": "Province_400",
    "zeal": 9
   },
@@ -1459,7 +1459,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "West Far Harad"
+   "displayName": "South West Harad"
   },
   {
    "id": "Province_432",
@@ -2672,7 +2672,35 @@
     "blacksmith": "Isengard"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "stone_quarry",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Isengard",
+     "cost": 850,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    },
+    {
+     "key": "copper_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Isengard",
+     "cost": 1100,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    },
+    {
+     "key": "blacksmith",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Isengard",
+     "cost": 1250,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -7823,7 +7851,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "Central far harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10125,9 +10153,67 @@
    ],
    "upkeep": 4250,
    "_startCost": 7125
+  },
+  {
+   "name": "Host of Province_400",
+   "faction": "Isengard",
+   "men": 240,
+   "at": "Province_400",
+   "order": null,
+   "units": [
+    "isengard_uruk_hai_archers",
+    "isengard_half_orc_axes"
+   ],
+   "xp": [
+    1,
+    1
+   ],
+   "upkeep": 700
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard mustered Host of Province_400 at Province_400 (2 regiments · 1,400 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Blacksmith at Province_400 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Copper Mine at Province_400 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Stone Quarry at Province_400 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -40781,7 +40867,8 @@
  "moved": [
   "Ered Luin",
   "Dale",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Isengard"
  ],
  "pendingReview": false
 }
