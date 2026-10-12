@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 8325,
+   "treasury": 425,
    "capital": "Province_388",
    "zeal": 9
   },
@@ -3605,7 +3605,17 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Dale",
+     "cost": 900,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -8625,7 +8635,13 @@
    "availableBldOwner": {
     "goat_pen": "Dale"
    },
-   "upg": null,
+   "upg": {
+    "to": 3,
+    "payer": "Dale",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 7000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9870,7 +9886,7 @@
    "name": "Host of Province_388",
    "faction": "Dale",
    "men": 1340,
-   "at": "Province_370",
+   "at": "Province_379",
    "order": null,
    "units": [
     "dale_spear_militia",
@@ -10092,6 +10108,41 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts construction: Province_455_split_1 → fortified city (large) (7000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale starts upgrading Grain Farm at Province_13 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_388 moved Province_370 → Province_379",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dale grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -40680,7 +40731,8 @@
   }
  ],
  "moved": [
-  "Ered Luin"
+  "Ered Luin",
+  "Dale"
  ],
  "pendingReview": false
 }
