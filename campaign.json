@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 85,
+   "treasury": 735,
    "capital": "Province_409",
    "zeal": 9
   },
@@ -758,7 +758,7 @@
    "bldLevel": {
     "barracks": 3,
     "healing_herb_garden": 2,
-    "blacksmith": 1
+    "blacksmith": 2
    },
    "cx": 1883.6418552757411,
    "cy": 574.5635957921581,
@@ -3169,7 +3169,8 @@
    "move": 2,
    "garrison": 7500,
    "bld": [
-    "iron_mine"
+    "iron_mine",
+    "healing_herb_garden"
    ],
    "adj": [
     "Harondor",
@@ -3214,7 +3215,8 @@
    ],
    "displayName": "Eregion",
    "bldLevel": {
-    "iron_mine": 1
+    "iron_mine": 3,
+    "healing_herb_garden": 3
    },
    "cx": 1746.4308975001015,
    "cy": 816.0118565840586,
@@ -3222,10 +3224,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "iron_mine"
+    "iron_mine",
+    "healing_herb_garden"
    ],
    "availableBldOwner": {
-    "iron_mine": "Imraldris"
+    "iron_mine": "Imraldris",
+    "healing_herb_garden": "Imraldris"
    },
    "upg": null,
    "buildQueue": [],
@@ -8026,7 +8030,7 @@
     "Province_466"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 1431.9597626343893,
    "cy": 595.7673284070062,
@@ -9288,7 +9292,7 @@
   {
    "name": "Host of Province_409",
    "faction": "Imraldris",
-   "men": 960,
+   "men": 840,
    "at": "Province_409",
    "order": null,
    "units": [
@@ -9299,22 +9303,20 @@
     "imraldris_noldorin_horsemen",
     "imraldris_noldorin_horsemen",
     "imraldris_rivendell_bows",
-    "imraldris_rivendell_bows",
     "imraldris_rivendell_bows"
    ],
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
    ],
-   "upkeep": 6525,
-   "_startCost": 12000
+   "upkeep": 6000,
+   "_startCost": 13050
   },
   {
    "name": "Host of Province_393",
@@ -10058,25 +10060,156 @@
    ],
    "upkeep": 1362.5,
    "_startCost": 1400
-  },
-  {
-   "name": "Host of Province_409",
-   "faction": "Imraldris",
-   "men": 240,
-   "at": "Province_409",
-   "order": null,
-   "units": [
-    "imraldris_imladris_swordsmen",
-    "imraldris_imladris_swordsmen"
-   ],
-   "xp": [
-    1,
-    1
-   ],
-   "upkeep": 1200
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_401 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_409 moved Province_409 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Blacksmith at Province_409 reaches Level 2 — it now grants +2 chevrons to regiments mustered here.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Blacksmith at Province_409 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_401 reaches Level 3 — it now yields 200 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Healing Herb Garden at Province_401 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_401 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Healing Herb Garden at Province_401 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden completed at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts construction: Healing Herb Garden at Province_401 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs is no longer available at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Healing Herb Garden at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Healing Herbs at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herbs is no longer available at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris may construct Healing Herbs at Province_401.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_461 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Grain Farm at Province_461 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_401 reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Iron Mine at Province_401 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_401 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Imraldris starts upgrading Iron Mine at Province_401 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
