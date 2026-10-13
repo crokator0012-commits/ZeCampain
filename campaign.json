@@ -4993,11 +4993,11 @@
    "hex": "#22b14c",
    "playable": true,
    "owner": "Gondor",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "fishing_jetties"
    ],
