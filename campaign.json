@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 1123,
+   "treasury": 73,
    "capital": "Province_17",
    "zeal": 9
   },
@@ -8996,7 +8996,7 @@
    "name": "Host of Province_305",
    "faction": "Mordor",
    "men": 2220,
-   "at": "Province_305",
+   "at": "Province_413",
    "order": null,
    "units": [
     "mordor_gothmog",
@@ -9061,10 +9061,10 @@
     "mordor_mordor_orc_spears",
     "mordor_mordor_orc_spears",
     "mordor_mordor_orc_bow_rabble",
-    "mordor_mordor_orc_bow_rabble",
-    "mordor_mordor_orc_bow_rabble",
     "mordor_warg_riders",
-    "mordor_othrod"
+    "mordor_othrod",
+    "mordor_aor_morgul_raiders",
+    "mordor_aor_morgul_raiders"
    ],
    "xp": [
     0,
@@ -9083,7 +9083,7 @@
     0,
     0
    ],
-   "upkeep": 5087.5,
+   "upkeep": 5612.5,
    "_startCost": 10175
   },
   {
@@ -10110,6 +10110,62 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor ends its turn — Lothlorien to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor reinforced Host of Province_17 at Province_305 (+2 regiments · 1,700 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_305 moved Province_305 → Province_413",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_305 moved Province_413 → Province_305",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 disbands Mordor Orc Bow Rabble at Province_305 — 325g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 disbands Mordor Orc Bow Rabble at Province_305 — 325g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_305 moved Province_305 → Province_413",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mordor grew tired of waiting on Lothlorien and skips ahead — Lothlorien keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -49557,7 +49613,8 @@
   "Imraldris",
   "Lindon",
   "Umbar",
-  "Dol Gul Dur"
+  "Dol Gul Dur",
+  "Mordor"
  ],
  "pendingReview": false
 }
