@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 3348,
+   "treasury": 1348,
    "capital": "Province_454",
    "zeal": 9
   },
@@ -3405,7 +3405,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6341,7 +6341,13 @@
    "availableBldOwner": {
     "road": "Dol Gul Dur"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dol Gul Dur",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6856,7 +6862,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7862,7 +7868,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10104,6 +10110,20 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur ends its turn — Lothlorien to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Dol Gul Dur starts construction: Province_351 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -22878,7 +22898,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 3,
+ "active": 5,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -49536,7 +49556,8 @@
   "Mahud",
   "Imraldris",
   "Lindon",
-  "Umbar"
+  "Umbar",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
