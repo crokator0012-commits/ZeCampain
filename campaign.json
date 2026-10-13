@@ -253,7 +253,7 @@
    "id": "Feredrim",
    "name": "Feredrim",
    "color": "#4F7A4E",
-   "treasury": 15931,
+   "treasury": 5281,
    "capital": "Province_460",
    "zeal": 9,
    "npc": true
@@ -317,7 +317,7 @@
    "name": "Harondor",
    "color": "#52efa7",
    "treasury": 9230,
-   "capital": "Province_5",
+   "capital": null,
    "zeal": 3,
    "npc": true
   }
@@ -830,14 +830,16 @@
    "modern": "Province 5",
    "hex": "#00a2e8",
    "playable": true,
-   "owner": "Harondor",
+   "owner": "Gondor",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks",
+    "copper_mine"
    ],
    "adj": [
     "Province_32",
@@ -855,7 +857,9 @@
    ],
    "displayName": "Harandor",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2,
+    "barracks": 3,
+    "copper_mine": 1
    },
    "cx": 2401.4060549501273,
    "cy": 2075.7259216890443,
@@ -863,10 +867,14 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks",
+    "copper_mine"
    ],
    "availableBldOwner": {
-    "grain_farm": "Harondor"
+    "grain_farm": "Harondor",
+    "barracks": "Feredrim",
+    "copper_mine": "Feredrim"
    },
    "upg": null,
    "buildQueue": [],
@@ -4984,13 +4992,15 @@
    "modern": "Province 32",
    "hex": "#22b14c",
    "playable": true,
-   "owner": "Harondor",
+   "owner": "Gondor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "fishing_jetties"
+   ],
    "adj": [
     "Province_208",
     "Province_295",
@@ -5006,14 +5016,20 @@
     "Province_72"
    ],
    "displayName": "East harondor",
-   "bldLevel": {},
+   "bldLevel": {
+    "fishing_jetties": 2
+   },
    "cx": 2151.215950354994,
    "cy": 2014.1390710530595,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "fishing_jetties"
+   ],
+   "availableBldOwner": {
+    "fishing_jetties": "Feredrim"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6933,7 +6949,7 @@
    "modern": "Province 462",
    "hex": "#ff7f27",
    "playable": true,
-   "owner": "Lostladen Tribes",
+   "owner": "Harondor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8183,7 +8199,7 @@
    "modern": "Province 469",
    "hex": "#fff200",
    "playable": true,
-   "owner": "Harondor",
+   "owner": "Gondor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -8200,7 +8216,7 @@
    ],
    "displayName": "southern harandor",
    "bldLevel": {
-    "fishing_jetties": 1
+    "fishing_jetties": 2
    },
    "cx": 2154.34706870634,
    "cy": 2182.3536121673005,
@@ -9527,7 +9543,7 @@
    "name": "Host of Province_5",
    "faction": "Harondor",
    "men": 1640,
-   "at": "Province_469",
+   "at": "Province_462",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -10124,6 +10140,307 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor annexed Province_462 (from Lostladen Tribes)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor occupied Province_462 (held by Lostladen Tribes)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_5 moved Province_469 → Province_462",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_469 (from Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_469 (held by Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_5 (from Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_5 (held by Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_32 (from Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_32 (held by Feredrim)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_5 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Barracks at Province_5 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine completed at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Copper Mine at Province_5 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Copper Mine at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_5 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Barracks at Province_5 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks completed at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Barracks at Province_5 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Barracks at Province_5.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_32 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Fishing Jetties at Province_32 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties completed at Province_32.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts construction: Fishing Jetties at Province_32 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim may construct Fishing Jetties at Province_32.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Fishing Jetties at Province_469 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Fishing Jetties at Province_469 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim annexed Province_32 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim occupied Province_32 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim annexed Province_469 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim occupied Province_469 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Province_469: construction declined — Gondor refunded 1,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts upgrading Fishing Jetties at Province_469 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_5 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim starts upgrading Grain Farm at Province_5 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim annexed Province_5 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Feredrim occupied Province_5 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_469 (from Harondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_469 (held by Harondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Harondor's capital falls — Province_5 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_5 (from Harondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_5 (held by Harondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor annexed Province_32 (from Harondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor occupied Province_32 (held by Harondor)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
