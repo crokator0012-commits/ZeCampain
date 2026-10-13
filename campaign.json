@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 5205,
+   "treasury": 5,
    "capital": "Province_260",
    "zeal": 9
   },
@@ -3014,7 +3014,13 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8737,8 +8743,8 @@
   {
    "name": "Host of Province_127",
    "faction": "Rohan",
-   "men": 1480,
-   "at": "Province_127",
+   "men": 2140,
+   "at": "Province_27",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -8747,69 +8753,77 @@
     "rohan_axe_theigns",
     "rohan_axe_theigns",
     "rohan_mustered_spears",
-    "rohan_mustered_spears",
-    "rohan_mustered_spears",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_rohan_horse_archers",
-    "rohan_rohan_horse_archers",
+    "rohan_scouts_of_rohan",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark",
+    "rohan_aor_eored_of_the_east_fold",
+    "rohan_aor_eored_of_the_east_fold",
+    "rohan_sword_theigns",
+    "rohan_sword_theigns",
+    "rohan_sword_theigns",
+    "rohan_musterd_axemen",
+    "rohan_mustered_spears"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 7825,
+   "_startCost": 9925
+  },
+  {
+   "name": "Host of Province_44",
+   "faction": "Rohan",
+   "men": 1960,
+   "at": "Province_260",
+   "order": null,
+   "units": [
+    "rohan_eomer",
+    "rohan_aor_eored_of_the_east_fold",
+    "rohan_yeomen_of_the_mark",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_musterd_axemen",
+    "rohan_mustered_spears",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark",
+    "rohan_scouts_of_rohan",
     "rohan_scouts_of_rohan"
    ],
    "xp": [
     0,
     0,
     0,
-    1,
     0,
     0,
     0,
     0,
-    1,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 4962.5,
-   "_startCost": 9925
-  },
-  {
-   "name": "Host of Province_44",
-   "faction": "Rohan",
-   "men": 2100,
-   "at": "Province_127",
-   "order": null,
-   "units": [
-    "rohan_eomer",
-    "rohan_sword_theigns",
-    "rohan_sword_theigns",
-    "rohan_sword_theigns",
-    "rohan_aor_eored_of_the_east_fold",
-    "rohan_aor_eored_of_the_east_fold",
-    "rohan_aor_eored_of_the_east_fold",
-    "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_musterd_axemen"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    1,
-    1,
     0,
     0,
     0,
@@ -8821,7 +8835,7 @@
     0,
     0
    ],
-   "upkeep": 7612.5,
+   "upkeep": 6350,
    "_startCost": 15225
   },
   {
@@ -10110,6 +10124,153 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan ends its turn — Lothlorien to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Province_197 → unfortified city (2 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan reinforced Host of Province_44 at Province_260 (+2 regiments · 1 450 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan reinforced Host of Province_44 at Province_260 (+3 regiments · 2 400 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 disbands Rohan Horse Archers at Province_260 — 650g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_21 → Province_260",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_44 moved Province_127 → Province_21",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_127 moved Province_127 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mustered Spears transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mustered Axemen transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sword Theigns transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sword Theigns transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sword Theigns transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Eored of the East Fold transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Eored of the East Fold transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mustered Spears transfers from Host of Province_127 to Host of Province_44 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Mustered Spears transfers from Host of Province_127 to Host of Province_44 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Yeomen of the Mark transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Yeomen of the Mark transfers from Host of Province_44 to Host of Province_127 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan Horse Archers transfers from Host of Province_127 to Host of Province_44 at Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan grew tired of waiting on Lothlorien and skips ahead — Lothlorien keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -49614,7 +49775,8 @@
   "Lindon",
   "Umbar",
   "Dol Gul Dur",
-  "Mordor"
+  "Mordor",
+  "Rohan"
  ],
  "pendingReview": false
 }
