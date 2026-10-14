@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 2855,
+   "treasury": 5,
    "capital": "Province_16",
    "zeal": 6
   },
@@ -9142,8 +9142,8 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1260,
-   "at": "Province_31",
+   "men": 1660,
+   "at": "Province_16",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9156,7 +9156,10 @@
     "lothlorien_galadhon_archers",
     "lothlorien_galadhon_archers",
     "lothlorien_lorien_outriders",
-    "lothlorien_lorien_outriders"
+    "lothlorien_lorien_outriders",
+    "lothlorien_naith_infantry",
+    "lothlorien_amroth_sentinels",
+    "lothlorien_amroth_sentinels"
    ],
    "xp": [
     0,
@@ -9169,9 +9172,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5500,
+   "upkeep": 6925,
    "_startCost": 11000,
    "fort": false
   },
@@ -10140,6 +10146,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Lothlorien reinforced Host of Province_16 at Province_16 (+3 regiments · 2,850 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_16 moved Province_31 → Province_16",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -23446,7 +23473,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 5,
+ "active": 7,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -50107,7 +50134,8 @@
   "Umbar",
   "Dol Gul Dur",
   "Mordor",
-  "Rohan"
+  "Rohan",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
