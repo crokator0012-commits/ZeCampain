@@ -3419,7 +3419,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6884,7 +6884,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7890,7 +7890,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
