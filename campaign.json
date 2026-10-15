@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 5588,
+   "treasury": 338,
    "capital": "Province_433",
    "zeal": 9
   },
@@ -3419,7 +3419,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6884,7 +6884,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {},
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -7890,7 +7890,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9452,7 +9452,7 @@
    "name": "Host of Province_390_split_1",
    "faction": "Gondor",
    "men": 2340,
-   "at": "Province_433",
+   "at": "Province_413",
    "order": null,
    "units": [
     "gondor_faramir",
@@ -10143,9 +10143,70 @@
     0
    ],
    "_startCost": 750
+  },
+  {
+   "name": "Host of Province_12",
+   "faction": "Gondor",
+   "men": 880,
+   "at": "Province_12",
+   "order": null,
+   "units": [
+    "gondor_aor_ringlovale_men_at_arms",
+    "gondor_aor_ringlovale_men_at_arms",
+    "gondor_aor_pinnath_gelin_spearmen",
+    "gondor_aor_pinnath_gelin_spearmen",
+    "gondor_aor_blackroot_vale_archers",
+    "gondor_aor_blackroot_vale_archers",
+    "gondor_aor_blackroot_vale_archers"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 2625
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor mustered Host of Province_12 at Province_12 (7 regiments · 5,250 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Osgiliath → Province_413",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_433 → Osgiliath",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -50135,7 +50196,8 @@
   "Dol Gul Dur",
   "Mordor",
   "Rohan",
-  "Lothlorien"
+  "Lothlorien",
+  "Gondor"
  ],
  "pendingReview": false
 }
