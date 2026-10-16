@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 2153,
+   "treasury": 1253,
    "capital": "Province_9",
    "zeal": 9
   },
@@ -4503,7 +4503,7 @@
    ],
    "displayName": "iron hills",
    "bldLevel": {
-    "iron_mine": 2,
+    "iron_mine": 3,
     "barracks": 2,
     "goat_pen": 1
    },
@@ -4523,17 +4523,7 @@
     "goat_pen": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Iron Hills",
-     "cost": 1750,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7515,7 +7505,7 @@
     "Province_9"
    ],
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 3240.94287109375,
    "cy": 514.9537760416666,
@@ -10121,6 +10111,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_233 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts upgrading Grain Farm at Province_233 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Mine at Province_9 reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
