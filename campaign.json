@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 3303,
+   "treasury": 353,
    "capital": "Province_9",
    "zeal": 9
   },
@@ -3429,7 +3429,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6860,7 +6860,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -7872,7 +7872,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9937,7 +9937,7 @@
   {
    "name": "Host of Province_9",
    "faction": "Iron Hills",
-   "men": 1440,
+   "men": 1800,
    "at": "Province_9",
    "order": null,
    "units": [
@@ -9952,7 +9952,10 @@
     "iron_hills_iron_hill_crossbows",
     "iron_hills_dwarven_lumberjacks",
     "iron_hills_ironhorn_cavarly",
-    "iron_hills_iron_hill_crossbows"
+    "iron_hills_iron_hill_crossbows",
+    "iron_hills_mattock_warriors",
+    "iron_hills_mattock_warriors",
+    "iron_hills_dwarven_axe_infantry"
    ],
    "xp": [
     0,
@@ -9966,9 +9969,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5612.5,
+   "upkeep": 7087.5,
    "_startCost": 9775
   },
   {
@@ -10157,6 +10163,41 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_424 → Province_9",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_9 moved Province_9 → Province_424",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills reinforced Host of Province_9 at Province_9 (+3 regiments · 2,950 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -52935,7 +52976,8 @@
   "Gondor",
   "Khand",
   "Woodland Realm",
-  "Rhudaur"
+  "Rhudaur",
+  "Iron Hills"
  ],
  "pendingReview": false
 }
