@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 353,
+   "treasury": 3303,
    "capital": "Province_9",
    "zeal": 9
   },
@@ -3429,7 +3429,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -5871,7 +5871,7 @@
    ],
    "bldLevel": {
     "barracks": 1,
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 1285.1546527395512,
    "cy": 208.4398721855994,
@@ -5887,17 +5887,7 @@
     "barracks": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gundabad",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null,
    "displayName": "Fornhost"
   },
@@ -6860,7 +6850,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -7872,7 +7862,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8024,7 +8014,7 @@
    "modern": "Province 461",
    "hex": "#ff7a05",
    "playable": true,
-   "owner": "Imraldris",
+   "owner": "Southern Endwaith",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -8075,7 +8065,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "goat_pen"
+   ],
    "adj": [
     "Province_25",
     "Province_260",
@@ -8086,7 +8078,9 @@
     "Province_422",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "goat_pen": 1
+   },
    "cx": 1547.5251418104467,
    "cy": 119.53143464901915,
    "siege": null,
@@ -8099,15 +8093,7 @@
     "goat_pen": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "payer": "Gundabad",
-     "cost": 500,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8522,7 +8508,7 @@
    ],
    "displayName": "mount gundabad",
    "bldLevel": {
-    "goat_pen": 1
+    "goat_pen": 2
    },
    "cx": 1778.7447226313207,
    "cy": 230.93154420989472,
@@ -8536,17 +8522,7 @@
     "goat_pen": "Gundabad"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Gundabad",
-     "cost": 900,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9179,10 +9155,10 @@
    ],
    "xp": [
     0,
-    0
+    1
    ],
    "upkeep": 1100,
-   "_startCost": 9900
+   "_startCost": 2200
   },
   {
    "name": "Host of Province_442",
@@ -9937,7 +9913,7 @@
   {
    "name": "Host of Province_9",
    "faction": "Iron Hills",
-   "men": 1800,
+   "men": 1440,
    "at": "Province_9",
    "order": null,
    "units": [
@@ -9952,10 +9928,7 @@
     "iron_hills_iron_hill_crossbows",
     "iron_hills_dwarven_lumberjacks",
     "iron_hills_ironhorn_cavarly",
-    "iron_hills_iron_hill_crossbows",
-    "iron_hills_mattock_warriors",
-    "iron_hills_mattock_warriors",
-    "iron_hills_dwarven_axe_infantry"
+    "iron_hills_iron_hill_crossbows"
    ],
    "xp": [
     0,
@@ -9969,12 +9942,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7087.5,
+   "upkeep": 5612.5,
    "_startCost": 9775
   },
   {
@@ -10166,36 +10136,36 @@
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Iron Hills ends its turn — Erebor to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 4,
-   "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_9 moved Province_424 → Province_9",
+   "txt": "Southern Endwaith annexed Province_461 (from Imraldris)",
    "kind": "",
    "detail": null
   },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Host of Province_9 moved Province_9 → Province_424",
+   "txt": "Southern Endwaith occupied Province_461 (held by Imraldris)",
    "kind": "",
    "detail": null
   },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Iron Hills reinforced Host of Province_9 at Province_9 (+3 regiments · 2,950 castas)",
-   "kind": "battle",
+   "txt": "Goat Pen at Province_384 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
    "detail": null
   },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
-   "txt": "Iron Hills grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
-   "kind": "turn",
+   "txt": "Goat Pen at Province_380 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen completed at Province_443.",
+   "kind": "",
    "detail": null
   },
   {
@@ -52976,8 +52946,7 @@
   "Gondor",
   "Khand",
   "Woodland Realm",
-  "Rhudaur",
-  "Iron Hills"
+  "Rhudaur"
  ],
  "pendingReview": false
 }
