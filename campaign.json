@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 5,
+   "treasury": 1100,
    "capital": "Province_260",
    "zeal": 9
   },
@@ -2475,7 +2475,8 @@
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "barracks"
+    "barracks",
+    "stone_quarry"
    ],
    "adj": [
     "Province_197",
@@ -2487,7 +2488,8 @@
    ],
    "displayName": "Eastfold",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 1,
+    "stone_quarry": 1
    },
    "cx": 2111.1171286095328,
    "cy": 1541.9248521396266,
@@ -2495,10 +2497,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "barracks"
+    "barracks",
+    "stone_quarry"
    ],
    "availableBldOwner": {
-    "barracks": "Rohan"
+    "barracks": "Rohan",
+    "stone_quarry": "Rohan"
    },
    "upg": null,
    "buildQueue": [],
@@ -3007,21 +3011,29 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [
     "Province_28",
     "Province_303",
     "Province_433"
    ],
    "displayName": "Fords",
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 2227.1202901470883,
    "cy": 1542.6018537175096,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Rohan"
+   },
    "upg": {
     "to": 1,
     "payer": "Rohan",
@@ -3588,7 +3600,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_21",
     "Province_27",
@@ -3598,14 +3612,20 @@
     "Province_412",
     "Province_44"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1845.3435234175975,
    "cy": 1324.4224965706446,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null,
@@ -4079,7 +4099,8 @@
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "barracks"
+    "barracks",
+    "copper_mine"
    ],
    "adj": [
     "Province_127",
@@ -4095,7 +4116,8 @@
    ],
    "displayName": "Eastern Riddermark",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 1,
+    "copper_mine": 1
    },
    "cx": 2128.246662936616,
    "cy": 1432.823675165854,
@@ -4103,10 +4125,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "barracks"
+    "barracks",
+    "copper_mine"
    ],
    "availableBldOwner": {
-    "barracks": "Rohan"
+    "barracks": "Rohan",
+    "copper_mine": "Rohan"
    },
    "upg": null,
    "buildQueue": [],
@@ -4842,7 +4866,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_127",
     "Province_22",
@@ -4857,14 +4883,20 @@
     "Province_468"
    ],
    "displayName": "Westfold",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1766.0813581744019,
    "cy": 1324.1996472274282,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -5906,7 +5938,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_127",
     "Province_19",
@@ -5924,14 +5958,20 @@
     "Province_424",
     "Province_72"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1916.3462312335553,
    "cy": 1392.7478718464633,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -6128,7 +6168,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_127",
     "Province_19",
@@ -6143,14 +6185,20 @@
     "Province_72"
    ],
    "displayName": "West Emmet",
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 1938.9775403998904,
    "cy": 1293.8609513375332,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -7199,7 +7247,9 @@
    "value": 500,
    "move": 2,
    "garrison": 7500,
-   "bld": [],
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [
     "Province_127",
     "Province_21",
@@ -7210,14 +7260,20 @@
     "Province_376"
    ],
    "displayName": "Dunharrow",
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 1867.8487781272684,
    "cy": 1459.4727800629082,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Rohan"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8624,21 +8680,29 @@
    "value": 500,
    "move": 2,
    "garrison": 7500,
-   "bld": [],
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [
     "Province_371",
     "Province_413",
     "Province_433",
     "Province_446"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 2385.307317073171,
    "cy": 1617.870731707317,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Gondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -8654,17 +8718,25 @@
    "value": 500,
    "move": 2,
    "garrison": 7500,
-   "bld": [],
+   "bld": [
+    "stone_quarry"
+   ],
    "adj": [],
    "displayName": "Cair Andros",
-   "bldLevel": {},
+   "bldLevel": {
+    "stone_quarry": 1
+   },
    "cx": 2371.888579387187,
    "cy": 1558.6295264623955,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "stone_quarry": "Gondor"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -10100,10 +10172,234 @@
     0
    ],
    "upkeep": 2687.5,
-   "_startCost": 5275
+   "_startCost": 5375
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Osgiliath.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Stone Quarry at Osgiliath (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Stone Quarry at Osgiliath.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_390_split_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor starts construction: Stone Quarry at Province_390_split_1 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gondor may construct Stone Quarry at Province_390_split_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine completed at Province_44.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Copper Mine at Province_44 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Copper Mine at Province_44.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_387.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Grain Farm at Province_387 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Grain Farm at Province_387.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_21.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Grain Farm at Province_21 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Grain Farm at Province_21.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_127.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Grain Farm at Province_127 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Grain Farm at Province_127.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_27.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Grain Farm at Province_27 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Grain Farm at Province_27.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_346.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Stone Quarry at Province_346 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Stone Quarry at Province_346.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_197.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Stone Quarry at Province_197 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_303.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan starts construction: Stone Quarry at Province_303 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Stone Quarry at Province_303.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Stone Quarry at Province_197.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry is no longer available at Province_303.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rohan may construct Stone Quarry at Province_303.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
