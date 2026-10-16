@@ -2191,7 +2191,7 @@
     "Province_442"
    ],
    "bldLevel": {
-    "healing_herb_garden": 2,
+    "healing_herb_garden": 3,
     "barracks": 2
    },
    "cx": 1966.1720251512636,
@@ -2208,17 +2208,7 @@
     "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "healing_herb_garden",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Lothlorien",
-     "cost": 1750,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10133,6 +10123,13 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Healing Herb Garden at Province_16 reaches Level 3 — it now yields 200 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
