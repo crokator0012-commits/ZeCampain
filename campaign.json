@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 589,
+   "treasury": 750,
    "capital": "Harondor",
    "zeal": 9
   },
@@ -9813,7 +9813,7 @@
   {
    "name": "Host of Harondor",
    "faction": "Umbar",
-   "men": 1820,
+   "men": 2080,
    "at": "Province_7",
    "order": null,
    "units": [
@@ -9831,7 +9831,9 @@
     "umbar_corsair_raiders",
     "umbar_corsair_raiders",
     "umbar_corsair_raiders",
-    "umbar_corsair_marines"
+    "umbar_corsair_marines",
+    "umbar_balik_axemen",
+    "umbar_balik_spearmen"
    ],
    "xp": [
     0,
@@ -9848,10 +9850,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4962.5,
-   "_startCost": 9900
+   "upkeep": 5575,
+   "_startCost": 10675
   },
   {
    "name": "Host of Province_10",
