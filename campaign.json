@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 2840,
+   "treasury": 140,
    "capital": "Province_432",
    "zeal": 9
   },
@@ -822,7 +822,17 @@
     "sheep_pen": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 1500,
+     "startedTurn": 4,
+     "startedDate": "Winter 1418"
+    }
+   ],
    "raid": null
   },
   {
@@ -3419,7 +3429,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -8919,8 +8929,8 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1820,
-   "at": "Province_447",
+   "men": 1940,
+   "at": "Province_432",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -8931,13 +8941,14 @@
     "rhudaur_weather_hill_scavengers",
     "rhudaur_bondi_spears",
     "rhudaur_coldfell_spearband",
-    "rhudaur_hillmen_hunters",
-    "rhudaur_hillmen_hunters",
-    "rhudaur_hillmen_hunters",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_corcurian_raiders",
     "rhudaur_bondi_spears",
-    "rhudaur_bondi_spears"
+    "rhudaur_bondi_spears",
+    "rhudaur_ettenmoor_marksmen",
+    "rhudaur_ettenmoor_marksmen",
+    "rhudaur_ettenmoor_marksmen",
+    "rhudaur_bondi_axes"
    ],
    "xp": [
     0,
@@ -8954,9 +8965,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 5450,
+   "upkeep": 6050,
    "_startCost": 10900
   },
   {
@@ -10146,6 +10158,97 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur ends its turn — Erebor to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+1 regiment · 600 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_25 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_447 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+3 regiments · 2,175 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 disbands Hillmen Hunters at Province_432 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 disbands Hillmen Hunters at Province_432 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 disbands Hillmen Hunters at Province_432 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur starts upgrading Sheep Pen at Province_447 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Rhudaur grew tired of waiting on Erebor and skips ahead — Erebor keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
@@ -52797,7 +52900,8 @@
   "Lothlorien",
   "Gondor",
   "Khand",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
