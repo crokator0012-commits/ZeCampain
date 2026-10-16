@@ -107,7 +107,7 @@
    "id": "Khand",
    "name": "Khand",
    "color": "#A85A25",
-   "treasury": 244,
+   "treasury": 3994,
    "capital": "Province_414",
    "zeal": 9
   },
@@ -6868,7 +6868,7 @@
    ],
    "displayName": "Akha Hills",
    "bldLevel": {
-    "copper_mine": 1
+    "copper_mine": 3
    },
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -6960,7 +6960,7 @@
    ],
    "displayName": "Near Harad",
    "bldLevel": {
-    "sheep_pen": 2
+    "sheep_pen": 3
    },
    "cx": 2488.565657694261,
    "cy": 2391.0772676485526,
@@ -6974,17 +6974,7 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Lostladen Tribes",
-     "cost": 1500,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7384,11 +7374,11 @@
    "hex": "#8b1a1a",
    "playable": true,
    "owner": "Khand",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -7399,7 +7389,7 @@
    ],
    "displayName": "Southern Desert Wastelands",
    "bldLevel": {
-    "grain_farm": 1
+    "grain_farm": 3
    },
    "cx": 3701.4402442679457,
    "cy": 1966.073580098906,
@@ -10176,6 +10166,69 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_385 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Grain Farm at Province_385 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine at Province_403 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Copper Mine at Province_403 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm at Province_385 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Grain Farm at Province_385 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine at Province_403 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Khand starts upgrading Copper Mine at Province_403 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_462 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
