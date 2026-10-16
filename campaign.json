@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 338,
+   "treasury": 3338,
    "capital": "Province_433",
    "zeal": 9
   },
@@ -3429,7 +3429,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -9063,7 +9063,7 @@
    "name": "Host of Province_17",
    "faction": "Mordor",
    "men": 1800,
-   "at": "Province_305",
+   "at": "Province_413",
    "order": null,
    "units": [
     "mordor_mordor_orc_warband",
@@ -9438,7 +9438,7 @@
    "name": "Host of Province_390_split_1",
    "faction": "Gondor",
    "men": 2340,
-   "at": "Province_413",
+   "at": "Province_433",
    "order": null,
    "units": [
     "gondor_faramir",
@@ -10133,17 +10133,16 @@
   {
    "name": "Host of Province_12",
    "faction": "Gondor",
-   "men": 880,
+   "men": 720,
    "at": "Province_12",
    "order": null,
    "units": [
-    "gondor_aor_ringlovale_men_at_arms",
-    "gondor_aor_ringlovale_men_at_arms",
-    "gondor_aor_pinnath_gelin_spearmen",
-    "gondor_aor_pinnath_gelin_spearmen",
-    "gondor_aor_blackroot_vale_archers",
-    "gondor_aor_blackroot_vale_archers",
-    "gondor_aor_blackroot_vale_archers"
+    "gondor_aor_pelagir_marines",
+    "gondor_aor_pelagir_marines",
+    "gondor_aor_warriors_of_lossnarch",
+    "gondor_aor_warriors_of_lossnarch",
+    "gondor_aor_warriors_of_lossnarch",
+    "gondor_steward_denethor_ii"
    ],
    "xp": [
     0,
@@ -10151,13 +10150,48 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 2625
+   "upkeep": 2687.5,
+   "_startCost": 5275
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_390_split_1 → Province_433",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Osgiliath moved Province_390_split_1 → Province_413",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Osgiliath moved Province_413 → Province_390_split_1",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_390_split_1 moved Province_413 → Province_390_split_1",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Host of Province_17 moved Province_305 → Province_413",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
