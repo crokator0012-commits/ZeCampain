@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 4351,
+   "treasury": 3200,
    "capital": "Province_400",
    "zeal": 9
   },
@@ -203,7 +203,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 2325,
+   "treasury": 2575,
    "capital": "Province_10",
    "zeal": 9
   },
@@ -2647,7 +2647,7 @@
    "bldLevel": {
     "iron_mine": 2,
     "barracks": 2,
-    "stone_quarry": 2,
+    "stone_quarry": 3,
     "copper_mine": 2,
     "blacksmith": 2
    },
@@ -5727,7 +5727,8 @@
    "garrison": 15000,
    "bld": [
     "gem_mine",
-    "barracks"
+    "barracks",
+    "gold_mine"
    ],
    "adj": [
     "Province_11",
@@ -5736,8 +5737,9 @@
    ],
    "displayName": "Erebor",
    "bldLevel": {
-    "gem_mine": 2,
-    "barracks": 2
+    "gem_mine": 4,
+    "barracks": 3,
+    "gold_mine": 4
    },
    "cx": 2463.8692858907834,
    "cy": 360.0347170743761,
@@ -5746,24 +5748,16 @@
    "bldOwner": {},
    "availableBld": [
     "barracks",
-    "gem_mine"
+    "gem_mine",
+    "gold_mine"
    ],
    "availableBldOwner": {
     "barracks": "Erebor",
-    "gem_mine": "Erebor"
+    "gem_mine": "Erebor",
+    "gold_mine": "Erebor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "gem_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Erebor",
-     "cost": 2250,
-     "startedTurn": 3,
-     "startedDate": "Autumn 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8364,7 +8358,8 @@
    "garrison": 7500,
    "bld": [
     "goat_pen",
-    "sheep_pen"
+    "sheep_pen",
+    "stone_quarry"
    ],
    "adj": [
     "Province_10",
@@ -8375,8 +8370,9 @@
     "Province_445"
    ],
    "bldLevel": {
-    "goat_pen": 1,
-    "sheep_pen": 1
+    "goat_pen": 3,
+    "sheep_pen": 3,
+    "stone_quarry": 3
    },
    "cx": 2343.4854101321166,
    "cy": 328.31099705351204,
@@ -8385,33 +8381,16 @@
    "bldOwner": {},
    "availableBld": [
     "sheep_pen",
-    "goat_pen"
+    "goat_pen",
+    "stone_quarry"
    ],
    "availableBldOwner": {
     "sheep_pen": "Erebor",
-    "goat_pen": "Erebor"
+    "goat_pen": "Erebor",
+    "stone_quarry": "Erebor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    },
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Erebor",
-     "cost": 900,
-     "startedTurn": 1,
-     "startedDate": "Spring 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9860,7 +9839,7 @@
   {
    "name": "Host of Province_10",
    "faction": "Erebor",
-   "men": 1300,
+   "men": 1900,
    "at": "Province_10",
    "order": null,
    "units": [
@@ -9874,7 +9853,12 @@
     "erebor_dwarven_warriors",
     "erebor_erebor_axe_throwers",
     "erebor_erebor_axe_throwers",
-    "erebor_gloin"
+    "erebor_gloin",
+    "erebor_dwarven_warriors",
+    "erebor_dwarven_warriors",
+    "erebor_erebor_axes",
+    "erebor_erebor_axes",
+    "erebor_dwarven_company"
    ],
    "xp": [
     0,
@@ -9887,10 +9871,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4975,
-   "_startCost": 10800
+   "upkeep": 7262.5,
+   "_startCost": 14525
   },
   {
    "name": "Host of Province_9",
@@ -10115,6 +10104,209 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry at Province_400 reaches Level 3 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Isengard starts upgrading Stone Quarry at Province_400 to Level 3 (1,400 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry at Province_378 reaches Level 3 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Stone Quarry at Province_378 to Level 3 (1,400 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry at Province_378 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Stone Quarry at Province_378 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Stone Quarry completed at Province_378.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts construction: Stone Quarry at Province_378 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor may construct Stone Quarry at Province_378.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gem Mine at Province_10 reaches Level 4 — it now yields 375 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Province_10 reaches Level 4 — it now yields 275 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Gem Mine at Province_10 to Level 4 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Gold Mine at Province_10 to Level 4 (3,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Province_10 reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Gold Mine at Province_10 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_378 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_378 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Sheep Pen at Province_378 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Goat Pen at Province_378 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Barracks at Province_10 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Barracks at Province_10 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine at Province_10 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts upgrading Gold Mine at Province_10 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gold Mine completed at Province_10.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor starts construction: Gold Mine at Province_10 (750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Erebor may construct Gold Mine at Province_10.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Goat Pen at Province_378 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Sheep Pen at Province_378 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Gem Mine at Province_10 reaches Level 3 — it now yields 250 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
