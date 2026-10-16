@@ -171,7 +171,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 3303,
+   "treasury": 2153,
    "capital": "Province_9",
    "zeal": 9
   },
@@ -4052,12 +4052,16 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "copper_mine"
+   ],
    "adj": [
     "Province_1",
     "Province_357"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "copper_mine": 1
+   },
    "cx": 3670.0260400838147,
    "cy": 491.1158047953422,
    "siege": null,
@@ -8338,7 +8342,9 @@
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm"
+   ],
    "adj": [
     "Province_233",
     "Province_260",
@@ -8347,7 +8353,9 @@
     "Province_450",
     "Province_460"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1
+   },
    "cx": 3494.708783636759,
    "cy": 580.2203766833491,
    "siege": null,
@@ -10123,6 +10131,34 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Grain Farm completed at Province_1.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts construction: Grain Farm at Province_1 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Copper Mine completed at Province_381.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter · S.R. 1418 (T.A. 3018)",
+   "txt": "Iron Hills starts construction: Copper Mine at Province_381 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter · S.R. 1418 (T.A. 3018)",
