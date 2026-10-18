@@ -635,7 +635,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Grey Havans"
+   "displayName": "Grey Havens"
   },
   {
    "id": "Province_440",
@@ -3425,7 +3425,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3497,11 +3497,11 @@
    "hex": "#757575",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
     "grain_farm"
    ],
@@ -6874,7 +6874,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -7693,11 +7693,11 @@
    "cy": 2635.6,
    "px": 35345,
    "coastal": true,
-   "tier": 2,
+   "tier": 1,
    "terrain": "plains",
-   "value": 850,
+   "value": 500,
    "move": 2,
-   "garrison": 600,
+   "garrison": 200,
    "owner": "Umbar",
    "adj": [
     "Harondor",
@@ -7882,7 +7882,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
