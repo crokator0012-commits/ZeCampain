@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 3784,
+   "treasury": 784,
    "capital": "Province_436",
    "zeal": 10
   },
@@ -2597,7 +2597,17 @@
     "timber_yard": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "timber_yard",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rhurrim",
+     "cost": 850,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3983,7 +3993,17 @@
     "gold_mine": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "gold_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rhurrim",
+     "cost": 1250,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -5634,7 +5654,17 @@
     "grain_farm": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rhurrim",
+     "cost": 900,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -8882,7 +8912,7 @@
    "name": "Host of Province_436",
    "faction": "Rhurrim",
    "men": 2080,
-   "at": "Province_458",
+   "at": "Province_460",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
@@ -10188,6 +10218,48 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim starts upgrading Gold Mine at Province_357 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim starts upgrading Grain Farm at Province_458 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim starts upgrading Timber Yard at Province_436 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_436 moved Province_458 → Province_460",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -61573,7 +61645,8 @@
   }
  ],
  "moved": [
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Rhurrim"
  ],
  "pendingReview": false
 }
