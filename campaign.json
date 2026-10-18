@@ -2799,7 +2799,7 @@
    "displayName": "Dor-En Alph",
    "bldLevel": {
     "fishing_jetties": 2,
-    "grain_farm": 1
+    "grain_farm": 2
    },
    "cx": 1891.0873060176398,
    "cy": 1891.540247850843,
@@ -2815,17 +2815,7 @@
     "grain_farm": "Dol Amroth"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Dol Amroth",
-     "cost": 900,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10176,9 +10166,56 @@
    ],
    "upkeep": 2687.5,
    "_startCost": 5375
+  },
+  {
+   "name": "Host of Province_449",
+   "faction": "Dol Amroth",
+   "men": 1160,
+   "at": "Province_449",
+   "order": null,
+   "units": [
+    "dol_amroth_knights_of_the_silver_swan",
+    "dol_amroth_princes_marksmen",
+    "dol_amroth_princes_marksmen",
+    "dol_amroth_princes_marksmen",
+    "dol_amroth_princes_marksmen",
+    "dol_amroth_princes_footmen",
+    "dol_amroth_princes_footmen",
+    "dol_amroth_princes_footmen",
+    "dol_amroth_princes_footmen",
+    "dol_amroth_amrothian_squires"
+   ],
+   "upkeep": 4412.5,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "_startCost": 8825
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Amroth raised a host at Province_449",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Grain Farm at Province_438 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
