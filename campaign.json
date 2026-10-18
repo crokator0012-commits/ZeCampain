@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 145,
+   "treasury": 7145,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -635,7 +635,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Grey Havans"
+   "displayName": "Grey Havens"
   },
   {
    "id": "Province_440",
@@ -3425,7 +3425,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6880,7 +6880,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -7888,7 +7888,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
