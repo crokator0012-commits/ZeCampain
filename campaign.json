@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorwinion",
    "color": "#7B1FA2",
-   "treasury": 3745,
+   "treasury": 2745,
    "capital": "Province_22",
    "zeal": 10
   },
@@ -8888,51 +8888,27 @@
   {
    "name": "Host of Province_436",
    "faction": "Rhurrim",
-   "men": 2080,
+   "men": 640,
    "at": "Province_460",
    "order": null,
    "units": [
     "rhurrim_loke_rim_stormriders",
     "rhurrim_rhunic_savages",
-    "rhurrim_rhunic_savages",
-    "rhurrim_rhunic_warroirs",
-    "rhurrim_clan_huntsmen",
-    "rhurrim_rhunic_archers",
     "rhurrim_rhunic_archers",
     "haerrim_aor_haerrim_outriders",
-    "haerrim_aor_haerrim_outriders",
     "haerrim_aor_haerrim_infantry",
-    "haerrim_aor_haerrim_infantry",
-    "haerrim_aor_haerrim_infantry",
-    "rhurrim_rhunic_archers",
-    "rhurrim_clan_axemen",
-    "rhurrim_clan_axemen",
-    "rhurrim_clan_raiders",
-    "rhurrim_clan_spearmen",
-    "rhurrim_clan_spearmen"
+    "haerrim_aor_haerrim_infantry"
    ],
    "xp": [
+    2,
     0,
+    3,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    1,
+    1
    ],
-   "upkeep": 6662.5,
-   "_startCost": 10975
+   "upkeep": 2812.5,
+   "_startCost": 13325
   },
   {
    "name": "Host of Province_432",
@@ -10233,9 +10209,27 @@
     0
    ],
    "_startCost": 0
+  },
+  {
+   "name": "Host of Province_22",
+   "faction": "Dorvinion",
+   "men": 0,
+   "at": "Province_22",
+   "order": null,
+   "units": [],
+   "upkeep": 0,
+   "xp": [],
+   "_startCost": 0
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion raised a host at Province_22",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
