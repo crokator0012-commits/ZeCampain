@@ -254,7 +254,7 @@
    "name": "Feredrim",
    "color": "#4F7A4E",
    "treasury": 6541,
-   "capital": "Province_460",
+   "capital": null,
    "zeal": 10,
    "npc": true
   },
@@ -937,11 +937,11 @@
    "hex": "#e0e0e0",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -968,13 +968,7 @@
    "availableBldOwner": {
     "grain_farm": "Balcoth"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rachrohir",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -1549,7 +1543,7 @@
    ],
    "displayName": "Lune Highlands",
    "bldLevel": {
-    "goat_pen": 2
+    "goat_pen": 3
    },
    "cx": 866.145450209338,
    "cy": 280.75698235200593,
@@ -1563,17 +1557,7 @@
     "goat_pen": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Ered Luin",
-     "cost": 1500,
-     "startedTurn": 4,
-     "startedDate": "Winter 1418"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -2741,7 +2725,7 @@
    "modern": "Province 348",
    "hex": "#5a189a",
    "playable": true,
-   "owner": "Feredrim",
+   "owner": "Rhurrim",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -3513,11 +3497,11 @@
    "hex": "#757575",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -3589,13 +3573,7 @@
    "availableBldOwner": {
     "grain_farm": "Rachrohir"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rachrohir",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -5679,11 +5657,11 @@
    "hex": "#ffeb3b",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [],
    "adj": [
     "Province_428",
@@ -5701,13 +5679,7 @@
    "bldOwner": {},
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": {
-    "to": 1,
-    "payer": "Rachrohir",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6110,7 +6082,7 @@
    "modern": "Province 460",
    "hex": "#ff6b35",
    "playable": true,
-   "owner": "Feredrim",
+   "owner": "Rhurrim",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -7721,11 +7693,11 @@
    "cy": 2635.6,
    "px": 35345,
    "coastal": true,
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 7500,
+   "garrison": 600,
    "owner": "Umbar",
    "adj": [
     "Harondor",
@@ -7740,13 +7712,7 @@
     "stables",
     "fishing_jetties"
    ],
-   "upg": {
-    "to": 2,
-    "payer": "Umbar",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 4000
-   },
+   "upg": null,
    "raid": null,
    "occ": null,
    "displayName": "lesser umbar",
@@ -10224,6 +10190,48 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Near Harad completes its works — now a fortified city (small).",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Goat Pen at Province_4 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_376 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_437 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_467 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Feredrim's capital falls — Province_460 is lost.",
+   "kind": "battle",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
