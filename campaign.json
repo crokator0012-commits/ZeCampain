@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorwinion",
    "color": "#7B1FA2",
-   "treasury": 2745,
+   "treasury": 245,
    "capital": "Province_22",
    "zeal": 10
   },
@@ -1010,7 +1010,17 @@
     "sheep_pen": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dorvinion",
+     "cost": 1500,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3478,7 +3488,17 @@
     "grain_farm": "Dorvinion"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dorvinion",
+     "cost": 1500,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -8669,7 +8689,17 @@
     "goat_pen": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "goat_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dorvinion",
+     "cost": 1500,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -10213,16 +10243,59 @@
   {
    "name": "Host of Province_22",
    "faction": "Dorvinion",
-   "men": 0,
+   "men": 1040,
    "at": "Province_22",
    "order": null,
-   "units": [],
-   "upkeep": 0,
-   "xp": [],
-   "_startCost": 0
+   "units": [
+    "dorwinion_mercs_merchant_escorts",
+    "dorwinion_mercs_merchant_escorts",
+    "dorwinion_vineland_men_at_arms",
+    "dorwinion_vineland_men_at_arms",
+    "dorwinion_vineland_men_at_arms",
+    "dorwinion_vineland_yardpatrollers",
+    "dorwinion_vineland_yardpatrollers",
+    "dorwinion_vineland_yardpatrollers",
+    "dorwinion_vineland_yardpatrollers",
+    "dorwinion_earls_of_the_vinter_court"
+   ],
+   "upkeep": 4612.5,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "_startCost": 7500
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion starts upgrading Goat Pen at Province_455_split_1 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion starts upgrading Sheep Pen at Province_398 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion starts upgrading Grain Farm at Province_468 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
