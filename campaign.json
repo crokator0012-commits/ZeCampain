@@ -131,7 +131,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 2710,
+   "treasury": 1060,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -1523,7 +1523,17 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fur_trappers_camp",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 1650,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3425,7 +3435,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -8944,7 +8954,7 @@
    "name": "Host of Province_432",
    "faction": "Rhudaur",
    "men": 1940,
-   "at": "Province_432",
+   "at": "Province_461",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -10275,6 +10285,48 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_25 → Province_461",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Fur Trapper's Camp at Province_432 to Level 3 (1,650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -62043,7 +62095,8 @@
   "Dale",
   "Rachrohir",
   "Dol Gul Dur",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
