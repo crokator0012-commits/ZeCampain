@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 7145,
+   "treasury": 4145,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -3631,7 +3631,8 @@
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "adj": [
     "Province_260",
@@ -3644,7 +3645,8 @@
    ],
    "displayName": "Stonehall",
    "bldLevel": {
-    "grain_farm": 2
+    "grain_farm": 2,
+    "barracks": 2
    },
    "cx": 2901.024890510949,
    "cy": 747.5347810218979,
@@ -3652,10 +3654,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "availableBldOwner": {
-    "grain_farm": "Dale"
+    "grain_farm": "Dale",
+    "barracks": "Dale"
    },
    "upg": {
     "to": 3,
@@ -10200,6 +10204,41 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Barracks at Province_13 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts upgrading Barracks at Province_13 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Barracks completed at Province_13.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts construction: Barracks at Province_13 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale may construct Barracks at Province_13.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
