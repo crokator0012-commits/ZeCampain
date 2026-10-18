@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 3868,
+   "treasury": 1868,
    "capital": "Province_454",
    "zeal": 10
   },
@@ -635,7 +635,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Grey Havens"
+   "displayName": "Grey Havans"
   },
   {
    "id": "Province_440",
@@ -3425,7 +3425,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3497,11 +3497,11 @@
    "hex": "#757575",
    "playable": true,
    "owner": "Rachrohir",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -4639,7 +4639,13 @@
    "availableBldOwner": {
     "grain_farm": "Dol Gul Dur"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dol Gul Dur",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6874,7 +6880,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -7693,11 +7699,11 @@
    "cy": 2635.6,
    "px": 35345,
    "coastal": true,
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 600,
    "owner": "Umbar",
    "adj": [
     "Harondor",
@@ -7882,7 +7888,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10194,6 +10200,27 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur starts construction: Province_397 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -61750,7 +61777,8 @@
   "Lostladen Tribes",
   "Rhurrim",
   "Dale",
-  "Rachrohir"
+  "Rachrohir",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
