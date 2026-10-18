@@ -2346,7 +2346,7 @@
    "modern": "Province 446",
    "hex": "#efe4b0",
    "playable": true,
-   "owner": "Gondor",
+   "owner": "Mordor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -7299,7 +7299,7 @@
    "modern": "Province 413",
    "hex": "#b5e61d",
    "playable": true,
-   "owner": "Gondor",
+   "owner": "Mordor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9033,7 +9033,7 @@
    "name": "Host of Province_305",
    "faction": "Mordor",
    "men": 2220,
-   "at": "Province_413",
+   "at": "Province_446",
    "order": null,
    "units": [
     "mordor_gothmog",
@@ -9078,7 +9078,7 @@
     0
    ],
    "upkeep": 6425,
-   "_startCost": 10100
+   "_startCost": 12850
   },
   {
    "name": "Host of Province_17",
@@ -9527,46 +9527,17 @@
   {
    "name": "Host of Osgiliath",
    "faction": "Gondor",
-   "men": 1860,
-   "at": "Province_413",
+   "men": 60,
+   "at": "Province_390_split_1",
    "order": null,
    "units": [
-    "gondor_boromir",
-    "gondor_gondor_sword_militia",
-    "gondor_gondor_sword_militia",
-    "gondor_gondor_sword_militia",
-    "gondor_gondor_spear_militia",
-    "gondor_gondor_spear_militia",
-    "gondor_aor_men_of_lamedon",
-    "gondor_aor_men_of_lamedon",
-    "gondor_aor_pinnath_gelin_spearmen",
-    "gondor_aor_pinnath_gelin_spearmen",
-    "gondor_aor_anorien_patrollers",
-    "gondor_aor_anorien_patrollers",
-    "gondor_gondorbow_militia",
-    "gondor_gondorbow_militia",
-    "gondor_gondorbow_militia",
-    "gondor_gondorbow_militia"
+    "gondor_boromir"
    ],
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 5000
+   "upkeep": 725,
+   "_startCost": 10000
   },
   {
    "name": "Host of Province_5",
@@ -10208,6 +10179,48 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Mordor annexed Province_446 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Mordor occupied Province_446 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Mordor annexed Province_413 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Mordor occupied Province_413 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_305 moved Province_413 → Province_446",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Osgiliath moved Province_413 → Province_390_split_1",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
