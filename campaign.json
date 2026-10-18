@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 7145,
+   "treasury": 145,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -1473,7 +1473,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "West Far Harad"
+   "displayName": "South West Harad"
   },
   {
    "id": "Province_432",
@@ -3679,7 +3679,13 @@
    "availableBldOwner": {
     "grain_farm": "Dale"
    },
-   "upg": null,
+   "upg": {
+    "to": 3,
+    "payer": "Dale",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 7000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7910,7 +7916,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "Central far harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9872,7 +9878,7 @@
    "name": "Host of Province_388",
    "faction": "Dale",
    "men": 1340,
-   "at": "Province_379",
+   "at": "Province_13",
    "order": null,
    "units": [
     "dale_spear_militia",
@@ -10218,6 +10224,41 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts construction: Province_13 → fortified city (large) (7000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_370 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_379 → Province_370",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -61646,7 +61687,8 @@
  ],
  "moved": [
   "Lostladen Tribes",
-  "Rhurrim"
+  "Rhurrim",
+  "Dale"
  ],
  "pendingReview": false
 }
