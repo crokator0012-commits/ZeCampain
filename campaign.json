@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 4145,
+   "treasury": 745,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -8076,7 +8076,8 @@
    },
    "upg": null,
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Barrow downs"
   },
   {
    "id": "Province_443",
@@ -8631,7 +8632,7 @@
    "modern": "Province 455 — separated tile 1",
    "hex": "#3f51b5",
    "playable": true,
-   "owner": "Dale",
+   "owner": "Dorvinion",
    "tier": 3,
    "terrain": "plains",
    "value": 1300,
@@ -10199,9 +10200,63 @@
     0
    ],
    "_startCost": 8825
+  },
+  {
+   "name": "Host of Province_13",
+   "faction": "Dale",
+   "men": 1200,
+   "at": "Province_13",
+   "order": null,
+   "units": [
+    "dale_aor_rhovanion_regents",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_yeomen",
+    "dale_yeomen",
+    "dale_yeomen",
+    "dale_yeomen",
+    "dale_merchant_escorts"
+   ],
+   "upkeep": 4025,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "_startCost": 0
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale raised a host at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion annexed Province_455_split_1 (from Dale)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Dorvinion occupied Province_455_split_1 (held by Dale)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
