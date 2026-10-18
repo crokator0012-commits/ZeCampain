@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 784,
+   "treasury": 1784,
    "capital": "Province_436",
    "zeal": 10
   },
@@ -6099,7 +6099,8 @@
    "move": 2,
    "garrison": 10000,
    "bld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "adj": [
     "Province_1",
@@ -6117,7 +6118,8 @@
     "Province_458"
    ],
    "bldLevel": {
-    "grain_farm": 2
+    "grain_farm": 2,
+    "barracks": 1
    },
    "cx": 3372.000628585949,
    "cy": 843.2915836353667,
@@ -6125,10 +6127,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "grain_farm"
+    "grain_farm",
+    "barracks"
    ],
    "availableBldOwner": {
-    "grain_farm": "Feredrim"
+    "grain_farm": "Feredrim",
+    "barracks": "Rhurrim"
    },
    "upg": null,
    "buildQueue": [],
@@ -10204,6 +10208,27 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Barracks completed at Province_460.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim starts construction: Barracks at Province_460 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhurrim may construct Barracks at Province_460.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
