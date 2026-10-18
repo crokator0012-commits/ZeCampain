@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 6594,
+   "treasury": 444,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -1473,7 +1473,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "South West Harad"
+   "displayName": "West Far Harad"
   },
   {
    "id": "Province_432",
@@ -3431,7 +3431,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6866,7 +6866,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -7880,7 +7880,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "Central far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9106,24 +9106,40 @@
   {
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
-   "men": 600,
-   "at": "Province_426",
+   "men": 1620,
+   "at": "Province_359",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
     "lostladen_tribes_haradrim_archers",
     "lostladen_tribes_haradrim_archers",
-    "lostladen_tribes_desert_archers",
-    "lostladen_tribes_desert_archers"
+    "lostladen_tribes_haradrim_archers",
+    "lostladen_tribes_haradrim_archers",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_swordsmen",
+    "lostladen_tribes_haradrim_glaives",
+    "lostladen_tribes_haradrim_glaives",
+    "lostladen_tribes_haradrim_glaives"
    ],
    "xp": [
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 1875,
+   "upkeep": 4950,
    "_startCost": 4800
   },
   {
@@ -10172,6 +10188,62 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_417 → Province_359",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_359 → Province_417",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes reinforced Host of Province_359 at Province_359 (+10 regiments · 7,100 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 disbands Desert Archers at Province_359 — 475g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 disbands Desert Archers at Province_359 — 475g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_426 → Province_359",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -61500,6 +61572,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Lostladen Tribes"
+ ],
  "pendingReview": false
 }
