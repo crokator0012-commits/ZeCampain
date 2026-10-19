@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 4725,
+   "treasury": 575,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -6908,7 +6908,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -8213,7 +8213,35 @@
     "barracks": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 2000,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    },
+    {
+     "key": "blacksmith",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 1250,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    },
+    {
+     "key": "goat_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 900,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null,
    "displayName": "Dragon's Bane"
   },
@@ -9672,7 +9700,7 @@
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
-   "at": "Province_419",
+   "at": "Province_6",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -10301,6 +10329,55 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Goat Pen at Province_419 to Level 2 (900 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Blacksmith at Province_419 to Level 2 (1,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Barracks at Province_419 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_4 → Province_6",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_419 → Province_4",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -62134,7 +62211,8 @@
   "Dol Gul Dur",
   "Woodland Realm",
   "Rhudaur",
-  "Isengard"
+  "Isengard",
+  "Ered Luin"
  ],
  "pendingReview": false
 }
