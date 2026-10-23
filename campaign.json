@@ -107,7 +107,7 @@
    "id": "Khand",
    "name": "Khand",
    "color": "#A85A25",
-   "treasury": 5797,
+   "treasury": 3047,
    "capital": "Province_414",
    "zeal": 10
   },
@@ -6908,7 +6908,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 3
    },
@@ -6924,7 +6924,17 @@
     "copper_mine": "Khand"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "copper_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 4,
+     "payer": "Khand",
+     "cost": 2750,
+     "startedTurn": 5,
+     "startedDate": "Spring 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -9297,7 +9307,7 @@
    "name": "Host of Province_414",
    "faction": "Khand",
    "men": 2380,
-   "at": "Province_414",
+   "at": "Province_359",
    "order": null,
    "units": [
     "khand_bane_of_the_steppes",
@@ -10329,6 +10339,48 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Khand ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Khand starts upgrading Copper Mine at Province_403 to Level 4 (2,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_414 moved Province_414 → Province_359",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_414 moved Province_403 → Province_414",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_414 moved Province_414 → Province_403",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Khand grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -62241,7 +62293,8 @@
   "Rhudaur",
   "Isengard",
   "Ered Luin",
-  "Imraldris"
+  "Imraldris",
+  "Khand"
  ],
  "pendingReview": false
 }
