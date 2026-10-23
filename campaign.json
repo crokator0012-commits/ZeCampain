@@ -3435,7 +3435,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6920,7 +6920,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7934,7 +7934,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8887,7 +8887,7 @@
    "name": "Host of Province_44",
    "faction": "Rohan",
    "men": 1940,
-   "at": "Province_127",
+   "at": "Province_260",
    "order": null,
    "units": [
     "rohan_eomer",
@@ -9000,7 +9000,7 @@
    "name": "Host of Province_432",
    "faction": "Rhudaur",
    "men": 1940,
-   "at": "Province_461",
+   "at": "Province_25",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -10365,6 +10365,20 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_461 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 moved Province_127 → Province_260",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
