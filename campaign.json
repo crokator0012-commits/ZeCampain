@@ -10332,6 +10332,34 @@
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Imladris ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_401 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_409 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Imladris grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
    "txt": "Ered Luin ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
@@ -62212,7 +62240,8 @@
   "Woodland Realm",
   "Rhudaur",
   "Isengard",
-  "Ered Luin"
+  "Ered Luin",
+  "Imraldris"
  ],
  "pendingReview": false
 }
