@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 9045,
+   "treasury": 120,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -3435,7 +3435,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3634,7 +3634,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null,
    "displayName": "EastFold"
@@ -4931,7 +4937,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6908,7 +6920,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7797,7 +7809,13 @@
    "availableBldOwner": {
     "timber_yard": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7916,7 +7934,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8818,7 +8836,7 @@
    "name": "Host of Province_127",
    "faction": "Rohan",
    "men": 2140,
-   "at": "Province_27",
+   "at": "Province_296",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -8868,8 +8886,8 @@
   {
    "name": "Host of Province_44",
    "faction": "Rohan",
-   "men": 1960,
-   "at": "Province_260",
+   "men": 1940,
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_eomer",
@@ -8882,13 +8900,13 @@
     "rohan_musterd_axemen",
     "rohan_musterd_axemen",
     "rohan_musterd_axemen",
-    "rohan_musterd_axemen",
-    "rohan_mustered_spears",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_scouts_of_rohan",
-    "rohan_scouts_of_rohan"
+    "rohan_scouts_of_rohan",
+    "rohan_sword_theigns",
+    "rohan_sword_theigns"
    ],
    "xp": [
     0,
@@ -8909,7 +8927,7 @@
     0,
     0
    ],
-   "upkeep": 6350,
+   "upkeep": 6612.5,
    "_startCost": 15225
   },
   {
@@ -10326,9 +10344,118 @@
     0
    ],
    "_startCost": 7500
+  },
+  {
+   "name": "Host of Province_260",
+   "faction": "Rohan",
+   "men": 360,
+   "at": "Province_260",
+   "order": null,
+   "units": [
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark",
+    "rohan_yeomen_of_the_mark"
+   ],
+   "xp": [
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1200
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan mustered Host of Province_260 at Province_260 (3 regiments · 2 400 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 disbands Mustered Axemen at Province_127 — 575g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 disbands Mustered Spears at Province_127 — 500g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_127 moved Province_27 → Province_296",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 moved Province_21 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 moved Province_260 → Province_21",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan reinforced Host of Province_44 at Province_260 (+3 regiments · 2 100 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 disbands Mustered Spears at Province_260 — 500g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts construction: Province_127 → unfortified city (2 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts construction: Province_28 → unfortified city (2 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts construction: Province_27 → unfortified city (2 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
@@ -62291,7 +62418,8 @@
   "Isengard",
   "Ered Luin",
   "Imraldris",
-  "Khand"
+  "Khand",
+  "Rohan"
  ],
  "pendingReview": false
 }
