@@ -6910,7 +6910,7 @@
    ],
    "displayName": "Akah Hills",
    "bldLevel": {
-    "copper_mine": 3
+    "copper_mine": 4
    },
    "cx": 3285.010263249863,
    "cy": 2007.8557439251404,
@@ -6924,17 +6924,7 @@
     "copper_mine": "Khand"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 4,
-     "payer": "Khand",
-     "cost": 2750,
-     "startedTurn": 5,
-     "startedDate": "Spring 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10339,6 +10329,13 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring · S.R. 1419 (T.A. 3019)",
+   "txt": "Copper Mine at Province_403 reaches Level 4 — it now yields 250 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring · S.R. 1419 (T.A. 3019)",
