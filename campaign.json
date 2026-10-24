@@ -467,7 +467,7 @@
    "move": 2,
    "garrison": 50,
    "bld": [
-    "timber",
+    "timber_yard",
     "timber_yard"
    ],
    "adj": [
@@ -3452,7 +3452,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6919,7 +6919,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7937,7 +7937,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9308,7 +9308,7 @@
    "name": "Host of Province_414",
    "faction": "Khand",
    "men": 2380,
-   "at": "Province_359",
+   "at": "Province_414",
    "order": null,
    "units": [
     "khand_bane_of_the_steppes",
@@ -10296,6 +10296,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Khand ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_414 moved Province_359 → Province_414",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Khand grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -83946,6 +83967,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Khand"
+ ],
  "pendingReview": false
 }
