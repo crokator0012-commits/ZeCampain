@@ -163,7 +163,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 3106,
+   "treasury": 631,
    "capital": "Province_400",
    "zeal": 10
   },
@@ -10090,7 +10090,7 @@
   {
    "name": "Host of Province_400",
    "faction": "Isengard",
-   "men": 1360,
+   "men": 1640,
    "at": "Province_400",
    "order": null,
    "units": [
@@ -10104,7 +10104,10 @@
     "isengard_half_orc_spears",
     "isengard_uruk_hai_raiders",
     "isengard_uruk_hai_archers",
-    "isengard_half_orc_axes"
+    "isengard_half_orc_axes",
+    "isengard_wargs_of_isengrad",
+    "isengard_wargs_of_isengrad",
+    "isengard_uruk_hai_archers"
    ],
    "xp": [
     2,
@@ -10117,9 +10120,12 @@
     2,
     2,
     2,
+    2,
+    2,
+    2,
     2
    ],
-   "upkeep": 4162.5,
+   "upkeep": 5400,
    "_startCost": 1400
   },
   {
@@ -10296,6 +10302,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard reinforced Host of Province_400 at Province_400 (+3 regiments · 2,475 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -83968,7 +83995,8 @@
   }
  ],
  "moved": [
-  "Khand"
+  "Khand",
+  "Isengard"
  ],
  "pendingReview": false
 }
