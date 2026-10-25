@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 6573,
+   "treasury": 4773,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 4950,
+   "treasury": 1450,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3019,11 +3019,11 @@
    "hex": "#32cf83",
    "playable": true,
    "owner": "Rohan",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
     "stone_quarry"
    ],
@@ -3047,7 +3047,13 @@
    "availableBldOwner": {
     "stone_quarry": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 4,
+    "startedDate": "Winter 1418",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -3604,11 +3610,11 @@
    "hex": "#2cb071",
    "playable": true,
    "owner": "Rohan",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
     "grain_farm"
    ],
@@ -3635,7 +3641,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null,
    "displayName": "EastFold"
@@ -4888,11 +4900,11 @@
    "hex": "#1f7d50",
    "playable": true,
    "owner": "Rohan",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
     "grain_farm"
    ],
@@ -4924,7 +4936,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6907,7 +6925,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7772,11 +7790,11 @@
    "hex": "#217a12",
    "playable": true,
    "owner": "Rohan",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 200,
+   "garrison": 50,
    "bld": [
     "timber_yard"
    ],
@@ -7800,7 +7818,13 @@
    "availableBldOwner": {
     "timber_yard": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 5,
+    "startedDate": "Spring 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8216,7 +8240,17 @@
     "barracks": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Ered Luin",
+     "cost": 3500,
+     "startedTurn": 6,
+     "startedDate": "Summer 1419"
+    }
+   ],
    "raid": null,
    "displayName": "Dragon's Bane"
   },
@@ -8837,6 +8871,7 @@
    "at": "Province_260",
    "order": null,
    "units": [
+    "rohan_eomer",
     "rohan_aor_eored_of_the_east_fold",
     "rohan_yeomen_of_the_mark",
     "rohan_musterd_axemen",
@@ -8852,8 +8887,7 @@
     "rohan_scouts_of_rohan",
     "rohan_scouts_of_rohan",
     "rohan_sword_theigns",
-    "rohan_sword_theigns",
-    "rohan_winfried"
+    "rohan_sword_theigns"
    ],
    "xp": [
     0,
@@ -8874,8 +8908,8 @@
     0,
     0
    ],
-   "upkeep": 6500,
-   "_startCost": 11425
+   "upkeep": 6612.5,
+   "_startCost": 15225
   },
   {
    "name": "Host of Province_392",
@@ -10228,23 +10262,20 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 420,
-   "at": "Province_127",
+   "men": 360,
+   "at": "Province_260",
    "order": null,
    "units": [
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
-    "rohan_eomer"
+    "rohan_yeomen_of_the_mark"
    ],
    "xp": [
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 2100,
-   "_startCost": 2400
+   "upkeep": 1200
   },
   {
    "name": "Host of Province_393",
@@ -10262,43 +10293,22 @@
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_260 moved Province_260 → Province_127",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Barracks at Province_419 to Level 3 (3,500 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_44 disbands Eomer at Province_260 — 1,800g returned to the treasury",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 6,
-   "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Province_197 completes its works — now a unfortified city.",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 6,
-   "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Province_28 completes its works — now a unfortified city.",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 6,
-   "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Province_127 completes its works — now a unfortified city.",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 6,
-   "d": "Summer · S.R. 1419 (T.A. 3019)",
-   "txt": "Province_27 completes its works — now a unfortified city.",
-   "kind": "",
+   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
    "detail": null
   },
   {
@@ -84052,7 +84062,8 @@
  "moved": [
   "Khand",
   "Isengard",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Ered Luin"
  ],
  "pendingReview": false
 }
