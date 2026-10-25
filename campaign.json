@@ -3452,7 +3452,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6925,7 +6925,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7943,7 +7943,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8220,9 +8220,9 @@
     "Province_8"
    ],
    "bldLevel": {
-    "barracks": 1,
-    "goat_pen": 1,
-    "blacksmith": 1
+    "barracks": 2,
+    "goat_pen": 2,
+    "blacksmith": 2
    },
    "cx": 1053.7625644655677,
    "cy": 242.40576398018,
@@ -8240,35 +8240,7 @@
     "barracks": "Ered Luin"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 2000,
-     "startedTurn": 5,
-     "startedDate": "Spring 1419"
-    },
-    {
-     "key": "blacksmith",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 1250,
-     "startedTurn": 5,
-     "startedDate": "Spring 1419"
-    },
-    {
-     "key": "goat_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 900,
-     "startedTurn": 5,
-     "startedDate": "Spring 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null,
    "displayName": "Dragon's Bane"
   },
@@ -10308,6 +10280,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Barracks at Province_419 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Blacksmith at Province_419 reaches Level 2 — it now grants +2 chevrons to regiments mustered here.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Goat Pen at Province_419 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
