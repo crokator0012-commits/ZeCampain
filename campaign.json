@@ -115,7 +115,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 5600,
+   "treasury": 1600,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -5129,7 +5129,13 @@
    "availableBldOwner": {
     "healing_herb_garden": "Woodland Realm"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Woodland Realm",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -10302,6 +10308,41 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_342 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm starts construction: Province_375 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -83996,7 +84037,8 @@
  ],
  "moved": [
   "Khand",
-  "Isengard"
+  "Isengard",
+  "Woodland Realm"
  ],
  "pendingReview": false
 }
