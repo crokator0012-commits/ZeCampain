@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 4773,
+   "treasury": 6573,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -3019,11 +3019,11 @@
    "hex": "#32cf83",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "stone_quarry"
    ],
@@ -3047,13 +3047,7 @@
    "availableBldOwner": {
     "stone_quarry": "Rohan"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rohan",
-    "startedTurn": 4,
-    "startedDate": "Winter 1418",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -3452,7 +3446,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3610,11 +3604,11 @@
    "hex": "#2cb071",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -3641,13 +3635,7 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rohan",
-    "startedTurn": 5,
-    "startedDate": "Spring 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null,
    "displayName": "EastFold"
@@ -4900,11 +4888,11 @@
    "hex": "#1f7d50",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
@@ -4936,13 +4924,7 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rohan",
-    "startedTurn": 5,
-    "startedDate": "Spring 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6925,7 +6907,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7790,11 +7772,11 @@
    "hex": "#217a12",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "timber_yard"
    ],
@@ -7818,13 +7800,7 @@
    "availableBldOwner": {
     "timber_yard": "Rohan"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rohan",
-    "startedTurn": 5,
-    "startedDate": "Spring 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -7943,7 +7919,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8861,7 +8837,6 @@
    "at": "Province_260",
    "order": null,
    "units": [
-    "rohan_eomer",
     "rohan_aor_eored_of_the_east_fold",
     "rohan_yeomen_of_the_mark",
     "rohan_musterd_axemen",
@@ -8877,7 +8852,8 @@
     "rohan_scouts_of_rohan",
     "rohan_scouts_of_rohan",
     "rohan_sword_theigns",
-    "rohan_sword_theigns"
+    "rohan_sword_theigns",
+    "rohan_winfried"
    ],
    "xp": [
     0,
@@ -8898,8 +8874,8 @@
     0,
     0
    ],
-   "upkeep": 6612.5,
-   "_startCost": 15225
+   "upkeep": 6500,
+   "_startCost": 11425
   },
   {
    "name": "Host of Province_392",
@@ -10252,20 +10228,23 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 360,
-   "at": "Province_260",
+   "men": 420,
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark"
+    "rohan_yeomen_of_the_mark",
+    "rohan_eomer"
    ],
    "xp": [
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 1200
+   "upkeep": 2100,
+   "_startCost": 2400
   },
   {
    "name": "Host of Province_393",
@@ -10280,6 +10259,48 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_260 moved Province_260 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 disbands Eomer at Province_260 — 1,800g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_197 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_28 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_127 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_27 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
