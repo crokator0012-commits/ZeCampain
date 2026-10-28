@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 5665,
+   "treasury": 640,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -1956,7 +1956,13 @@
    },
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dale",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7895,7 +7901,13 @@
     "road": "Dale",
     "timber_yard": "Dale"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Dale",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9808,28 +9820,26 @@
   {
    "name": "Host of Province_388",
    "faction": "Dale",
-   "men": 1340,
+   "men": 1220,
    "at": "Province_13",
    "order": null,
    "units": [
     "dale_spear_militia",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
     "dale_aor_vinelands_gaurds",
-    "dale_watch_post_sentries"
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen"
    ],
    "xp": [
     2,
-    1,
-    1,
-    1,
-    1,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -9837,7 +9847,7 @@
     0,
     0
    ],
-   "upkeep": 3800,
+   "upkeep": 3500,
    "_startCost": 7600
   },
   {
@@ -10178,22 +10188,24 @@
   {
    "name": "Host of Province_13",
    "faction": "Dale",
-   "men": 1200,
-   "at": "Province_13",
+   "men": 1440,
+   "at": "Province_379",
    "order": null,
    "units": [
     "dale_aor_rhovanion_regents",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
-    "dale_merchant_escorts"
+    "dale_merchant_escorts",
+    "dale_watch_post_sentries",
+    "dale_merchant_escorts",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen"
    ],
-   "upkeep": 4025,
+   "upkeep": 4837.5,
    "xp": [
     0,
     0,
@@ -10203,8 +10215,10 @@
     0,
     0,
     0,
-    0,
-    0
+    1,
+    1,
+    1,
+    1
    ],
    "_startCost": 0
   },
@@ -10274,6 +10288,139 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_370 → Province_379",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_13 → Province_370",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Merchant Escorts transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 is absorbed into Host of Province_388",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Merchant Escorts transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale mustered Host of Province_13 at Province_13 (1 regiments · 1025 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Watch Post Sentries transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts construction: Province_379 → unfortified city (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts construction: Province_370 → unfortified city (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -84139,7 +84286,8 @@
   "Isengard",
   "Woodland Realm",
   "Ered Luin",
-  "Imraldris"
+  "Imraldris",
+  "Dale"
  ],
  "pendingReview": false
 }
