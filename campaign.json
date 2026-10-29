@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 4388,
+   "treasury": 388,
    "capital": "Province_454",
    "zeal": 10
   },
@@ -5791,7 +5791,13 @@
    "availableBldOwner": {
     "road": "Dol Gul Dur"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Dol Gul Dur",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -10288,6 +10294,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur starts construction: Province_373 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -84287,7 +84314,8 @@
   "Woodland Realm",
   "Ered Luin",
   "Imraldris",
-  "Dale"
+  "Dale",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
