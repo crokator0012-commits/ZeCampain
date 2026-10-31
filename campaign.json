@@ -4150,7 +4150,7 @@
    "displayName": "Eastern Riddermark",
    "bldLevel": {
     "barracks": 1,
-    "copper_mine": 1
+    "copper_mine": 2
    },
    "cx": 2128.246662936616,
    "cy": 1432.823675165854,
@@ -4166,17 +4166,7 @@
     "copper_mine": "Rohan"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rohan",
-     "cost": 1100,
-     "startedTurn": 6,
-     "startedDate": "Summer 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -10331,6 +10321,13 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Copper Mine at Province_44 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
