@@ -3118,22 +3118,34 @@
    "modern": "Province 270",
    "hex": "#e31181",
    "playable": true,
-   "owner": "",
+   "owner": "Ered Luin",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
    "move": 2,
    "garrison": 50,
-   "bld": [],
+   "bld": [
+    "grain_farm",
+    "stone_quarry"
+   ],
    "adj": [],
-   "bldLevel": {},
+   "bldLevel": {
+    "grain_farm": 1,
+    "stone_quarry": 1
+   },
    "cx": 320.04618811033066,
    "cy": 151.97759122837073,
    "siege": null,
    "occ": null,
    "bldOwner": {},
-   "availableBld": [],
-   "availableBldOwner": {},
+   "availableBld": [
+    "grain_farm",
+    "stone_quarry"
+   ],
+   "availableBldOwner": {
+    "grain_farm": "Ered Luin",
+    "stone_quarry": "Ered Luin"
+   },
    "upg": null,
    "buildQueue": [],
    "raid": null
@@ -9657,7 +9669,7 @@
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
-   "at": "Province_6",
+   "at": "Province_270",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -10321,6 +10333,69 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Stone Quarry completed at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Grain Farm completed at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts construction: Stone Quarry at Province_270 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts construction: Grain Farm at Province_270 (500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin may construct Stone Quarry at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin may construct Grain Farm at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin annexed Province_270 (from )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin occupied Province_270 (held by )",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_6 → Province_270",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
