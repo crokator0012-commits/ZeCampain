@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 4773,
+   "treasury": 73,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -3488,7 +3488,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -4204,7 +4204,17 @@
     "copper_mine": "Rohan"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "copper_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rohan",
+     "cost": 1100,
+     "startedTurn": 6,
+     "startedDate": "Summer 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -4966,7 +4976,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Rohan",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6057,7 +6073,13 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Rohan",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6963,7 +6985,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7981,7 +8003,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8859,7 +8881,7 @@
    "name": "Host of Province_127",
    "faction": "Rohan",
    "men": 1300,
-   "at": "Province_296",
+   "at": "Province_27",
    "order": null,
    "units": [
     "rohan_prince_theodred",
@@ -8896,7 +8918,7 @@
    "name": "Host of Province_44",
    "faction": "Rohan",
    "men": 1940,
-   "at": "Province_127",
+   "at": "Province_27",
    "order": null,
    "units": [
     "rohan_aor_eored_of_the_east_fold",
@@ -10234,22 +10256,16 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 420,
+   "men": 60,
    "at": "Province_260",
    "order": null,
    "units": [
-    "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
     "rohan_eomer"
    ],
    "xp": [
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 2100
+   "upkeep": 900
   },
   {
    "name": "Host of Province_393",
@@ -10264,6 +10280,76 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts upgrading Copper Mine at Province_44 to Level 2 (1 100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts construction: Province_21 → unfortified city (2 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan starts construction: Province_27 → fortified city (small) (4 000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_260 disbands Yeomen of the Mark at Province_260 — 800g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_260 disbands Yeomen of the Mark at Province_260 — 800g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_260 disbands Yeomen of the Mark at Province_260 — 800g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_127 moved Province_296 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_44 moved Province_127 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer · S.R. 1419 (T.A. 3019)",
+   "txt": "Rohan grew tired of waiting on Dunland and skips ahead — Dunland keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer · S.R. 1419 (T.A. 3019)",
@@ -89705,7 +89791,8 @@
   "Anduin Vale",
   "Dol Amroth",
   "Dorvinion",
-  "Lothlorien"
+  "Lothlorien",
+  "Rohan"
  ],
  "pendingReview": false
 }
