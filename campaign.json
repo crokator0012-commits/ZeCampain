@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 700,
+   "treasury": 800,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3126,12 +3126,14 @@
    "garrison": 50,
    "bld": [
     "grain_farm",
-    "stone_quarry"
+    "stone_quarry",
+    "fishing_jetties"
    ],
    "adj": [],
    "bldLevel": {
-    "grain_farm": 1,
-    "stone_quarry": 1
+    "grain_farm": 2,
+    "stone_quarry": 2,
+    "fishing_jetties": 2
    },
    "cx": 320.04618811033066,
    "cy": 151.97759122837073,
@@ -3140,11 +3142,13 @@
    "bldOwner": {},
    "availableBld": [
     "grain_farm",
-    "stone_quarry"
+    "stone_quarry",
+    "fishing_jetties"
    ],
    "availableBldOwner": {
     "grain_farm": "Ered Luin",
-    "stone_quarry": "Ered Luin"
+    "stone_quarry": "Ered Luin",
+    "fishing_jetties": "Ered Luin"
    },
    "upg": {
     "to": 1,
@@ -3153,27 +3157,9 @@
     "startedDate": "Autumn 1419",
     "cost": 2000
    },
-   "buildQueue": [
-    {
-     "key": "stone_quarry",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 850,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    },
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Ered Luin",
-     "cost": 900,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    }
-   ],
-   "raid": null
+   "buildQueue": [],
+   "raid": null,
+   "displayName": "Durin's Light"
   },
   {
    "id": "Province_208",
@@ -3493,7 +3479,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7940,11 +7926,11 @@
    "hex": "#6a040f",
    "playable": true,
    "owner": "Dale",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "road",
     "timber_yard"
@@ -7974,13 +7960,7 @@
     "road": "Dale",
     "timber_yard": "Dale"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Dale",
-    "startedTurn": 6,
-    "startedDate": "Summer 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -8010,7 +7990,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10358,6 +10338,62 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_370 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Fishing Jetties at Province_270 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Fishing Jetties at Province_270 to Level 2 (1,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Fishing Jetties completed at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts construction: Fishing Jetties at Province_270 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin may construct Fishing Jetties at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Grain Farm at Province_270 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Stone Quarry at Province_270 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
