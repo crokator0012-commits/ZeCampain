@@ -9674,7 +9674,7 @@
    "name": "Host of Province_390",
    "faction": "Ered Luin",
    "men": 1370,
-   "at": "Province_270",
+   "at": "Province_415",
    "order": null,
    "units": [
     "ered_luin_s_merchant_swordsmen",
@@ -10338,6 +10338,13 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_270 → Province_415",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
