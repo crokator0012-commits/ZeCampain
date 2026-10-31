@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 3850,
+   "treasury": 700,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3126,14 +3126,12 @@
    "garrison": 50,
    "bld": [
     "grain_farm",
-    "stone_quarry",
-    "fishing_jetties"
+    "stone_quarry"
    ],
    "adj": [],
    "bldLevel": {
     "grain_farm": 1,
-    "stone_quarry": 1,
-    "fishing_jetties": 1
+    "stone_quarry": 1
    },
    "cx": 320.04618811033066,
    "cy": 151.97759122837073,
@@ -3142,16 +3140,39 @@
    "bldOwner": {},
    "availableBld": [
     "grain_farm",
-    "stone_quarry",
-    "fishing_jetties"
+    "stone_quarry"
    ],
    "availableBldOwner": {
     "grain_farm": "Ered Luin",
-    "stone_quarry": "Ered Luin",
-    "fishing_jetties": "Ered Luin"
+    "stone_quarry": "Ered Luin"
    },
-   "upg": null,
-   "buildQueue": [],
+   "upg": {
+    "to": 1,
+    "payer": "Ered Luin",
+    "startedTurn": 7,
+    "startedDate": "Autumn 1419",
+    "cost": 2000
+   },
+   "buildQueue": [
+    {
+     "key": "stone_quarry",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 850,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    },
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Ered Luin",
+     "cost": 900,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3472,7 +3493,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7989,7 +8010,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10340,22 +10361,36 @@
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Fishing Jetties completed at Province_270.",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts upgrading Grain Farm at Province_270 to Level 2 (900 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Ered Luin starts construction: Fishing Jetties at Province_270 (600 castas)",
+   "txt": "Ered Luin starts upgrading Stone Quarry at Province_270 to Level 2 (850 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Ered Luin may construct Fishing Jetties at Province_270.",
+   "txt": "Ered Luin starts construction: Province_270 → unfortified city (2,000 castas)",
    "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
    "detail": null
   },
   {
@@ -111627,6 +111662,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Ered Luin"
+ ],
  "pendingReview": false
 }
