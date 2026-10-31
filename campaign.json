@@ -195,7 +195,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 4450,
+   "treasury": 3850,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3126,12 +3126,14 @@
    "garrison": 50,
    "bld": [
     "grain_farm",
-    "stone_quarry"
+    "stone_quarry",
+    "fishing_jetties"
    ],
    "adj": [],
    "bldLevel": {
     "grain_farm": 1,
-    "stone_quarry": 1
+    "stone_quarry": 1,
+    "fishing_jetties": 1
    },
    "cx": 320.04618811033066,
    "cy": 151.97759122837073,
@@ -3140,11 +3142,13 @@
    "bldOwner": {},
    "availableBld": [
     "grain_farm",
-    "stone_quarry"
+    "stone_quarry",
+    "fishing_jetties"
    ],
    "availableBldOwner": {
     "grain_farm": "Ered Luin",
-    "stone_quarry": "Ered Luin"
+    "stone_quarry": "Ered Luin",
+    "fishing_jetties": "Ered Luin"
    },
    "upg": null,
    "buildQueue": [],
@@ -10333,6 +10337,27 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Fishing Jetties completed at Province_270.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin starts construction: Fishing Jetties at Province_270 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin may construct Fishing Jetties at Province_270.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
