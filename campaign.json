@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 3723,
+   "treasury": 73,
    "capital": "Province_454",
    "zeal": 10
   },
@@ -3479,7 +3479,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6978,7 +6978,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7990,7 +7990,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9753,7 +9753,7 @@
   {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
-   "men": 2060,
+   "men": 2300,
    "at": "Province_454",
    "order": null,
    "units": [
@@ -9774,7 +9774,9 @@
     "dol_gul_dur_aor_undeads",
     "dol_gul_dur_mirkwood_reavers",
     "dol_gul_dur_mirkwood_raiders",
-    "dol_gul_dur_mirkwood_reavers"
+    "dol_gul_dur_mirkwood_reavers",
+    "dol_gul_dur_mercs_aor_mountain_orc_stalkers",
+    "dol_gul_dur_mercs_aor_mountain_orc_stalkers"
    ],
    "xp": [
     0,
@@ -9794,9 +9796,11 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6175,
+   "upkeep": 6950,
    "_startCost": 12075
   },
   {
@@ -10335,9 +10339,62 @@
     0
    ],
    "_startCost": 0
+  },
+  {
+   "name": "Host of Province_454",
+   "faction": "Dol Gul Dur",
+   "men": 360,
+   "at": "Province_342",
+   "order": null,
+   "units": [
+    "dol_gul_dur_mirkwood_reavers",
+    "dol_gul_dur_mirkwood_reavers",
+    "dol_gul_dur_mirkwood_reavers"
+   ],
+   "xp": [
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1050
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_454 moved Province_454 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur mustered Host of Province_454 at Province_454 (3 regiments · 2,100 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur reinforced Host of Province_454 at Province_454 (+2 regiments · 1,550 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -111735,7 +111792,8 @@
  ],
  "moved": [
   "Ered Luin",
-  "Imraldris"
+  "Imraldris",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
