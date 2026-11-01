@@ -10363,6 +10363,20 @@
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
    "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
@@ -111793,7 +111807,8 @@
  "moved": [
   "Ered Luin",
   "Imraldris",
-  "Dol Gul Dur"
+  "Dol Gul Dur",
+  "Woodland Realm"
  ],
  "pendingReview": false
 }
