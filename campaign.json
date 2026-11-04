@@ -3481,7 +3481,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6974,7 +6974,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7986,7 +7986,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9243,7 +9243,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1660,
-   "at": "Province_23",
+   "at": "Province_373",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -10199,6 +10199,27 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_16 moved Province_23 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -127569,7 +127590,8 @@
   "Erebor",
   "Mahud",
   "Rachrohir",
-  "Gundabad"
+  "Gundabad",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
