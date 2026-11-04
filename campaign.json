@@ -147,7 +147,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 4267,
+   "treasury": 317,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -1488,7 +1488,17 @@
     "salt_mine": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "salt_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 1100,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null,
    "displayName": "South West Harad"
   },
@@ -3481,7 +3491,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -4316,7 +4326,17 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "spice_trader",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Lostladen Tribes",
+     "cost": 2000,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -4857,7 +4877,17 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "stone_quarry",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 850,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -6974,7 +7004,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7986,7 +8016,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9190,7 +9220,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 2540,
-   "at": "Province_462",
+   "at": "Harondor",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -9243,7 +9273,7 @@
    "name": "Host of Province_16",
    "faction": "Lothlorien",
    "men": 1660,
-   "at": "Province_373",
+   "at": "Province_23",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -10202,21 +10232,42 @@
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien ends its turn — Dale to move.",
+   "txt": "Lostladen Tribes ends its turn — Dale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_16 moved Province_23 → Province_373",
+   "txt": "Lostladen Tribes starts upgrading Stone Quarry at Province_341 to Level 2 (850 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "txt": "Lostladen Tribes starts upgrading Salt Mine at Province_463 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Spice Trader at Province_359 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_462 → Harondor",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
    "kind": "turn",
    "detail": null
   },
@@ -127591,7 +127642,7 @@
   "Mahud",
   "Rachrohir",
   "Gundabad",
-  "Lothlorien"
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
