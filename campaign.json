@@ -155,7 +155,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 3413,
+   "treasury": 538,
    "capital": "Province_442",
    "zeal": 10
   },
@@ -7486,7 +7486,13 @@
     "iron_mine": "Goblins",
     "goat_pen": "Goblins"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Khazad-dum",
+    "startedTurn": 7,
+    "startedDate": "Autumn 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9311,8 +9317,8 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 1500,
-   "at": "Province_410",
+   "men": 1620,
+   "at": "Province_435",
    "order": null,
    "units": [
     "khazad_dum_mountain_travellers",
@@ -9326,7 +9332,8 @@
     "khazad_dum_aor_guards_of_durins_gate",
     "khazad_dum_wardens_of_the_deep",
     "khazad_dum_darrowdelf_axe_throwers",
-    "khazad_dum_longbeard_spearmen"
+    "khazad_dum_longbeard_spearmen",
+    "khazad_dum_aor_protectors_of_azanulbizar"
    ],
    "xp": [
     0,
@@ -9340,9 +9347,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 5262.5,
+   "upkeep": 5700,
    "_startCost": 9875
   },
   {
@@ -10209,6 +10217,41 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum reinforced Host of Province_442 at Province_435 (+1 regiment · 875 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_442 moved Province_410 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum starts construction: Province_410 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -127623,7 +127666,8 @@
   "Rachrohir",
   "Gundabad",
   "Lothlorien",
-  "Gondor"
+  "Gondor",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
