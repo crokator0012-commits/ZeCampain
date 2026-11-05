@@ -3481,7 +3481,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6984,7 +6984,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8002,7 +8002,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10205,6 +10205,13 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale ends its turn — Dunland to move.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -29181,7 +29188,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 6,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -127662,7 +127669,8 @@
   "Gundabad",
   "Lothlorien",
   "Gondor",
-  "Khazad-dum"
+  "Khazad-dum",
+  "Dale"
  ],
  "pendingReview": false
 }
