@@ -2029,7 +2029,7 @@
    "modern": "Province 29",
    "hex": "#2198bd",
    "playable": true,
-   "owner": "Anduin Vale",
+   "owner": "Lothlorien",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -10199,6 +10199,20 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien annexed Province_29 (from Anduin Vale)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien occupied Province_29 (held by Anduin Vale)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
