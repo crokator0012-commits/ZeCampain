@@ -107,7 +107,7 @@
    "id": "Khand",
    "name": "Khand",
    "color": "#A85A25",
-   "treasury": 6853,
+   "treasury": 0,
    "capital": null,
    "zeal": 10
   },
@@ -123,7 +123,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 1040,
+   "treasury": 7883,
    "capital": "Province_436",
    "zeal": 10
   },
@@ -211,7 +211,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 73,
+   "treasury": 4073,
    "capital": "Province_454",
    "zeal": 8
   },
@@ -3481,7 +3481,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -5822,13 +5822,7 @@
    "availableBldOwner": {
     "road": "Dol Gul Dur"
    },
-   "upg": {
-    "to": 2,
-    "payer": "Dol Gul Dur",
-    "startedTurn": 6,
-    "startedDate": "Summer 1419",
-    "cost": 4000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6368,7 +6362,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "road"
    ],
@@ -6984,7 +6978,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8002,7 +7996,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9253,7 +9247,7 @@
     0
    ],
    "upkeep": 7150,
-   "_startCost": 9900
+   "_startCost": 14300
   },
   {
    "name": "Host of Province_16",
@@ -10208,8 +10202,22 @@
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
-   "txt": "Dale ends its turn — Dunland to move.",
-   "kind": "turn",
+   "txt": "Host of Province_16 moved Province_462 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_16 moved Province_373 → Province_462",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_373: construction declined — Dol Gul Dur refunded 4,000 castas.",
+   "kind": "",
    "detail": null
   },
   {
@@ -29188,7 +29196,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 6,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -127669,8 +127677,7 @@
   "Gundabad",
   "Lothlorien",
   "Gondor",
-  "Khazad-dum",
-  "Dale"
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
