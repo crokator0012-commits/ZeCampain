@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 5650,
+   "treasury": 250,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -851,7 +851,26 @@
     "iron_mine": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Rhudaur",
+     "cost": 1100,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    },
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 4,
+     "payer": "Rhudaur",
+     "cost": 2250,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -1820,7 +1839,17 @@
     "grain_farm": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 1500,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3481,7 +3510,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -5072,7 +5101,17 @@
     "iron_mine": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 1750,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -6994,7 +7033,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8028,7 +8067,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9051,14 +9090,13 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1940,
-   "at": "Province_422",
+   "men": 1700,
+   "at": "Province_25",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
     "rhudaur_cocurian_axe_hird",
     "rhudaur_cocurian_axe_hird",
-    "rhudaur_bondi_axes",
     "rhudaur_weather_hill_scavengers",
     "rhudaur_weather_hill_scavengers",
     "rhudaur_bondi_spears",
@@ -9069,8 +9107,7 @@
     "rhudaur_bondi_spears",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_ettenmoor_marksmen",
-    "rhudaur_bondi_axes"
+    "rhudaur_ettenmoor_marksmen"
    ],
    "xp": [
     0,
@@ -9086,11 +9123,9 @@
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 6050,
+   "upkeep": 5450,
    "_startCost": 10900
   },
   {
@@ -10239,6 +10274,97 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur ends its turn — Lindon to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Sheep Pen at Province_447 to Level 4 (2,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_432 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_432 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_25 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_422 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Grain Farm at Province_422 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Iron Mine at Province_25 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Iron Mine at Province_447 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur grew tired of waiting on Lindon and skips ahead — Lindon keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -133075,7 +133201,8 @@
   "Iron Hills",
   "Isengard",
   "Lostladen Tribes",
-  "Rohan"
+  "Rohan",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
