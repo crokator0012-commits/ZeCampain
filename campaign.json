@@ -9948,7 +9948,7 @@
   {
    "name": "Host of Province_400",
    "faction": "Isengard",
-   "men": 1640,
+   "men": 1780,
    "at": "Province_296",
    "order": null,
    "units": [
@@ -9965,7 +9965,8 @@
     "isengard_half_orc_axes",
     "isengard_wargs_of_isengrad",
     "isengard_wargs_of_isengrad",
-    "isengard_uruk_hai_archers"
+    "isengard_uruk_hai_archers",
+    "isengard_half_orc_spears"
    ],
    "xp": [
     2,
@@ -9981,10 +9982,11 @@
     2,
     2,
     2,
+    2,
     2
    ],
-   "upkeep": 5400,
-   "_startCost": 1400
+   "upkeep": 5737.5,
+   "_startCost": 11475
   },
   {
    "name": "Host of Province_26",
