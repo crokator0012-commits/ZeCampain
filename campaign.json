@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 6300,
+   "treasury": 5650,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -818,7 +818,8 @@
    "move": 2,
    "garrison": 7500,
    "bld": [
-    "sheep_pen"
+    "sheep_pen",
+    "iron_mine"
    ],
    "adj": [
     "Province_25",
@@ -833,7 +834,8 @@
     "Province_440"
    ],
    "bldLevel": {
-    "sheep_pen": 3
+    "sheep_pen": 3,
+    "iron_mine": 1
    },
    "cx": 1817.5136413241178,
    "cy": 420.70261913423064,
@@ -841,10 +843,12 @@
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "sheep_pen"
+    "sheep_pen",
+    "iron_mine"
    ],
    "availableBldOwner": {
-    "sheep_pen": "Rhudaur"
+    "sheep_pen": "Rhudaur",
+    "iron_mine": "Rhudaur"
    },
    "upg": null,
    "buildQueue": [],
@@ -3477,7 +3481,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -6990,7 +6994,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8024,7 +8028,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10235,6 +10239,41 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Iron Mine completed at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts construction: Iron Mine at Province_447 (650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur may construct Iron Mine at Province_447.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_442 moved Province_333 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_442 moved Province_435 → Province_333",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
