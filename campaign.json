@@ -139,7 +139,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 4267,
+   "treasury": 67,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -1480,7 +1480,17 @@
     "salt_mine": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "salt_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 1100,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null,
    "displayName": "South West Harad"
   },
@@ -4853,7 +4863,17 @@
     "barracks": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "stone_quarry",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 850,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -7072,7 +7092,17 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 4,
+     "payer": "Lostladen Tribes",
+     "cost": 2250,
+     "startedTurn": 7,
+     "startedDate": "Autumn 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -9176,7 +9206,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 2540,
-   "at": "Province_462",
+   "at": "Harondor",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -10197,6 +10227,48 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes ends its turn — Lindon to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Stone Quarry at Province_341 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Salt Mine at Province_463 to Level 2 (1,100 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Sheep Pen at Province_462 to Level 4 (2,250 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_462 → Harondor",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes grew tired of waiting on Lindon and skips ahead — Lindon keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
@@ -132877,7 +132949,8 @@
   "Dale",
   "Dunland",
   "Iron Hills",
-  "Isengard"
+  "Isengard",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
