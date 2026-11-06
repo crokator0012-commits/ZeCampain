@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 250,
+   "treasury": 4750,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -835,7 +835,7 @@
    ],
    "bldLevel": {
     "sheep_pen": 3,
-    "iron_mine": 1
+    "iron_mine": 2
    },
    "cx": 1817.5136413241178,
    "cy": 420.70261913423064,
@@ -851,26 +851,7 @@
     "iron_mine": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 2,
-     "payer": "Rhudaur",
-     "cost": 1100,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    },
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 4,
-     "payer": "Rhudaur",
-     "cost": 2250,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3510,7 +3491,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7033,7 +7014,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8067,7 +8048,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10274,6 +10255,20 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Iron Mine at Province_447 reaches Level 2 — it now yields 100 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_447: construction declined — Rhudaur refunded 2,250 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn · S.R. 1419 (T.A. 3019)",
