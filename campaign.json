@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 7049,
+   "treasury": 11049,
    "capital": "Province_260",
    "zeal": 9
   },
@@ -3055,7 +3055,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "stone_quarry"
    ],
@@ -3663,7 +3663,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -4967,7 +4967,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -4999,13 +4999,7 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": {
-    "to": 2,
-    "payer": "Rohan",
-    "startedTurn": 6,
-    "startedDate": "Summer 1419",
-    "cost": 4000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -6315,11 +6309,11 @@
    "hex": "#8ccf33",
    "playable": true,
    "owner": "Rohan",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "grain_farm"
    ],
@@ -6351,13 +6345,7 @@
    "availableBldOwner": {
     "grain_farm": "Rohan"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Rohan",
-    "startedTurn": 7,
-    "startedDate": "Autumn 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -7844,7 +7832,7 @@
    ],
    "displayName": "Edoras",
    "bldLevel": {
-    "barracks": 2,
+    "barracks": 3,
     "horse_stables": 1
    },
    "cx": 1994.8470346447446,
@@ -7861,17 +7849,7 @@
     "horse_stables": "Rohan"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Rohan",
-     "cost": 3500,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7929,7 +7907,7 @@
    "terrain": "plains",
    "value": 500,
    "move": 2,
-   "garrison": 200,
+   "garrison": 7500,
    "bld": [
     "timber_yard"
    ],
@@ -10335,6 +10313,27 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Barracks at Province_260 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_387 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_27: construction declined — Rohan refunded 4,000 castas.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
