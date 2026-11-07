@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 9825,
+   "treasury": 7825,
    "capital": "Province_409",
    "zeal": 9
   },
@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 295,
+   "treasury": 10545,
    "capital": "Province_364",
    "zeal": 10
   },
@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 11856,
+   "treasury": 5856,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -187,7 +187,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 125,
+   "treasury": 5775,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -5196,7 +5196,13 @@
    "availableBldOwner": {
     "healing_herb_garden": "Woodland Realm"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Woodland Realm",
+    "startedTurn": 6,
+    "startedDate": "Summer 1419",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -5794,7 +5800,7 @@
    "modern": "Province 373",
    "hex": "#6e543b",
    "playable": true,
-   "owner": "Lothlorien",
+   "owner": "Dol Gul Dur",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -8242,7 +8248,13 @@
    "availableBldOwner": {
     "grain_farm": "Imraldris"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Imraldris",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null,
    "displayName": "Barrow downs"
@@ -9005,7 +9017,7 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 1920,
+   "men": 1700,
    "at": "Province_375",
    "order": null,
    "units": [
@@ -9022,9 +9034,7 @@
     "woodland_realm_silvan_lookouts",
     "woodland_realm_forest_riders",
     "woodland_realm_silvan_axes",
-    "woodland_realm_forest_spears",
-    "woodland_realm_forest_riders",
-    "woodland_realm_forest_sentinels"
+    "woodland_realm_forest_spears"
    ],
    "xp": [
     0,
@@ -9040,12 +9050,10 @@
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7525,
-   "_startCost": 12775
+   "upkeep": 6387.5,
+   "_startCost": 11925
   },
   {
    "name": "Host of Province_436",
@@ -9310,7 +9318,7 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1520,
+   "men": 1660,
    "at": "Province_373",
    "order": null,
    "units": [
@@ -9326,6 +9334,7 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
+    "lothlorien_amroth_sentinels",
     "lothlorien_amroth_sentinels"
    ],
    "xp": [
@@ -9341,43 +9350,28 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 6437.5,
-   "_startCost": 13850,
+   "upkeep": 6925,
+   "_startCost": 11000,
    "fort": false
   },
   {
    "name": "Host of Province_364",
    "faction": "Lindon",
-   "men": 1260,
-   "at": "Province_364",
+   "men": 240,
+   "at": "Province_430",
    "order": null,
    "units": [
     "lindon_haven_watchers",
-    "lindon_aor_shipwrigh_s_nobles",
-    "lindon_noldorin_spearmen",
-    "lindon_noldorin_spearmen",
-    "lindon_noldorin_equestrians",
-    "lindon_noldorin_equestrians",
-    "lindon_noldorin_archers",
-    "lindon_noldorin_archers",
-    "lindon_noldorin_archers",
-    "lindon_noldorin_spearmen"
+    "lindon_aor_shipwrigh_s_nobles"
    ],
    "xp": [
     0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    1
    ],
-   "upkeep": 6225,
+   "upkeep": 1100,
    "_startCost": 2200
   },
   {
@@ -9431,7 +9425,7 @@
    "name": "Host of Province_409",
    "faction": "Imraldris",
    "men": 120,
-   "at": "Province_401",
+   "at": "Province_409",
    "order": null,
    "units": [
     "imraldris_elrond"
@@ -9566,10 +9560,12 @@
   {
    "name": "Host of Province_390",
    "faction": "Ered Luin",
-   "men": 1990,
-   "at": "Province_419",
+   "men": 1370,
+   "at": "Province_415",
    "order": null,
    "units": [
+    "ered_luin_s_merchant_swordsmen",
+    "ered_luin_s_merchant_swordsmen",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_broadbeam_pikes",
@@ -9578,16 +9574,11 @@
     "ered_luin_s_broadbeam_axe_warriors",
     "ered_luin_aor_s_bridge_wardens",
     "ered_luin_s_tumunzahar_distinguished",
-    "ered_luin_mercs_mercs_s_noldorian_borderguards",
-    "ered_luin_s_broadbeam_axe_warriors",
-    "ered_luin_s_broadbeam_axe_warriors",
-    "ered_luin_s_broadbeam_axe_warriors",
-    "ered_luin_aor_s_bridge_wardens",
-    "ered_luin_mercs_mercs_s_noldorian_borderguards",
-    "ered_luin_s_firebeard_hammers",
-    "ered_luin_s_firebeard_hammers"
+    "ered_luin_mercs_mercs_s_noldorian_borderguards"
    ],
    "xp": [
+    0,
+    0,
     1,
     1,
     1,
@@ -9596,16 +9587,9 @@
     1,
     0,
     1,
-    0,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2
+    0
    ],
-   "upkeep": 7800,
+   "upkeep": 4975,
    "_startCost": 12475
   },
   {
@@ -10320,112 +10304,140 @@
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Province_375: construction declined — Woodland Realm refunded 4,000 castas.",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien annexed Province_373 (from Dol Gul Dur)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien occupied Province_373 (held by Dol Gul Dur)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "txt": "Imladris ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_390 moved Province_384 → Province_419",
+   "txt": "Imraldris starts construction: Province_461 → unfortified city (2,000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_390 moved Province_419 → Province_384",
+   "txt": "Province_416: construction declined — Imladris refunded 4,000 castas.",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Ered Luin reinforced Host of Province_390 at Province_419 (+7 regiments · 7,050 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_390 disbands Merchant Swordsmen at Province_419 — 700g returned to the treasury",
+   "txt": "Imraldris starts construction: Province_416 → fortified city (small) (4,000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_390 disbands Merchant Swordsmen at Province_419 — 700g returned to the treasury",
+   "txt": "Province_416: construction declined — Imladris refunded 4,000 castas.",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_390 moved Province_415 → Province_419",
+   "txt": "Imraldris starts construction: Province_416 → fortified city (small) (4,000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lindon ends its turn — Anduin Vale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lindon reinforced Host of Province_364 at Province_364 (+8 regiments · 10,250 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_364 moved Province_466 → Province_364",
+   "txt": "Host of Province_409 moved Province_418 → Province_409",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_364 moved Province_430 → Province_466",
+   "txt": "Host of Province_409 moved Province_409 → Province_418",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lindon grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "txt": "Host of Province_409 moved Province_416 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_409 → Province_416",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_416: construction declined — Imladris refunded 4,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Imraldris starts construction: Province_416 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_401 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_409 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_416: construction declined — Imladris refunded 4,000 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_401 → Province_409",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_416 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Imraldris starts construction: Province_416 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_409 moved Province_401 → Province_416",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Imladris grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
    "kind": "turn",
    "detail": null
   },
@@ -136246,8 +136258,7 @@
   "Dol Gul Dur",
   "Khazad-dum",
   "Lostladen Tribes",
-  "Lindon",
-  "Ered Luin"
+  "Imraldris"
  ],
  "pendingReview": false
 }
