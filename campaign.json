@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 13856,
+   "treasury": 11856,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -9005,7 +9005,7 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 1700,
+   "men": 1920,
    "at": "Province_375",
    "order": null,
    "units": [
@@ -9022,7 +9022,9 @@
     "woodland_realm_silvan_lookouts",
     "woodland_realm_forest_riders",
     "woodland_realm_silvan_axes",
-    "woodland_realm_forest_spears"
+    "woodland_realm_forest_spears",
+    "woodland_realm_forest_riders",
+    "woodland_realm_forest_sentinels"
    ],
    "xp": [
     0,
@@ -9038,10 +9040,12 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6387.5,
-   "_startCost": 11925
+   "upkeep": 7525,
+   "_startCost": 12775
   },
   {
    "name": "Host of Province_436",
