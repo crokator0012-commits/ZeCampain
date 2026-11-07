@@ -147,7 +147,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 5608,
+   "treasury": 133,
    "capital": "Province_442",
    "zeal": 10
   },
@@ -6928,7 +6928,13 @@
    "availableBldOwner": {
     "iron_mine": "Goblins"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Khazad-dum",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9365,7 +9371,7 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 1620,
+   "men": 2100,
    "at": "Province_435",
    "order": null,
    "units": [
@@ -9381,7 +9387,11 @@
     "khazad_dum_wardens_of_the_deep",
     "khazad_dum_darrowdelf_axe_throwers",
     "khazad_dum_longbeard_spearmen",
-    "khazad_dum_aor_protectors_of_azanulbizar"
+    "khazad_dum_aor_protectors_of_azanulbizar",
+    "khazad_dum_dwarrowdelf_swordsmen",
+    "khazad_dum_dwarrowdelf_swordsmen",
+    "khazad_dum_mountain_travellers",
+    "khazad_dum_hunters_of_khazad_dum"
    ],
    "xp": [
     0,
@@ -9396,9 +9406,13 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5700,
+   "upkeep": 7437.5,
    "_startCost": 9875
   },
   {
@@ -10281,6 +10295,48 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum reinforced Host of Province_442 at Province_435 (+4 regiments · 3,475 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_442 moved Province_410 → Province_435",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum starts construction: Province_418 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_442 moved Province_435 → Province_410",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Khazad-dum grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -135962,7 +136018,8 @@
   }
  ],
  "moved": [
-  "Dol Gul Dur"
+  "Dol Gul Dur",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
