@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 9825,
+   "treasury": 14320,
    "capital": "Province_409",
    "zeal": 9
   },
@@ -8207,11 +8207,11 @@
    "hex": "#ff7a05",
    "playable": true,
    "owner": "Imraldris",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm"
    ],
