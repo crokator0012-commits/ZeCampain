@@ -6110,7 +6110,8 @@
     "cost": 2000
    },
    "buildQueue": [],
-   "raid": null
+   "raid": null,
+   "displayName": "Diddy's Play House"
   },
   {
    "id": "Province_352",
