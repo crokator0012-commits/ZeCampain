@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 6051,
+   "treasury": 1301,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -3501,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3693,7 +3693,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -7031,7 +7031,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8051,7 +8051,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8435,7 +8435,17 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 1500,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -9745,8 +9755,8 @@
   {
    "name": "Host of Province_388",
    "faction": "Dale",
-   "men": 1220,
-   "at": "Province_13",
+   "men": 740,
+   "at": "Province_421",
    "order": null,
    "units": [
     "dale_spear_militia",
@@ -9754,11 +9764,7 @@
     "dale_yeomen",
     "dale_yeomen",
     "dale_yeomen",
-    "dale_aor_vinelands_gaurds",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen"
+    "dale_aor_vinelands_gaurds"
    ],
    "xp": [
     2,
@@ -9766,13 +9772,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 3500,
+   "upkeep": 1900,
    "_startCost": 7600
   },
   {
@@ -10090,8 +10092,8 @@
   {
    "name": "Host of Province_13",
    "faction": "Dale",
-   "men": 1440,
-   "at": "Province_379",
+   "men": 2400,
+   "at": "Province_13",
    "order": null,
    "units": [
     "dale_aor_rhovanion_regents",
@@ -10105,9 +10107,17 @@
     "dale_shipmen",
     "dale_shipmen",
     "dale_shipmen",
-    "dale_shipmen"
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_shipmen",
+    "dale_merchant_escorts",
+    "dale_merchant_escorts",
+    "dale_watch_post_sentries",
+    "dale_watch_post_sentries"
    ],
-   "upkeep": 4837.5,
+   "upkeep": 8062.5,
    "xp": [
     0,
     0,
@@ -10120,7 +10130,15 @@
     1,
     1,
     1,
-    1
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
    "_startCost": 0
   },
@@ -10314,6 +10332,188 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_451 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_13 → Province_451",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale starts upgrading Grain Farm at Province_421 to Level 3 (1500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_451 → Province_421",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_13 → Province_451",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_370 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_388 moved Province_13 → Province_370",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Watch Post Sentries transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Watch Post Sentries transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 is absorbed into Host of Province_388",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Watch Post Sentries transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Watch Post Sentries transfers from Host of Province_13 to Host of Province_388 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale mustered Host of Province_13 at Province_13 (2 regiments · 1200 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Merchant Escorts transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Merchant Escorts transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_370 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_13 → Province_370",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 merges into Host of Province_388 at Province_13 (2 regiments)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale mustered Host of Province_13 at Province_13 (2 regiments · 2050 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Shipmen transfers from Host of Province_388 to Host of Province_13 at Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_13 moved Province_379 → Province_13",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dale grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136343,7 +136543,8 @@
   "Lostladen Tribes",
   "Lindon",
   "Ered Luin",
-  "Erebor"
+  "Erebor",
+  "Dale"
  ],
  "pendingReview": false
 }
