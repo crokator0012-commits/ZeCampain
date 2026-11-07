@@ -2169,11 +2169,11 @@
    "hex": "#0077b6",
    "playable": true,
    "owner": "",
-   "tier": 1,
+   "tier": 2,
    "terrain": "plains",
-   "value": 500,
+   "value": 850,
    "move": 2,
-   "garrison": 200,
+   "garrison": 10000,
    "bld": [],
    "adj": [
     "Province_260",
@@ -3693,7 +3693,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
