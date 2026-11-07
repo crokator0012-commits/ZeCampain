@@ -203,7 +203,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 7043,
+   "treasury": 743,
    "capital": "Province_454",
    "zeal": 9
   },
@@ -3491,7 +3491,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7014,7 +7014,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8054,7 +8054,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10246,23 +10246,83 @@
   {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
-   "men": 360,
+   "men": 1360,
    "at": "Province_342",
    "order": null,
    "units": [
     "dol_gul_dur_mirkwood_reavers",
     "dol_gul_dur_mirkwood_reavers",
-    "dol_gul_dur_mirkwood_reavers"
+    "dol_gul_dur_mirkwood_reavers",
+    "dol_gul_dur_mercs_warg_riders",
+    "dol_gul_dur_mercs_warg_riders",
+    "dol_gul_dur_mirkwood_reavers",
+    "dol_gul_dur_mercs_aor_mountain_orc_stalkers",
+    "dol_gul_dur_mercs_aor_mountain_orc_stalkers",
+    "dol_gul_dur_mercs_orc_archers",
+    "dol_gul_dur_mercs_orc_archers",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads"
    ],
    "xp": [
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 1050
+   "upkeep": 4200
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur reinforced Host of Province_454 at Province_342 (+2 regiments · 850 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_454 moved Province_454 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur reinforced Host of Province_454 at Province_454 (+7 regiments · 5,450 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_454 moved Province_342 → Province_454",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Dol Gul Dur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -135901,6 +135961,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Dol Gul Dur"
+ ],
  "pendingReview": false
 }
