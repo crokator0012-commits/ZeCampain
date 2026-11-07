@@ -187,7 +187,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 5775,
+   "treasury": 125,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -7030,7 +7030,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -9570,12 +9570,10 @@
   {
    "name": "Host of Province_390",
    "faction": "Ered Luin",
-   "men": 1370,
-   "at": "Province_415",
+   "men": 1990,
+   "at": "Province_419",
    "order": null,
    "units": [
-    "ered_luin_s_merchant_swordsmen",
-    "ered_luin_s_merchant_swordsmen",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_firebeard_orc_hunters",
     "ered_luin_s_broadbeam_pikes",
@@ -9584,11 +9582,16 @@
     "ered_luin_s_broadbeam_axe_warriors",
     "ered_luin_aor_s_bridge_wardens",
     "ered_luin_s_tumunzahar_distinguished",
-    "ered_luin_mercs_mercs_s_noldorian_borderguards"
+    "ered_luin_mercs_mercs_s_noldorian_borderguards",
+    "ered_luin_s_broadbeam_axe_warriors",
+    "ered_luin_s_broadbeam_axe_warriors",
+    "ered_luin_s_broadbeam_axe_warriors",
+    "ered_luin_aor_s_bridge_wardens",
+    "ered_luin_mercs_mercs_s_noldorian_borderguards",
+    "ered_luin_s_firebeard_hammers",
+    "ered_luin_s_firebeard_hammers"
    ],
    "xp": [
-    0,
-    0,
     1,
     1,
     1,
@@ -9597,9 +9600,16 @@
     1,
     0,
     1,
-    0
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
    ],
-   "upkeep": 4975,
+   "upkeep": 7800,
    "_startCost": 12475
   },
   {
@@ -10311,6 +10321,62 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_384 → Province_419",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_419 → Province_384",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin reinforced Host of Province_390 at Province_419 (+7 regiments · 7,050 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 disbands Merchant Swordsmen at Province_419 — 700g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 disbands Merchant Swordsmen at Province_419 — 700g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_390 moved Province_415 → Province_419",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Ered Luin grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136163,7 +136229,8 @@
   "Dol Gul Dur",
   "Khazad-dum",
   "Lostladen Tribes",
-  "Lindon"
+  "Lindon",
+  "Ered Luin"
  ],
  "pendingReview": false
 }
