@@ -139,7 +139,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 4862,
+   "treasury": 262,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -1470,7 +1470,7 @@
     "Province_464"
    ],
    "bldLevel": {
-    "salt_mine": 1
+    "salt_mine": 2
    },
    "cx": 2272.857727615944,
    "cy": 2623.33530713084,
@@ -1488,11 +1488,11 @@
     {
      "key": "salt_mine",
      "kind": "tradeUpgrade",
-     "toLevel": 2,
+     "toLevel": 3,
      "payer": "Lostladen Tribes",
-     "cost": 1100,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
+     "cost": 1750,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
     }
    ],
    "raid": null,
@@ -2025,7 +2025,17 @@
     "stone_quarry": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "stone_quarry",
+     "kind": "tradeUpgrade",
+     "toLevel": 2,
+     "payer": "Lostladen Tribes",
+     "cost": 850,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3491,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -4860,7 +4870,7 @@
    ],
    "displayName": "Upper harad",
    "bldLevel": {
-    "stone_quarry": 1,
+    "stone_quarry": 2,
     "barracks": 1
    },
    "cx": 2842.0626749178646,
@@ -4879,13 +4889,13 @@
    "upg": null,
    "buildQueue": [
     {
-     "key": "stone_quarry",
-     "kind": "tradeUpgrade",
+     "key": "barracks",
+     "kind": "barracksUpgrade",
      "toLevel": 2,
      "payer": "Lostladen Tribes",
-     "cost": 850,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
+     "cost": 2000,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
     }
    ],
    "raid": null
@@ -7020,7 +7030,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7114,7 +7124,7 @@
    ],
    "displayName": "Near Harad",
    "bldLevel": {
-    "sheep_pen": 3
+    "sheep_pen": 4
    },
    "cx": 2488.565657694261,
    "cy": 2391.0772676485526,
@@ -7128,17 +7138,7 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 4,
-     "payer": "Lostladen Tribes",
-     "cost": 2250,
-     "startedTurn": 7,
-     "startedDate": "Autumn 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8060,7 +8060,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9260,7 +9260,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 2540,
-   "at": "Harondor",
+   "at": "Province_462",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -10295,6 +10295,97 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Stone Quarry at Province_417 to Level 2 (850 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Salt Mine at Province_463 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes starts upgrading Barracks at Province_341 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 is disbanded — no regiments remain",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 disbands Serpent Guards at Province_359 — 1,500g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes mustered Host of Province_359 at Province_359 (1 regiments · 1,500 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Province_463 → Province_462",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Stone Quarry at Province_341 reaches Level 2 — it now yields 75 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Salt Mine at Province_463 reaches Level 2 — it now yields 125 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Sheep Pen at Province_462 reaches Level 4 — it now yields 225 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_359 moved Harondor → Province_463",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lostladen Tribes grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136019,7 +136110,8 @@
  ],
  "moved": [
   "Dol Gul Dur",
-  "Khazad-dum"
+  "Khazad-dum",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
