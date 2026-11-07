@@ -3501,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -5800,7 +5800,7 @@
    "modern": "Province 373",
    "hex": "#6e543b",
    "playable": true,
-   "owner": "Dol Gul Dur",
+   "owner": "Lothlorien",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -8060,7 +8060,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9312,7 +9312,7 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1660,
+   "men": 1520,
    "at": "Province_373",
    "order": null,
    "units": [
@@ -9328,7 +9328,6 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
-    "lothlorien_amroth_sentinels",
     "lothlorien_amroth_sentinels"
    ],
    "xp": [
@@ -9344,11 +9343,10 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 6925,
-   "_startCost": 11000,
+   "upkeep": 6437.5,
+   "_startCost": 13850,
    "fort": false
   },
   {
@@ -10321,6 +10319,20 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien annexed Province_373 (from Dol Gul Dur)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien occupied Province_373 (held by Dol Gul Dur)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
