@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 10545,
+   "treasury": 295,
    "capital": "Province_364",
    "zeal": 10
   },
@@ -3501,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7030,7 +7030,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8060,7 +8060,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9354,18 +9354,34 @@
   {
    "name": "Host of Province_364",
    "faction": "Lindon",
-   "men": 240,
-   "at": "Province_430",
+   "men": 1260,
+   "at": "Province_364",
    "order": null,
    "units": [
     "lindon_haven_watchers",
-    "lindon_aor_shipwrigh_s_nobles"
+    "lindon_aor_shipwrigh_s_nobles",
+    "lindon_noldorin_spearmen",
+    "lindon_noldorin_spearmen",
+    "lindon_noldorin_equestrians",
+    "lindon_noldorin_equestrians",
+    "lindon_noldorin_archers",
+    "lindon_noldorin_archers",
+    "lindon_noldorin_archers",
+    "lindon_noldorin_spearmen"
    ],
    "xp": [
     0,
-    1
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ],
-   "upkeep": 1100,
+   "upkeep": 6225,
    "_startCost": 2200
   },
   {
@@ -10295,6 +10311,41 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lindon ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lindon reinforced Host of Province_364 at Province_364 (+8 regiments · 10,250 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_364 moved Province_466 → Province_364",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_364 moved Province_430 → Province_466",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lindon grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136111,7 +136162,8 @@
  "moved": [
   "Dol Gul Dur",
   "Khazad-dum",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Lindon"
  ],
  "pendingReview": false
 }
