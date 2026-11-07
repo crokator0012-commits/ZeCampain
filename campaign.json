@@ -195,7 +195,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 6202,
+   "treasury": 202,
    "capital": "Province_10",
    "zeal": 10
   },
@@ -219,7 +219,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 418,
+   "treasury": 6993,
    "capital": "Province_23",
    "zeal": 10
   },
@@ -4474,7 +4474,13 @@
    "availableBldOwner": {
     "silver_mine": "Ered Mithrin"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Erebor",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -5556,7 +5562,13 @@
    "availableBldOwner": {
     "grain_farm": "Ered Mithrin"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Erebor",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -6287,7 +6299,13 @@
    "availableBldOwner": {
     "goat_pen": "Ered Mithrin"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Erebor",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -9961,8 +9979,8 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 2120,
-   "at": "Province_26",
+   "men": 980,
+   "at": "Province_345",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -9972,16 +9990,7 @@
     "beorings_aor_pass_sentries",
     "beorings_aor_carrock_wardens",
     "greenwood_aor_greenwood_rangers",
-    "anduin_vale_aor_greenwood_axemen",
-    "anduin_vale_vale_yeomen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_spearmen",
-    "eotheod_aor_eotheod_cavalry",
-    "anduin_vale_vale_spearmen",
-    "anduin_vale_vale_yeomen",
-    "anduin_vale_vale_yeomen",
-    "anduin_vale_vale_spearmen"
+    "anduin_vale_aor_greenwood_axemen"
    ],
    "xp": [
     2,
@@ -9991,18 +10000,9 @@
     1,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7500,
+   "upkeep": 4212.5,
    "_startCost": 8850
   },
   {
@@ -10338,29 +10338,64 @@
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Anduin Vale ends its turn — Dale to move.",
+   "txt": "Erebor ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_23 moved Province_295 → Province_26",
+   "txt": "Host of Province_10 moved Province_378 → Province_441",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_23 moved Province_345 → Province_295",
+   "txt": "Host of Province_10 moved Province_10 → Province_378",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Anduin Vale reinforced Host of Province_23 at Province_345 (+9 regiments · 6,575 castas)",
-   "kind": "battle",
+   "txt": "Host of Province_10 moved Province_378 → Province_10",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_10 moved Province_441 → Province_378",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Erebor starts construction: Province_434 → unfortified city (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Erebor starts construction: Province_356 → unfortified city (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Erebor starts construction: Province_441 → unfortified city (2000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Erebor grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
    "detail": null
   },
   {
@@ -30234,7 +30269,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -136308,7 +136343,7 @@
   "Lostladen Tribes",
   "Lindon",
   "Ered Luin",
-  "Anduin Vale"
+  "Erebor"
  ],
  "pendingReview": false
 }
