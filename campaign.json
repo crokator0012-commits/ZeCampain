@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 7640,
+   "treasury": 165,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -1542,7 +1542,17 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 3500,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -9143,8 +9153,8 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1700,
-   "at": "Province_25",
+   "men": 2500,
+   "at": "Province_447",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -9160,7 +9170,13 @@
     "rhudaur_bondi_spears",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_ettenmoor_marksmen"
+    "rhudaur_ettenmoor_marksmen",
+    "rhudaur_bondi_spears",
+    "rhudaur_coldfell_spearband",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_bondi_spears",
+    "rhudaur_bondi_spears"
    ],
    "xp": [
     0,
@@ -9176,9 +9192,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5450,
+   "upkeep": 7437.5,
    "_startCost": 10900
   },
   {
@@ -10389,6 +10411,118 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+4 regiments · 2,750 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+6 regiments · 3,625 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_25 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136637,7 +136771,8 @@
   "Ered Luin",
   "Erebor",
   "Rohan",
-  "Dale"
+  "Dale",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
