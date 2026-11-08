@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 14320,
+   "treasury": 20,
    "capital": "Province_409",
    "zeal": 9
   },
@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 3435,
+   "treasury": 5385,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 1356,
+   "treasury": 11856,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 165,
+   "treasury": 7640,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -1542,17 +1542,7 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Rhudaur",
-     "cost": 3500,
-     "startedTurn": 8,
-     "startedDate": "Winter 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3511,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7051,7 +7041,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8110,7 +8100,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9077,8 +9067,8 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 2280,
-   "at": "Province_342",
+   "men": 1920,
+   "at": "Province_375",
    "order": null,
    "units": [
     "woodland_realm_legolas",
@@ -9096,10 +9086,7 @@
     "woodland_realm_silvan_axes",
     "woodland_realm_forest_spears",
     "woodland_realm_forest_riders",
-    "woodland_realm_forest_sentinels",
-    "woodland_realm_silvan_axes",
-    "woodland_realm_forest_archers",
-    "woodland_realm_forest_axes"
+    "woodland_realm_forest_sentinels"
    ],
    "xp": [
     0,
@@ -9117,12 +9104,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 8825,
+   "upkeep": 7525,
    "_startCost": 12775
   },
   {
@@ -9159,8 +9143,8 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 2500,
-   "at": "Province_447",
+   "men": 1700,
+   "at": "Province_25",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -9176,13 +9160,7 @@
     "rhudaur_bondi_spears",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_ettenmoor_marksmen",
-    "rhudaur_bondi_spears",
-    "rhudaur_coldfell_spearband",
-    "rhudaur_weather_hill_scavengers",
-    "rhudaur_weather_hill_scavengers",
-    "rhudaur_bondi_spears",
-    "rhudaur_bondi_spears"
+    "rhudaur_ettenmoor_marksmen"
    ],
    "xp": [
     0,
@@ -9198,15 +9176,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7437.5,
+   "upkeep": 5450,
    "_startCost": 10900
   },
   {
@@ -9400,7 +9372,7 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1800,
+   "men": 1520,
    "at": "Province_373",
    "order": null,
    "units": [
@@ -9416,8 +9388,6 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
-    "lothlorien_amroth_sentinels",
-    "lothlorien_amroth_sentinels",
     "lothlorien_amroth_sentinels"
    ],
    "xp": [
@@ -9433,11 +9403,9 @@
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 7412.5,
+   "upkeep": 6437.5,
    "_startCost": 13850,
    "fort": false
   },
@@ -9524,16 +9492,38 @@
   {
    "name": "Host of Province_409",
    "faction": "Imraldris",
-   "men": 120,
-   "at": "Province_401",
+   "men": 1320,
+   "at": "Province_409",
    "order": null,
    "units": [
-    "imraldris_elrond"
+    "imraldris_elrond",
+    "imraldris_imladris_swordsmen",
+    "imraldris_imladris_swordsmen",
+    "imraldris_imladris_swordsmen",
+    "imraldris_noldorin_horsemen",
+    "imraldris_noldorin_horsemen",
+    "imraldris_noldorin_swordsmen",
+    "imraldris_noldorin_swordsmen",
+    "imraldris_noldorin_archers",
+    "imraldris_noldorin_archers",
+    "imraldris_noldorin_horsemen",
+    "imraldris_rivendell_bows"
    ],
    "xp": [
-    5
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
    ],
-   "upkeep": 750,
+   "upkeep": 7900,
    "_startCost": 1500
   },
   {
@@ -10418,295 +10408,34 @@
     0
    ],
    "upkeep": 4200
-  },
-  {
-   "name": "Host of Province_392",
-   "faction": "Woodland Realm",
-   "men": 1120,
-   "at": "Province_427",
-   "order": null,
-   "units": [
-    "woodland_realm_forest_axes",
-    "woodland_realm_forest_archers",
-    "woodland_realm_silvan_spears",
-    "woodland_realm_silvan_spears",
-    "woodland_realm_silvan_axes",
-    "woodland_realm_silvan_axes",
-    "woodland_realm_forest_sentinels",
-    "woodland_realm_forest_sentinels",
-    "woodland_realm_forest_riders"
-   ],
-   "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "upkeep": 3950
   }
  ],
  "log": [
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien ends its turn — Anduin Vale to move.",
+   "txt": "Imladris ends its turn — Anduin Vale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_16 merges into Host of Province_16 at Province_373 (2 regiments)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_16 moved Province_16 → Province_373",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien mustered Host of Province_16 at Province_16 (2 regiments · 1,950 castas)",
+   "txt": "Imladris reinforced Host of Province_409 at Province_409 (+11 regiments · 14,300 castas)",
    "kind": "battle",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Lothlorien grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Woodland Realm ends its turn — Anduin Vale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_375 → Province_427",
+   "txt": "Host of Province_409 moved Province_401 → Province_409",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_375 → Province_342",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Forest Axes transfers from Host of Province_392 to Host of Province_392 at Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Forest Archers transfers from Host of Province_392 to Host of Province_392 at Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Silvan Axes transfers from Host of Province_392 to Host of Province_392 at Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_342 → Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_342 → Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_375 → Province_342",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_427 → Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_375 → Province_342",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_427 → Province_375",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_392 → Province_427",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Woodland Realm mustered Host of Province_392 at Province_392 (12 regiments · 10,500 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_392 moved Province_375 → Province_427",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Woodland Realm grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Rhudaur ends its turn — Anduin Vale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_432 → Province_447",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_447 → Province_432",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_432 → Province_447",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+4 regiments · 2,750 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_447 → Province_432",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 disbands Bondi Axes at Province_447 — 600g returned to the treasury",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_432 → Province_447",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 3 (3,500 castas)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+6 regiments · 3,625 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_447 → Province_432",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Host of Province_432 moved Province_25 → Province_447",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 8,
-   "d": "Winter · S.R. 1419 (T.A. 3019)",
-   "txt": "Rhudaur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "txt": "Imladris grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
    "kind": "turn",
    "detail": null
   },
@@ -136959,9 +136688,7 @@
   "Erebor",
   "Rohan",
   "Dale",
-  "Rhudaur",
-  "Woodland Realm",
-  "Lothlorien"
+  "Imraldris"
  ],
  "pendingReview": false
 }
