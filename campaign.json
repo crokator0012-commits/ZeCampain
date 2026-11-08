@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 11856,
+   "treasury": 1356,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -9077,8 +9077,8 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 1920,
-   "at": "Province_375",
+   "men": 2280,
+   "at": "Province_342",
    "order": null,
    "units": [
     "woodland_realm_legolas",
@@ -9096,7 +9096,10 @@
     "woodland_realm_silvan_axes",
     "woodland_realm_forest_spears",
     "woodland_realm_forest_riders",
-    "woodland_realm_forest_sentinels"
+    "woodland_realm_forest_sentinels",
+    "woodland_realm_silvan_axes",
+    "woodland_realm_forest_archers",
+    "woodland_realm_forest_axes"
    ],
    "xp": [
     0,
@@ -9114,9 +9117,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 7525,
+   "upkeep": 8825,
    "_startCost": 12775
   },
   {
@@ -10408,9 +10414,151 @@
     0
    ],
    "upkeep": 4200
+  },
+  {
+   "name": "Host of Province_392",
+   "faction": "Woodland Realm",
+   "men": 1120,
+   "at": "Province_427",
+   "order": null,
+   "units": [
+    "woodland_realm_forest_axes",
+    "woodland_realm_forest_archers",
+    "woodland_realm_silvan_spears",
+    "woodland_realm_silvan_spears",
+    "woodland_realm_silvan_axes",
+    "woodland_realm_silvan_axes",
+    "woodland_realm_forest_sentinels",
+    "woodland_realm_forest_sentinels",
+    "woodland_realm_forest_riders"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 3950
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_427",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Forest Axes transfers from Host of Province_392 to Host of Province_392 at Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Forest Archers transfers from Host of Province_392 to Host of Province_392 at Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Silvan Axes transfers from Host of Province_392 to Host of Province_392 at Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_342 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_342 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_427 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_427 → Province_375",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_392 → Province_427",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm mustered Host of Province_392 at Province_392 (12 regiments · 10,500 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_392 moved Province_375 → Province_427",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Woodland Realm grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136772,7 +136920,8 @@
   "Erebor",
   "Rohan",
   "Dale",
-  "Rhudaur"
+  "Rhudaur",
+  "Woodland Realm"
  ],
  "pendingReview": false
 }
