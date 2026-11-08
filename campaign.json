@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 5385,
+   "treasury": 3435,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -9400,7 +9400,7 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1520,
+   "men": 1800,
    "at": "Province_373",
    "order": null,
    "units": [
@@ -9416,6 +9416,8 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
+    "lothlorien_amroth_sentinels",
+    "lothlorien_amroth_sentinels",
     "lothlorien_amroth_sentinels"
    ],
    "xp": [
@@ -9431,9 +9433,11 @@
     0,
     0,
     0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6437.5,
+   "upkeep": 7412.5,
    "_startCost": 13850,
    "fort": false
   },
@@ -10447,6 +10451,41 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_16 merges into Host of Province_16 at Province_373 (2 regiments)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_16 moved Province_16 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien mustered Host of Province_16 at Province_16 (2 regiments · 1,950 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136921,7 +136960,8 @@
   "Rohan",
   "Dale",
   "Rhudaur",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
