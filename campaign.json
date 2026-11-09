@@ -155,7 +155,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 4514,
+   "treasury": 2514,
    "capital": "Province_400",
    "zeal": 10
   },
@@ -3501,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7041,7 +7041,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7371,7 +7371,13 @@
    "availableBldOwner": {
     "grain_farm": "Isengard"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Isengard",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -8100,7 +8106,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10411,6 +10417,41 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_400 moved Province_423 → Province_296",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_400 moved Province_296 → Province_423",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard starts construction: Province_296 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Isengard grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136688,7 +136729,8 @@
   "Erebor",
   "Rohan",
   "Dale",
-  "Imraldris"
+  "Imraldris",
+  "Isengard"
  ],
  "pendingReview": false
 }
