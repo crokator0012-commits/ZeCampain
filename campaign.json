@@ -219,7 +219,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 6993,
+   "treasury": 668,
    "capital": "Province_23",
    "zeal": 10
   },
@@ -3693,7 +3693,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -10051,8 +10051,8 @@
   {
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
-   "men": 980,
-   "at": "Province_345",
+   "men": 1940,
+   "at": "Province_23",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -10062,6 +10062,14 @@
     "beorings_aor_pass_sentries",
     "beorings_aor_carrock_wardens",
     "greenwood_aor_greenwood_rangers",
+    "anduin_vale_aor_greenwood_axemen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_spearmen",
+    "anduin_vale_vale_spearmen",
+    "eotheod_aor_eotheod_cavalry",
+    "eotheod_aor_eotheod_cavalry",
+    "anduin_vale_vale_yeomen",
     "anduin_vale_aor_greenwood_axemen"
    ],
    "xp": [
@@ -10072,9 +10080,17 @@
     1,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4212.5,
+   "upkeep": 7375,
    "_startCost": 8850
   },
   {
@@ -10423,6 +10439,41 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Anduin Vale ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_23 moved Province_26 → Province_23",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_23 moved Province_295 → Province_26",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_23 moved Province_345 → Province_295",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Anduin Vale reinforced Host of Province_23 at Province_345 (+8 regiments · 6,325 castas)",
+   "kind": "battle",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -30665,7 +30716,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 2,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -136743,7 +136794,8 @@
   "Rohan",
   "Dale",
   "Imraldris",
-  "Isengard"
+  "Isengard",
+  "Anduin Vale"
  ],
  "pendingReview": false
 }
