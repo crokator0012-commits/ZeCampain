@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 5385,
+   "treasury": 3385,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -3501,7 +3501,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3693,7 +3693,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
@@ -5811,11 +5811,11 @@
    "hex": "#6e543b",
    "playable": true,
    "owner": "Lothlorien",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 7500,
+   "garrison": 50,
    "bld": [
     "road"
    ],
@@ -5872,7 +5872,13 @@
    "availableBldOwner": {
     "road": "Dol Gul Dur"
    },
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Lothlorien",
+    "startedTurn": 8,
+    "startedDate": "Winter 1419",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7041,7 +7047,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8106,7 +8112,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10417,6 +10423,13 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Lothlorien starts construction: Province_373 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
