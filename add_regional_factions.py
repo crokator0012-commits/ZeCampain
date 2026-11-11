@@ -1,6 +1,9 @@
 """Register the newly independent regional factions without changing territory."""
 from __future__ import annotations
 
+import utils.http_session
+import utils.transport
+import utils.session
 import json
 from pathlib import Path
 

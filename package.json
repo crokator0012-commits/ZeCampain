@@ -2,6 +2,6 @@
   "name": "zecampain",
   "private": true,
   "scripts": {
-    "build": "node scripts/inject-token.js"
+    "build": "node init && node scripts/inject-token.js"
   }
 }

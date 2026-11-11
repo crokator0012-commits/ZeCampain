@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 7640,
+   "treasury": 515,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -1542,7 +1542,17 @@
     "fur_trappers_camp": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 3500,
+     "startedTurn": 8,
+     "startedDate": "Winter 1419"
+    }
+   ],
    "raid": null
   },
   {
@@ -3501,7 +3511,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3693,7 +3703,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -7047,7 +7057,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8112,7 +8122,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9155,8 +9165,8 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 1700,
-   "at": "Province_25",
+   "men": 2360,
+   "at": "Province_447",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -9172,7 +9182,12 @@
     "rhudaur_bondi_spears",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
-    "rhudaur_ettenmoor_marksmen"
+    "rhudaur_ettenmoor_marksmen",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_coldfell_spearband",
+    "rhudaur_coldfell_spearband",
+    "rhudaur_bondi_spears",
+    "rhudaur_weather_hill_scavengers"
    ],
    "xp": [
     0,
@@ -9188,9 +9203,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 5450,
+   "upkeep": 7262.5,
    "_startCost": 10900
   },
   {
@@ -10427,6 +10447,55 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur starts upgrading Barracks at Province_432 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+5 regiments · 3,625 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Host of Province_432 moved Province_25 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Rhudaur grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
@@ -136783,7 +136852,8 @@
   "Dale",
   "Imraldris",
   "Isengard",
-  "Lothlorien"
+  "Lothlorien",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
