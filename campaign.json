@@ -147,7 +147,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 4856,
+   "treasury": 556,
    "capital": "Province_442",
    "zeal": 10
   },
@@ -3505,7 +3505,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3697,7 +3697,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -7045,7 +7045,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7421,7 +7421,17 @@
     "iron_mine": "Goblins"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Khazad-dum",
+     "cost": 3500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -8094,7 +8104,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9453,7 +9463,7 @@
   {
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
-   "men": 2100,
+   "men": 2220,
    "at": "Province_435",
    "order": null,
    "units": [
@@ -9473,6 +9483,7 @@
     "khazad_dum_dwarrowdelf_swordsmen",
     "khazad_dum_dwarrowdelf_swordsmen",
     "khazad_dum_mountain_travellers",
+    "khazad_dum_hunters_of_khazad_dum",
     "khazad_dum_hunters_of_khazad_dum"
    ],
    "xp": [
@@ -9492,9 +9503,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 7437.5,
+   "upkeep": 7837.5,
    "_startCost": 9875
   },
   {
@@ -10480,6 +10492,34 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum reinforced Host of Province_442 at Province_435 (+1 regiment · 800 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum starts upgrading Barracks at Province_435 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -156344,6 +156384,8 @@
    }
   }
  ],
- "moved": [],
+ "moved": [
+  "Khazad-dum"
+ ],
  "pendingReview": false
 }
