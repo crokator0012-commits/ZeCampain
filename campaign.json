@@ -3511,7 +3511,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3703,7 +3703,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
@@ -3711,11 +3711,11 @@
    "hex": "#08156e",
    "playable": true,
    "owner": "Dale",
-   "tier": 2,
+   "tier": 3,
    "terrain": "plains",
-   "value": 850,
+   "value": 1300,
    "move": 2,
-   "garrison": 10000,
+   "garrison": 1200,
    "bld": [
     "grain_farm",
     "barracks"
@@ -3747,13 +3747,7 @@
     "grain_farm": "Dale",
     "barracks": "Dale"
    },
-   "upg": {
-    "to": 3,
-    "payer": "Dale",
-    "startedTurn": 5,
-    "startedDate": "Spring 1419",
-    "cost": 7000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -7057,7 +7051,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7212,7 +7206,7 @@
     "Province_72"
    ],
    "bldLevel": {
-    "grain_farm": 2
+    "grain_farm": 3
    },
    "cx": 2749.2434571383797,
    "cy": 669.0554771979314,
@@ -7226,17 +7220,7 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "grain_farm",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Dale",
-     "cost": 1500,
-     "startedTurn": 8,
-     "startedDate": "Winter 1419"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -8122,7 +8106,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10447,6 +10431,20 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Grain Farm at Province_451 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter · S.R. 1419 (T.A. 3019)",
+   "txt": "Province_13 completes its works — now a fortified city (large).",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter · S.R. 1419 (T.A. 3019)",
