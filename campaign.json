@@ -195,7 +195,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 5080,
+   "treasury": 330,
    "capital": "Province_10",
    "zeal": 10
   },
@@ -10507,9 +10507,50 @@
     0
    ],
    "_startCost": 0
+  },
+  {
+   "name": "Host of Province_10",
+   "faction": "Erebor",
+   "men": 500,
+   "at": "Province_10",
+   "order": null,
+   "units": [
+    "erebor_erebor_crossbows",
+    "erebor_erebor_axe_guards",
+    "erebor_erebor_axe_warroirs",
+    "erebor_erebor_spear_gaurds"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 2375
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Erebor ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Erebor mustered Host of Province_10 at Province_10 (4 regiments · 4750 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Erebor grew tired of waiting on Ered Luin and skips ahead — Ered Luin keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -31452,7 +31493,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 8,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -156481,7 +156522,8 @@
  ],
  "moved": [
   "Khazad-dum",
-  "Anduin Vale"
+  "Anduin Vale",
+  "Erebor"
  ],
  "pendingReview": false
 }
