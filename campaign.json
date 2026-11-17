@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 2505,
+   "treasury": 3505,
    "capital": "Province_409",
    "zeal": 10
   },
@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 3043,
+   "treasury": 4043,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -187,7 +187,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 4535,
+   "treasury": 2535,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3707,7 +3707,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
@@ -31451,7 +31451,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 8,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
