@@ -3151,11 +3151,11 @@
    "hex": "#e31181",
    "playable": true,
    "owner": "Ered Luin",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "grain_farm",
     "stone_quarry",
@@ -3182,13 +3182,7 @@
     "stone_quarry": "Ered Luin",
     "fishing_jetties": "Ered Luin"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Ered Luin",
-    "startedTurn": 7,
-    "startedDate": "Autumn 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null,
    "displayName": "Durin's Light"
@@ -10516,6 +10510,13 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Province_270 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
