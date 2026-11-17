@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 6189,
+   "treasury": 1189,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -3509,7 +3509,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3701,7 +3701,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -7055,7 +7055,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8114,7 +8114,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -8498,7 +8498,17 @@
     "grain_farm": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 1500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -8587,7 +8597,17 @@
     "market": "Dale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Dale",
+     "cost": 3500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -10530,6 +10550,27 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dale ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dale starts upgrading Grain Farm at Province_421 to Level 3 (1500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dale starts upgrading Barracks at Province_388 to Level 3 (3500 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -31493,7 +31534,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 1,
+ "active": 2,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -156523,7 +156564,8 @@
  "moved": [
   "Khazad-dum",
   "Anduin Vale",
-  "Erebor"
+  "Erebor",
+  "Dale"
  ],
  "pendingReview": false
 }
