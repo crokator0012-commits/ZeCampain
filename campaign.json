@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 3505,
+   "treasury": 505,
    "capital": "Province_409",
    "zeal": 10
   },
@@ -187,7 +187,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 2535,
+   "treasury": 1535,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -3336,7 +3336,13 @@
     "iron_mine": "Imraldris",
     "healing_herb_garden": "Imraldris"
    },
-   "upg": null,
+   "upg": {
+    "to": 2,
+    "payer": "Imraldris",
+    "startedTurn": 9,
+    "startedDate": "Spring 1420",
+    "cost": 4000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -10556,6 +10562,13 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imraldris starts construction: Province_401 → fortified city (small) (4,000 castas)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
