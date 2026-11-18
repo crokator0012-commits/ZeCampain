@@ -3701,7 +3701,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
@@ -5698,12 +5698,12 @@
    "modern": "Province 372",
    "hex": "#6d4c41",
    "playable": true,
-   "owner": "Dunland",
-   "tier": 1,
+   "owner": "Imraldris",
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 7500,
+   "garrison": 50,
    "bld": [
     "goat_pen",
     "goat_pen"
@@ -10556,6 +10556,20 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imraldris annexed Province_372 (from Dunland)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imraldris occupied Province_372 (held by Dunland)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
