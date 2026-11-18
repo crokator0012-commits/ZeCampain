@@ -155,7 +155,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 4422,
+   "treasury": 647,
    "capital": "Province_400",
    "zeal": 10
   },
@@ -3515,7 +3515,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3707,7 +3707,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -7071,7 +7071,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8130,7 +8130,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10142,8 +10142,8 @@
   {
    "name": "Host of Province_400",
    "faction": "Isengard",
-   "men": 1780,
-   "at": "Province_296",
+   "men": 2360,
+   "at": "Province_400",
    "order": null,
    "units": [
     "isengard_uruk_hai_archers",
@@ -10160,7 +10160,12 @@
     "isengard_wargs_of_isengrad",
     "isengard_wargs_of_isengrad",
     "isengard_uruk_hai_archers",
-    "isengard_half_orc_spears"
+    "isengard_half_orc_spears",
+    "isengard_half_orc_spears",
+    "isengard_wargs_of_isengrad",
+    "isengard_uruk_hai_raiders",
+    "isengard_uruk_hai_raiders",
+    "isengard_uruk_hai_raiders"
    ],
    "xp": [
     2,
@@ -10177,9 +10182,14 @@
     2,
     2,
     2,
+    2,
+    2,
+    2,
+    2,
+    2,
     2
    ],
-   "upkeep": 5737.5,
+   "upkeep": 7625,
    "_startCost": 11475
   },
   {
@@ -10562,6 +10572,34 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Isengard ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Isengard reinforced Host of Province_400 at Province_400 (+5 regiments · 3,775 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_400 moved Province_296 → Province_400",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Isengard grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -156733,7 +156771,8 @@
   "Erebor",
   "Dale",
   "Imraldris",
-  "Iron Hills"
+  "Iron Hills",
+  "Isengard"
  ],
  "pendingReview": false
 }
