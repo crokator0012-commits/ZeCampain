@@ -3701,7 +3701,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -9537,7 +9537,7 @@
    "name": "Host of Province_409",
    "faction": "Imraldris",
    "men": 1320,
-   "at": "Province_409",
+   "at": "Province_372",
    "order": null,
    "units": [
     "imraldris_elrond",
@@ -10544,6 +10544,62 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imladris ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_401 → Province_372",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_430 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_401 → Province_430",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_372 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_401 → Province_372",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_409 moved Province_409 → Province_401",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imladris grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -156601,7 +156657,8 @@
   "Khazad-dum",
   "Anduin Vale",
   "Erebor",
-  "Dale"
+  "Dale",
+  "Imraldris"
  ],
  "pendingReview": false
 }
