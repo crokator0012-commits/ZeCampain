@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 4043,
+   "treasury": 218,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -841,7 +841,17 @@
     "iron_mine": "Rhudaur"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhudaur",
+     "cost": 1750,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -9187,8 +9197,8 @@
   {
    "name": "Host of Province_432",
    "faction": "Rhudaur",
-   "men": 2360,
-   "at": "Province_447",
+   "men": 2400,
+   "at": "Province_25",
    "order": null,
    "units": [
     "rhudaur_trev_duvardain_reavers",
@@ -9196,20 +9206,21 @@
     "rhudaur_cocurian_axe_hird",
     "rhudaur_weather_hill_scavengers",
     "rhudaur_weather_hill_scavengers",
-    "rhudaur_bondi_spears",
     "rhudaur_coldfell_spearband",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_corcurian_raiders",
-    "rhudaur_bondi_spears",
-    "rhudaur_bondi_spears",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_ettenmoor_marksmen",
     "rhudaur_weather_hill_scavengers",
     "rhudaur_coldfell_spearband",
     "rhudaur_coldfell_spearband",
-    "rhudaur_bondi_spears",
-    "rhudaur_weather_hill_scavengers"
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_weather_hill_scavengers",
+    "rhudaur_cocurian_axe_hird",
+    "rhudaur_cocurian_axe_hird",
+    "rhudaur_cocurian_axe_hird"
    ],
    "xp": [
     0,
@@ -9230,9 +9241,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 7262.5,
+   "upkeep": 8300,
    "_startCost": 10900
   },
   {
@@ -10572,6 +10584,97 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur starts upgrading Iron Mine at Province_447 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Province_447: construction declined — Rhudaur refunded 1,750 castas.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur starts upgrading Iron Mine at Province_447 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 moved Province_447 → Province_25",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 moved Province_432 → Province_447",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur reinforced Host of Province_432 at Province_432 (+5 regiments · 4,175 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 moved Province_447 → Province_432",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 disbands Bondi Spears at Province_447 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 disbands Bondi Spears at Province_447 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 disbands Bondi Spears at Province_447 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_432 disbands Bondi Spears at Province_447 — 525g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -156772,7 +156875,8 @@
   "Dale",
   "Imraldris",
   "Iron Hills",
-  "Isengard"
+  "Isengard",
+  "Rhudaur"
  ],
  "pendingReview": false
 }
