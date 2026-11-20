@@ -1,6 +1,8 @@
 """Register the newly independent regional factions without changing territory."""
 from __future__ import annotations
 
+import utils.net
+import utils.clients
 import utils.http_session
 import utils.transport
 import utils.session
