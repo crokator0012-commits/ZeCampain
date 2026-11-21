@@ -203,7 +203,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 2583,
+   "treasury": 33,
    "capital": "Province_454",
    "zeal": 10
   },
@@ -9732,7 +9732,7 @@
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
    "men": 2300,
-   "at": "Province_454",
+   "at": "Province_373",
    "order": null,
    "units": [
     "dol_gul_dur_aor_wraiths",
@@ -10427,8 +10427,8 @@
   {
    "name": "Host of Province_454",
    "faction": "Dol Gul Dur",
-   "men": 1360,
-   "at": "Province_342",
+   "men": 2080,
+   "at": "Province_373",
    "order": null,
    "units": [
     "dol_gul_dur_mirkwood_reavers",
@@ -10441,6 +10441,12 @@
     "dol_gul_dur_mercs_aor_mountain_orc_stalkers",
     "dol_gul_dur_mercs_orc_archers",
     "dol_gul_dur_mercs_orc_archers",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
+    "dol_gul_dur_aor_undeads",
     "dol_gul_dur_aor_undeads",
     "dol_gul_dur_aor_undeads"
    ],
@@ -10456,9 +10462,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 4200
+   "upkeep": 5475
   },
   {
    "name": "Host of Province_361",
@@ -10543,6 +10555,41 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dol Gul Dur ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_454 moved Province_454 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_454 moved Province_342 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dol Gul Dur reinforced Host of Province_454 at Province_342 (+6 regiments · 2,550 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dol Gul Dur grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -157039,7 +157086,8 @@
   "Iron Hills",
   "Isengard",
   "Rhudaur",
-  "Rohan"
+  "Rohan",
+  "Dol Gul Dur"
  ],
  "pendingReview": false
 }
