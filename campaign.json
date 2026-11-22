@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 4320,
+   "treasury": 670,
    "capital": "Province_364",
    "zeal": 10
   },
@@ -9401,8 +9401,8 @@
   {
    "name": "Host of Province_364",
    "faction": "Lindon",
-   "men": 1260,
-   "at": "Province_364",
+   "men": 1900,
+   "at": "Province_430",
    "order": null,
    "units": [
     "lindon_haven_watchers",
@@ -9414,7 +9414,12 @@
     "lindon_noldorin_archers",
     "lindon_noldorin_archers",
     "lindon_noldorin_archers",
-    "lindon_noldorin_spearmen"
+    "lindon_noldorin_spearmen",
+    "lindon_falathrim_spearmen",
+    "lindon_falathrim_spearmen",
+    "lindon_falathrim_swordsmen",
+    "lindon_falathrim_swordsmen",
+    "lindon_falathrim_swordsmen"
    ],
    "xp": [
     0,
@@ -9426,9 +9431,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6225,
+   "upkeep": 8050,
    "_startCost": 12450
   },
   {
@@ -10555,6 +10565,41 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lindon ends its turn — Dol Amroth to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lindon reinforced Host of Province_364 at Province_430 (+5 regiments · 3,650 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_364 moved Province_466 → Province_430",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_364 moved Province_364 → Province_466",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lindon grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -157087,7 +157132,8 @@
   "Isengard",
   "Rhudaur",
   "Rohan",
-  "Dol Gul Dur"
+  "Dol Gul Dur",
+  "Lindon"
  ],
  "pendingReview": false
 }
