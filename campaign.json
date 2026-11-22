@@ -5835,11 +5835,11 @@
    "hex": "#6e543b",
    "playable": true,
    "owner": "Lothlorien",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 7500,
    "bld": [
     "road"
    ],
@@ -5896,13 +5896,7 @@
    "availableBldOwner": {
     "road": "Dol Gul Dur"
    },
-   "upg": {
-    "to": 1,
-    "payer": "Lothlorien",
-    "startedTurn": 8,
-    "startedDate": "Winter 1419",
-    "cost": 2000
-   },
+   "upg": null,
    "buildQueue": [],
    "raid": null
   },
@@ -10488,6 +10482,13 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Province_373 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
