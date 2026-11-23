@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 16402,
+   "treasury": 752,
    "capital": "Province_17",
    "zeal": 10
   },
@@ -3492,7 +3492,17 @@
     "fishing_jetties": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 1650,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -3771,11 +3781,11 @@
    "hex": "#fac46b",
    "playable": true,
    "owner": "Mordor",
-   "tier": 0,
+   "tier": 1,
    "terrain": "plains",
-   "value": 250,
+   "value": 500,
    "move": 2,
-   "garrison": 50,
+   "garrison": 200,
    "bld": [
     "copper_mine"
    ],
@@ -3808,7 +3818,17 @@
     "copper_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "copper_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 1750,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -3904,7 +3924,17 @@
     "stone_quarry": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 3500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -4865,7 +4895,17 @@
     "iron_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "iron_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 1750,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -6641,7 +6681,17 @@
     "sheep_pen": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 1500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -6694,7 +6744,17 @@
     "barracks": "Mordor"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "barracks",
+     "kind": "barracksUpgrade",
+     "toLevel": 3,
+     "payer": "Mordor",
+     "cost": 3500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -8388,7 +8448,7 @@
    "modern": "Province 469",
    "hex": "#fff200",
    "playable": true,
-   "owner": "Gondor",
+   "owner": "Mordor",
    "tier": 0,
    "terrain": "plains",
    "value": 250,
@@ -9191,7 +9251,7 @@
    "name": "Host of Province_305",
    "faction": "Mordor",
    "men": 2220,
-   "at": "Province_32",
+   "at": "Province_469",
    "order": null,
    "units": [
     "mordor_gothmog",
@@ -10189,7 +10249,7 @@
   {
    "name": "Host of Province_393",
    "faction": "Gundabad",
-   "men": 1680,
+   "men": 2160,
    "at": "Province_393",
    "order": null,
    "units": [
@@ -10204,12 +10264,20 @@
     "gundabad_mountain_orc_stalkers",
     "gundabad_orc_warband",
     "gundabad_orc_marauders",
-    "gundabad_mountain_orc_traversers",
-    "gundabad_mountain_orc_traversers",
-    "gundabad_mountain_orc_traversers"
+    "gundabad_night_hunters",
+    "gundabad_night_hunters",
+    "gundabad_night_hunters",
+    "gundabad_night_hunters",
+    "gundabad_orc_warband",
+    "gundabad_orc_warband",
+    "gundabad_orc_warband"
    ],
-   "upkeep": 5475,
+   "upkeep": 5812.5,
    "xp": [
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -10225,7 +10293,7 @@
     0,
     0
    ],
-   "_startCost": 6800
+   "_startCost": 10950
   },
   {
    "name": "Host of Province_334",
@@ -10380,7 +10448,7 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 1680,
+   "men": 1500,
    "at": "Province_260",
    "order": null,
    "units": [
@@ -10396,8 +10464,7 @@
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers"
+    "rohan_erkenbrand"
    ],
    "xp": [
     0,
@@ -10412,10 +10479,10 @@
     0,
     0,
     0,
-    0,
     0
    ],
-   "upkeep": 7000
+   "upkeep": 6775,
+   "_startCost": 14000
   },
   {
    "name": "Host of Province_392",
@@ -10456,6 +10523,97 @@
   }
  ],
  "log": [
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_327 → Province_260",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Copper Mine at Province_453 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Barracks at Province_347 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Province_453 completes its works — now a unfortified city.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts construction: Province_453 → unfortified city (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Barracks at Province_17 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_260 → Province_327",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Sheep Pen at Province_72 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Fishing Jetties at Province_371 to Level 3 (1,650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor starts upgrading Iron Mine at Province_327 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor annexed Province_469 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor occupied Province_469 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_305 moved Province_32 → Province_469",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
