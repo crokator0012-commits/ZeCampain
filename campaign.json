@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 398,
+   "treasury": 6823,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -219,7 +219,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 7760,
+   "treasury": 10,
    "capital": "Province_23",
    "zeal": 10
   },
@@ -1947,7 +1947,17 @@
     "grain_farm": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 1500,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -2963,7 +2973,17 @@
     "healing_herb_garden": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "healing_herb_garden",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 1750,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -3534,7 +3554,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3879,7 +3899,17 @@
     "grain_farm": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 1500,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -4066,7 +4096,17 @@
     "startedDate": "Spring 1420",
     "cost": 4000
    },
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 1500,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -5300,7 +5340,17 @@
     "grain_farm": "Anduin Vale"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Anduin Vale",
+     "cost": 1500,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -7142,7 +7192,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8166,7 +8216,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9077,13 +9127,14 @@
   {
    "name": "Host of Province_127",
    "faction": "Rohan",
-   "men": 1260,
+   "men": 1300,
    "at": "Province_27",
    "order": null,
    "units": [
     "rohan_prince_theodred",
     "rohan_sword_theigns",
     "rohan_axe_theigns",
+    "rohan_scouts_of_rohan",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_aor_eored_of_the_east_fold",
@@ -9091,24 +9142,23 @@
     "rohan_sword_theigns",
     "rohan_sword_theigns",
     "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark",
-    "rohan_aor_eored_of_the_east_fold"
+    "rohan_yeomen_of_the_mark"
    ],
    "xp": [
     1,
     2,
     3,
+    1,
     2,
     2,
     1,
     1,
     2,
     2,
-    0,
     0,
     0
    ],
-   "upkeep": 5825,
+   "upkeep": 5612.5,
    "_startCost": 11575
   },
   {
@@ -10032,7 +10082,7 @@
    "name": "Host of Province_23",
    "faction": "Anduin Vale",
    "men": 1440,
-   "at": "Province_26",
+   "at": "Province_208",
    "order": null,
    "units": [
     "anduin_vale_vale_axemen",
@@ -10476,8 +10526,8 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 2220,
-   "at": "Province_127",
+   "men": 1500,
+   "at": "Province_260",
    "order": null,
    "units": [
     "rohan_eorling_retainers",
@@ -10492,13 +10542,7 @@
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
-    "rohan_erkenbrand",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers",
-    "rohan_eorling_retainers"
+    "rohan_erkenbrand"
    ],
    "xp": [
     0,
@@ -10513,15 +10557,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 9775,
+   "upkeep": 6775,
    "_startCost": 14000
   },
   {
@@ -10550,78 +10588,78 @@
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Rohan ends its turn — Anduin Vale to move.",
+   "txt": "Anduin Vale ends its turn — Dale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_127 moved Province_374 → Province_27",
+   "txt": "Anduin Vale starts upgrading Grain Farm at Province_333 to Level 3 (1,500 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Rohan reinforced Host of Province_127 at Province_374 (+1 regiment · 1 150 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_127 disbands Scouts of Rohan at Province_374 — 725g returned to the treasury",
+   "txt": "Anduin Vale starts upgrading Healing Herb Garden at Province_295 to Level 3 (1,750 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_127 moved Province_27 → Province_374",
+   "txt": "Anduin Vale starts upgrading Grain Farm at Province_103 to Level 3 (1,500 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_127 moved Province_374 → Province_27",
+   "txt": "Anduin Vale starts upgrading Grain Farm at Province_26 to Level 3 (1,500 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_127 moved Province_27 → Province_374",
+   "txt": "Anduin Vale starts upgrading Sheep Pen at Province_18 to Level 3 (1,500 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_260 moved Province_21 → Province_127",
+   "txt": "Host of Province_23 moved Province_26 → Province_208",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_260 moved Province_260 → Province_21",
+   "txt": "Host of Province_23 moved Province_23 → Province_26",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Rohan reinforced Host of Province_260 at Province_260 (+6 regiments · 6 000 castas)",
-   "kind": "battle",
+   "txt": "Province_23: construction declined — Anduin Vale refunded 3,500 castas.",
+   "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Rohan grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
-   "kind": "turn",
+   "txt": "Anduin Vale starts upgrading Barracks at Province_23 to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_23 moved Province_26 → Province_23",
+   "kind": "",
    "detail": null
   },
   {
@@ -33057,7 +33095,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 0,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -176063,7 +176101,7 @@
  "moved": [
   "Ered Luin",
   "Rhudaur",
-  "Rohan"
+  "Anduin Vale"
  ],
  "pendingReview": false
 }
