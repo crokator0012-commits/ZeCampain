@@ -10498,22 +10498,6 @@
    "_startCost": 14000
   },
   {
-   "name": "Host of Province_392",
-   "faction": "Woodland Realm",
-   "men": 260,
-   "at": "Province_427",
-   "order": null,
-   "units": [
-    "woodland_realm_silvan_archers",
-    "woodland_realm_silvan_spears"
-   ],
-   "xp": [
-    0,
-    0
-   ],
-   "upkeep": 712.5
-  },
-  {
    "name": "Host of Province_334",
    "faction": "Dunland",
    "men": 320,
