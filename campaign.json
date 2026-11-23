@@ -9132,7 +9132,7 @@
   {
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
-   "men": 2420,
+   "men": 2080,
    "at": "Province_351",
    "order": null,
    "units": [
@@ -9148,14 +9148,11 @@
     "woodland_realm_forest_axes",
     "woodland_realm_silvan_lookouts",
     "woodland_realm_forest_riders",
-    "woodland_realm_silvan_axes",
     "woodland_realm_forest_spears",
-    "woodland_realm_forest_riders",
-    "woodland_realm_forest_sentinels",
-    "woodland_realm_silvan_spears",
     "woodland_realm_lasgalen_axes",
     "woodland_realm_lasgalen_axes",
-    "woodland_realm_silvan_archers"
+    "woodland_realm_silvan_archers",
+    "woodland_realm_forest_sentinels"
    ],
    "xp": [
     0,
@@ -9174,13 +9171,10 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 9412.5,
-   "_startCost": 12775
+   "upkeep": 8087.5,
+   "_startCost": 18825
   },
   {
    "name": "Host of Province_436",
