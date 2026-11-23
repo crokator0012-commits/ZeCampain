@@ -1,8 +1,8 @@
 {
  "title": "Middle-earth Campaign",
- "turn": 9,
+ "turn": 10,
  "year": 1420,
- "season": "Spring",
+ "season": "Summer",
  "w": 3821,
  "h": 2687,
  "sea": "#162838",
@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 689,
+   "treasury": 6477,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -19,7 +19,7 @@
    "id": "Dorvinion",
    "name": "Dorwinion",
    "color": "#7B1FA2",
-   "treasury": 198,
+   "treasury": 6241,
    "capital": "Province_22",
    "zeal": 10
   },
@@ -27,9 +27,9 @@
    "id": "Dunland",
    "name": "Dunland",
    "color": "#6D4C41",
-   "treasury": 3074,
+   "treasury": 5665,
    "capital": "Province_334",
-   "zeal": 6
+   "zeal": 7
   },
   {
    "id": "Goblins",
@@ -43,7 +43,7 @@
    "id": "Gondor",
    "name": "Gondor",
    "color": "#1F5E99",
-   "treasury": 304,
+   "treasury": 3987,
    "capital": "Province_433",
    "zeal": 10
   },
@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 505,
+   "treasury": 3340,
    "capital": "Province_409",
    "zeal": 10
   },
@@ -59,7 +59,7 @@
    "id": "Lindon",
    "name": "Lindon",
    "color": "#3B8C8C",
-   "treasury": 670,
+   "treasury": 4330,
    "capital": "Province_364",
    "zeal": 10
   },
@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 183,
+   "treasury": 3411,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -83,7 +83,7 @@
    "id": "Mordor",
    "name": "Mordor",
    "color": "#6B1010",
-   "treasury": 752,
+   "treasury": 8648,
    "capital": "Province_17",
    "zeal": 10
   },
@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 452,
+   "treasury": 6823,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -99,7 +99,7 @@
    "id": "Umbar",
    "name": "Umbar",
    "color": "#7B2639",
-   "treasury": 8888,
+   "treasury": 5936,
    "capital": "Harondor",
    "zeal": 10
   },
@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 591,
+   "treasury": 2207,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -115,7 +115,7 @@
    "id": "Rhurrim",
    "name": "Rhurrim",
    "color": "#7A263A",
-   "treasury": 10984,
+   "treasury": 12352,
    "capital": "Province_436",
    "zeal": 10
   },
@@ -123,7 +123,7 @@
    "id": "Rhudaur",
    "name": "Rhudaur",
    "color": "#5F4B8B",
-   "treasury": 218,
+   "treasury": 2538,
    "capital": "Province_432",
    "zeal": 10
   },
@@ -139,7 +139,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 332,
+   "treasury": 5437,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -147,7 +147,7 @@
    "id": "Khazad-dum",
    "name": "Khazad-dum",
    "color": "#616161",
-   "treasury": 556,
+   "treasury": 5199,
    "capital": "Province_442",
    "zeal": 10
   },
@@ -155,7 +155,7 @@
    "id": "Isengard",
    "name": "Isengard",
    "color": "#363B35",
-   "treasury": 647,
+   "treasury": 2177,
    "capital": "Province_400",
    "zeal": 10
   },
@@ -163,7 +163,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 423,
+   "treasury": 3946,
    "capital": "Province_9",
    "zeal": 10
   },
@@ -171,7 +171,7 @@
    "id": "Gundabad",
    "name": "Gundabad",
    "color": "#58221B",
-   "treasury": 978,
+   "treasury": 2741,
    "capital": "Province_393",
    "zeal": 10
   },
@@ -187,7 +187,7 @@
    "id": "Ered Luin",
    "name": "Ered Luin",
    "color": "#5C6F7B",
-   "treasury": 1535,
+   "treasury": 6195,
    "capital": "Province_390",
    "zeal": 10
   },
@@ -195,7 +195,7 @@
    "id": "Erebor",
    "name": "Erebor",
    "color": "#C69214",
-   "treasury": 330,
+   "treasury": 4733,
    "capital": "Province_10",
    "zeal": 10
   },
@@ -203,7 +203,7 @@
    "id": "Dol Gul Dur",
    "name": "Dol Gul Dur",
    "color": "#3A0E20",
-   "treasury": 33,
+   "treasury": 3886,
    "capital": "Province_454",
    "zeal": 10
   },
@@ -211,7 +211,7 @@
    "id": "Dol Amroth",
    "name": "Dol Amroth",
    "color": "#4E86B8",
-   "treasury": 639,
+   "treasury": 3802,
    "capital": "Province_449",
    "zeal": 10
   },
@@ -219,7 +219,7 @@
    "id": "Anduin Vale",
    "name": "Anduin Vale",
    "color": "#2E86AB",
-   "treasury": 459,
+   "treasury": 7760,
    "capital": "Province_23",
    "zeal": 10
   },
@@ -310,7 +310,7 @@
    "color": "#52efa7",
    "treasury": 7370,
    "capital": null,
-   "zeal": 8,
+   "zeal": 9,
    "npc": true
   }
  ],
@@ -2820,7 +2820,17 @@
     "silver_mine": "Feredrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "silver_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 2000,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -3478,7 +3488,7 @@
    ],
    "displayName": "coast of nurn",
    "bldLevel": {
-    "fishing_jetties": 2
+    "fishing_jetties": 3
    },
    "cx": 3111.7534661401896,
    "cy": 1825.8397114271295,
@@ -3492,17 +3502,7 @@
     "fishing_jetties": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "fishing_jetties",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 1650,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3804,7 +3804,7 @@
    ],
    "displayName": "Mordor Heartlands",
    "bldLevel": {
-    "copper_mine": 2
+    "copper_mine": 3
    },
    "cx": 2518.2264150943397,
    "cy": 1487.1181727904668,
@@ -3818,17 +3818,7 @@
     "copper_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "copper_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 1750,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -3907,7 +3897,7 @@
    ],
    "displayName": "The Black Gate",
    "bldLevel": {
-    "barracks": 2,
+    "barracks": 3,
     "stone_quarry": 2
    },
    "cx": 2479.548387096774,
@@ -3924,17 +3914,7 @@
     "stone_quarry": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 3500,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -4115,7 +4095,17 @@
     "gold_mine": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "gold_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 2000,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -4622,7 +4612,7 @@
    "displayName": "Umbar",
    "bldLevel": {
     "gold_mine": 3,
-    "barracks": 2,
+    "barracks": 3,
     "fishing_jetties": 3
    },
    "bldOwner": {},
@@ -4881,7 +4871,7 @@
    ],
    "displayName": "Lithlad",
    "bldLevel": {
-    "iron_mine": 2
+    "iron_mine": 3
    },
    "cx": 3028.759515253259,
    "cy": 1651.6482700731842,
@@ -4895,17 +4885,7 @@
     "iron_mine": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "iron_mine",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 1750,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -5590,7 +5570,17 @@
     "barracks": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "copper_mine",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 1750,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -5686,7 +5676,17 @@
     "fishing_jetties": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "fishing_jetties",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 1650,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -5825,7 +5825,17 @@
     "grain_farm": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 1500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -6321,7 +6331,17 @@
     "barracks": "Rhurrim"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "grain_farm",
+     "kind": "tradeUpgrade",
+     "toLevel": 3,
+     "payer": "Rhurrim",
+     "cost": 1500,
+     "startedTurn": 9,
+     "startedDate": "Spring 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -6667,7 +6687,7 @@
    ],
    "displayName": "Mordia",
    "bldLevel": {
-    "sheep_pen": 2
+    "sheep_pen": 3
    },
    "cx": 3226.1178550931454,
    "cy": 1534.347500349005,
@@ -6681,17 +6701,7 @@
     "sheep_pen": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "sheep_pen",
-     "kind": "tradeUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 1500,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -6730,7 +6740,7 @@
    ],
    "displayName": "Barad- Dur",
    "bldLevel": {
-    "barracks": 2
+    "barracks": 3
    },
    "cx": 2631.845382963493,
    "cy": 1579.3507516105942,
@@ -6744,17 +6754,7 @@
     "barracks": "Mordor"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Mordor",
-     "cost": 3500,
-     "startedTurn": 9,
-     "startedDate": "Spring 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -7977,7 +7977,7 @@
    "occ": null,
    "displayName": "lesser umbar",
    "bldLevel": {
-    "blacksmith": 2,
+    "blacksmith": 3,
     "fishing_jetties": 2
    },
    "bldOwner": {},
@@ -8839,7 +8839,7 @@
    ],
    "displayName": "Lamedon",
    "bldLevel": {
-    "barracks": 1
+    "barracks": 2
    },
    "cx": 1982.7405281285878,
    "cy": 1755.2240014502386,
@@ -10523,6 +10523,300 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Summer 1420 opens — the round begins with Anduin Vale.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Anduin Vale: +8,650 income, −1,349 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dol Amroth: +4,375 income, −1,212 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dol Gul Dur: +4,100 income, −247 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Erebor: +6,550 income, −2,147 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Ered Luin: +6,275 income, −1,615 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Gundabad: +4,475 income, −2,712 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Iron Hills: +4,775 income, −1,252 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Isengard: +3,075 income, −1,545 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum: +6,250 income, −1,607 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes: +6,600 income, −1,495 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhudaur: +4,000 income, −1,680 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim: +12,725 income, −957 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm: +3,675 income, −2,059 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Umbar: +6,125 income, −1,577 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan: +9,820 income, −3,449 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Mordor: +11,700 income, −3,804 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien: +4,000 income, −772 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Lindon: +5,325 income, −1,665 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Imladris: +4,450 income, −1,615 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Gondor: +7,050 income, −3,367 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dunland: +5,825 income, −3,234 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dorwinion: +8,025 income, −1,982 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Dale: +7,900 income, −2,112 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Blacksmith at Near Harad reaches Level 3 — it now grants +3 chevrons to regiments mustered here.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Umbar starts upgrading Blacksmith at Near Harad to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Barracks at Harondor reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Umbar starts upgrading Barracks at Harondor to Level 3 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Barracks at Province_361 reaches Level 2 — units through Tier 2 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Umbar starts upgrading Barracks at Province_361 to Level 2 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Fishing Jetties at Province_386 to Level 3 (1,650 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Copper Mine at Province_33 to Level 3 (1,750 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Grain Farm at Province_458 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Gold Mine at Province_357 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Silver Mine at Province_348 to Level 3 (2,000 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Rhurrim starts upgrading Grain Farm at Province_460 to Level 3 (1,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Fishing Jetties at Province_371 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Sheep Pen at Province_72 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Iron Mine at Province_327 reaches Level 3 — it now yields 175 castas each season.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Barracks at Province_17 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Barracks at Province_347 reaches Level 3 — units through Tier 3 are now recruitable.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 9,
+   "d": "Spring · S.R. 1420 (T.A. 3020)",
+   "txt": "Copper Mine at Province_453 reaches Level 3 — it now yields 150 castas each season.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 9,
    "d": "Spring · S.R. 1420 (T.A. 3020)",
@@ -32487,7 +32781,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 20,
+ "active": 0,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -170352,32 +170646,5144 @@
      ]
     ]
    }
+  },
+  {
+   "t": 9,
+   "label": "Mordor · Spring 1420 · turn 9",
+   "snap": {
+    "prov": {
+     "Province_382": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_424": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_439": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_365": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_415": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_390": [
+      "Ered Luin",
+      "",
+      "",
+      4
+     ],
+     "Province_364": [
+      "Lindon",
+      "",
+      "",
+      4
+     ],
+     "Province_440": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_450": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_409": [
+      "Imraldris",
+      "",
+      "",
+      4
+     ],
+     "Province_447": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_5": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_425": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_437": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_398": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_345": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_459": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_6": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_90": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_383": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_465": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_24": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_428": [
+      "Dorvinion",
+      "",
+      "",
+      2
+     ],
+     "Province_305": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_463": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_432": [
+      "Rhudaur",
+      "",
+      "",
+      4
+     ],
+     "Province_4": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_395": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_405": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_448": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_412": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_422": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_20": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_333": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_379": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_417": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_29": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_31": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_431": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_2": [
+      "",
+      "",
+      "",
+      1
+     ],
+     "Province_16": [
+      "Lothlorien",
+      "",
+      "",
+      4
+     ],
+     "Province_466": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_444": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_396": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_446": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_416": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_303": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_7": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_436": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_400": [
+      "Isengard",
+      "",
+      "",
+      4
+     ],
+     "Province_445": [
+      "Erebor",
+      "",
+      "",
+      3
+     ],
+     "Province_348": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_438": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_295": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_23": [
+      "Anduin Vale",
+      "",
+      "",
+      4
+     ],
+     "Province_14": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_197": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_3": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_270": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_208": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_401": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_411": [
+      "Lindon",
+      "",
+      "",
+      0
+     ],
+     "Province_371": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_426": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_468": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_376": [
+      "Dorvinion",
+      "",
+      "",
+      0
+     ],
+     "Province_127": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_13": [
+      "Dale",
+      "",
+      "",
+      3
+     ],
+     "Province_453": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_103": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_347": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_433": [
+      "Gondor",
+      "",
+      "",
+      4
+     ],
+     "Province_457": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_18": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_357": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_389": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_381": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_44": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_359": [
+      "Lostladen Tribes",
+      "",
+      "",
+      4
+     ],
+     "Province_454": [
+      "Dol Gul Dur",
+      "",
+      "",
+      4
+     ],
+     "Province_427": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_356": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_430": [
+      "Lindon",
+      "",
+      "",
+      2
+     ],
+     "Harondor": [
+      "Umbar",
+      "",
+      "",
+      4
+     ],
+     "Province_9": [
+      "Iron Hills",
+      "",
+      "",
+      4
+     ],
+     "Province_407": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_397": [
+      "Dol Gul Dur",
+      "",
+      "",
+      0
+     ],
+     "Province_327": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_341": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_449": [
+      "Dol Amroth",
+      "",
+      "",
+      4
+     ],
+     "Province_27": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_423": [
+      "Isengard",
+      "",
+      "",
+      1
+     ],
+     "Province_25": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_32": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_375": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_26": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_377": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_414": [
+      "Rhurrim",
+      "",
+      "",
+      3
+     ],
+     "Province_12": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_11": [
+      "Iron Hills",
+      "",
+      "",
+      1
+     ],
+     "Province_33": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_434": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_386": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_22": [
+      "Dorvinion",
+      "",
+      "",
+      4
+     ],
+     "Province_372": [
+      "Imraldris",
+      "",
+      "",
+      0
+     ],
+     "Province_458": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_467": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_373": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_10": [
+      "Erebor",
+      "",
+      "",
+      4
+     ],
+     "Province_392": [
+      "Woodland Realm",
+      "",
+      "",
+      4
+     ],
+     "Province_384": [
+      "Gundabad",
+      "",
+      "",
+      2
+     ],
+     "Province_399": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_21": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_352": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_456": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_460": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_441": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_387": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_362": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_351": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_72": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_17": [
+      "Mordor",
+      "",
+      "",
+      4
+     ],
+     "Province_429": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_334": [
+      "Dunland",
+      "",
+      "",
+      4
+     ],
+     "Province_342": [
+      "Dol Gul Dur",
+      "",
+      "",
+      2
+     ],
+     "Province_455": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_418": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_8": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_403": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_374": [
+      "Rohan",
+      "",
+      "",
+      3
+     ],
+     "Province_462": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_451": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_406": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "South Ithilien": [
+      "Umbar",
+      "",
+      "",
+      1
+     ],
+     "Province_296": [
+      "Isengard",
+      "",
+      "",
+      0
+     ],
+     "Province_435": [
+      "Khazad-dum",
+      "",
+      "",
+      3
+     ],
+     "Province_346": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_413": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_410": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_385": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_19": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_442": [
+      "Khazad-dum",
+      "",
+      "",
+      4
+     ],
+     "Province_233": [
+      "Iron Hills",
+      "",
+      "",
+      2
+     ],
+     "Province_260": [
+      "Rohan",
+      "",
+      "",
+      4
+     ],
+     "Near Harad": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_28": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_408": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_370": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_464": [
+      "Lostladen Tribes",
+      "",
+      "",
+      1
+     ],
+     "Province_391": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_452": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_420": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_461": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_443": [
+      "Gundabad",
+      "",
+      "",
+      0
+     ],
+     "Province_419": [
+      "Ered Luin",
+      "",
+      "",
+      2
+     ],
+     "Province_469": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_421": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_404": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_388": [
+      "Dale",
+      "",
+      "",
+      4
+     ],
+     "Province_1": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_378": [
+      "Erebor",
+      "",
+      "",
+      1
+     ],
+     "Province_393": [
+      "Gundabad",
+      "",
+      "",
+      4
+     ],
+     "Province_380": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_361": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_340": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_455_split_1": [
+      "Dorvinion",
+      "",
+      "",
+      3
+     ],
+     "Osgiliath": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_390_split_1": [
+      "Gondor",
+      "",
+      "",
+      1
+     ]
+    },
+    "armies": [
+     [
+      "Host of Province_127",
+      "Rohan",
+      "Province_27",
+      1300,
+      0
+     ],
+     [
+      "Host of Province_44",
+      "Rohan",
+      "Province_27",
+      1100,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_351",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_436",
+      "Rhurrim",
+      "Province_460",
+      1000,
+      0
+     ],
+     [
+      "Host of Province_432",
+      "Rhudaur",
+      "Province_25",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_469",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_17",
+      "Mordor",
+      "Province_413",
+      1800,
+      0
+     ],
+     [
+      "Host of Province_359",
+      "Lostladen Tribes",
+      "Province_462",
+      2540,
+      0
+     ],
+     [
+      "Host of Province_16",
+      "Lothlorien",
+      "Province_373",
+      800,
+      0
+     ],
+     [
+      "Host of Province_364",
+      "Lindon",
+      "Province_430",
+      1900,
+      0
+     ],
+     [
+      "Host of Province_442",
+      "Khazad-dum",
+      "Province_435",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_409",
+      "Imraldris",
+      "Province_372",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_384",
+      2280,
+      0
+     ],
+     [
+      "Host of Province_390_split_1",
+      "Gondor",
+      "Province_390_split_1",
+      2340,
+      0
+     ],
+     [
+      "Host of Osgiliath",
+      "Gondor",
+      "Province_390_split_1",
+      60,
+      0
+     ],
+     [
+      "Host of Province_390",
+      "Ered Luin",
+      "Province_419",
+      1990,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_296",
+      1840,
+      0
+     ],
+     [
+      "Host of Province_449",
+      "Dol Amroth",
+      "Province_457",
+      1480,
+      0
+     ],
+     [
+      "Host of Province_388",
+      "Dale",
+      "Province_388",
+      860,
+      0
+     ],
+     [
+      "Host of Harondor",
+      "Umbar",
+      "Province_361",
+      2080,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_441",
+      2140,
+      0
+     ],
+     [
+      "Host of Province_9",
+      "Iron Hills",
+      "Province_233",
+      1560,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_23",
+      "Anduin Vale",
+      "Province_26",
+      1440,
+      0
+     ],
+     [
+      "Host of Province_400",
+      "Isengard",
+      "Province_400",
+      2360,
+      0
+     ],
+     [
+      "Host of Province_26",
+      "Anduin Vale",
+      "Province_2",
+      360,
+      0
+     ],
+     [
+      "Host of Province_12",
+      "Gondor",
+      "Province_12",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_13",
+      "Dale",
+      "Province_13",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      920,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_393",
+      2160,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_423",
+      1980,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_413",
+      1860,
+      0
+     ],
+     [
+      "Host of Province_454",
+      "Dol Gul Dur",
+      "Province_454",
+      180,
+      0
+     ],
+     [
+      "Host of Province_361",
+      "Umbar",
+      "Province_361",
+      420,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_10",
+      500,
+      0
+     ],
+     [
+      "Host of Province_260",
+      "Rohan",
+      "Province_260",
+      1500,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_427",
+      260,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_334",
+      320,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 9,
+   "label": "Rachrohir · Spring 1420 · turn 9",
+   "snap": {
+    "prov": {
+     "Province_382": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_424": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_439": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_365": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_415": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_390": [
+      "Ered Luin",
+      "",
+      "",
+      4
+     ],
+     "Province_364": [
+      "Lindon",
+      "",
+      "",
+      4
+     ],
+     "Province_440": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_450": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_409": [
+      "Imraldris",
+      "",
+      "",
+      4
+     ],
+     "Province_447": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_5": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_425": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_437": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_398": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_345": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_459": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_6": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_90": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_383": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_465": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_24": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_428": [
+      "Dorvinion",
+      "",
+      "",
+      2
+     ],
+     "Province_305": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_463": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_432": [
+      "Rhudaur",
+      "",
+      "",
+      4
+     ],
+     "Province_4": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_395": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_405": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_448": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_412": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_422": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_20": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_333": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_379": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_417": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_29": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_31": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_431": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_2": [
+      "",
+      "",
+      "",
+      1
+     ],
+     "Province_16": [
+      "Lothlorien",
+      "",
+      "",
+      4
+     ],
+     "Province_466": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_444": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_396": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_446": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_416": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_303": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_7": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_436": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_400": [
+      "Isengard",
+      "",
+      "",
+      4
+     ],
+     "Province_445": [
+      "Erebor",
+      "",
+      "",
+      3
+     ],
+     "Province_348": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_438": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_295": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_23": [
+      "Anduin Vale",
+      "",
+      "",
+      4
+     ],
+     "Province_14": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_197": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_3": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_270": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_208": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_401": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_411": [
+      "Lindon",
+      "",
+      "",
+      0
+     ],
+     "Province_371": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_426": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_468": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_376": [
+      "Dorvinion",
+      "",
+      "",
+      0
+     ],
+     "Province_127": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_13": [
+      "Dale",
+      "",
+      "",
+      3
+     ],
+     "Province_453": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_103": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_347": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_433": [
+      "Gondor",
+      "",
+      "",
+      4
+     ],
+     "Province_457": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_18": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_357": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_389": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_381": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_44": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_359": [
+      "Lostladen Tribes",
+      "",
+      "",
+      4
+     ],
+     "Province_454": [
+      "Dol Gul Dur",
+      "",
+      "",
+      4
+     ],
+     "Province_427": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_356": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_430": [
+      "Lindon",
+      "",
+      "",
+      2
+     ],
+     "Harondor": [
+      "Umbar",
+      "",
+      "",
+      4
+     ],
+     "Province_9": [
+      "Iron Hills",
+      "",
+      "",
+      4
+     ],
+     "Province_407": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_397": [
+      "Dol Gul Dur",
+      "",
+      "",
+      0
+     ],
+     "Province_327": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_341": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_449": [
+      "Dol Amroth",
+      "",
+      "",
+      4
+     ],
+     "Province_27": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_423": [
+      "Isengard",
+      "",
+      "",
+      1
+     ],
+     "Province_25": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_32": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_375": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_26": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_377": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_414": [
+      "Rhurrim",
+      "",
+      "",
+      3
+     ],
+     "Province_12": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_11": [
+      "Iron Hills",
+      "",
+      "",
+      1
+     ],
+     "Province_33": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_434": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_386": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_22": [
+      "Dorvinion",
+      "",
+      "",
+      4
+     ],
+     "Province_372": [
+      "Imraldris",
+      "",
+      "",
+      0
+     ],
+     "Province_458": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_467": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_373": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_10": [
+      "Erebor",
+      "",
+      "",
+      4
+     ],
+     "Province_392": [
+      "Woodland Realm",
+      "",
+      "",
+      4
+     ],
+     "Province_384": [
+      "Gundabad",
+      "",
+      "",
+      2
+     ],
+     "Province_399": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_21": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_352": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_456": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_460": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_441": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_387": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_362": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_351": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_72": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_17": [
+      "Mordor",
+      "",
+      "",
+      4
+     ],
+     "Province_429": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_334": [
+      "Dunland",
+      "",
+      "",
+      4
+     ],
+     "Province_342": [
+      "Dol Gul Dur",
+      "",
+      "",
+      2
+     ],
+     "Province_455": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_418": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_8": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_403": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_374": [
+      "Rohan",
+      "",
+      "",
+      3
+     ],
+     "Province_462": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_451": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_406": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "South Ithilien": [
+      "Umbar",
+      "",
+      "",
+      1
+     ],
+     "Province_296": [
+      "Isengard",
+      "",
+      "",
+      0
+     ],
+     "Province_435": [
+      "Khazad-dum",
+      "",
+      "",
+      3
+     ],
+     "Province_346": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_413": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_410": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_385": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_19": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_442": [
+      "Khazad-dum",
+      "",
+      "",
+      4
+     ],
+     "Province_233": [
+      "Iron Hills",
+      "",
+      "",
+      2
+     ],
+     "Province_260": [
+      "Rohan",
+      "",
+      "",
+      4
+     ],
+     "Near Harad": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_28": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_408": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_370": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_464": [
+      "Lostladen Tribes",
+      "",
+      "",
+      1
+     ],
+     "Province_391": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_452": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_420": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_461": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_443": [
+      "Gundabad",
+      "",
+      "",
+      0
+     ],
+     "Province_419": [
+      "Ered Luin",
+      "",
+      "",
+      2
+     ],
+     "Province_469": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_421": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_404": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_388": [
+      "Dale",
+      "",
+      "",
+      4
+     ],
+     "Province_1": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_378": [
+      "Erebor",
+      "",
+      "",
+      1
+     ],
+     "Province_393": [
+      "Gundabad",
+      "",
+      "",
+      4
+     ],
+     "Province_380": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_361": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_340": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_455_split_1": [
+      "Dorvinion",
+      "",
+      "",
+      3
+     ],
+     "Osgiliath": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_390_split_1": [
+      "Gondor",
+      "",
+      "",
+      1
+     ]
+    },
+    "armies": [
+     [
+      "Host of Province_127",
+      "Rohan",
+      "Province_27",
+      1300,
+      0
+     ],
+     [
+      "Host of Province_44",
+      "Rohan",
+      "Province_27",
+      1100,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_351",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_436",
+      "Rhurrim",
+      "Province_460",
+      1000,
+      0
+     ],
+     [
+      "Host of Province_432",
+      "Rhudaur",
+      "Province_25",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_469",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_17",
+      "Mordor",
+      "Province_413",
+      1800,
+      0
+     ],
+     [
+      "Host of Province_359",
+      "Lostladen Tribes",
+      "Province_462",
+      2540,
+      0
+     ],
+     [
+      "Host of Province_16",
+      "Lothlorien",
+      "Province_373",
+      800,
+      0
+     ],
+     [
+      "Host of Province_364",
+      "Lindon",
+      "Province_430",
+      1900,
+      0
+     ],
+     [
+      "Host of Province_442",
+      "Khazad-dum",
+      "Province_435",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_409",
+      "Imraldris",
+      "Province_372",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_384",
+      2280,
+      0
+     ],
+     [
+      "Host of Province_390_split_1",
+      "Gondor",
+      "Province_390_split_1",
+      2340,
+      0
+     ],
+     [
+      "Host of Osgiliath",
+      "Gondor",
+      "Province_390_split_1",
+      60,
+      0
+     ],
+     [
+      "Host of Province_390",
+      "Ered Luin",
+      "Province_419",
+      1990,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_296",
+      1840,
+      0
+     ],
+     [
+      "Host of Province_449",
+      "Dol Amroth",
+      "Province_457",
+      1480,
+      0
+     ],
+     [
+      "Host of Province_388",
+      "Dale",
+      "Province_388",
+      860,
+      0
+     ],
+     [
+      "Host of Harondor",
+      "Umbar",
+      "Province_361",
+      2080,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_441",
+      2140,
+      0
+     ],
+     [
+      "Host of Province_9",
+      "Iron Hills",
+      "Province_233",
+      1560,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_23",
+      "Anduin Vale",
+      "Province_26",
+      1440,
+      0
+     ],
+     [
+      "Host of Province_400",
+      "Isengard",
+      "Province_400",
+      2360,
+      0
+     ],
+     [
+      "Host of Province_26",
+      "Anduin Vale",
+      "Province_2",
+      360,
+      0
+     ],
+     [
+      "Host of Province_12",
+      "Gondor",
+      "Province_12",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_13",
+      "Dale",
+      "Province_13",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      920,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_393",
+      2160,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_423",
+      1980,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_413",
+      1860,
+      0
+     ],
+     [
+      "Host of Province_454",
+      "Dol Gul Dur",
+      "Province_454",
+      180,
+      0
+     ],
+     [
+      "Host of Province_361",
+      "Umbar",
+      "Province_361",
+      420,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_10",
+      500,
+      0
+     ],
+     [
+      "Host of Province_260",
+      "Rohan",
+      "Province_260",
+      1500,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_427",
+      260,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_334",
+      320,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 9,
+   "label": "Rhurrim · Spring 1420 · turn 9",
+   "snap": {
+    "prov": {
+     "Province_382": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_424": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_439": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_365": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_415": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_390": [
+      "Ered Luin",
+      "",
+      "",
+      4
+     ],
+     "Province_364": [
+      "Lindon",
+      "",
+      "",
+      4
+     ],
+     "Province_440": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_450": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_409": [
+      "Imraldris",
+      "",
+      "",
+      4
+     ],
+     "Province_447": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_5": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_425": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_437": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_398": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_345": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_459": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_6": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_90": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_383": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_465": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_24": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_428": [
+      "Dorvinion",
+      "",
+      "",
+      2
+     ],
+     "Province_305": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_463": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_432": [
+      "Rhudaur",
+      "",
+      "",
+      4
+     ],
+     "Province_4": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_395": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_405": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_448": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_412": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_422": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_20": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_333": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_379": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_417": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_29": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_31": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_431": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_2": [
+      "",
+      "",
+      "",
+      1
+     ],
+     "Province_16": [
+      "Lothlorien",
+      "",
+      "",
+      4
+     ],
+     "Province_466": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_444": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_396": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_446": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_416": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_303": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_7": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_436": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_400": [
+      "Isengard",
+      "",
+      "",
+      4
+     ],
+     "Province_445": [
+      "Erebor",
+      "",
+      "",
+      3
+     ],
+     "Province_348": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_438": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_295": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_23": [
+      "Anduin Vale",
+      "",
+      "",
+      4
+     ],
+     "Province_14": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_197": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_3": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_270": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_208": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_401": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_411": [
+      "Lindon",
+      "",
+      "",
+      0
+     ],
+     "Province_371": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_426": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_468": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_376": [
+      "Dorvinion",
+      "",
+      "",
+      0
+     ],
+     "Province_127": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_13": [
+      "Dale",
+      "",
+      "",
+      3
+     ],
+     "Province_453": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_103": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_347": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_433": [
+      "Gondor",
+      "",
+      "",
+      4
+     ],
+     "Province_457": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_18": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_357": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_389": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_381": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_44": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_359": [
+      "Lostladen Tribes",
+      "",
+      "",
+      4
+     ],
+     "Province_454": [
+      "Dol Gul Dur",
+      "",
+      "",
+      4
+     ],
+     "Province_427": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_356": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_430": [
+      "Lindon",
+      "",
+      "",
+      2
+     ],
+     "Harondor": [
+      "Umbar",
+      "",
+      "",
+      4
+     ],
+     "Province_9": [
+      "Iron Hills",
+      "",
+      "",
+      4
+     ],
+     "Province_407": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_397": [
+      "Dol Gul Dur",
+      "",
+      "",
+      0
+     ],
+     "Province_327": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_341": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_449": [
+      "Dol Amroth",
+      "",
+      "",
+      4
+     ],
+     "Province_27": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_423": [
+      "Isengard",
+      "",
+      "",
+      1
+     ],
+     "Province_25": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_32": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_375": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_26": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_377": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_414": [
+      "Rhurrim",
+      "",
+      "",
+      3
+     ],
+     "Province_12": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_11": [
+      "Iron Hills",
+      "",
+      "",
+      1
+     ],
+     "Province_33": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_434": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_386": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_22": [
+      "Dorvinion",
+      "",
+      "",
+      4
+     ],
+     "Province_372": [
+      "Imraldris",
+      "",
+      "",
+      0
+     ],
+     "Province_458": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_467": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_373": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_10": [
+      "Erebor",
+      "",
+      "",
+      4
+     ],
+     "Province_392": [
+      "Woodland Realm",
+      "",
+      "",
+      4
+     ],
+     "Province_384": [
+      "Gundabad",
+      "",
+      "",
+      2
+     ],
+     "Province_399": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_21": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_352": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_456": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_460": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_441": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_387": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_362": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_351": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_72": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_17": [
+      "Mordor",
+      "",
+      "",
+      4
+     ],
+     "Province_429": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_334": [
+      "Dunland",
+      "",
+      "",
+      4
+     ],
+     "Province_342": [
+      "Dol Gul Dur",
+      "",
+      "",
+      2
+     ],
+     "Province_455": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_418": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_8": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_403": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_374": [
+      "Rohan",
+      "",
+      "",
+      3
+     ],
+     "Province_462": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_451": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_406": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "South Ithilien": [
+      "Umbar",
+      "",
+      "",
+      1
+     ],
+     "Province_296": [
+      "Isengard",
+      "",
+      "",
+      0
+     ],
+     "Province_435": [
+      "Khazad-dum",
+      "",
+      "",
+      3
+     ],
+     "Province_346": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_413": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_410": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_385": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_19": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_442": [
+      "Khazad-dum",
+      "",
+      "",
+      4
+     ],
+     "Province_233": [
+      "Iron Hills",
+      "",
+      "",
+      2
+     ],
+     "Province_260": [
+      "Rohan",
+      "",
+      "",
+      4
+     ],
+     "Near Harad": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_28": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_408": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_370": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_464": [
+      "Lostladen Tribes",
+      "",
+      "",
+      1
+     ],
+     "Province_391": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_452": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_420": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_461": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_443": [
+      "Gundabad",
+      "",
+      "",
+      0
+     ],
+     "Province_419": [
+      "Ered Luin",
+      "",
+      "",
+      2
+     ],
+     "Province_469": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_421": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_404": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_388": [
+      "Dale",
+      "",
+      "",
+      4
+     ],
+     "Province_1": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_378": [
+      "Erebor",
+      "",
+      "",
+      1
+     ],
+     "Province_393": [
+      "Gundabad",
+      "",
+      "",
+      4
+     ],
+     "Province_380": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_361": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_340": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_455_split_1": [
+      "Dorvinion",
+      "",
+      "",
+      3
+     ],
+     "Osgiliath": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_390_split_1": [
+      "Gondor",
+      "",
+      "",
+      1
+     ]
+    },
+    "armies": [
+     [
+      "Host of Province_127",
+      "Rohan",
+      "Province_27",
+      1300,
+      0
+     ],
+     [
+      "Host of Province_44",
+      "Rohan",
+      "Province_27",
+      1100,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_351",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_436",
+      "Rhurrim",
+      "Province_460",
+      1000,
+      0
+     ],
+     [
+      "Host of Province_432",
+      "Rhudaur",
+      "Province_25",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_469",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_17",
+      "Mordor",
+      "Province_413",
+      1800,
+      0
+     ],
+     [
+      "Host of Province_359",
+      "Lostladen Tribes",
+      "Province_462",
+      2540,
+      0
+     ],
+     [
+      "Host of Province_16",
+      "Lothlorien",
+      "Province_373",
+      800,
+      0
+     ],
+     [
+      "Host of Province_364",
+      "Lindon",
+      "Province_430",
+      1900,
+      0
+     ],
+     [
+      "Host of Province_442",
+      "Khazad-dum",
+      "Province_435",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_409",
+      "Imraldris",
+      "Province_372",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_384",
+      2280,
+      0
+     ],
+     [
+      "Host of Province_390_split_1",
+      "Gondor",
+      "Province_390_split_1",
+      2340,
+      0
+     ],
+     [
+      "Host of Osgiliath",
+      "Gondor",
+      "Province_390_split_1",
+      60,
+      0
+     ],
+     [
+      "Host of Province_390",
+      "Ered Luin",
+      "Province_419",
+      1990,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_296",
+      1840,
+      0
+     ],
+     [
+      "Host of Province_449",
+      "Dol Amroth",
+      "Province_457",
+      1480,
+      0
+     ],
+     [
+      "Host of Province_388",
+      "Dale",
+      "Province_388",
+      860,
+      0
+     ],
+     [
+      "Host of Harondor",
+      "Umbar",
+      "Province_361",
+      2080,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_441",
+      2140,
+      0
+     ],
+     [
+      "Host of Province_9",
+      "Iron Hills",
+      "Province_233",
+      1560,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_23",
+      "Anduin Vale",
+      "Province_26",
+      1440,
+      0
+     ],
+     [
+      "Host of Province_400",
+      "Isengard",
+      "Province_400",
+      2360,
+      0
+     ],
+     [
+      "Host of Province_26",
+      "Anduin Vale",
+      "Province_2",
+      360,
+      0
+     ],
+     [
+      "Host of Province_12",
+      "Gondor",
+      "Province_12",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_13",
+      "Dale",
+      "Province_13",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      920,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_393",
+      2160,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_423",
+      1980,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_413",
+      1860,
+      0
+     ],
+     [
+      "Host of Province_454",
+      "Dol Gul Dur",
+      "Province_454",
+      180,
+      0
+     ],
+     [
+      "Host of Province_361",
+      "Umbar",
+      "Province_361",
+      420,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_10",
+      500,
+      0
+     ],
+     [
+      "Host of Province_260",
+      "Rohan",
+      "Province_260",
+      1500,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_427",
+      260,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_334",
+      320,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 9,
+   "label": "Woodland Realm · Spring 1420 · turn 9",
+   "snap": {
+    "prov": {
+     "Province_382": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_424": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_439": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_365": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_415": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_390": [
+      "Ered Luin",
+      "",
+      "",
+      4
+     ],
+     "Province_364": [
+      "Lindon",
+      "",
+      "",
+      4
+     ],
+     "Province_440": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_450": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_409": [
+      "Imraldris",
+      "",
+      "",
+      4
+     ],
+     "Province_447": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_5": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_425": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_437": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_398": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_345": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_459": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_6": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_90": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_383": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_465": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_24": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_428": [
+      "Dorvinion",
+      "",
+      "",
+      2
+     ],
+     "Province_305": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_463": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_432": [
+      "Rhudaur",
+      "",
+      "",
+      4
+     ],
+     "Province_4": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_395": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_405": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_448": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_412": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_422": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_20": [
+      "Lindon",
+      "",
+      "",
+      1
+     ],
+     "Province_333": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_379": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_417": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_29": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_31": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_431": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_2": [
+      "",
+      "",
+      "",
+      1
+     ],
+     "Province_16": [
+      "Lothlorien",
+      "",
+      "",
+      4
+     ],
+     "Province_466": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_444": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_396": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_446": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_416": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_303": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_7": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_436": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_400": [
+      "Isengard",
+      "",
+      "",
+      4
+     ],
+     "Province_445": [
+      "Erebor",
+      "",
+      "",
+      3
+     ],
+     "Province_348": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_438": [
+      "Dol Amroth",
+      "",
+      "",
+      1
+     ],
+     "Province_295": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_23": [
+      "Anduin Vale",
+      "",
+      "",
+      4
+     ],
+     "Province_14": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_197": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_3": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_270": [
+      "Ered Luin",
+      "",
+      "",
+      1
+     ],
+     "Province_208": [
+      "Anduin Vale",
+      "",
+      "",
+      2
+     ],
+     "Province_401": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_411": [
+      "Lindon",
+      "",
+      "",
+      0
+     ],
+     "Province_371": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_426": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_468": [
+      "Dorvinion",
+      "",
+      "",
+      1
+     ],
+     "Province_376": [
+      "Dorvinion",
+      "",
+      "",
+      0
+     ],
+     "Province_127": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_13": [
+      "Dale",
+      "",
+      "",
+      3
+     ],
+     "Province_453": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_103": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_347": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_433": [
+      "Gondor",
+      "",
+      "",
+      4
+     ],
+     "Province_457": [
+      "Dol Amroth",
+      "",
+      "",
+      0
+     ],
+     "Province_18": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_357": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_389": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_381": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_44": [
+      "Rohan",
+      "",
+      "",
+      2
+     ],
+     "Province_359": [
+      "Lostladen Tribes",
+      "",
+      "",
+      4
+     ],
+     "Province_454": [
+      "Dol Gul Dur",
+      "",
+      "",
+      4
+     ],
+     "Province_427": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_356": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_430": [
+      "Lindon",
+      "",
+      "",
+      2
+     ],
+     "Harondor": [
+      "Umbar",
+      "",
+      "",
+      4
+     ],
+     "Province_9": [
+      "Iron Hills",
+      "",
+      "",
+      4
+     ],
+     "Province_407": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_397": [
+      "Dol Gul Dur",
+      "",
+      "",
+      0
+     ],
+     "Province_327": [
+      "Mordor",
+      "",
+      "",
+      3
+     ],
+     "Province_341": [
+      "Lostladen Tribes",
+      "",
+      "",
+      2
+     ],
+     "Province_449": [
+      "Dol Amroth",
+      "",
+      "",
+      4
+     ],
+     "Province_27": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_423": [
+      "Isengard",
+      "",
+      "",
+      1
+     ],
+     "Province_25": [
+      "Rhudaur",
+      "",
+      "",
+      1
+     ],
+     "Province_32": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_375": [
+      "Woodland Realm",
+      "",
+      "",
+      1
+     ],
+     "Province_26": [
+      "Anduin Vale",
+      "",
+      "",
+      1
+     ],
+     "Province_377": [
+      "Dunland",
+      "",
+      "",
+      2
+     ],
+     "Province_414": [
+      "Rhurrim",
+      "",
+      "",
+      3
+     ],
+     "Province_12": [
+      "Gondor",
+      "",
+      "",
+      2
+     ],
+     "Province_11": [
+      "Iron Hills",
+      "",
+      "",
+      1
+     ],
+     "Province_33": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_434": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_386": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_22": [
+      "Dorvinion",
+      "",
+      "",
+      4
+     ],
+     "Province_372": [
+      "Imraldris",
+      "",
+      "",
+      0
+     ],
+     "Province_458": [
+      "Rhurrim",
+      "",
+      "",
+      0
+     ],
+     "Province_467": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_373": [
+      "Lothlorien",
+      "",
+      "",
+      1
+     ],
+     "Province_10": [
+      "Erebor",
+      "",
+      "",
+      4
+     ],
+     "Province_392": [
+      "Woodland Realm",
+      "",
+      "",
+      4
+     ],
+     "Province_384": [
+      "Gundabad",
+      "",
+      "",
+      2
+     ],
+     "Province_399": [
+      "",
+      "",
+      "",
+      0
+     ],
+     "Province_21": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_352": [
+      "Dunland",
+      "",
+      "",
+      1
+     ],
+     "Province_456": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_460": [
+      "Rhurrim",
+      "",
+      "",
+      2
+     ],
+     "Province_441": [
+      "Erebor",
+      "",
+      "",
+      0
+     ],
+     "Province_387": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_362": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_351": [
+      "Dol Gul Dur",
+      "",
+      "",
+      1
+     ],
+     "Province_72": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_17": [
+      "Mordor",
+      "",
+      "",
+      4
+     ],
+     "Province_429": [
+      "Anduin Vale",
+      "",
+      "",
+      0
+     ],
+     "Province_334": [
+      "Dunland",
+      "",
+      "",
+      4
+     ],
+     "Province_342": [
+      "Dol Gul Dur",
+      "",
+      "",
+      2
+     ],
+     "Province_455": [
+      "Rhurrim",
+      "",
+      "",
+      4
+     ],
+     "Province_418": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_8": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_403": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_374": [
+      "Rohan",
+      "",
+      "",
+      3
+     ],
+     "Province_462": [
+      "Lostladen Tribes",
+      "",
+      "",
+      0
+     ],
+     "Province_451": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_406": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "South Ithilien": [
+      "Umbar",
+      "",
+      "",
+      1
+     ],
+     "Province_296": [
+      "Isengard",
+      "",
+      "",
+      0
+     ],
+     "Province_435": [
+      "Khazad-dum",
+      "",
+      "",
+      3
+     ],
+     "Province_346": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_413": [
+      "Mordor",
+      "",
+      "",
+      1
+     ],
+     "Province_410": [
+      "Khazad-dum",
+      "",
+      "",
+      0
+     ],
+     "Province_385": [
+      "Rhurrim",
+      "",
+      "",
+      1
+     ],
+     "Province_19": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_442": [
+      "Khazad-dum",
+      "",
+      "",
+      4
+     ],
+     "Province_233": [
+      "Iron Hills",
+      "",
+      "",
+      2
+     ],
+     "Province_260": [
+      "Rohan",
+      "",
+      "",
+      4
+     ],
+     "Near Harad": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_28": [
+      "Rohan",
+      "",
+      "",
+      1
+     ],
+     "Province_408": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_370": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_464": [
+      "Lostladen Tribes",
+      "",
+      "",
+      1
+     ],
+     "Province_391": [
+      "Khazad-dum",
+      "",
+      "",
+      1
+     ],
+     "Province_452": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_420": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_461": [
+      "Imraldris",
+      "",
+      "",
+      1
+     ],
+     "Province_443": [
+      "Gundabad",
+      "",
+      "",
+      0
+     ],
+     "Province_419": [
+      "Ered Luin",
+      "",
+      "",
+      2
+     ],
+     "Province_469": [
+      "Mordor",
+      "",
+      "",
+      0
+     ],
+     "Province_421": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_404": [
+      "Dale",
+      "",
+      "",
+      1
+     ],
+     "Province_388": [
+      "Dale",
+      "",
+      "",
+      4
+     ],
+     "Province_1": [
+      "Iron Hills",
+      "",
+      "",
+      0
+     ],
+     "Province_378": [
+      "Erebor",
+      "",
+      "",
+      1
+     ],
+     "Province_393": [
+      "Gundabad",
+      "",
+      "",
+      4
+     ],
+     "Province_380": [
+      "Gundabad",
+      "",
+      "",
+      1
+     ],
+     "Province_361": [
+      "Umbar",
+      "",
+      "",
+      2
+     ],
+     "Province_340": [
+      "Umbar",
+      "",
+      "",
+      0
+     ],
+     "Province_455_split_1": [
+      "Dorvinion",
+      "",
+      "",
+      3
+     ],
+     "Osgiliath": [
+      "Gondor",
+      "",
+      "",
+      1
+     ],
+     "Province_390_split_1": [
+      "Gondor",
+      "",
+      "",
+      1
+     ]
+    },
+    "armies": [
+     [
+      "Host of Province_127",
+      "Rohan",
+      "Province_27",
+      1300,
+      0
+     ],
+     [
+      "Host of Province_44",
+      "Rohan",
+      "Province_27",
+      1100,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_351",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_436",
+      "Rhurrim",
+      "Province_460",
+      1000,
+      0
+     ],
+     [
+      "Host of Province_432",
+      "Rhudaur",
+      "Province_25",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_469",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_17",
+      "Mordor",
+      "Province_413",
+      1800,
+      0
+     ],
+     [
+      "Host of Province_359",
+      "Lostladen Tribes",
+      "Province_462",
+      2540,
+      0
+     ],
+     [
+      "Host of Province_16",
+      "Lothlorien",
+      "Province_373",
+      800,
+      0
+     ],
+     [
+      "Host of Province_364",
+      "Lindon",
+      "Province_430",
+      1900,
+      0
+     ],
+     [
+      "Host of Province_442",
+      "Khazad-dum",
+      "Province_435",
+      2220,
+      0
+     ],
+     [
+      "Host of Province_409",
+      "Imraldris",
+      "Province_372",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_384",
+      2280,
+      0
+     ],
+     [
+      "Host of Province_390_split_1",
+      "Gondor",
+      "Province_390_split_1",
+      2340,
+      0
+     ],
+     [
+      "Host of Osgiliath",
+      "Gondor",
+      "Province_390_split_1",
+      60,
+      0
+     ],
+     [
+      "Host of Province_390",
+      "Ered Luin",
+      "Province_419",
+      1990,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_296",
+      1840,
+      0
+     ],
+     [
+      "Host of Province_449",
+      "Dol Amroth",
+      "Province_457",
+      1480,
+      0
+     ],
+     [
+      "Host of Province_388",
+      "Dale",
+      "Province_388",
+      860,
+      0
+     ],
+     [
+      "Host of Harondor",
+      "Umbar",
+      "Province_361",
+      2080,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_441",
+      2140,
+      0
+     ],
+     [
+      "Host of Province_9",
+      "Iron Hills",
+      "Province_233",
+      1560,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      1320,
+      0
+     ],
+     [
+      "Host of Province_23",
+      "Anduin Vale",
+      "Province_26",
+      1440,
+      0
+     ],
+     [
+      "Host of Province_400",
+      "Isengard",
+      "Province_400",
+      2360,
+      0
+     ],
+     [
+      "Host of Province_26",
+      "Anduin Vale",
+      "Province_2",
+      360,
+      0
+     ],
+     [
+      "Host of Province_12",
+      "Gondor",
+      "Province_12",
+      2420,
+      0
+     ],
+     [
+      "Host of Province_13",
+      "Dale",
+      "Province_13",
+      2400,
+      0
+     ],
+     [
+      "Host of Province_22",
+      "Dorvinion",
+      "Province_428",
+      920,
+      0
+     ],
+     [
+      "Host of Province_393",
+      "Gundabad",
+      "Province_393",
+      2160,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_423",
+      1980,
+      0
+     ],
+     [
+      "Host of Province_305",
+      "Mordor",
+      "Province_413",
+      1860,
+      0
+     ],
+     [
+      "Host of Province_454",
+      "Dol Gul Dur",
+      "Province_454",
+      180,
+      0
+     ],
+     [
+      "Host of Province_361",
+      "Umbar",
+      "Province_361",
+      420,
+      0
+     ],
+     [
+      "Host of Province_10",
+      "Erebor",
+      "Province_10",
+      500,
+      0
+     ],
+     [
+      "Host of Province_260",
+      "Rohan",
+      "Province_260",
+      1500,
+      0
+     ],
+     [
+      "Host of Province_392",
+      "Woodland Realm",
+      "Province_427",
+      260,
+      0
+     ],
+     [
+      "Host of Province_334",
+      "Dunland",
+      "Province_334",
+      320,
+      0
+     ]
+    ]
+   }
   }
  ],
- "moved": [
-  "Khazad-dum",
-  "Anduin Vale",
-  "Erebor",
-  "Dale",
-  "Imraldris",
-  "Iron Hills",
-  "Isengard",
-  "Rhudaur",
-  "Rohan",
-  "Dol Gul Dur",
-  "Lindon",
-  "Ered Luin",
-  "Woodland Realm",
-  "Dol Amroth",
-  "Dorvinion",
-  "Lothlorien",
-  "Dunland",
-  "Ered Mithrin",
-  "Goblins",
-  "Gondor",
-  "Gundabad",
-  "Lostladen Tribes",
-  "Mahud"
- ],
+ "moved": [],
  "pendingReview": false
 }
