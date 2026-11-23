@@ -3534,7 +3534,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Far Harad",
+   "displayName": "Mahud",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3736,7 +3736,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "EastFold"
+   "displayName": "Goy Slop Town"
   },
   {
    "id": "Province_13",
@@ -6500,7 +6500,7 @@
    "modern": "Province 351",
    "hex": "#5c4631",
    "playable": true,
-   "owner": "Dol Gul Dur",
+   "owner": "Woodland Realm",
    "tier": 1,
    "terrain": "plains",
    "value": 500,
@@ -7127,7 +7127,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akah Hills",
+   "displayName": "Akha Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7167,7 +7167,7 @@
     "Province_346",
     "Province_376"
    ],
-   "displayName": "Helms Deep",
+   "displayName": "Helms Jizz",
    "bldLevel": {
     "gem_mine": 2,
     "barracks": 2
@@ -8151,7 +8151,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "far harad",
+   "displayName": "East Harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -10542,6 +10542,34 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_10 moved Province_351 → Province_10",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm annexed Province_351 (from Dol Gul Dur)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm occupied Province_351 (held by Dol Gul Dur)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_10 moved Province_10 → Province_351",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
