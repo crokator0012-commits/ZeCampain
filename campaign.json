@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 6823,
+   "treasury": 398,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -3534,7 +3534,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -3736,7 +3736,7 @@
    "upg": null,
    "buildQueue": [],
    "raid": null,
-   "displayName": "Goy Slop Town"
+   "displayName": "EastFold"
   },
   {
    "id": "Province_13",
@@ -5900,7 +5900,7 @@
    "garrison": 200,
    "bld": [
     "road",
-    "healing_herbs",
+    "healing_herb_garden",
     "healing_herb_garden"
    ],
    "adj": [
@@ -7142,7 +7142,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -7182,7 +7182,7 @@
     "Province_346",
     "Province_376"
    ],
-   "displayName": "Helms Jizz",
+   "displayName": "Helms Deep",
    "bldLevel": {
     "gem_mine": 2,
     "barracks": 2
@@ -8166,7 +8166,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9077,14 +9077,13 @@
   {
    "name": "Host of Province_127",
    "faction": "Rohan",
-   "men": 1300,
+   "men": 1260,
    "at": "Province_27",
    "order": null,
    "units": [
     "rohan_prince_theodred",
     "rohan_sword_theigns",
     "rohan_axe_theigns",
-    "rohan_scouts_of_rohan",
     "rohan_yeomen_of_the_mark",
     "rohan_yeomen_of_the_mark",
     "rohan_aor_eored_of_the_east_fold",
@@ -9092,13 +9091,13 @@
     "rohan_sword_theigns",
     "rohan_sword_theigns",
     "rohan_yeomen_of_the_mark",
-    "rohan_yeomen_of_the_mark"
+    "rohan_yeomen_of_the_mark",
+    "rohan_aor_eored_of_the_east_fold"
    ],
    "xp": [
     1,
     2,
     3,
-    1,
     2,
     2,
     1,
@@ -9106,9 +9105,10 @@
     2,
     2,
     0,
+    0,
     0
    ],
-   "upkeep": 5612.5,
+   "upkeep": 5825,
    "_startCost": 11575
   },
   {
@@ -10476,8 +10476,8 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 1500,
-   "at": "Province_260",
+   "men": 2220,
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_eorling_retainers",
@@ -10492,7 +10492,13 @@
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
-    "rohan_erkenbrand"
+    "rohan_erkenbrand",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers"
    ],
    "xp": [
     0,
@@ -10507,9 +10513,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6775,
+   "upkeep": 9775,
    "_startCost": 14000
   },
   {
@@ -10535,6 +10547,83 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan ends its turn — Anduin Vale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_127 moved Province_374 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan reinforced Host of Province_127 at Province_374 (+1 regiment · 1 150 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_127 disbands Scouts of Rohan at Province_374 — 725g returned to the treasury",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_127 moved Province_27 → Province_374",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_127 moved Province_374 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_127 moved Province_27 → Province_374",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_21 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_260 → Province_21",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan reinforced Host of Province_260 at Province_260 (+6 regiments · 6 000 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan grew tired of waiting on Anduin Vale and skips ahead — Anduin Vale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -175973,7 +176062,8 @@
  ],
  "moved": [
   "Ered Luin",
-  "Rhudaur"
+  "Rhudaur",
+  "Rohan"
  ],
  "pendingReview": false
 }
