@@ -3554,7 +3554,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -7192,7 +7192,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -8216,7 +8216,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9547,7 +9547,7 @@
    "name": "Host of Province_442",
    "faction": "Khazad-dum",
    "men": 2220,
-   "at": "Province_435",
+   "at": "Province_380",
    "order": null,
    "units": [
     "khazad_dum_mountain_travellers",
@@ -10585,6 +10585,34 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_442 moved Province_410 → Province_380",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_442 moved Province_435 → Province_410",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Khazad-dum grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -176101,7 +176129,8 @@
  "moved": [
   "Ered Luin",
   "Rhudaur",
-  "Anduin Vale"
+  "Anduin Vale",
+  "Khazad-dum"
  ],
  "pendingReview": false
 }
