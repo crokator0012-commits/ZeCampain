@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 2207,
+   "treasury": 4107,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -5899,7 +5899,9 @@
    "move": 2,
    "garrison": 200,
    "bld": [
-    "road"
+    "road",
+    "healing_herbs",
+    "healing_herb_garden"
    ],
    "adj": [
     "Near Harad",
@@ -5942,17 +5944,25 @@
     "Province_72",
     "Province_9"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "healing_herb_garden": 1
+   },
    "cx": 2274.5580767692923,
    "cy": 807.8806477409037,
    "siege": null,
    "occ": null,
-   "bldOwner": {},
+   "bldOwner": {
+    "healing_herbs": "Lothlorien"
+   },
    "availableBld": [
-    "road"
+    "road",
+    "healing_herbs",
+    "healing_herb_garden"
    ],
    "availableBldOwner": {
-    "road": "Dol Gul Dur"
+    "road": "Dol Gul Dur",
+    "healing_herbs": "Lothlorien",
+    "healing_herb_garden": "Lothlorien"
    },
    "upg": null,
    "buildQueue": [],
@@ -6501,13 +6511,14 @@
    "hex": "#5c4631",
    "playable": true,
    "owner": "Woodland Realm",
-   "tier": 1,
+   "tier": 0,
    "terrain": "plains",
-   "value": 500,
+   "value": 250,
    "move": 2,
-   "garrison": 7500,
+   "garrison": 50,
    "bld": [
-    "road"
+    "road",
+    "healing_herb_garden"
    ],
    "adj": [
     "Province_11",
@@ -6580,17 +6591,21 @@
     "Province_72",
     "Province_9"
    ],
-   "bldLevel": {},
+   "bldLevel": {
+    "healing_herb_garden": 1
+   },
    "cx": 2247.1761425868763,
    "cy": 734.7968734441899,
    "siege": null,
    "occ": null,
    "bldOwner": {},
    "availableBld": [
-    "road"
+    "road",
+    "healing_herb_garden"
    ],
    "availableBldOwner": {
-    "road": "Dol Gul Dur"
+    "road": "Dol Gul Dur",
+    "healing_herb_garden": "Woodland Realm"
    },
    "upg": null,
    "buildQueue": [],
@@ -10520,6 +10535,69 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Healing Herb Garden completed at Province_351.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm starts construction: Healing Herb Garden at Province_351 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm may construct Healing Herb Garden at Province_351.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Healing Herb Garden completed at Province_373.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien starts construction: Healing Herb Garden at Province_373 (600 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien may construct Healing Herb Garden at Province_373.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Healing Herbs completed at Province_373.",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien starts construction: Healing Herbs at Province_373 (0 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien may construct Healing Herbs at Province_373.",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
