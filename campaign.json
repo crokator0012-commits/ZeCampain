@@ -11,7 +11,7 @@
    "id": "Dale",
    "name": "Dale",
    "color": "#8A3F1D",
-   "treasury": 427,
+   "treasury": 6477,
    "capital": "Province_388",
    "zeal": 10
   },
@@ -51,7 +51,7 @@
    "id": "Imraldris",
    "name": "Imladris",
    "color": "#6FA8DC",
-   "treasury": 3340,
+   "treasury": 1340,
    "capital": "Province_409",
    "zeal": 10
   },
@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 86,
+   "treasury": 3411,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -163,7 +163,7 @@
    "id": "Iron Hills",
    "name": "Iron Hills",
    "color": "#556B2F",
-   "treasury": 446,
+   "treasury": 3946,
    "capital": "Province_9",
    "zeal": 10
   },
@@ -5845,7 +5845,13 @@
    },
    "availableBld": [],
    "availableBldOwner": {},
-   "upg": null,
+   "upg": {
+    "to": 1,
+    "payer": "Imraldris",
+    "startedTurn": 10,
+    "startedDate": "Summer 1420",
+    "cost": 2000
+   },
    "buildQueue": [],
    "raid": null
   },
@@ -7905,17 +7911,7 @@
     "barracks": "Iron Hills"
    },
    "upg": null,
-   "buildQueue": [
-    {
-     "key": "barracks",
-     "kind": "barracksUpgrade",
-     "toLevel": 3,
-     "payer": "Iron Hills",
-     "cost": 3500,
-     "startedTurn": 10,
-     "startedDate": "Summer 1420"
-    }
-   ],
+   "buildQueue": [],
    "raid": null
   },
   {
@@ -9485,8 +9481,8 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 1280,
-   "at": "Province_397",
+   "men": 800,
+   "at": "Province_373",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9495,11 +9491,7 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
-    "lothlorien_amroth_sentinels",
-    "lothlorien_lorien_sentries",
-    "lothlorien_lorien_sentries",
-    "lothlorien_lorien_sentries",
-    "lothlorien_galadhon_archers"
+    "lothlorien_amroth_sentinels"
    ],
    "xp": [
     2,
@@ -9508,13 +9500,9 @@
     1,
     1,
     0,
-    1,
-    0,
-    0,
-    0,
-    0
+    1
    ],
-   "upkeep": 5350,
+   "upkeep": 3687.5,
    "_startCost": 14825,
    "fort": false
   },
@@ -9900,8 +9888,8 @@
   {
    "name": "Host of Province_388",
    "faction": "Dale",
-   "men": 1700,
-   "at": "Province_421",
+   "men": 860,
+   "at": "Province_388",
    "order": null,
    "units": [
     "dale_spear_militia",
@@ -9910,13 +9898,6 @@
     "dale_yeomen",
     "dale_yeomen",
     "dale_aor_vinelands_gaurds",
-    "dale_shipmen",
-    "dale_merchant_escorts",
-    "dale_merchant_escorts",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
-    "dale_shipmen",
     "dale_shipmen"
    ],
    "xp": [
@@ -9926,16 +9907,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 5325,
+   "upkeep": 2300,
    "_startCost": 7600
   },
   {
@@ -9989,7 +9963,7 @@
    "name": "Host of Province_10",
    "faction": "Erebor",
    "men": 2140,
-   "at": "Province_421",
+   "at": "Province_441",
    "order": null,
    "units": [
     "erebor_dwarven_miners",
@@ -10276,7 +10250,7 @@
    "name": "Host of Province_13",
    "faction": "Dale",
    "men": 2400,
-   "at": "Province_421",
+   "at": "Province_13",
    "order": null,
    "units": [
     "dale_aor_rhovanion_regents",
@@ -10620,175 +10594,77 @@
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Iron Hills ends its turn — Dol Amroth to move.",
+   "txt": "Imladris ends its turn — Dale to move.",
    "kind": "turn",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_9 moved Province_9 → Province_233",
+   "txt": "Host of Province_409 moved Province_352 → Province_372",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_9 moved Province_233 → Province_9",
+   "txt": "Host of Province_409 moved Province_372 → Province_352",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Iron Hills starts upgrading Barracks at Province_233 to Level 3 (3,500 castas)",
+   "txt": "Imraldris starts construction: Province_372 → unfortified city (2,000 castas)",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Iron Hills grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Erebor ends its turn — Dol Amroth to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_455_split_1 → Province_421",
+   "txt": "Host of Province_409 moved Province_401 → Province_372",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_421 → Province_455_split_1",
+   "txt": "Host of Province_409 moved Province_372 → Province_401",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_404 → Province_421",
+   "txt": "Host of Province_409 moved Province_401 → Province_372",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_388 → Province_404",
+   "txt": "Host of Province_409 moved Province_416 → Province_401",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_378 → Province_388",
+   "txt": "Host of Province_409 moved Province_401 → Province_416",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_10 moved Province_441 → Province_378",
+   "txt": "Host of Province_409 moved Province_372 → Province_401",
    "kind": "",
    "detail": null
   },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Erebor grew tired of waiting on Dol Amroth and skips ahead — Dol Amroth keeps its turn for later this round.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Dale ends its turn — Dol Amroth to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_388 moved Province_465 → Province_421",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_388 moved Province_388 → Province_465",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Dale reinforced Host of Province_388 at Province_388 (+7 regiments · 6050 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_13 moved Province_404 → Province_421",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_13 moved Province_13 → Province_404",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Lothlorien ends its turn — Dale to move.",
-   "kind": "turn",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_16 moved Province_373 → Province_397",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_16 merges into Host of Province_16 at Province_373 (4 regiments)",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Host of Province_16 moved Province_16 → Province_373",
-   "kind": "",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Lothlorien mustered Host of Province_16 at Province_16 (4 regiments · 3,325 castas)",
-   "kind": "battle",
-   "detail": null
-  },
-  {
-   "t": 10,
-   "d": "Summer · S.R. 1420 (T.A. 3020)",
-   "txt": "Lothlorien grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "txt": "Imladris grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
    "kind": "turn",
    "detail": null
   },
@@ -33330,7 +33206,7 @@
   "Umbar",
   "Woodland Realm"
  ],
- "active": 2,
+ "active": 1,
  "wars": [
   "Goblins|Gondor",
   "Gondor|Rhurrim",
@@ -176338,10 +176214,7 @@
   "Rhudaur",
   "Anduin Vale",
   "Khazad-dum",
-  "Lothlorien",
-  "Dale",
-  "Erebor",
-  "Iron Hills"
+  "Imraldris"
  ],
  "pendingReview": false
 }
