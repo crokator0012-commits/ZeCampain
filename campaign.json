@@ -67,7 +67,7 @@
    "id": "Lothlorien",
    "name": "Lothlorien",
    "color": "#C9A227",
-   "treasury": 3411,
+   "treasury": 86,
    "capital": "Province_16",
    "zeal": 10
   },
@@ -3554,7 +3554,7 @@
     "Province_414",
     "Province_444"
    ],
-   "displayName": "Mahud",
+   "displayName": "Far Harad",
    "bldLevel": {
     "exotic_animal_pen": 1,
     "barracks": 1
@@ -8222,7 +8222,7 @@
     "Province_462",
     "Province_463"
    ],
-   "displayName": "East Harad",
+   "displayName": "far harad",
    "bldLevel": {
     "copper_mine": 1
    },
@@ -9481,8 +9481,8 @@
   {
    "name": "Host of Province_16",
    "faction": "Lothlorien",
-   "men": 800,
-   "at": "Province_373",
+   "men": 1280,
+   "at": "Province_397",
    "order": null,
    "units": [
     "lothlorien_aor_heroes_of_amon_lanc",
@@ -9491,7 +9491,11 @@
     "lothlorien_lorien_outriders",
     "lothlorien_lorien_outriders",
     "lothlorien_naith_infantry",
-    "lothlorien_amroth_sentinels"
+    "lothlorien_amroth_sentinels",
+    "lothlorien_lorien_sentries",
+    "lothlorien_lorien_sentries",
+    "lothlorien_lorien_sentries",
+    "lothlorien_galadhon_archers"
    ],
    "xp": [
     2,
@@ -9500,9 +9504,13 @@
     1,
     1,
     0,
-    1
+    1,
+    0,
+    0,
+    0,
+    0
    ],
-   "upkeep": 3687.5,
+   "upkeep": 5350,
    "_startCost": 14825,
    "fort": false
   },
@@ -10611,6 +10619,48 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_16 moved Province_373 → Province_397",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_16 merges into Host of Province_16 at Province_373 (4 regiments)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_16 moved Province_16 → Province_373",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien mustered Host of Province_16 at Province_16 (4 regiments · 3,325 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lothlorien grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -176263,7 +176313,8 @@
   "Anduin Vale",
   "Khazad-dum",
   "Imraldris",
-  "Woodland Realm"
+  "Woodland Realm",
+  "Lothlorien"
  ],
  "pendingReview": false
 }
