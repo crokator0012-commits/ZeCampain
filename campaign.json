@@ -107,7 +107,7 @@
    "id": "Woodland Realm",
    "name": "Woodland Realm",
    "color": "#28603B",
-   "treasury": 4107,
+   "treasury": 82,
    "capital": "Province_392",
    "zeal": 10
   },
@@ -9204,7 +9204,7 @@
    "name": "Host of Province_392",
    "faction": "Woodland Realm",
    "men": 2080,
-   "at": "Province_351",
+   "at": "Province_342",
    "order": null,
    "units": [
     "woodland_realm_legolas",
@@ -10588,9 +10588,57 @@
     0
    ],
    "_startCost": 3425
+  },
+  {
+   "name": "Host of Province_392",
+   "faction": "Woodland Realm",
+   "men": 500,
+   "at": "Province_392",
+   "order": null,
+   "units": [
+    "woodland_realm_forest_archers",
+    "woodland_realm_forest_archers",
+    "woodland_realm_lasgalen_axes",
+    "woodland_realm_forest_sentinels"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 2012.5
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm mustered Host of Province_392 at Province_392 (4 regiments · 4,025 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_392 moved Province_351 → Province_342",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Woodland Realm grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -176214,7 +176262,8 @@
   "Rhudaur",
   "Anduin Vale",
   "Khazad-dum",
-  "Imraldris"
+  "Imraldris",
+  "Woodland Realm"
  ],
  "pendingReview": false
 }
