@@ -91,7 +91,7 @@
    "id": "Rohan",
    "name": "Rohan",
    "color": "#C3A24A",
-   "treasury": 6823,
+   "treasury": 23,
    "capital": "Province_260",
    "zeal": 10
   },
@@ -7198,7 +7198,7 @@
     "Province_438",
     "Province_72"
    ],
-   "displayName": "Akha Hills",
+   "displayName": "Akah Hills",
    "bldLevel": {
     "copper_mine": 4
    },
@@ -9180,7 +9180,7 @@
   {
    "name": "Host of Province_44",
    "faction": "Rohan",
-   "men": 1100,
+   "men": 1220,
    "at": "Province_27",
    "order": null,
    "units": [
@@ -9193,7 +9193,8 @@
     "rohan_scouts_of_rohan",
     "rohan_sword_theigns",
     "rohan_sword_theigns",
-    "rohan_winfried"
+    "rohan_winfried",
+    "rohan_sword_theigns"
    ],
    "xp": [
     0,
@@ -9205,9 +9206,10 @@
     0,
     0,
     0,
+    0,
     0
    ],
-   "upkeep": 4487.5,
+   "upkeep": 4887.5,
    "_startCost": 11425
   },
   {
@@ -10550,8 +10552,8 @@
   {
    "name": "Host of Province_260",
    "faction": "Rohan",
-   "men": 1500,
-   "at": "Province_260",
+   "men": 2220,
+   "at": "Province_127",
    "order": null,
    "units": [
     "rohan_eorling_retainers",
@@ -10566,7 +10568,13 @@
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
     "rohan_eorling_retainers",
-    "rohan_erkenbrand"
+    "rohan_erkenbrand",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers",
+    "rohan_eorling_retainers"
    ],
    "xp": [
     0,
@@ -10581,9 +10589,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 6775,
+   "upkeep": 9775,
    "_startCost": 14000
   },
   {
@@ -10629,6 +10643,62 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_44 moved Province_374 → Province_27",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan reinforced Host of Province_44 at Province_374 (+1 regiment · 800 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_44 moved Province_27 → Province_374",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_21 → Province_127",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_260 moved Province_260 → Province_21",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan reinforced Host of Province_260 at Province_260 (+6 regiments · 6 000 castas)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Rohan grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -176374,7 +176444,8 @@
   "Imraldris",
   "Woodland Realm",
   "Lothlorien",
-  "Lostladen Tribes"
+  "Lostladen Tribes",
+  "Rohan"
  ],
  "pendingReview": false
 }
