@@ -139,7 +139,7 @@
    "id": "Lostladen Tribes",
    "name": "Lostladen Tribes",
    "color": "#D46A16",
-   "treasury": 5437,
+   "treasury": 1937,
    "capital": "Province_359",
    "zeal": 10
   },
@@ -868,7 +868,7 @@
    "modern": "Province 5",
    "hex": "#00a2e8",
    "playable": true,
-   "owner": "Gondor",
+   "owner": "Lostladen Tribes",
    "tier": 2,
    "terrain": "plains",
    "value": 850,
@@ -7306,7 +7306,17 @@
     "sheep_pen": "Lostladen Tribes"
    },
    "upg": null,
-   "buildQueue": [],
+   "buildQueue": [
+    {
+     "key": "sheep_pen",
+     "kind": "tradeUpgrade",
+     "toLevel": 5,
+     "payer": "Lostladen Tribes",
+     "cost": 3500,
+     "startedTurn": 10,
+     "startedDate": "Summer 1420"
+    }
+   ],
    "raid": null
   },
   {
@@ -9429,7 +9439,7 @@
    "name": "Host of Province_359",
    "faction": "Lostladen Tribes",
    "men": 2540,
-   "at": "Province_462",
+   "at": "Province_5",
    "order": null,
    "units": [
     "lostladen_tribes_serpent_gaurds",
@@ -10619,6 +10629,55 @@
   }
  ],
  "log": [
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes ends its turn — Dale to move.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes starts upgrading Sheep Pen at Province_462 to Level 5 (3,500 castas)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes annexed Province_5 (from Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes occupied Province_5 (held by Gondor)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_359 moved Province_341 → Province_5",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Host of Province_359 moved Province_462 → Province_341",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 10,
+   "d": "Summer · S.R. 1420 (T.A. 3020)",
+   "txt": "Lostladen Tribes grew tired of waiting on Dale and skips ahead — Dale keeps its turn for later this round.",
+   "kind": "turn",
+   "detail": null
+  },
   {
    "t": 10,
    "d": "Summer · S.R. 1420 (T.A. 3020)",
@@ -176314,7 +176373,8 @@
   "Khazad-dum",
   "Imraldris",
   "Woodland Realm",
-  "Lothlorien"
+  "Lothlorien",
+  "Lostladen Tribes"
  ],
  "pendingReview": false
 }
